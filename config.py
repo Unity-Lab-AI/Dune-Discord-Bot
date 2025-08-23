@@ -43,8 +43,8 @@ class Config:
         logger.info(f"Successfully loaded pollinations token: {self.pollinations_token[:10]}... (truncated for security)")
 
         # Bot configuration
-        # Default to the OpenAI large model instead of the legacy "unity" model
-        self.default_model = "openai-large"
+        # Default to the gpt-5-nano model instead of the legacy "unity" model
+        self.default_model = "gpt-5-nano"
         try:
             with open("system_instructions.txt", "r") as f:
                 self.system_instructions = f.read().strip()

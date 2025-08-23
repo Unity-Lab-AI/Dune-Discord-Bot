@@ -150,7 +150,7 @@ class MemoryManager:
         if model is None:
             default = (
                 self.api_client.config.default_model
-                if self.api_client and self.api_client.config else "openai-large"
+                if self.api_client and self.api_client.config else "gpt-5-nano"
             )
             model = default
             self.user_models[guild_id][user_id] = model
