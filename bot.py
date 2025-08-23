@@ -37,14 +37,8 @@ async def setup_bot():
     # Fetch available models from the Pollinations API
     models = await api_client.fetch_models()
     memory_manager.set_models(models)
-    # Prefer the OpenAI large model when available
-    openai_large = next(
-        (m["name"] for m in models if "openai" in m["name"].lower() and "large" in m["name"].lower()),
-        None,
-    )
-    if openai_large:
-        config.default_model = openai_large
-    elif models:
+    # Keep the configured default model (gpt-5-nano) when available
+    if models and not any(m["name"].lower() == config.default_model.lower() for m in models):
         config.default_model = models[0]["name"]
     data_manager.load_data(memory_manager)
     setup_commands(bot)
