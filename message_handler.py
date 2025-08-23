@@ -5,6 +5,7 @@ import asyncio
 import aiohttp
 from io import BytesIO
 import json
+import difflib
 
 logger = logging.getLogger(__name__)
 
@@ -16,7 +17,7 @@ class MessageHandler:
         self.data_manager = data_manager
         self.bot = bot
         self.game_data = self.load_game_data("dune.json")
-        self.item_lookup = {name.lower(): details for name, details in self.game_data.get("items", {}).items()}
+        self.item_lookup = {name.lower(): details for name, details in self.game_data.get("item_dictionary", {}).items()}
 
     async def handle_message(self, message):
         channel_id = str(message.channel.id)
@@ -71,11 +72,33 @@ class MessageHandler:
             logger.error(f"Failed to load game data from {path}: {e}")
             return {}
 
+    def normalize_text(self, text: str) -> str:
+        """Lowercase and apply simple synonym replacements for comparison."""
+        text = text.lower()
+        replacements = {
+            "copter": "ornithopter",
+        }
+        for src, target in replacements.items():
+            text = re.sub(rf"\b{src}\b", target, text)
+        text = re.sub(r"[^a-z0-9\s]", " ", text)
+        return re.sub(r"\s+", " ", text).strip()
+
     def get_relevant_game_info(self, message: str) -> str:
-        lower = message.lower()
+        norm_message = self.normalize_text(message)
+        message_tokens = norm_message.split()
         info_parts = []
+        threshold = 0.6
         for name, info in self.item_lookup.items():
-            if name in lower:
+            norm_name = self.normalize_text(name)
+            name_tokens = norm_name.split()
+            matches = 0
+            for token in message_tokens:
+                if token in name_tokens:
+                    matches += 1
+                elif difflib.get_close_matches(token, name_tokens, n=1, cutoff=0.8):
+                    matches += 1
+            score = matches / len(message_tokens) if message_tokens else 0
+            if score >= threshold:
                 details = ", ".join(f"{k.replace('_', ' ')}: {v}" for k, v in info.items())
                 info_parts.append(f"{name}: {details}")
         return "\n".join(info_parts)
