@@ -34,15 +34,12 @@ bot.memory_manager = memory_manager
 
 async def setup_bot():
     await bot.wait_until_ready()
-    models = await api_client.fetch_models()
-    if not models:
-        models = [{"name": "unity", "description": "Default unity model"}]
-        logging.info("No models loaded from API, defaulting to 'unity'.")
+    models = [{"name": "unity", "description": "Default unity model"}]
     memory_manager.set_models(models)
     config.default_model = "unity"
     data_manager.load_data(memory_manager)
-    setup_commands(bot, models)
-    print(f"Loaded {len(models)} models: {[m['name'] for m in models]}")
+    setup_commands(bot)
+    print("Loaded unity model")
 
 @bot.event
 async def on_ready():

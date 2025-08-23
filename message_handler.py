@@ -4,6 +4,7 @@ import logging
 import asyncio
 import aiohttp
 from io import BytesIO
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -14,6 +15,8 @@ class MessageHandler:
         self.config = config
         self.data_manager = data_manager
         self.bot = bot
+        self.game_data = self.load_game_data("dune.json")
+        self.item_lookup = {name.lower(): details for name, details in self.game_data.get("items", {}).items()}
 
     async def handle_message(self, message):
         channel_id = str(message.channel.id)
@@ -34,6 +37,9 @@ class MessageHandler:
             if msg["content"].strip():
                 role = "assistant" if msg["role"] == "ai" else msg["role"]
                 messages.append({"role": role, "content": msg["content"]})
+        game_info = self.get_relevant_game_info(user_message)
+        if game_info:
+            messages.append({"role": "system", "content": f"Game data:\n{game_info}"})
         logger.info(f"Preparing to send message for user {user_id} with model {user_model}")
         if not self.api_client:
             await message.channel.send(f"<@{user_id}> Error: API client not initialized")
@@ -56,6 +62,23 @@ class MessageHandler:
         except Exception as e:
             logger.error(f"Failed to send message for user {user_id}: {e}")
             await message.channel.send(f"<@{user_id}> Failed to send response - please try again.")
+
+    def load_game_data(self, path: str) -> dict:
+        try:
+            with open(path, "r") as f:
+                return json.load(f)
+        except Exception as e:
+            logger.error(f"Failed to load game data from {path}: {e}")
+            return {}
+
+    def get_relevant_game_info(self, message: str) -> str:
+        lower = message.lower()
+        info_parts = []
+        for name, info in self.item_lookup.items():
+            if name in lower:
+                details = ", ".join(f"{k.replace('_', ' ')}: {v}" for k, v in info.items())
+                info_parts.append(f"{name}: {details}")
+        return "\n".join(info_parts)
 
     def clean_response(self, response: str) -> str:
         response = response.strip()
