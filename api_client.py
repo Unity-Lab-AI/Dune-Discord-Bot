@@ -58,8 +58,8 @@ class APIClient:
                 return [{"name": m.strip()} for m in result]
             if all(isinstance(m, dict) and "name" in m for m in result):
                 return [{"name": m["name"].strip(), "description": m.get("description", "")} for m in result]
-        # Fallback to the OpenAI large model if the models endpoint is unavailable
-        return [{"name": "openai-large", "description": "Default OpenAI large model"}]
+        # Fallback to the gpt-5-nano model if the models endpoint is unavailable
+        return [{"name": "gpt-5-nano", "description": "Default gpt-5 nano model"}]
 
     async def send_message(self, messages: list, model: str | None):
         if self.session is None or self.session.closed:

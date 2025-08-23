@@ -1,6 +1,6 @@
 WHAT IS DUNE BOT?
 -----------------
-Dune Bot is an AI Discord bot that chats, remembers, and generates images/code. Uses Pollinations.ai API, switches models, and saves convos. Default model is `openai-large`.
+Dune Bot is an AI Discord bot that chats, remembers, and generates images/code. Uses Pollinations.ai API, switches models, and saves convos. Default model is `gpt-5-nano`.
 
 KEY FEATURES
 ------------
@@ -72,7 +72,7 @@ HOW IT WORKS
 ------------
 - MEMORY: Last 20 messages/user/model, 5 channel notes, saved in chat_data.json
 - IMAGES: Detects "image"/"draw", uses Pollinations.ai
-- MODELS: User-picked, defaults to "openai-large"
+- MODELS: User-picked, defaults to "gpt-5-nano"
 - TEXT: <2000 chars = message, 2000-4096 chars = embed, >4096 chars = .txt file
 
 FILES
