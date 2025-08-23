@@ -113,7 +113,7 @@ class MessageHandler:
         return "\n".join(cleaned_lines).strip()
 
     def build_message(self, content: str) -> dict:
-        url_pattern = r"https?://\S+"
+        url_pattern = r'https?://[^\s"\'<>]+'
         image_urls = re.findall(url_pattern, content)
         content_without_urls = re.sub(url_pattern, "", content).strip()
         return {"content": content_without_urls, "image_urls": image_urls}
@@ -125,12 +125,17 @@ class MessageHandler:
         files = []
         for url in image_urls:
             async with aiohttp.ClientSession() as session:
-                async with session.get(url) as resp:
-                    if resp.status == 200:
-                        data = await resp.read()
-                        files.append(discord.File(BytesIO(data), filename="image.png"))
-                    else:
-                        logger.error(f"Failed to fetch image from {url}: status {resp.status}")
+                try:
+                    async with session.get(url) as resp:
+                        if resp.status == 200:
+                            data = await resp.read()
+                            files.append(discord.File(BytesIO(data), filename="image.png"))
+                        else:
+                            logger.error(f"Failed to fetch image from {url}: status {resp.status}")
+                except aiohttp.InvalidURL as e:
+                    logger.error(f"Invalid image URL {url}: {e}")
+                except Exception as e:
+                    logger.error(f"Error fetching image from {url}: {e}")
 
         if content or files:
             prefixed_content = f"<@{user_id}> {content}" if content else f"<@{user_id}>"
