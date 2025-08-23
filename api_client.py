@@ -70,10 +70,16 @@ class APIClient:
         payload = {
             "messages": messages,
             "model": model,
-            "temperature": 0.7,
             "max_tokens": 1024,
             "stream": False
         }
+        # The gpt-5-nano model only supports the default temperature of 0.
+        # Including a non-zero temperature value results in an API error.
+        # To maintain compatibility with other models that might support
+        # temperature tuning, only add the temperature field when the
+        # selected model is not gpt-5-nano.
+        if model.lower() != "gpt-5-nano":
+            payload["temperature"] = 0.7
         try:
             result = await self._request_json("POST", self.config.api_url, json=payload, timeout=aiohttp.ClientTimeout(total=30))
         except asyncio.TimeoutError:
