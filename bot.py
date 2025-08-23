@@ -34,12 +34,21 @@ bot.memory_manager = memory_manager
 
 async def setup_bot():
     await bot.wait_until_ready()
-    models = [{"name": "unity", "description": "Default unity model"}]
+    # Fetch available models from the Pollinations API
+    models = await api_client.fetch_models()
     memory_manager.set_models(models)
-    config.default_model = "unity"
+    # Prefer the OpenAI large model when available
+    openai_large = next(
+        (m["name"] for m in models if "openai" in m["name"].lower() and "large" in m["name"].lower()),
+        None,
+    )
+    if openai_large:
+        config.default_model = openai_large
+    elif models:
+        config.default_model = models[0]["name"]
     data_manager.load_data(memory_manager)
     setup_commands(bot)
-    print("Loaded unity model")
+    print(f"Loaded {config.default_model} model")
 
 @bot.event
 async def on_ready():
