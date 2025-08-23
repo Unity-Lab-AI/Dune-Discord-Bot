@@ -18,6 +18,7 @@ class MessageHandler:
         self.bot = bot
         self.game_data = self.load_game_data("dune.json")
         self.item_lookup = {name.lower(): details for name, details in self.game_data.get("item_dictionary", {}).items()}
+        self.game_summary = self.game_data.get("game_summary", "")
 
     async def handle_message(self, message):
         channel_id = str(message.channel.id)
@@ -38,6 +39,8 @@ class MessageHandler:
             if msg["content"].strip():
                 role = "assistant" if msg["role"] == "ai" else msg["role"]
                 messages.append({"role": role, "content": msg["content"]})
+        if self.game_summary:
+            messages.append({"role": "system", "content": f"Game summary:\n{self.game_summary}"})
         game_info = self.get_relevant_game_info(user_message)
         if game_info:
             messages.append({"role": "system", "content": f"Game data:\n{game_info}"})
@@ -165,3 +168,4 @@ class MessageHandler:
 
         if content.strip():
             self.memory_manager.add_ai_message(str(message.channel.id), guild_id, user_id, content)
+
