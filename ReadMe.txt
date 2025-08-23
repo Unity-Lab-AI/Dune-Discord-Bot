@@ -1,6 +1,6 @@
-WHAT IS UNITY?
---------------
-Unity is an AI Discord bot that chats, remembers, and generates images/code. Uses Pollinations.ai API, switches models, and saves convos.
+WHAT IS DUNE BOT?
+-----------------
+Dune Bot is an AI Discord bot that chats, remembers, and generates images/code. Uses Pollinations.ai API, switches models, and saves convos. Default model is `openai-large`.
 
 KEY FEATURES
 ------------
@@ -57,7 +57,7 @@ SETUP
 
 COMMANDS
 --------
-- !unityhelp - Show commands/models
+- !bothelp - Show commands/models
 - !setmodel - Pick AI model (DM)
 - !savememory <text> - Save channel note
 - !wipe - Clear chat history
@@ -72,7 +72,7 @@ HOW IT WORKS
 ------------
 - MEMORY: Last 20 messages/user/model, 5 channel notes, saved in chat_data.json
 - IMAGES: Detects "image"/"draw", uses Pollinations.ai
-- MODELS: User-picked, defaults to "unity"
+- MODELS: User-picked, defaults to "openai-large"
 - TEXT: <2000 chars = message, 2000-4096 chars = embed, >4096 chars = .txt file
 
 FILES
@@ -116,4 +116,4 @@ WHY UNITY?
 - Adapts to users
 - Fits any server
 
-Check logs or restart if stuck. More chats = better Unity!
+Check logs or restart if stuck. More chats = better results!

@@ -3,25 +3,25 @@ from discord.ext import commands
 
 
 def setup_commands(bot):
-    @bot.command(name="unityhelp")
-    async def unityhelp(ctx):
+    @bot.command(name="bothelp")
+    async def bothelp(ctx):
         embed = discord.Embed(
-            title="Unity Bot Help",
+            title="Dune Bot Help",
             description="Available commands:",
             color=0x00ff00,
             timestamp=discord.utils.utcnow()
         )
         embed.add_field(
             name="Commands",
-            value="`!unityhelp` - Show this help\n`!savememory <text>` - Save a memory\n`!wipe` - Clear chat history",
+            value="`!bothelp` - Show this help\n`!savememory <text>` - Save a memory\n`!wipe` - Clear chat history",
             inline=False
         )
         embed.add_field(
             name="Model",
-            value="Unity (default)",
+            value=f"{bot.memory_manager.api_client.config.default_model} (default)",
             inline=False
         )
-        embed.set_footer(text="Unity | Pollinations.ai")
+        embed.set_footer(text="Pollinations.ai")
         await ctx.send(embed=embed)
 
     @bot.command(name="savememory")

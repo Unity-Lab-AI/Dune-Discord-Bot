@@ -148,7 +148,13 @@ class MemoryManager:
         self.initialize_user(guild_id, user_id)
         model = self.user_models.get(guild_id, {}).get(user_id)
         if model is None:
-            model = "unity"
+            default = (
+                self.api_client.config.default_model
+                if self.api_client and self.api_client.config else "openai-large"
+            )
+            model = default
             self.user_models[guild_id][user_id] = model
-            logger.info(f"Assigned default model {model} for user {user_id} in guild {guild_id}")
+            logger.info(
+                f"Assigned default model {model} for user {user_id} in guild {guild_id}"
+            )
         return model
