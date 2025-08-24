@@ -486,9 +486,9 @@
       "usage": "Sidearm, disruptor with inscription",
       "damage_type": "TBD",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 40 Intel Points, requires Intel Spent: 1200",
       "crafting_materials": "TBD",
-      "research_required": "TBD",
+      "research_required": "40 Intel Points, Intel Spent: 1200",
       "lootable": "Yes"
     },
     "Abulurd's Rapture": {
@@ -498,9 +498,9 @@
       "usage": "Sidearm, disruptor modified for doubleshots of heavy darts",
       "damage_type": "TBD",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 20 Intel Points, requires Intel Spent: 300",
       "crafting_materials": "TBD",
-      "research_required": "TBD",
+      "research_required": "20 Intel Points, Intel Spent: 300",
       "lootable": "Yes"
     },
     "Acheronian Boots": {
@@ -570,7 +570,7 @@
       "usage": "Tier 5 unique scattergun",
       "damage_type": "TBD",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -582,7 +582,7 @@
       "usage": "Tier 5 short blade",
       "damage_type": "Blade",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -606,7 +606,7 @@
       "usage": "Tier 5 unique sidearm",
       "damage_type": "TBD",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -616,9 +616,9 @@
       "tier": 5,
       "unique": false,
       "usage": "Tier 5 scattergun",
-      "damage_type": "TBD",
+      "damage_type": "Heavy Dart",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -628,9 +628,9 @@
       "tier": 5,
       "unique": false,
       "usage": "Tier 5 scattergun",
-      "damage_type": "TBD",
+      "damage_type": "Heavy Dart",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -640,9 +640,9 @@
       "tier": 5,
       "unique": false,
       "usage": "Tier 5 rifle",
-      "damage_type": "TBD",
+      "damage_type": "Light Dart",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -652,9 +652,9 @@
       "tier": 5,
       "unique": false,
       "usage": "Tier 5 rifle",
-      "damage_type": "TBD",
+      "damage_type": "Light Dart",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -666,7 +666,7 @@
       "usage": "Tier 5 short blade",
       "damage_type": "Blade",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -702,7 +702,7 @@
       "usage": "Tier 5 long blade",
       "damage_type": "Blade",
       "damage": "54.3 per swing",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -714,7 +714,7 @@
       "usage": "Tier 5 long blade",
       "damage_type": "Blade",
       "damage": "54.3 per swing",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -726,7 +726,7 @@
       "usage": "Tier 5 heavy weapon",
       "damage_type": "Heavy Dart",
       "damage": "17.0 per shot",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -836,7 +836,7 @@
       "usage": "Rifle-Karpov",
       "damage_type": "TBD",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -848,9 +848,9 @@
       "usage": "Special Maula Pistol, increases accuracy while Prescient",
       "damage_type": "TBD",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "TBD",
-      "research_required": "TBD",
+      "research_required": "10 Intel Points",
       "lootable": "Yes"
     },
     "Armor Plating": {
@@ -891,9 +891,9 @@
       "usage": "Sidearm, heavy pistol with shield-destabilizing darts",
       "damage_type": "TBD",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "TBD",
-      "research_required": "TBD",
+      "research_required": "10 Intel Points",
       "lootable": "Yes"
     },
     "Artisan JABAL Spitdart": {
@@ -1655,9 +1655,9 @@
       "usage": "Sidearm, pistol with increased accuracy",
       "damage_type": "TBD",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 30 Intel Points, requires Intel Spent: 700",
       "crafting_materials": "TBD",
-      "research_required": "TBD",
+      "research_required": "30 Intel Points, Intel Spent: 700",
       "lootable": "Yes"
     },
     "Copper Ingot": {
@@ -1887,7 +1887,7 @@
       "type": "Building",
       "usage": "Upgraded from shelters for defense",
       "how_to_obtain": "Built and upgraded",
-      "crafting_materials": "Not specified",
+      "crafting_materials": "320x Granite Stone, 120x Steel Ingot, 40x Polymers, 12x Armor Plating",
       "research_required": "Intel for construction category",
       "lootable": "No"
     },
@@ -2311,7 +2311,7 @@
     "Mohandis Sandbike Engine Mk1": {
       "type": "Vehicle Part",
       "usage": "Sandbike engine",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2319,7 +2319,7 @@
     "Mohandis Sandbike Engine Mk3": {
       "type": "Vehicle Part",
       "usage": "Sandbike engine upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2327,7 +2327,7 @@
     "Night Rider Sandbike Boost Mk2": {
       "type": "Vehicle Part",
       "usage": "Sandbike boost",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2527,7 +2527,7 @@
     "Sandbike Backseat Mk1": {
       "type": "Vehicle Part",
       "usage": "Sandbike backseat",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2535,7 +2535,7 @@
     "Sandbike Booster Mk2": {
       "type": "Vehicle Part",
       "usage": "Sandbike booster upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2543,7 +2543,7 @@
     "Sandbike Booster Mk3": {
       "type": "Vehicle Part",
       "usage": "Sandbike booster upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2551,7 +2551,7 @@
     "Sandbike Booster Mk4": {
       "type": "Vehicle Part",
       "usage": "Sandbike booster upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2559,7 +2559,7 @@
     "Sandbike Booster Mk5": {
       "type": "Vehicle Part",
       "usage": "Sandbike booster upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2567,7 +2567,7 @@
     "Sandbike Booster Mk6": {
       "type": "Vehicle Part",
       "usage": "Sandbike booster upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2583,7 +2583,7 @@
     "Sandbike Chassis Mk2": {
       "type": "Vehicle Part",
       "usage": "Sandbike chassis upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2591,7 +2591,7 @@
     "Sandbike Chassis Mk3": {
       "type": "Vehicle Part",
       "usage": "Sandbike chassis upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2599,7 +2599,7 @@
     "Sandbike Chassis Mk4": {
       "type": "Vehicle Part",
       "usage": "Sandbike chassis upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2607,7 +2607,7 @@
     "Sandbike Chassis Mk5": {
       "type": "Vehicle Part",
       "usage": "Sandbike chassis upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2615,7 +2615,7 @@
     "Sandbike Chassis Mk6": {
       "type": "Vehicle Part",
       "usage": "Sandbike chassis upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2623,7 +2623,7 @@
     "Sandbike Engine Mk1": {
       "type": "Vehicle Part",
       "usage": "Sandbike engine",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2631,7 +2631,7 @@
     "Sandbike Engine Mk2": {
       "type": "Vehicle Part",
       "usage": "Sandbike engine upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2639,7 +2639,7 @@
     "Sandbike Engine Mk3": {
       "type": "Vehicle Part",
       "usage": "Sandbike engine upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2647,7 +2647,7 @@
     "Sandbike Engine Mk4": {
       "type": "Vehicle Part",
       "usage": "Sandbike engine upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2655,7 +2655,7 @@
     "Sandbike Engine Mk5": {
       "type": "Vehicle Part",
       "usage": "Sandbike engine upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2663,7 +2663,7 @@
     "Sandbike Engine Mk6": {
       "type": "Vehicle Part",
       "usage": "Sandbike engine upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2671,7 +2671,7 @@
     "Sandbike Hull Mk1": {
       "type": "Vehicle Part",
       "usage": "Sandbike hull",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2679,7 +2679,7 @@
     "Sandbike Hull Mk2": {
       "type": "Vehicle Part",
       "usage": "Sandbike hull upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2687,7 +2687,7 @@
     "Sandbike Hull Mk3": {
       "type": "Vehicle Part",
       "usage": "Sandbike hull upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2695,7 +2695,7 @@
     "Sandbike Hull Mk4": {
       "type": "Vehicle Part",
       "usage": "Sandbike hull upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2703,7 +2703,7 @@
     "Sandbike Hull Mk5": {
       "type": "Vehicle Part",
       "usage": "Sandbike hull upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2711,7 +2711,7 @@
     "Sandbike Hull Mk6": {
       "type": "Vehicle Part",
       "usage": "Sandbike hull upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2719,7 +2719,7 @@
     "Sandbike Inventory Mk1": {
       "type": "Vehicle Part",
       "usage": "Sandbike inventory",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2727,7 +2727,7 @@
     "Sandbike Inventory Mk2": {
       "type": "Vehicle Part",
       "usage": "Sandbike inventory upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2735,7 +2735,7 @@
     "Sandbike PSU Mk1": {
       "type": "Vehicle Part",
       "usage": "Sandbike PSU",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2743,7 +2743,7 @@
     "Sandbike PSU Mk2": {
       "type": "Vehicle Part",
       "usage": "Sandbike PSU upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2751,7 +2751,7 @@
     "Sandbike PSU Mk3": {
       "type": "Vehicle Part",
       "usage": "Sandbike PSU upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2759,7 +2759,7 @@
     "Sandbike PSU Mk4": {
       "type": "Vehicle Part",
       "usage": "Sandbike PSU upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2767,7 +2767,7 @@
     "Sandbike PSU Mk5": {
       "type": "Vehicle Part",
       "usage": "Sandbike PSU upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2775,7 +2775,7 @@
     "Sandbike PSU Mk6": {
       "type": "Vehicle Part",
       "usage": "Sandbike PSU upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2783,7 +2783,7 @@
     "Sandbike Scanner Mk2": {
       "type": "Vehicle Part",
       "usage": "Sandbike scanner",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2791,7 +2791,7 @@
     "Sandbike Tread Mk1": {
       "type": "Vehicle Part",
       "usage": "Sandbike tread",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2799,7 +2799,7 @@
     "Sandbike Tread Mk2": {
       "type": "Vehicle Part",
       "usage": "Sandbike tread upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2807,7 +2807,7 @@
     "Sandbike Tread Mk3": {
       "type": "Vehicle Part",
       "usage": "Sandbike tread upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2815,7 +2815,7 @@
     "Sandbike Tread Mk4": {
       "type": "Vehicle Part",
       "usage": "Sandbike tread upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2823,7 +2823,7 @@
     "Sandbike Tread Mk5": {
       "type": "Vehicle Part",
       "usage": "Sandbike tread upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2831,7 +2831,7 @@
     "Sandbike Tread Mk6": {
       "type": "Vehicle Part",
       "usage": "Sandbike tread upgrade",
-      "how_to_obtain": "Crafted",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "No"
@@ -2900,7 +2900,7 @@
       "type": "Building",
       "usage": "Basic survival structures",
       "how_to_obtain": "Built",
-      "crafting_materials": "Not specified",
+      "crafting_materials": "120x Basalt Stone, 40x Steel Ingot, 20x Polymers",
       "research_required": "Intel for construction category",
       "lootable": "No"
     },
@@ -3114,8 +3114,8 @@
       "type": "Storage",
       "usage": "Stores water automatically",
       "how_to_obtain": "Built",
-      "crafting_materials": "Not specified",
-      "research_required": "Intel for water category",
+      "crafting_materials": "80x Steel Ingot, 24x Watertube, 18x Mechanical Parts, 30x Polymers",
+      "research_required": "10 Intel Points",
       "lootable": "No"
     },
     "Water Flask": {
@@ -3140,7 +3140,7 @@
       "usage": "Pistol-Maula",
       "damage_type": "TBD",
       "damage": "TBD",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Schematic costs 10 Intel Points",
       "crafting_materials": "Not specified",
       "research_required": "Intel or schematic",
       "lootable": "Yes"
@@ -4904,6 +4904,150 @@
       "how_to_obtain": "Crafted via Vehicle Fabricator",
       "crafting_materials": "60x Plastanium Ingot, 35x Cobalt Paste, 20x Particle Capacitor, 30x Complex Machinery, 10x Tri-Forged Hydraulic Piston, 900x Water",
       "research_required": "40 Intel Points, Intel Spent: 1200",
+      "lootable": "No"
+    },
+    "Refinery Station": {
+      "type": "Station",
+      "usage": "Refines raw resources and Spice into refined materials (e.g., Ingots, Fuel Cells, Refined Spice).",
+      "how_to_obtain": "Built",
+      "crafting_materials": "120x Steel Ingot, 45x Mechanical Parts, 25x Polymers, 6x Hydraulic Piston",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Vehicle Fabricator": {
+      "type": "Station",
+      "usage": "Fabricates vehicle parts and modules for Sandbikes, Buggies, Ornithopters, and Sandcrawlers.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "150x Steel Ingot, 60x Mechanical Parts, 40x Polymers, 8x Hydraulic Piston",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Advanced Survival Fabricator": {
+      "type": "Station",
+      "usage": "Produces advanced survival components (filters, servoks, regulators) and high-tier crafting items.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "100x Steel Ingot, 30x Mechanical Parts, 40x Polymers, 6x Servoks",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Survival Station": {
+      "type": "Station",
+      "usage": "Entry-level bench for consumables and basic survival gear (e.g., Water Flasks).",
+      "how_to_obtain": "Built",
+      "crafting_materials": "60x Steel Ingot, 20x Mechanical Parts, 12x Polymers",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Shelters (T1)": {
+      "type": "Building",
+      "usage": "Basic survival structure for protection from storms and heat.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "120x Basalt Stone, 40x Steel Ingot, 20x Polymers",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Fortresses (T2)": {
+      "type": "Building",
+      "usage": "Heavily reinforced stronghold; increases defense and base durability.",
+      "how_to_obtain": "Built and upgraded",
+      "crafting_materials": "320x Granite Stone, 120x Steel Ingot, 40x Polymers, 12x Armor Plating",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Water Cisterns (T1)": {
+      "type": "Building",
+      "usage": "Automates storage of water from Windtraps and other inputs; prevents overflow.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "80x Steel Ingot, 24x Watertube, 18x Mechanical Parts, 30x Polymers",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Floor": {
+      "type": "Building Piece",
+      "usage": "Floor structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "10x Basalt Stone, 2x Steel Ingot",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Wall": {
+      "type": "Building Piece",
+      "usage": "Wall structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "12x Basalt Stone, 2x Steel Ingot",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Ceiling": {
+      "type": "Building Piece",
+      "usage": "Ceiling structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "10x Basalt Stone, 2x Steel Ingot",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Foundation": {
+      "type": "Building Piece",
+      "usage": "Foundation structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "20x Basalt Stone, 4x Steel Ingot",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Pillar": {
+      "type": "Building Piece",
+      "usage": "Pillar structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "6x Basalt Stone, 1x Steel Ingot",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Door": {
+      "type": "Building Piece",
+      "usage": "Door structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "8x Steel Ingot, 6x Polymers",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Window": {
+      "type": "Building Piece",
+      "usage": "Window structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "6x Steel Ingot, 4x Polymers",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Stairs": {
+      "type": "Building Piece",
+      "usage": "Stairs structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "14x Basalt Stone, 2x Steel Ingot",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Ramp": {
+      "type": "Building Piece",
+      "usage": "Ramp structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "12x Basalt Stone, 2x Steel Ingot",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Roof": {
+      "type": "Building Piece",
+      "usage": "Roof structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "10x Basalt Stone, 2x Steel Ingot",
+      "research_required": "10 Intel Points",
+      "lootable": "No"
+    },
+    "Building Piece - Gate": {
+      "type": "Building Piece",
+      "usage": "Gate structural element for base construction.",
+      "how_to_obtain": "Built",
+      "crafting_materials": "40x Steel Ingot, 16x Polymers, 4x Mechanical Parts",
+      "research_required": "10 Intel Points",
       "lootable": "No"
     }
   },
