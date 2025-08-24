@@ -5,7 +5,7 @@ import asyncio
 import aiohttp
 from io import BytesIO
 import json
-import difflib
+from typing import Dict, Any, List, Tuple
 
 logger = logging.getLogger(__name__)
 
@@ -16,39 +16,190 @@ class MessageHandler:
         self.config = config
         self.data_manager = data_manager
         self.bot = bot
+
+        self.synonyms = {
+            "shotgun": ["scattergun", "12 gauge", "12g", "pump-action", "auto-shotgun"],
+            "copter": ["ornithopter"],
+        }
+
         self.game_data = self.load_game_data("dune.json")
-        self.item_lookup = {name.lower(): details for name, details in self.game_data.get("item_dictionary", {}).items()}
+        self.items = self._extract_items(self.game_data)
+        self.item_lookup: Dict[str, Tuple[str, Dict[str, Any]]] = {
+            self.normalize_text(name): (name, details) for name, details in self.items.items()
+        }
         self.game_summary = self.game_data.get("game_summary", "")
+
+        self.domain_terms = {
+            "item", "items", "gear", "weapon", "weapons", "gun", "guns", "shotgun",
+            "knife", "sword", "shield", "armor", "vehicle", "ornithopter", "thopter",
+            "stats", "stat", "damage", "dps", "cost", "craft", "crafting", "blueprint",
+            "recipe", "build", "best", "which", "recommend", "recommendation", "compare",
+            "vs", "versus", "loadout", "kit"
+        }
+        self.greeting_terms = {"hi","hello","hey","yo","sup","howdy","greetings","hola"}
+
+    def load_game_data(self, path: str) -> dict:
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            logger.error(f"Failed to load game data from {path}: {e}")
+            return {}
+
+    def _extract_items(self, data: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
+        if isinstance(data, dict):
+            if "items" in data and isinstance(data["items"], dict):
+                return data["items"]
+            if "item_dictionary" in data and isinstance(data["item_dictionary"], dict):
+                return data["item_dictionary"]
+            meta_keys = {"game_summary", "version", "_meta"}
+            items = {k: v for k, v in data.items() if k not in meta_keys and isinstance(v, dict)}
+            if items:
+                return items
+        return {}
+
+    def normalize_text(self, text: str) -> str:
+        text = (text or "").lower()
+        synonyms = getattr(self, "synonyms", {})
+        for src, alts in synonyms.items():
+            pattern = r"\b(" + re.escape(src) + r"|" + "|".join(map(re.escape, alts)) + r")\b"
+            text = re.sub(pattern, src, text)
+        text = re.sub(r"[^a-z0-9\s]", " ", text)
+        return re.sub(r"\s+", " ", text).strip()
+
+    def is_small_talk(self, user_message: str) -> bool:
+        norm = self.normalize_text(user_message)
+        tokens = set(norm.split())
+        if not tokens:
+            return False
+        if len(norm.split()) <= 6 and (tokens & self.greeting_terms):
+            if tokens & self.domain_terms:
+                return False
+            return True
+        return False
+
+    def is_item_query(self, user_message: str) -> bool:
+        norm = self.normalize_text(user_message)
+        tokens = set(norm.split())
+        return bool(tokens & self.domain_terms)
+
+    def _score_item(self, message_tokens: List[str], name: str, details: Dict[str, Any]) -> float:
+        norm_name = self.normalize_text(name)
+        name_tokens = set(norm_name.split())
+        msg_tokens = set(message_tokens)
+        score = 0.0
+        score += len(msg_tokens & name_tokens)
+        for field in ("type", "usage"):
+            val = str(details.get(field, "")).lower()
+            val = self.normalize_text(val)
+            if not val:
+                continue
+            field_tokens = set(val.split())
+            score += 0.5 * len(msg_tokens & field_tokens)
+        return score
+
+    async def _ai_query_plan(self, model: str, user_message: str) -> Dict[str, Any]:
+        sys = "You are a query planner. Return only JSON with keys: keywords (array), types (array)."
+        usr = f"User question: {user_message}\nReturn only JSON."
+        try:
+            out = await self.api_client.send_message(
+                [{"role": "system", "content": sys}, {"role": "user", "content": usr}],
+                model
+            )
+            m = re.search(r"\{[\s\S]*\}", out or "")
+            plan = json.loads(m.group(0)) if m else {}
+            plan["keywords"] = [self.normalize_text(k) for k in plan.get("keywords", []) if isinstance(k, str)]
+            plan["types"] = [self.normalize_text(t) for t in plan.get("types", []) if isinstance(t, str)]
+            return plan
+        except Exception as e:
+            logger.warning(f"Query-plan parse failed, falling back to heuristic: {e}")
+            return {}
+
+    def _retrieve_matches(self, user_message: str, plan: Dict[str, Any], top_k: int = 6):
+        norm = self.normalize_text(user_message)
+        message_tokens = norm.split()
+        message_tokens += plan.get("keywords", [])
+        message_tokens += plan.get("types", [])
+        seen = set()
+        message_tokens = [t for t in message_tokens if not (t in seen or seen.add(t))]
+        scored = []
+        for _, (display_name, details) in self.item_lookup.items():
+            s = self._score_item(message_tokens, display_name, details)
+            if s > 0:
+                scored.append((display_name, details, s))
+        scored.sort(key=lambda x: x[2], reverse=True)
+        return scored[:top_k]
+
+    def _game_context_json(self, matches):
+        payload = {
+            "items": [
+                {
+                    "name": name,
+                    "score": round(score, 3),
+                    "fields": {k: v for k, v in details.items()
+                               if isinstance(v, (str, int, float, bool)) or v is None}
+                }
+                for (name, details, score) in matches
+            ]
+        }
+        return json.dumps(payload, ensure_ascii=False, indent=2)
 
     async def handle_message(self, message):
         channel_id = str(message.channel.id)
         guild_id = str(message.guild.id) if message.guild else "DM"
         user_id = str(message.author.id)
         user_message = message.content
+
         if user_message.lower().startswith("!"):
             return
+
         self.memory_manager.add_user_message(channel_id, guild_id, user_id, user_message)
         user_model = self.memory_manager.get_user_model(guild_id, user_id)
+
+        if self.is_small_talk(user_message):
+            system_prompt = f"{self.config.system_instructions}\nYou are {user_model}."
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_message},
+            ]
+            try:
+                ai_response = await self.api_client.send_message(messages, user_model)
+            except Exception as e:
+                await message.channel.send(f"<@{user_id}> Error: Failed to fetch response - {e}")
+                return
+            ai_response_clean = self.clean_response(ai_response) or "Hey!"
+            final_message = self.build_message(ai_response_clean)
+            await self._send_message(message, user_id, final_message, user_message.lower())
+            return
+
+        messages = []
         system_prompt = f"{self.config.system_instructions}\nYou are {user_model}."
-        messages = [{"role": "system", "content": system_prompt}]
+        messages.append({"role": "system", "content": system_prompt})
+
         channel_memories = self.memory_manager.channel_memories.get(channel_id, [])
         if channel_memories:
             messages.append({"role": "user", "content": "\n".join(channel_memories)})
+
         model_history = self.memory_manager.get_user_model_history(guild_id, user_id, user_model)
         for msg in model_history:
             if msg["content"].strip():
                 role = "assistant" if msg["role"] == "ai" else msg["role"]
                 messages.append({"role": role, "content": msg["content"]})
-        if self.game_summary:
-            messages.append({"role": "system", "content": f"Game summary:\n{self.game_summary}"})
-        game_info = self.get_relevant_game_info(user_message)
-        if game_info:
-            messages.append({"role": "system", "content": f"Game data:\n{game_info}"})
-        logger.info(f"Preparing to send message for user {user_id} with model {user_model}")
-        if not self.api_client:
-            await message.channel.send(f"<@{user_id}> Error: API client not initialized")
-            logger.error(f"API client is None for user {user_id}")
-            return
+
+        include_gamedata = self.is_item_query(user_message)
+        if include_gamedata:
+            plan = await self._ai_query_plan(user_model, user_message)
+            matches = self._retrieve_matches(user_message, plan, top_k=6)
+            game_context = self._game_context_json(matches)
+            guardrails = (
+                "When the question concerns items, gear, or stats, use ONLY the following GameData JSON "
+                "for concrete names or numbers. If an asked-for item is missing, say so briefly and ask a short follow-up. "
+                "Do not comment about GameData if the user wasn't asking about items."
+            )
+            messages.append({"role": "system", "content": f"{guardrails}\n\nGameData:\n{game_context}"})
+
+        messages.append({"role": "user", "content": user_message})
+
         try:
             ai_response = await self.api_client.send_message(messages, user_model)
             if not ai_response or not ai_response.strip():
@@ -57,120 +208,58 @@ class MessageHandler:
         except Exception as e:
             await message.channel.send(f"<@{user_id}> Error: Failed to fetch response - {e}")
             return
-        ai_response_clean = self.clean_response(ai_response)
-        if not ai_response_clean:
-            ai_response_clean = "Empty response from API—please try again later."
+
+        ai_response_clean = self.clean_response(ai_response) or "Got it."
         final_message = self.build_message(ai_response_clean)
-        try:
-            await self._send_message(message, user_id, final_message, user_message.lower())
-        except Exception as e:
-            logger.error(f"Failed to send message for user {user_id}: {e}")
-            await message.channel.send(f"<@{user_id}> Failed to send response - please try again.")
+        await self._send_message(message, user_id, final_message, user_message.lower())
 
-    def load_game_data(self, path: str) -> dict:
-        try:
-            with open(path, "r") as f:
-                return json.load(f)
-        except Exception as e:
-            logger.error(f"Failed to load game data from {path}: {e}")
-            return {}
+    def clean_response(self, text: str) -> str:
+        if not text:
+            return ""
+        text = re.sub(r"\[/?CODE\]", "", text, flags=re.IGNORECASE)
+        return text.strip()
 
-    def normalize_text(self, text: str) -> str:
-        """Lowercase and apply simple synonym replacements for comparison."""
-        text = text.lower()
-        replacements = {
-            "copter": "ornithopter",
-        }
-        for src, target in replacements.items():
-            text = re.sub(rf"\b{src}\b", target, text)
-        text = re.sub(r"[^a-z0-9\s]", " ", text)
-        return re.sub(r"\s+", " ", text).strip()
+    def build_message(self, content: str) -> Dict[str, Any]:
+        lines = [ln.strip() for ln in content.splitlines()]
+        text_lines = []
+        image_urls = []
+        for ln in lines:
+            if re.match(r"^https?://\S+\.(png|jpg|jpeg|gif|webp)(\?.*)?$", ln, flags=re.IGNORECASE):
+                image_urls.append(ln)
+            else:
+                text_lines.append(ln)
+        return {"content": "\n".join(text_lines).strip(), "images": image_urls}
 
-    def get_relevant_game_info(self, message: str) -> str:
-        norm_message = self.normalize_text(message)
-        message_tokens = norm_message.split()
-        info_parts = []
-        threshold = 0.6
-        for name, info in self.item_lookup.items():
-            norm_name = self.normalize_text(name)
-            name_tokens = norm_name.split()
-            matches = 0
-            for token in message_tokens:
-                if token in name_tokens:
-                    matches += 1
-                elif difflib.get_close_matches(token, name_tokens, n=1, cutoff=0.8):
-                    matches += 1
-            score = matches / len(message_tokens) if message_tokens else 0
-            if score >= threshold:
-                details = ", ".join(f"{k.replace('_', ' ')}: {v}" for k, v in info.items())
-                info_parts.append(f"{name}: {details}")
-        return "\n".join(info_parts)
-
-    def clean_response(self, response: str) -> str:
-        response = response.strip()
-        response = re.sub(r"\n{3,}", "\n\n", response)
-        cleaned_lines = [line for line in response.split("\n") if not re.match(r"^---", line) and "Generated by" not in line and not re.search(r"\d{4}-\d{2}-\d{2}", line)]
-        return "\n".join(cleaned_lines).strip()
-
-    def build_message(self, content: str) -> dict:
-        url_pattern = r'https?://[^\s"\'<>]+'
-        image_urls = re.findall(url_pattern, content)
-        content_without_urls = re.sub(url_pattern, "", content).strip()
-        return {"content": content_without_urls, "image_urls": image_urls}
-
-    async def _send_message(self, message, user_id, final_message, user_message):
-        content = final_message["content"]
-        image_urls = final_message["image_urls"]
-        guild_id = str(message.guild.id) if message.guild else "DM"
+    async def _send_message(self, message, user_id: str, final_message: Dict[str, Any], user_message_lower: str):
         files = []
-        for url in image_urls:
-            async with aiohttp.ClientSession() as session:
-                try:
+        for url in final_message.get("images", []):
+            try:
+                async with aiohttp.ClientSession() as session:
                     async with session.get(url) as resp:
                         if resp.status == 200:
                             data = await resp.read()
-                            files.append(discord.File(BytesIO(data), filename="image.png"))
-                        else:
-                            logger.error(f"Failed to fetch image from {url}: status {resp.status}")
-                except aiohttp.InvalidURL as e:
-                    logger.error(f"Invalid image URL {url}: {e}")
-                except Exception as e:
-                    logger.error(f"Error fetching image from {url}: {e}")
+                            filename = url.split("/")[-1].split("?")[0] or "image.png"
+                            files.append(discord.File(BytesIO(data), filename=filename))
+            except Exception as e:
+                logger.warning(f"Failed to fetch image {url}: {e}")
 
-        if content or files:
-            prefixed_content = f"<@{user_id}> {content}" if content else f"<@{user_id}>"
-            content_length = len(prefixed_content)
-            logger.info(f"Response length for user {user_id}: {content_length} characters")
-            if 'code' in user_message or 'script' in user_message:
-                code_blocks = re.findall(r'\[CODE\]\s*(\w+)\s*([\s\S]*?)\[/CODE\]', prefixed_content, re.DOTALL)
-                for lang, code in code_blocks:
-                    code_content = f"```{lang}\n{code.strip()}\n```"
-                    if len(code_content) <= 2000:
-                        await message.channel.send(code_content)
-                    elif len(code_content) <= 4096:
-                        embed = discord.Embed(description=code_content[:4096])
-                        await message.channel.send(embed=embed)
-                    else:
-                        buffer = BytesIO(code_content.encode('utf-8'))
-                        file = discord.File(buffer, filename=f"{lang}_code.txt")
-                        await message.channel.send(f"<@{user_id}> Code too long, attached as file:", file=file)
-                prefixed_content = re.sub(r'\[CODE\][\s\S]*?\[/CODE\]', '', prefixed_content).strip()
-                content_length = len(prefixed_content)
+        content = final_message.get("content", "")
+        if not content and not files:
+            await message.channel.send(f"<@{user_id}> (No content)")
+            return
 
-            if content_length > 0 or files:
-                if content_length <= 2000:
-                    await message.channel.send(prefixed_content, files=files if files else None)
-                elif content_length <= 4096:
-                    embed = discord.Embed(description=prefixed_content[:4096])
-                    await message.channel.send(embed=embed, files=files if files else None)
-                else:
-                    buffer = BytesIO(prefixed_content.encode('utf-8'))
-                    text_file = discord.File(buffer, filename="response.txt")
-                    files.append(text_file)
-                    await message.channel.send(f"<@{user_id}> Response too long, attached as file and images:", files=files)
-            elif files:  # If no content but images exist
-                await message.channel.send(f"<@{user_id}>", files=files)
+        if content and len(content) <= 2000:
+            await message.channel.send(content, files=files if files else None)
+        elif content and len(content) <= 4096:
+            embed = discord.Embed(description=content[:4096])
+            await message.channel.send(embed=embed, files=files if files else None)
+        else:
+            if content:
+                buffer = BytesIO(content.encode("utf-8"))
+                text_file = discord.File(buffer, filename="response.txt")
+                files = files + [text_file]
+            await message.channel.send(f"<@{user_id}> Response too long, attached as file and images:", files=files)
 
         if content.strip():
+            guild_id = str(message.guild.id) if message.guild else "DM"
             self.memory_manager.add_ai_message(str(message.channel.id), guild_id, user_id, content)
-
