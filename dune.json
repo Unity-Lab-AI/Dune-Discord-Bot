@@ -13096,7 +13096,7 @@
     "Windtrap": {
       "research_required": "Intel for water category",
       "impact_on_progression": "Essential for water generation in bases",
-      "type": "Placeable Object",
+      "type": "Placeable - Water Production",
       "crafting_materials": "Harvested alloys, polymers",
       "lootable": "No",
       "how_to_obtain": "Built at a base using harvested alloys and polymers",
@@ -13132,8 +13132,31 @@
             "item": "Calibrated Servok",
             "qty": 20
           }
+        ],
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Steel Ingot",
+            "qty": 90
+          },
+          {
+            "item": "Silicone Block",
+            "qty": 30
+          },
+          {
+            "item": "Calibrated Servok",
+            "qty": 20
+          }
         ]
-      }
+      },
+      "health": 3500,
+      "power_cost": 75,
+      "water_capacity": 500,
+      "water_gather_rate": 0.75,
+      "requires_filter": true,
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Windtrap"
+      ]
     },
     "Particulate Filter": {
       "type": "Refined Resources",
@@ -13452,8 +13475,26 @@
       "function": "Refines raw spice into Spice Melange"
     },
     "Blood Purifier": {
-      "type": "Placeable - Utility",
-      "function": "Converts blood sacks into water"
+      "type": "Placeable - Refining Station",
+      "function": "Converts blood sacks into water",
+      "health": 1250,
+      "power_cost": 10,
+      "water_capacity": 1000,
+      "water_extraction_efficiency": 0.2,
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Salvaged Metal",
+            "qty": 70
+          }
+        ]
+      },
+      "notes": "Unlock via 'Water from Blood' questline; requires power to operate.",
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Blood%2BPurifier",
+        "https://www.polygon.com/dune-awakening-guides/606391/blood-purifier-how-to-build-unlock"
+      ]
     },
     "Fuel Generator": {
       "type": "Placeable - Power Generator",
@@ -13729,21 +13770,22 @@
     },
     "Recycler": {
       "type": "Placeable - Utility",
-      "function": "Breaks down unwanted items into base materials",
+      "function": "Disassembles items, returning a portion of component materials based on condition.",
       "crafting": {
         "station": "Construction Tool",
         "ingredients": [
           {
-            "item": "Salvaged Metal",
+            "item": "Copper Ingot",
             "qty": 30
-          },
-          {
-            "item": "Mechanical Parts",
-            "qty": 10
           }
         ],
         "time_s": 20
-      }
+      },
+      "sources_web": [
+        "https://awakening.wiki/Recycler",
+        "https://game8.co/games/Dune-Awakening/archives/527865",
+        "https://questlog.gg/dune-awakening/en/db/placeable/Recycler_Placeable"
+      ]
     },
     "Artisan GRDA 44 Scattergun": {
       "type": "Weapons - Scattergun",
@@ -14587,6 +14629,219 @@
       },
       "sources_web": [
         "https://game8.co/games/Dune-Awakening/archives/527844"
+      ]
+    },
+    "Small Ore Refinery": {
+      "type": "Placeable - Refining Station",
+      "function": "Refines basic ores into ingots.",
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Salvaged Metal",
+            "qty": 90
+          }
+        ]
+      },
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Small%2BOre%2BRefinery"
+      ]
+    },
+    "Medium Ore Refinery": {
+      "type": "Placeable - Refining Station",
+      "function": "Refines ores into ingots at higher throughput.",
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Steel Ingot",
+            "qty": 125
+          },
+          {
+            "item": "Cobalt Paste",
+            "qty": 60
+          },
+          {
+            "item": "Complex Machinery",
+            "qty": 50
+          }
+        ]
+      },
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Medium%2BOre%2BRefinery"
+      ]
+    },
+    "Large Ore Refinery": {
+      "type": "Placeable - Refining Station",
+      "function": "High-end refinery producing ingots from raw ores with improved efficiency vs smaller refineries.",
+      "sources_web": [
+        "https://game8.co/games/Dune-Awakening/archives/527848",
+        "https://dune.gaming.tools/placeables/largeorerefinery_placeable",
+        "https://www.gamerguides.com/dune-awakening/database/construction/refineries/large-ore-refinery"
+      ]
+    },
+    "Small Chemical Refinery": {
+      "type": "Placeable - Refining Station",
+      "health": 1250,
+      "power_cost": 15,
+      "inventory_slots": 5,
+      "inventory_volume": 200,
+      "function": "Processes raw resources into Cobalt Paste, Silicone Blocks, and Fuel Cell Packs.",
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Copper Ingot",
+            "qty": 45
+          }
+        ]
+      },
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Small%2BChemical%2BRefinery"
+      ]
+    },
+    "Medium Chemical Refinery": {
+      "type": "Placeable - Refining Station",
+      "function": "Processes larger chemical loads; used for Silicone Blocks, Cobalt Paste, Lubricant, Vehicle Fuel Cells.",
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Duraluminum Ingot",
+            "qty": 150
+          },
+          {
+            "item": "Silicone Block",
+            "qty": 90
+          },
+          {
+            "item": "Complex Machinery",
+            "qty": 50
+          },
+          {
+            "item": "Spice Melange",
+            "qty": 35
+          }
+        ]
+      },
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Medium%2BChemical%2BRefinery",
+        "https://duneawakening.wiki.fextralife.com/Across%2Bthe%2BGap"
+      ]
+    },
+    "Improved Blood Purifier": {
+      "type": "Placeable - Refining Station",
+      "health": 2500,
+      "power_cost": 35,
+      "water_capacity": 1000,
+      "blood_filtration_rate": 8,
+      "water_extraction_efficiency": 0.4,
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Iron Ingot",
+            "qty": 50
+          },
+          {
+            "item": "Silicone Block",
+            "qty": 16
+          },
+          {
+            "item": "Complex Machinery",
+            "qty": 20
+          }
+        ]
+      },
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Improved%2BBlood%2BPurifier",
+        "https://dune.gaming.tools/placeables/bloodwaterextractionadvanced_placeable"
+      ]
+    },
+    "Water Cistern": {
+      "type": "Placeable - Storage (Water)",
+      "function": "Stores water used by base production units; can be drunk from.",
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Copper Ingot",
+            "qty": 20
+          }
+        ]
+      },
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Water%2BCistern"
+      ]
+    },
+    "Medium Water Cistern": {
+      "type": "Placeable - Storage (Water)",
+      "water_capacity": 25000,
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Steel Ingot",
+            "qty": 60
+          },
+          {
+            "item": "Silicone Block",
+            "qty": 30
+          }
+        ]
+      },
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Medium%2BWater%2BCistern",
+        "https://awakening.wiki/Medium_Water_Cistern"
+      ]
+    },
+    "Large Water Cistern": {
+      "type": "Placeable - Storage (Water)",
+      "water_capacity": 100000,
+      "sources_web": [
+        "https://awakening.wiki/Large_Water_Cistern"
+      ]
+    },
+    "Fuel-Powered Generator": {
+      "type": "Placeable - Power Generator",
+      "power_output": 75,
+      "fuel": "Fuel Cells",
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Salvaged Metal",
+            "qty": 45
+          }
+        ]
+      },
+      "sources_web": [
+        "https://selphie1999gaming.com/game-guides/dune-awakening/dune-awakening-base-power-energy-management-guide/",
+        "https://awakening.wiki/Fuel-Powered_Generator",
+        "https://game8.co/games/Dune-Awakening/archives/527870"
+      ]
+    },
+    "Medium Storage Container": {
+      "type": "Placeable - Storage",
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Plastanium Ingot",
+            "qty": 70
+          },
+          {
+            "item": "Silicone Block",
+            "qty": 14
+          },
+          {
+            "item": "Spice Melange",
+            "qty": 4
+          }
+        ]
+      },
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Medium%2BStorage%2BContainer"
       ]
     }
   },
@@ -19395,13 +19650,6 @@
       "Water Cisterns (T1)": [
         "_water_cost",
         "capacity"
-      ],
-      "Water Flask": [
-        "crafting_materials",
-        "capacity"
-      ],
-      "Watertube": [
-        "crafting_materials"
       ],
       "Way of the Fallen": [
         "tier",
