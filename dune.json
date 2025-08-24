@@ -6098,7 +6098,7 @@
     },
     "Hajra Literjon Mk1": {
       "research_required": "Intel for water category",
-      "type": "Storage",
+      "type": "Utility - Water Discipline (Unique)",
       "crafting_materials": "Not specified",
       "lootable": "No",
       "how_to_obtain": "Crafted",
@@ -6108,7 +6108,11 @@
           "item": "Not specified"
         }
       ],
-      "_base_model": "Hajra Literjon"
+      "_base_model": "Hajra Literjon",
+      "container_capacity_ml": 1500,
+      "sources_web": [
+        "https://dune.gaming.tools/items/highcapacityliterjon"
+      ]
     },
     "Halleck’s Pick": {
       "research_required": "Intel or schematic",
@@ -7825,10 +7829,10 @@
       "research_required": "Intel or schematic",
       "damage": "113.4 per shot",
       "product": "TBD",
-      "type": "Heavy Weapon",
+      "type": "Weapons - Heavy (Unique)",
       "crafting_materials": "TBD",
       "lootable": "Yes",
-      "how_to_obtain": "Not specified",
+      "how_to_obtain": "Unique weapon; schematic per Game8 guide",
       "usage": "Heavy weapon for ranged combat",
       "damage_type": "Energy",
       "_parsed_materials": [
@@ -7836,7 +7840,23 @@
           "item": "TBD"
         }
       ],
-      "_base_model": "Plasma Cannon"
+      "_base_model": "Plasma Cannon",
+      "tier": "6 (Plastanium)",
+      "fire_mode": "Automatic",
+      "stats": {
+        "damage_per_shot": 113.4,
+        "shield_damage": 113.4,
+        "rate_of_fire_rpm": 315,
+        "reload_speed_s": 3.5,
+        "effective_range_m": 57,
+        "accuracy": 0.4,
+        "stability": 0.85,
+        "power_consumption": 210.53
+      },
+      "sources_web": [
+        "https://dune.gaming.tools/items/lmg_unique_power_06",
+        "https://game8.co/games/Dune-Awakening/archives/531981"
+      ]
     },
     "Plastanium": {
       "research_required": "None",
@@ -8049,7 +8069,7 @@
     },
     "Power Pack Mk1": {
       "research_required": "Intel or schematic",
-      "type": "Utility",
+      "type": "Tools - Utility (Power)",
       "crafting_materials": "Not specified",
       "lootable": "Yes",
       "how_to_obtain": "Crafted or found",
@@ -8059,7 +8079,15 @@
           "item": "Not specified"
         }
       ],
-      "_base_model": "Power Pack"
+      "_base_model": "Power Pack",
+      "function": "Portable power pack providing energy to gadgets/tools",
+      "crafted_at": [
+        "Survival Fabricator"
+      ],
+      "sources_web": [
+        "https://game8.co/games/Dune-Awakening/archives/527907",
+        "https://www.gamerguides.com/dune-awakening/database/utility/power-packs"
+      ]
     },
     "Power Pack Mk2": {
       "research_required": "Intel or schematic",
@@ -10576,7 +10604,7 @@
     },
     "Scipio's Bloodbag": {
       "research_required": "Intel or schematic",
-      "type": "Tool",
+      "type": "Utility - Hydration Tool (Unique)",
       "crafting_materials": "Not specified",
       "lootable": "Yes",
       "how_to_obtain": "Crafted or found",
@@ -10586,7 +10614,11 @@
           "item": "Not specified"
         }
       ],
-      "_base_model": "Scipio's Bloodbag"
+      "_base_model": "Scipio's Bloodbag",
+      "container_capacity_ml": 13000,
+      "sources_web": [
+        "https://dune.gaming.tools/items/bloodsack_unique_durable_02"
+      ]
     },
     "Scout Ornithopter Chassis Mk4": {
       "research_required": "20 Intel Points, Intel Spent: 300",
@@ -13155,7 +13187,8 @@
       "water_gather_rate": 0.75,
       "requires_filter": true,
       "sources_web": [
-        "https://duneawakening.wiki.fextralife.com/Windtrap"
+        "https://duneawakening.wiki.fextralife.com/Windtrap",
+        "https://game8.co/games/Dune-Awakening/archives/527679"
       ]
     },
     "Particulate Filter": {
@@ -13228,7 +13261,7 @@
       }
     },
     "Personal Light": {
-      "type": "Utility - Utility Tools",
+      "type": "Tools - Utility",
       "description": "A Personal Light for exploration. Toggle on/off.",
       "crafting": {
         "materials": [
@@ -13240,8 +13273,27 @@
             "item": "Silicone Block",
             "qty": 3
           }
+        ],
+        "ingredients": [
+          {
+            "item": "Steel Ingot",
+            "qty": 6
+          },
+          {
+            "item": "Silicone Block",
+            "qty": 3
+          }
         ]
-      }
+      },
+      "function": "Portable light source; equips to gadget slot",
+      "crafted_at": [
+        "Survival Fabricator",
+        "General Fabricator"
+      ],
+      "sources_web": [
+        "https://game8.co/games/Dune-Awakening/archives/527898",
+        "https://duneawakening.wiki.fextralife.com/Personal%2BLight"
+      ]
     },
     "Abulurd’s Rapture": {
       "unique": true,
@@ -13510,11 +13562,23 @@
     },
     "Advanced Sub-Fief Console": {
       "type": "Placeable - Control",
-      "function": "Expands base coverage and build area"
+      "function": "Expands base build radius; advanced sub-fief management",
+      "crafting": {
+        "station": "Construction Tool",
+        "ingredients": [
+          {
+            "item": "Salvaged Metal",
+            "qty": 40
+          }
+        ]
+      },
+      "sources_web": [
+        "https://duneawakening.wiki.fextralife.com/Advanced%2BSub-Fief%2BConsole"
+      ]
     },
     "Repair Station": {
       "type": "Placeable - Utility",
-      "function": "Repairs vehicles, buildings, and tools fully",
+      "function": "Repairs vehicles, items and buildings",
       "crafting": {
         "ingredients": [
           {
@@ -13522,8 +13586,16 @@
             "qty": 40
           }
         ],
-        "research": "5 research points"
-      }
+        "research": "5 research points",
+        "station": "Construction Tool"
+      },
+      "research_required": {
+        "points": 5
+      },
+      "sources_web": [
+        "https://game8.co/games/Dune-Awakening/archives/527863",
+        "https://www.polygon.com/dune-awakening-guides/606688/repair-how-to-vehicles-items-buildings"
+      ]
     },
     "Basic Stillsuit": {
       "type": "Armor - Stillsuit",
@@ -14772,7 +14844,8 @@
       },
       "sources_web": [
         "https://duneawakening.wiki.fextralife.com/Water%2BCistern"
-      ]
+      ],
+      "water_capacity_ml": 5000
     },
     "Medium Water Cistern": {
       "type": "Placeable - Storage (Water)",
@@ -14791,16 +14864,18 @@
         ]
       },
       "sources_web": [
-        "https://duneawakening.wiki.fextralife.com/Medium%2BWater%2BCistern",
-        "https://awakening.wiki/Medium_Water_Cistern"
-      ]
+        "https://awakening.wiki/Medium_Water_Cistern",
+        "https://duneawakening.wiki.fextralife.com/Medium%2BWater%2BCistern"
+      ],
+      "water_capacity_ml": 25000
     },
     "Large Water Cistern": {
       "type": "Placeable - Storage (Water)",
       "water_capacity": 100000,
       "sources_web": [
         "https://awakening.wiki/Large_Water_Cistern"
-      ]
+      ],
+      "water_capacity_ml": 100000
     },
     "Fuel-Powered Generator": {
       "type": "Placeable - Power Generator",
@@ -14842,6 +14917,242 @@
       },
       "sources_web": [
         "https://duneawakening.wiki.fextralife.com/Medium%2BStorage%2BContainer"
+      ]
+    },
+    "Small Blood Sack": {
+      "type": "Utility - Hydration Tool",
+      "container_capacity_ml": 3000,
+      "crafting": {
+        "station": [
+          "Personal Fabricator",
+          "Fabricator",
+          "Survival Fabricator"
+        ],
+        "ingredients": [
+          {
+            "item": "Plant Fiber",
+            "qty": 25
+          },
+          {
+            "item": "Salvaged Metal",
+            "qty": 5
+          }
+        ],
+        "time_s": 4
+      },
+      "sources_web": [
+        "https://dune.gaming.tools/items/bloodsack_01"
+      ]
+    },
+    "Medium Blood Sack": {
+      "type": "Utility - Hydration Tool",
+      "container_capacity_ml": 9000,
+      "crafting": {
+        "station": [
+          "Fabricator",
+          "Survival Fabricator"
+        ],
+        "ingredients": [
+          {
+            "item": "Iron Ingot",
+            "qty": 6
+          },
+          {
+            "item": "Micro-sandwich Fabric",
+            "qty": 12
+          },
+          {
+            "item": "Plant Fiber",
+            "qty": 6
+          }
+        ],
+        "time_s": 5
+      },
+      "sources_web": [
+        "https://dune.gaming.tools/items/bloodsack_02"
+      ]
+    },
+    "Large Blood Sack": {
+      "type": "Utility - Hydration Tool",
+      "container_capacity_ml": 15000,
+      "crafting": {
+        "station": [
+          "Survival Fabricator"
+        ],
+        "ingredients": [
+          {
+            "item": "Aluminum Ingot",
+            "qty": 14
+          },
+          {
+            "item": "Micro-sandwich Fabric",
+            "qty": 16
+          },
+          {
+            "item": "Plant Fiber",
+            "qty": 6
+          },
+          {
+            "item": "Insulated Fabric",
+            "qty": 6
+          },
+          {
+            "item": "Water",
+            "qty_ml": 255
+          }
+        ],
+        "time_s": 5
+      },
+      "sources_web": [
+        "https://dune.gaming.tools/items/bloodsack_03"
+      ]
+    },
+    "Massive Blood Sack": {
+      "type": "Utility - Hydration Tool",
+      "container_capacity_ml": 24000,
+      "crafting": {
+        "station": [
+          "Advanced Survival Fabricator"
+        ],
+        "ingredients": [
+          {
+            "item": "Plastanium Ingot",
+            "qty": 45
+          },
+          {
+            "item": "Silicone Block",
+            "qty": 41
+          },
+          {
+            "item": "Atmospheric Filtered Fabric",
+            "qty": 11
+          },
+          {
+            "item": "Spice Melange",
+            "qty": 31
+          },
+          {
+            "item": "Water",
+            "qty_ml": 790
+          }
+        ],
+        "time_s": 15
+      },
+      "sources_web": [
+        "https://dune.gaming.tools/items/bloodsack_t6"
+      ]
+    },
+    "Sinner's Bloodbag": {
+      "type": "Utility - Hydration Tool (Unique)",
+      "container_capacity_ml": 19000,
+      "sources_web": [
+        "https://dune.gaming.tools/items/bloodsack_unique_durable_04"
+      ]
+    },
+    "Decaliterjon": {
+      "type": "Utility - Water Discipline",
+      "container_capacity_ml": 10000,
+      "crafting": {
+        "station": [
+          "Survival Fabricator"
+        ],
+        "ingredients": [
+          {
+            "item": "Aluminum Ingot",
+            "qty": 30
+          },
+          {
+            "item": "Micro-sandwich Fabric",
+            "qty": 8
+          },
+          {
+            "item": "Insulated Fabric",
+            "qty": 6
+          },
+          {
+            "item": "Water",
+            "qty_ml": 255
+          }
+        ],
+        "time_s": 5
+      },
+      "sources_web": [
+        "https://dune.gaming.tools/items/decajon"
+      ]
+    },
+    "Literjon Mk6": {
+      "type": "Utility - Water Discipline",
+      "container_capacity_ml": 20000,
+      "crafting": {
+        "station": [
+          "Advanced Survival Fabricator"
+        ],
+        "ingredients": [
+          {
+            "item": "Plastanium Ingot",
+            "qty": 55
+          },
+          {
+            "item": "Silicone Block",
+            "qty": 62
+          },
+          {
+            "item": "Atmospheric Filtered Fabric",
+            "qty": 7
+          },
+          {
+            "item": "Spice Melange",
+            "qty": 31
+          },
+          {
+            "item": "Water",
+            "qty_ml": 790
+          }
+        ],
+        "time_s": 15
+      },
+      "sources_web": [
+        "https://dune.gaming.tools/items/literjon_t6",
+        "https://questlog.gg/dune-awakening/en/db/item/Literjon_T6"
+      ]
+    },
+    "Hajra Literjon Mk6": {
+      "type": "Utility - Water Discipline (Unique)",
+      "container_capacity_ml": 3000,
+      "crafting": {
+        "station": [
+          "Advanced Survival Fabricator"
+        ],
+        "ingredients": [
+          {
+            "item": "Plastanium Ingot",
+            "qty": 60
+          },
+          {
+            "item": "Silicone Block",
+            "qty": 71
+          },
+          {
+            "item": "Atmospheric Filtered Fabric",
+            "qty": 8
+          },
+          {
+            "item": "Spice Melange",
+            "qty": 94
+          },
+          {
+            "item": "Spice-infused Plastanium Dust",
+            "qty": 16
+          },
+          {
+            "item": "Water",
+            "qty_ml": 790
+          }
+        ],
+        "time_s": 15
+      },
+      "sources_web": [
+        "https://www.method.gg/dune-awakening/database/tools/hajra-literjon-mk6"
       ]
     }
   },
@@ -19651,6 +19962,13 @@
         "_water_cost",
         "capacity"
       ],
+      "Water Flask": [
+        "crafting_materials",
+        "capacity"
+      ],
+      "Watertube": [
+        "crafting_materials"
+      ],
       "Way of the Fallen": [
         "tier",
         "unique",
@@ -19667,13 +19985,12 @@
     "Advanced Sub-Fief Console extends building radius."
   ],
   "max_build_slots_verified": {
-    "Fabricators": 5,
-    "Refineries": 5,
-    "Generators": 4,
-    "Storage Containers": 10,
-    "Defensive Structures": 6,
+    "Fabricators": 30,
+    "Refineries": 30,
+    "Generators": 30,
+    "Storage Containers": 30,
     "Decor Items": 50,
-    "Utilities": 8,
-    "Vehicles per Player": 3
+    "Utilities": 30,
+    "Vehicles per Player": 10
   }
 }
