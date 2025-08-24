@@ -5167,7 +5167,7 @@
         "main hull": 1,
         "side hull": 1,
         "tail hull": 1,
-        "wing": 6,
+        "wing": 8,
         "storage": 1,
         "vacuum": 1,
         "centrifuge": 1
