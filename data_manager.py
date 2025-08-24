@@ -11,7 +11,7 @@ class DataManager:
         self.data = {"channels": {}, "user_models": {}, "user_histories": {}}
         if not os.path.exists(filename):
             try:
-                with open(filename, "w") as f:
+                with open(filename, "w", encoding="utf-8") as f:
                     json.dump(self.data, f, indent=4)
                 logger.info(f"Created new data file at {filename}")
             except Exception as e:
@@ -21,7 +21,7 @@ class DataManager:
     def load_data(self, memory_manager):
         if os.path.exists(self.filename):
             try:
-                with open(self.filename, "r") as f:
+                with open(self.filename, "r", encoding="utf-8") as f:
                     self.data = json.loads(f.read())
                 for channel_id, channel_data in self.data.get("channels", {}).items():
                     memory_manager.channel_memories[channel_id] = channel_data.get("memories", [])
@@ -66,7 +66,7 @@ class DataManager:
                     "memories": mems,
                     "history": memory_manager.channel_histories.get(channel_id, [])
                 }
-            with open(self.filename, "w") as f:
+            with open(self.filename, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4)
             logger.debug("Data saved successfully to chat_data.json")
         except Exception as e:
