@@ -1,10 +1,11 @@
 @echo off
-cd /d "%~dp0"
-python --version | findstr "3.8 3.9 3.10 3.11" >nul
-if errorlevel 1 (
-    echo ERROR: Python 3.8-3.11 required. Please install a compatible version.
-    pause
-    exit /b 1
-)
+REM Force Windows console and Python to use UTF-8 to avoid decode errors
+chcp 65001 >NUL
+set PYTHONUTF8=1
+set PYTHONIOENCODING=utf-8
+
+REM (Optional) Activate venv if you use one
+REM call .venv\Scripts\activate
+
 python bot.py
 pause
