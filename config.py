@@ -46,7 +46,7 @@ class Config:
         # Default to the gpt-5-nano model instead of the legacy "unity" model
         self.default_model = "gpt-5-nano"
         try:
-            with open("system_instructions.txt", "r") as f:
+            with open("system_instructions.txt", "r", encoding="utf-8") as f:
                 self.system_instructions = f.read().strip()
         except FileNotFoundError:
             logger.error("system_instructions.txt not found")
