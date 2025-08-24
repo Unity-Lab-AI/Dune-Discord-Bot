@@ -117,3 +117,10 @@ WHY UNITY?
 - Fits any server
 
 Check logs or restart if stuck. More chats = better results!
+(makes fun images)
+<img width="928" height="663" alt="image" src="https://github.com/user-attachments/assets/4b41f713-8f78-4122-af8e-aa4659eaf87d" />
+(can joke with you)
+<img width="923" height="458" alt="image" src="https://github.com/user-attachments/assets/4974e133-36f6-4d61-9cf6-3d6c9918c5b4" />
+(will give detail requirment lists for just about anything in game)
+<img width="936" height="1056" alt="image" src="https://github.com/user-attachments/assets/9c7154ff-223b-4117-809e-15acfeddb3d8" />
+ANY SO MuCH MORE!
