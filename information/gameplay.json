@@ -5,7 +5,6 @@
   "tiers": {
     "Plastanium": [
       "A Dart for Every Man",
-      "Albatros Kanat Modülü Mk6",
       "Assault Ornithopter Cabin Mk6",
       "Assault Ornithopter Chassis Mk6",
       "Assault Ornithopter Cockpit Mk6",
@@ -15,7 +14,7 @@
       "Assault Ornithopter Tail Mk6",
       "Assault Ornithopter Thruster Mk6",
       "Assault Ornithopter Wing Mk6",
-      "Bashar’s Command",
+      "Bashar's Command",
       "Black Market K-28 Lasgun",
       "Buggy Booster Mk6",
       "Buggy Chassis Mk6",
@@ -38,7 +37,7 @@
       "Carrier Ornithopter Vacuum Mk6",
       "Carrier Ornithopter Wing Mk6",
       "Dampened Sandcrawler Treads",
-      "Halleck’s Pick",
+      "Halleck's Pick",
       "Healkit Mk6",
       "Melange Spiced Liquor",
       "Missile",
@@ -72,18 +71,10 @@
       "Walker Sandcrawler Engine Mk6"
     ],
     "Duraluminum": [
-      "Abartılı Mesaj",
       "Adept Disruptor M11",
       "Adept Maula Pistol",
       "Adept Rafiq Snubnose",
-      "Akheron Elçeği",
-      "Akheron Kaskı",
-      "Akheron Pantolonu",
-      "Akheron Plaka Göğüslüğü",
-      "Akheron Çizmesi",
-      "Akım Bıçağı",
-      "Albatros Kanat Modülü Mk5",
-      "Alevsaçar",
+      "Akheron Pants",
       "Arhun K-28 Lasgun",
       "Assault Ornithopter Cabin Mk5",
       "Assault Ornithopter Chassis Mk5",
@@ -95,12 +86,6 @@
       "Assault Ornithopter Tail Mk5",
       "Assault Ornithopter Thruster Mk5",
       "Assault Ornithopter Wing Mk5",
-      "Ağır Koşucu Av Tüfeği",
-      "Ağır Koşucu Eldivenleri",
-      "Ağır Koşucu Göğüslüğü",
-      "Ağır Koşucu Maskesi",
-      "Ağır Koşucu Pantolonu",
-      "Ağır Koşucu Çizmeleri",
       "Buggy Booster Mk5",
       "Buggy Chassis Mk5",
       "Buggy Cutteray Mk5",
@@ -136,12 +121,11 @@
       "Scout Ornithopter Generator Mk5",
       "Scout Ornithopter Hull Mk5",
       "Scout Ornithopter Wing Mk5",
-      "Shaitan’s Tongue",
+      "Shaitan's Tongue",
       "Spice-infused Duraluminum Dust"
     ],
     "Aluminum": [
       "Abulurd's Rapture",
-      "Albatros Kanat Modülü Mk4",
       "Aluminum Armor Boots",
       "Aluminum Armor Chestplate",
       "Aluminum Armor Gauntlets",
@@ -217,9 +201,6 @@
       "Advanced Machinery",
       "Advanced Servoks",
       "Agave Seeds",
-      "Alacakaranlık Binicisi Kartelası",
-      "Alan İşareti",
-      "Alexin Hanedanı Ağır Zırh Kartelası",
       "Aluminum Ore",
       "Aren's Light Armor Boots",
       "Aren's Light Armor Chestpiece",
@@ -393,7 +374,7 @@
       "Sunset Dye Global Swatch",
       "Suspensor Field Emitter",
       "Suspensors",
-      "Terrarium of Muad’Dib",
+      "Terrarium of Muad'Dib",
       "Thumper",
       "Titanium",
       "Tri-Forged Hydraulic Piston",
@@ -414,7 +395,6 @@
       "Artisan Maula Pistol",
       "Artisan Rafiq Snubnose",
       "Artisan Sword",
-      "Açıcı",
       "Buggy Booster Mk3",
       "Buggy Chassis Mk3",
       "Buggy Cutteray Mk3",
@@ -538,13 +518,6 @@
         "damage_type",
         "damage",
         "crafting_materials",
-        "_water_cost"
-      ],
-      "Abartılı Mesaj": [
-        "unique",
-        "damage_type",
-        "damage",
-        "how_to_obtain",
         "_water_cost"
       ],
       "Abulurd's Rapture": [
@@ -710,76 +683,9 @@
         "damage",
         "_water_cost"
       ],
-      "Akheron Elçeği": [
+      "Akheron Pants": [
         "unique",
         "how_to_obtain",
-        "_water_cost"
-      ],
-      "Akheron Kaskı": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Akheron Pantolonu": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Akheron Plaka Göğüslüğü": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Akheron Çizmesi": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Akım Bıçağı": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Alacakaranlık Binicisi Kartelası": [
-        "tier",
-        "unique",
-        "damage_type",
-        "damage",
-        "_water_cost"
-      ],
-      "Alan İşareti": [
-        "tier",
-        "unique",
-        "damage_type",
-        "damage",
-        "crafting_materials",
-        "_water_cost"
-      ],
-      "Albatros Kanat Modülü Mk4": [
-        "unique",
-        "damage_type",
-        "damage"
-      ],
-      "Albatros Kanat Modülü Mk5": [
-        "unique",
-        "damage_type",
-        "damage"
-      ],
-      "Albatros Kanat Modülü Mk6": [
-        "unique",
-        "damage_type",
-        "damage"
-      ],
-      "Alevsaçar": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Alexin Hanedanı Ağır Zırh Kartelası": [
-        "tier",
-        "unique",
-        "damage_type",
-        "damage",
         "_water_cost"
       ],
       "Aluminum Armor Boots": [
@@ -1063,41 +969,6 @@
         "crafting_materials",
         "_water_cost"
       ],
-      "Açıcı": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Ağır Koşucu Av Tüfeği": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Ağır Koşucu Eldivenleri": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Ağır Koşucu Göğüslüğü": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Ağır Koşucu Maskesi": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Ağır Koşucu Pantolonu": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
-      "Ağır Koşucu Çizmeleri": [
-        "unique",
-        "how_to_obtain",
-        "_water_cost"
-      ],
       "Ballistic Weave Fabric": [
         "tier",
         "unique",
@@ -1113,7 +984,7 @@
         "damage",
         "_water_cost"
       ],
-      "Bashar’s Command": [
+      "Bashar's Command": [
         "unique",
         "damage_type",
         "damage",
@@ -1914,7 +1785,7 @@
         "capacity",
         "_water_cost"
       ],
-      "Halleck’s Pick": [
+      "Halleck's Pick": [
         "unique",
         "damage_type",
         "damage",
@@ -3086,7 +2957,7 @@
         "crafting_materials",
         "_water_cost"
       ],
-      "Shaitan’s Tongue": [
+      "Shaitan's Tongue": [
         "unique",
         "how_to_obtain",
         "_water_cost"
@@ -3321,7 +3192,7 @@
         "crafting_materials",
         "_water_cost"
       ],
-      "Terrarium of Muad’Dib": [
+      "Terrarium of Muad'Dib": [
         "tier",
         "unique",
         "damage_type",
@@ -3462,12 +3333,6 @@
         "damage_type",
         "damage"
       ],
-      "Abartılı Mesaj": [
-        "unique",
-        "damage_type",
-        "damage",
-        "how_to_obtain"
-      ],
       "Abulurd's Rapture": [
         "damage_type",
         "damage"
@@ -3537,33 +3402,7 @@
       "Advanced Particulate Filter": [
         "crafting_materials"
       ],
-      "Akheron Elçeği": [
-        "unique",
-        "how_to_obtain"
-      ],
-      "Akheron Kaskı": [
-        "unique",
-        "how_to_obtain"
-      ],
-      "Akheron Pantolonu": [
-        "unique",
-        "how_to_obtain"
-      ],
-      "Akheron Plaka Göğüslüğü": [
-        "unique",
-        "how_to_obtain"
-      ],
-      "Akheron Çizmesi": [
-        "unique",
-        "how_to_obtain"
-      ],
-      "Akım Bıçağı": [
-        "how_to_obtain"
-      ],
-      "Alan İşareti": [
-        "crafting_materials"
-      ],
-      "Alevsaçar": [
+      "Akheron Pants": [
         "unique",
         "how_to_obtain"
       ],
@@ -3655,36 +3494,10 @@
       "Atmospheric Filtered Fabric": [
         "crafting_materials"
       ],
-      "Açıcı": [
-        "how_to_obtain"
-      ],
-      "Ağır Koşucu Av Tüfeği": [
-        "how_to_obtain"
-      ],
-      "Ağır Koşucu Eldivenleri": [
-        "unique",
-        "how_to_obtain"
-      ],
-      "Ağır Koşucu Göğüslüğü": [
-        "unique",
-        "how_to_obtain"
-      ],
-      "Ağır Koşucu Maskesi": [
-        "unique",
-        "how_to_obtain"
-      ],
-      "Ağır Koşucu Pantolonu": [
-        "unique",
-        "how_to_obtain"
-      ],
-      "Ağır Koşucu Çizmeleri": [
-        "unique",
-        "how_to_obtain"
-      ],
       "Ballistic Weave Fabric": [
         "crafting_materials"
       ],
-      "Bashar’s Command": [
+      "Bashar's Command": [
         "unique",
         "damage_type",
         "damage",
@@ -3801,7 +3614,7 @@
         "crafting_materials",
         "capacity"
       ],
-      "Halleck’s Pick": [
+      "Halleck's Pick": [
         "how_to_obtain"
       ],
       "Hollower Stillsuit Boots": [
@@ -4105,7 +3918,7 @@
       "Scipio's Bloodbag": [
         "crafting_materials"
       ],
-      "Shaitan’s Tongue": [
+      "Shaitan's Tongue": [
         "unique",
         "how_to_obtain"
       ],

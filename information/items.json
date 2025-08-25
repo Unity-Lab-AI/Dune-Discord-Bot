@@ -1,7 +1,6 @@
 {
   "item_list": [
     "A Dart for Every Man",
-    "Abartılı Mesaj",
     "Abulurd's Rapture",
     "Acheronian Boots",
     "Acheronian Chestplate",
@@ -29,19 +28,7 @@
     "Advanced Particulate Filter",
     "Advanced Servoks",
     "Agave Seeds",
-    "Akheron Elçeği",
-    "Akheron Kaskı",
-    "Akheron Pantolonu",
-    "Akheron Plaka Göğüslüğü",
-    "Akheron Çizmesi",
-    "Akım Bıçağı",
-    "Alacakaranlık Binicisi Kartelası",
-    "Alan İşareti",
-    "Albatros Kanat Modülü Mk4",
-    "Albatros Kanat Modülü Mk5",
-    "Albatros Kanat Modülü Mk6",
-    "Alevsaçar",
-    "Alexin Hanedanı Ağır Zırh Kartelası",
+    "Akheron Pants",
     "Aluminum Armor Boots",
     "Aluminum Armor Chestplate",
     "Aluminum Armor Gauntlets",
@@ -86,16 +73,9 @@
     "Assault Ornithopter Wing Mk5",
     "Assault Ornithopter Wing Mk6",
     "Atmospheric Filtered Fabric",
-    "Açıcı",
-    "Ağır Koşucu Av Tüfeği",
-    "Ağır Koşucu Eldivenleri",
-    "Ağır Koşucu Göğüslüğü",
-    "Ağır Koşucu Maskesi",
-    "Ağır Koşucu Pantolonu",
-    "Ağır Koşucu Çizmeleri",
     "Ballistic Weave Fabric",
     "Basalt Stone",
-    "Bashar’s Command",
+    "Bashar's Command",
     "Basic Cutteray",
     "Basic Dirk",
     "Basic Disruptor M11",
@@ -219,7 +199,7 @@
     "Granite Stone",
     "Gun Parts",
     "Hajra Literjon Mk1",
-    "Halleck’s Pick",
+    "Halleck's Pick",
     "Healkit",
     "Healkit Mk2",
     "Healkit Mk4",
@@ -408,7 +388,7 @@
     "Scout Ornithopter Wing Mk6",
     "Scrap Metal",
     "Servoks",
-    "Shaitan’s Tongue",
+    "Shaitan's Tongue",
     "Shelters",
     "Shigawire Claw",
     "Shock-sword",
@@ -452,7 +432,7 @@
     "Sunset Dye Global Swatch",
     "Suspensor Field Emitter",
     "Suspensors",
-    "Terrarium of Muad’Dib",
+    "Terrarium of Muad'Dib",
     "The Ancient Way",
     "Thumper",
     "Titanium",
@@ -534,43 +514,53 @@
         }
       ]
     },
-    "Abartılı Mesaj": {
-      "research_required": "Intel or schematic",
-      "damage": "TBD",
-      "product": "Duraluminum",
-      "type": "Heavy Weapon",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy weapon",
-      "damage_type": "TBD",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Abartılı Mesaj"
-    },
     "Abulurd's Rapture": {
       "unique": true,
       "type": "Weapons - Sidearms",
-      "crafting_materials": "TBD",
-      "lootable": "Yes",
-      "how_to_obtain": "Schematic costs 20 Intel Points, requires Intel Spent: 300",
-      "usage": "Sidearm, disruptor modified for doubleshots of heavy darts",
-      "damage_type": "TBD",
-      "research_required": "20 Intel Points, Intel Spent: 300",
-      "damage": "TBD",
-      "tier": "Aluminum",
-      "_parsed_materials": [
+      "base_weapon": "Disruptor (Heavy Dart)",
+      "tier": "Aluminum (Mk?)",
+      "fire_mode": "Automatic (Double-shot)",
+      "damage_type": "Heavy Dart",
+      "damage_per_shot": 37.1,
+      "rate_of_fire_rpm": 461,
+      "clip_size": 52,
+      "reload_speed_s": 1.5,
+      "effective_range_m": 10,
+      "accuracy": 0.43,
+      "stability": 0.6,
+      "weight_v": "2V",
+      "created_at": "Weapons Fabricator",
+      "crafting_ingredients": [
         {
-          "item": "TBD"
+          "item": "Water",
+          "qty_ml": 170
+        },
+        {
+          "item": "Silicone Block",
+          "qty": 20
+        },
+        {
+          "item": "Aluminum Ingot",
+          "qty": 20
+        },
+        {
+          "item": "Mechanical Parts",
+          "qty": 13
+        },
+        {
+          "item": "Gun Parts",
+          "qty": 20
+        },
+        {
+          "item": "Light Caliber Compressor",
+          "qty": 5
+        },
+        {
+          "item": "Spice-infused Aluminum Dust",
+          "qty": 8
         }
       ],
-      "_tier_source": "explicit",
-      "_base_model": "Abulurd's Rapture"
+      "how_to_obtain": "Schematic from Imperial Testing Station No. 142 (large chest, respawns ~45m) or Exchange"
     },
     "Acheronian Boots": {
       "research_required": "Intel or schematic",
@@ -1225,45 +1215,7 @@
       ],
       "_base_model": "Agave Seeds"
     },
-    "Akheron Elçeği": {
-      "research_required": "Intel or schematic",
-      "damage": "N/A",
-      "product": "Duraluminum",
-      "type": "Heavy Armor",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy armor gloves",
-      "damage_type": "N/A",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Akheron Elçeği"
-    },
-    "Akheron Kaskı": {
-      "research_required": "Intel or schematic",
-      "damage": "N/A",
-      "product": "Duraluminum",
-      "type": "Heavy Armor",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy armor helmet",
-      "damage_type": "N/A",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Akheron Kaskı"
-    },
-    "Akheron Pantolonu": {
+    "Akheron Pants": {
       "research_required": "Intel or schematic",
       "damage": "N/A",
       "product": "Duraluminum",
@@ -1280,251 +1232,7 @@
       ],
       "tier": "Duraluminum",
       "_tier_source": "from_product",
-      "_base_model": "Akheron Pantolonu"
-    },
-    "Akheron Plaka Göğüslüğü": {
-      "research_required": "Intel or schematic",
-      "damage": "N/A",
-      "product": "Duraluminum",
-      "type": "Heavy Armor",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy armor chestplate",
-      "damage_type": "N/A",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Akheron Plaka Göğüslüğü"
-    },
-    "Akheron Çizmesi": {
-      "research_required": "Intel or schematic",
-      "damage": "N/A",
-      "product": "Duraluminum",
-      "type": "Heavy Armor",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy armor boots",
-      "damage_type": "N/A",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Akheron Çizmesi"
-    },
-    "Akım Bıçağı": {
-      "research_required": "Intel or schematic",
-      "damage": "54.3 per swing",
-      "product": "Duraluminum",
-      "type": "Short Blade",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Melee short blade",
-      "damage_type": "Blade",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Akım Bıçağı"
-    },
-    "Alacakaranlık Binicisi Kartelası": {
-      "research_required": "None",
-      "type": "Cosmetic",
-      "crafting_materials": "N/A",
-      "lootable": "No",
-      "how_to_obtain": "Pre-order bonus or in-game",
-      "usage": "Twilight rider swatch for vehicles",
-      "_parsed_materials": [
-        {
-          "item": "N/A"
-        }
-      ],
-      "_base_model": "Alacakaranlık Binicisi Kartelası"
-    },
-    "Alan İşareti": {
-      "research_required": "Intel or schematic",
-      "type": "Deployable",
-      "crafting_materials": "Not specified",
-      "lootable": "No",
-      "how_to_obtain": "Crafted",
-      "usage": "Area marker for building",
-      "_parsed_materials": [
-        {
-          "item": "Not specified"
-        }
-      ],
-      "_base_model": "Alan İşareti"
-    },
-    "Albatros Kanat Modülü Mk4": {
-      "research_required": "20 Intel Points, Intel Spent: 300",
-      "type": "Vehicle Part - Wing",
-      "crafting_materials": "340x Water, 9x Aluminum Ingot, 4x Advanced Servoks, 3x Cobalt Paste, 2x Industrial Pump",
-      "material": "Aluminum",
-      "lootable": "No",
-      "how_to_obtain": "Crafted via Vehicle Fabricator",
-      "usage": "Wing for Scout Ornithopter",
-      "_parsed_materials": [
-        {
-          "item": "Water",
-          "qty": 340,
-          "unit": "units"
-        },
-        {
-          "item": "Aluminum Ingot",
-          "qty": 9,
-          "unit": "units"
-        },
-        {
-          "item": "Advanced Servoks",
-          "qty": 4,
-          "unit": "units"
-        },
-        {
-          "item": "Cobalt Paste",
-          "qty": 3,
-          "unit": "units"
-        },
-        {
-          "item": "Industrial Pump",
-          "qty": 2,
-          "unit": "units"
-        }
-      ],
-      "_water_cost": {
-        "units": 340
-      },
-      "tier": "Aluminum",
-      "_tier_source": "from_materials",
-      "_base_model": "Albatros Kanat Modülü"
-    },
-    "Albatros Kanat Modülü Mk5": {
-      "research_required": "30 Intel Points, Intel Spent: 700",
-      "type": "Vehicle Part - Wing",
-      "crafting_materials": "340x Water, 9x Duraluminum Ingot, 4x Advanced Servoks, 3x Cobalt Paste, 2x Industrial Pump",
-      "material": "Duraluminum",
-      "lootable": "No",
-      "how_to_obtain": "Crafted via Vehicle Fabricator",
-      "usage": "Wing for Scout Ornithopter",
-      "_parsed_materials": [
-        {
-          "item": "Water",
-          "qty": 340,
-          "unit": "units"
-        },
-        {
-          "item": "Duraluminum Ingot",
-          "qty": 9,
-          "unit": "units"
-        },
-        {
-          "item": "Advanced Servoks",
-          "qty": 4,
-          "unit": "units"
-        },
-        {
-          "item": "Cobalt Paste",
-          "qty": 3,
-          "unit": "units"
-        },
-        {
-          "item": "Industrial Pump",
-          "qty": 2,
-          "unit": "units"
-        }
-      ],
-      "_water_cost": {
-        "units": 340
-      },
-      "tier": "Duraluminum",
-      "_tier_source": "from_materials",
-      "_base_model": "Albatros Kanat Modülü"
-    },
-    "Albatros Kanat Modülü Mk6": {
-      "research_required": "40 Intel Points, Intel Spent: 1200",
-      "type": "Vehicle Part - Wing",
-      "crafting_materials": "340x Water, 9x Plastanium Ingot, 4x Advanced Servoks, 3x Cobalt Paste, 2x Industrial Pump",
-      "material": "Plastanium",
-      "lootable": "No",
-      "how_to_obtain": "Crafted via Vehicle Fabricator",
-      "usage": "Wing for Scout Ornithopter",
-      "_parsed_materials": [
-        {
-          "item": "Water",
-          "qty": 340,
-          "unit": "units"
-        },
-        {
-          "item": "Plastanium Ingot",
-          "qty": 9,
-          "unit": "units"
-        },
-        {
-          "item": "Advanced Servoks",
-          "qty": 4,
-          "unit": "units"
-        },
-        {
-          "item": "Cobalt Paste",
-          "qty": 3,
-          "unit": "units"
-        },
-        {
-          "item": "Industrial Pump",
-          "qty": 2,
-          "unit": "units"
-        }
-      ],
-      "_water_cost": {
-        "units": 340
-      },
-      "tier": "Plastanium",
-      "_tier_source": "from_materials",
-      "_base_model": "Albatros Kanat Modülü"
-    },
-    "Alevsaçar": {
-      "research_required": "Intel or schematic",
-      "damage": "25.8 per shot",
-      "product": "Duraluminum",
-      "type": "Heavy Weapon",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy weapon for ranged combat",
-      "damage_type": "Fire",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Alevsaçar"
-    },
-    "Alexin Hanedanı Ağır Zırh Kartelası": {
-      "research_required": "None",
-      "type": "Cosmetic",
-      "crafting_materials": "N/A",
-      "lootable": "No",
-      "how_to_obtain": "Pre-order bonus or in-game",
-      "usage": "Heavy armor swatch",
-      "_parsed_materials": [
-        {
-          "item": "N/A"
-        }
-      ],
-      "_base_model": "Alexin Hanedanı Ağır Zırh Kartelası"
+      "_base_model": "Akheron Pants"
     },
     "Aluminum Armor Boots": {
       "research_required": "Intel or schematic",
@@ -2580,139 +2288,6 @@
       ],
       "_base_model": "Atmospheric Filtered Fabric"
     },
-    "Açıcı": {
-      "research_required": "Intel or schematic",
-      "damage": "16.4 per shot",
-      "product": "Steel",
-      "type": "Rifle",
-      "crafting_materials": "Steel",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Ranged rifle combat",
-      "damage_type": "Light Dart",
-      "_parsed_materials": [
-        {
-          "item": "Steel"
-        }
-      ],
-      "tier": "Steel",
-      "_tier_source": "from_product",
-      "_base_model": "Açıcı"
-    },
-    "Ağır Koşucu Av Tüfeği": {
-      "research_required": "Intel or schematic",
-      "damage": "35.2 per shot",
-      "product": "Duraluminum",
-      "type": "Scattergun",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Ranged scattergun combat",
-      "damage_type": "Heavy Dart",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Ağır Koşucu Av Tüfeği"
-    },
-    "Ağır Koşucu Eldivenleri": {
-      "research_required": "Intel or schematic",
-      "damage": "N/A",
-      "product": "Duraluminum",
-      "type": "Heavy Armor",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy armor gloves",
-      "damage_type": "N/A",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Ağır Koşucu Eldivenleri"
-    },
-    "Ağır Koşucu Göğüslüğü": {
-      "research_required": "Intel or schematic",
-      "damage": "N/A",
-      "product": "Duraluminum",
-      "type": "Heavy Armor",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy armor chestplate",
-      "damage_type": "N/A",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Ağır Koşucu Göğüslüğü"
-    },
-    "Ağır Koşucu Maskesi": {
-      "research_required": "Intel or schematic",
-      "damage": "N/A",
-      "product": "Duraluminum",
-      "type": "Heavy Armor",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy armor mask",
-      "damage_type": "N/A",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Ağır Koşucu Maskesi"
-    },
-    "Ağır Koşucu Pantolonu": {
-      "research_required": "Intel or schematic",
-      "damage": "N/A",
-      "product": "Duraluminum",
-      "type": "Heavy Armor",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy armor pants",
-      "damage_type": "N/A",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Ağır Koşucu Pantolonu"
-    },
-    "Ağır Koşucu Çizmeleri": {
-      "research_required": "Intel or schematic",
-      "damage": "N/A",
-      "product": "Duraluminum",
-      "type": "Heavy Armor",
-      "crafting_materials": "Duraluminum",
-      "lootable": "Yes",
-      "how_to_obtain": "Not specified",
-      "usage": "Heavy armor boots",
-      "damage_type": "N/A",
-      "_parsed_materials": [
-        {
-          "item": "Duraluminum"
-        }
-      ],
-      "tier": "Duraluminum",
-      "_tier_source": "from_product",
-      "_base_model": "Ağır Koşucu Çizmeleri"
-    },
     "Ballistic Weave Fabric": {
       "research_required": "Intel or schematic",
       "type": "Resource",
@@ -2742,7 +2317,7 @@
       ],
       "_base_model": "Basalt Stone"
     },
-    "Bashar’s Command": {
+    "Bashar's Command": {
       "research_required": "Intel or schematic",
       "damage": "TBD",
       "product": "Plastanium",
@@ -2759,7 +2334,7 @@
       ],
       "tier": "Plastanium (Mk6)",
       "_tier_source": "from_product",
-      "_base_model": "Bashar’s Command",
+      "_base_model": "Bashar's Command",
       "unique": true,
       "base_weapon": "Machine Gun",
       "fire_mode": "Automatic",
@@ -6111,7 +5686,7 @@
         "https://dune.gaming.tools/items/highcapacityliterjon"
       ]
     },
-    "Halleck’s Pick": {
+    "Halleck's Pick": {
       "research_required": "Intel or schematic",
       "damage": "TBD",
       "product": "Plastanium",
@@ -6128,7 +5703,7 @@
       ],
       "tier": "Plastanium",
       "_tier_source": "from_product",
-      "_base_model": "Halleck’s Pick",
+      "_base_model": "Halleck's Pick",
       "unique": true,
       "damage_per_hit": 139,
       "attack_speed": 140,
@@ -11436,7 +11011,7 @@
       ],
       "_base_model": "Servoks"
     },
-    "Shaitan’s Tongue": {
+    "Shaitan's Tongue": {
       "research_required": "Intel or schematic",
       "damage": "25.8 per shot",
       "product": "Duraluminum",
@@ -11453,7 +11028,7 @@
       ],
       "tier": "Duraluminum",
       "_tier_source": "from_product",
-      "_base_model": "Shaitan’s Tongue",
+      "_base_model": "Shaitan's Tongue",
       "unique": true,
       "base_weapon": "Flamethrower",
       "product_material": "Duraluminum",
@@ -12752,19 +12327,19 @@
       ],
       "_base_model": "Suspensors"
     },
-    "Terrarium of Muad’Dib": {
+    "Terrarium of Muad'Dib": {
       "research_required": "None",
       "type": "Decoration",
       "crafting_materials": "N/A",
       "lootable": "No",
       "how_to_obtain": "Pre-order bonus",
-      "usage": "Detailed decoration housing a desert mouse, Muad’Dib, depicting its life",
+      "usage": "Detailed decoration housing a desert mouse, Muad'Dib, depicting its life",
       "_parsed_materials": [
         {
           "item": "N/A"
         }
       ],
-      "_base_model": "Terrarium of Muad’Dib"
+      "_base_model": "Terrarium of Muad'Dib"
     },
     "The Ancient Way": {
       "research_required": "Intel or schematic",
@@ -13291,54 +12866,6 @@
         "https://game8.co/games/Dune-Awakening/archives/527898",
         "https://duneawakening.wiki.fextralife.com/Personal%2BLight"
       ]
-    },
-    "Abulurd’s Rapture": {
-      "unique": true,
-      "type": "Weapons - Sidearms",
-      "base_weapon": "Disruptor (Heavy Dart)",
-      "tier": "Aluminum (Mk?)",
-      "fire_mode": "Automatic (Double-shot)",
-      "damage_type": "Heavy Dart",
-      "damage_per_shot": 37.1,
-      "rate_of_fire_rpm": 461,
-      "clip_size": 52,
-      "reload_speed_s": 1.5,
-      "effective_range_m": 10,
-      "accuracy": 0.43,
-      "stability": 0.6,
-      "weight_v": "2V",
-      "created_at": "Weapons Fabricator",
-      "crafting_ingredients": [
-        {
-          "item": "Water",
-          "qty_ml": 170
-        },
-        {
-          "item": "Silicone Block",
-          "qty": 20
-        },
-        {
-          "item": "Aluminum Ingot",
-          "qty": 20
-        },
-        {
-          "item": "Mechanical Parts",
-          "qty": 13
-        },
-        {
-          "item": "Gun Parts",
-          "qty": 20
-        },
-        {
-          "item": "Light Caliber Compressor",
-          "qty": 5
-        },
-        {
-          "item": "Spice-infused Aluminum Dust",
-          "qty": 8
-        }
-      ],
-      "how_to_obtain": "Schematic from Imperial Testing Station No. 142 (large chest, respawns ~45m) or Exchange"
     },
     "Construction Tool": {
       "type": "Tools - Building Tool",
