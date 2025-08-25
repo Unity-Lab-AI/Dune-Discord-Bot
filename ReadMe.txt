@@ -49,7 +49,8 @@ SETUP
    - Warnings: Never share token publicly, don't commit to Git
 4. Optional: Restrict bot to specific channels:
    - Open .env, add: ALLOWED_CHANNELS=12345,67890
-   - Leave blank to allow all; default is `1408772627538903060`
+     (separate multiple IDs with commas or spaces)
+   - Leave blank or omit to allow the bot in all channels
 5. Install dependencies:
    - Open terminal/command prompt in folder
    - Run: pip install -U pip  (updates pip if needed)
