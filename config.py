@@ -51,6 +51,12 @@ class Config:
         except FileNotFoundError:
             logger.error("system_instructions.txt not found")
             raise FileNotFoundError("system_instructions.txt not found")
+        try:
+            with open("info_request_instructions.txt", "r", encoding="utf-8") as f:
+                self.info_request_instructions = f.read().strip()
+        except FileNotFoundError:
+            logger.error("info_request_instructions.txt not found")
+            raise FileNotFoundError("info_request_instructions.txt not found")
         self.api_url = f"https://text.pollinations.ai/openai?token={self.pollinations_token}"
         self.models_url = "https://text.pollinations.ai/models"
         allowed_channels_env = os.getenv("ALLOWED_CHANNELS", "").strip()

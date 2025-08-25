@@ -96,6 +96,7 @@ FILES
 - requirements.txt - Dependencies
 - .env - Tokens (keep secret)
 - system_instructions.txt - AI rules
+- info_request_instructions.txt - info-query rules
 - RUN_BOT.bat - Start script
 - logs/ - application.log, chat_data.json
 
@@ -108,7 +109,7 @@ Game data lives in the `information/` directory. Each JSON file covers a domain:
 - `skills.json`, `research.json`
 - `tips.json`, `strategies.json`, `gameplay.json`, `volumes.json`
 
-When a message arrives the bot first asks the LLM which domains it needs, then reads only the named JSON files and sends the relevant entries back with the user's text to craft a final answer. Add or update data by editing the corresponding file or dropping a new `*.json` into `information/`.
+When a message arrives the bot first asks the LLM which domains it needs (using `info_request_instructions.txt`), then reads only the named JSON files and sends the relevant entries back with the user's text to craft a final answer. Add or update data by editing the corresponding file or dropping a new `*.json` into `information/`.
 
 TROUBLESHOOTING
 ---------------
@@ -121,6 +122,7 @@ CONFIG TWEAKS
 -------------
 - Edit config.py: max_history (20), max_memories (5), add code/image keywords
 - Edit system_instructions.txt for AI style
+- Edit info_request_instructions.txt for data lookup behavior
 
 SECURITY
 --------

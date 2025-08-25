@@ -145,11 +145,7 @@ class MessageHandler:
         - ``keywords``: search terms to locate specific entries.
         """
 
-        sys = (
-            "You are a query planner for a Dune: Awakening knowledge base. "
-            "Return only JSON with keys: files (array of information file names) "
-            "and keywords (array)."
-        )
+        sys = self.config.info_request_instructions
         overview_lines = [f"{name}: {summary}" for name, summary in self.file_summaries.items()]
         overview = "\n".join(overview_lines)
         usr = (
