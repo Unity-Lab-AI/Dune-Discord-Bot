@@ -6,7 +6,7 @@ import aiohttp
 from io import BytesIO
 import json
 from pathlib import Path
-from typing import Dict, Any, Tuple
+from typing import Dict, Any, Tuple, List
 
 logger = logging.getLogger(__name__)
 
@@ -60,7 +60,8 @@ class MessageHandler:
             "knife", "sword", "shield", "armor", "vehicle", "ornithopter", "thopter",
             "stats", "stat", "damage", "dps", "cost", "craft", "crafting", "blueprint",
             "recipe", "build", "best", "which", "recommend", "recommendation", "compare",
-            "vs", "versus", "loadout", "kit"
+            "vs", "versus", "loadout", "kit", "npc", "npcs", "contract", "contracts",
+            "lore", "solari", "skill", "skills", "building", "buildings"
         }
         self.greeting_terms = {"hi","hello","hey","yo","sup","howdy","greetings","hola"}
 
@@ -140,9 +141,12 @@ class MessageHandler:
     async def _ai_query_plan(self, model: str, user_message: str) -> Dict[str, Any]:
         """Ask the LLM which information files and keywords are relevant.
 
-        The model is prompted to return JSON with two arrays:
+        The model is prompted to return JSON with three arrays:
         - ``files``: information domain filenames (e.g., "weapons", "armor").
-        - ``keywords``: search terms to locate specific entries.
+        - ``keywords``: search terms to locate specific entries within JSON files.
+        - ``logic``: objects describing searches for the Dune Logic database,
+          each with optional ``type`` (e.g., ``npc`` or ``item``) and a list of
+          ``terms`` keywords.
         """
 
         sys = self.config.info_request_instructions
@@ -159,8 +163,24 @@ class MessageHandler:
             )
             m = re.search(r"\{[\s\S]*\}", out or "")
             plan = json.loads(m.group(0)) if m else {}
-            plan["files"] = [self.normalize_text(f) for f in plan.get("files", []) if isinstance(f, str)]
-            plan["keywords"] = [self.normalize_text(k) for k in plan.get("keywords", []) if isinstance(k, str)]
+            plan["files"] = [
+                self.normalize_text(f) for f in plan.get("files", []) if isinstance(f, str)
+            ]
+            plan["keywords"] = [
+                self.normalize_text(k) for k in plan.get("keywords", []) if isinstance(k, str)
+            ]
+            logic_queries: List[Dict[str, Any]] = []
+            for entry in plan.get("logic", []):
+                if isinstance(entry, dict):
+                    tp = self.normalize_text(entry.get("type", ""))
+                    terms = [
+                        self.normalize_text(t)
+                        for t in entry.get("terms", [])
+                        if isinstance(t, str)
+                    ]
+                    if terms:
+                        logic_queries.append({"type": tp, "terms": terms})
+            plan["logic"] = logic_queries
             return plan
         except Exception as e:
             logger.warning(f"Query-plan parse failed, falling back to heuristic: {e}")
@@ -180,6 +200,50 @@ class MessageHandler:
         """Serialize matched game data to JSON for LLM consumption."""
 
         return json.dumps(matches, ensure_ascii=False, indent=2)
+
+    async def _dune_logic_lookup(self, plan: Dict[str, Any]) -> Dict[str, Any]:
+        """Perform searches against the Dune Logic database based on plan."""
+
+        from dune_logic.search import search_autocomplete, route_path
+
+        results: List[Dict[str, Any]] = []
+        for query in plan.get("logic", []):
+            if not isinstance(query, dict):
+                continue
+            terms = query.get("terms", [])
+            qtype = query.get("type", "")
+            keyword = " ".join(terms).strip()
+            if not keyword:
+                continue
+            type_map = {
+                "item": "items",
+                "weapon": "items",
+                "vehicle": "items",
+                "npc": "npcs",
+                "contract": "contracts",
+                "building": "buildables",
+                "skill": "skills",
+            }
+            types = [type_map[qtype]] if qtype in type_map else None
+            try:
+                suggestions = await search_autocomplete("en", keyword, types)
+            except Exception as e:
+                logger.warning(f"Logic search failed for {keyword}: {e}")
+                continue
+            cards: List[Dict[str, Any]] = []
+            for s in suggestions[:3]:
+                path = s.get("path")
+                if not path:
+                    continue
+                try:
+                    kind, card = await route_path("en", path)
+                    card["kind"] = kind
+                    card["path"] = path
+                    cards.append(card)
+                except Exception as e:
+                    logger.warning(f"Logic fetch failed for {path}: {e}")
+            results.append({"type": qtype, "terms": terms, "results": cards})
+        return {"logic": results}
 
     async def handle_message(self, message):
         channel_id = str(message.channel.id)
@@ -223,17 +287,21 @@ class MessageHandler:
                 role = "assistant" if msg["role"] == "ai" else msg["role"]
                 messages.append({"role": role, "content": msg["content"]})
 
-        include_gamedata = self.is_item_query(user_message)
-        if include_gamedata:
-            plan = await self._ai_query_plan(user_model, user_message)
-            matches = self._retrieve_data(plan)
-            game_context = self._game_context_json(matches)
+        plan = await self._ai_query_plan(user_model, user_message)
+        matches = self._retrieve_data(plan)
+        logic_matches = await self._dune_logic_lookup(plan)
+        context_parts: List[str] = []
+        if matches:
+            context_parts.append(f"GameData:\n{self._game_context_json(matches)}")
+        if logic_matches.get("logic"):
+            context_parts.append("LogicData:\n" + json.dumps(logic_matches, ensure_ascii=False, indent=2))
+        if context_parts:
             guardrails = (
                 "When the question concerns items, gear, or stats, use ONLY the following GameData JSON "
                 "for concrete names or numbers. If an asked-for item is missing, say so briefly and ask a short follow-up. "
-                "Do not comment about GameData if the user wasn't asking about items."
+                "Do not comment about GameData if the user wasn't asking about items. DuneLogic search results are provided as additional context."
             )
-            messages.append({"role": "system", "content": f"{guardrails}\n\nGameData:\n{game_context}"})
+            messages.append({"role": "system", "content": guardrails + "\n\n" + "\n\n".join(context_parts)})
 
         messages.append({"role": "user", "content": user_message})
 
