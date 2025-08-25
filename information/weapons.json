@@ -1,0 +1,110 @@
+{
+  "weapons": {
+    "Weapons - Sidearms": [
+      "A Dart for Every Man",
+      "Abulurd's Rapture",
+      "Adept Disruptor M11",
+      "Adept Disruptor Pistol",
+      "Adept Maula Pistol",
+      "Adept Rafiq Snubnose",
+      "Ari's Pistol",
+      "Artisan Disruptor M11",
+      "Artisan Disruptor Pistol",
+      "Artisan Maula Pistol",
+      "Artisan Rafiq Snubnose",
+      "Basic Disruptor M11",
+      "Basic Maula Pistol",
+      "Basic Rafiq Snubnose",
+      "Cope",
+      "House Disruptor M11",
+      "House Maula Pistol",
+      "House Rafiq Snubnose",
+      "Regis Disruptor M11",
+      "Regis Maula Pistol",
+      "Regis Rafiq Snubnose",
+      "Standard Disruptor M11",
+      "Standard Maula Pistol",
+      "Standard Rafiq Snubnose",
+      "Way of the Fallen"
+    ],
+    "Heavy Weapon": [
+      "Abartılı Mesaj",
+      "Alevsaçar",
+      "Arhun K-28 Lasgun",
+      "Bashar’s Command",
+      "Black Market K-28 Lasgun",
+      "Experimental Vulcan GAU-94",
+      "Extravagant Message",
+      "House Vulcan GAU-92",
+      "Plasma Cannon",
+      "Regis Missile Launcher",
+      "Regis Vulcan GAU-92",
+      "Shaitan’s Tongue",
+      "The Ancient Way"
+    ],
+    "Weapons - Scatterguns": [
+      "Adept Burst Drillshot",
+      "Adept Drillshot FK7",
+      "Adept GRDA 44",
+      "Basic Drillshot FK7",
+      "Basic GRDA 44",
+      "House Drillshot FK7",
+      "House GRDA 44",
+      "Regis Drillshot FK7",
+      "Regis GRDA 44",
+      "Standard Drillshot FK7",
+      "Standard GRDA 44"
+    ],
+    "Weapons - Short Blades": [
+      "Adept Dirk",
+      "Adept Kindjal",
+      "Basic Dirk",
+      "Basic Kindjal",
+      "House Dirk",
+      "House Kindjal",
+      "Regis Dirk",
+      "Regis Kindjal",
+      "Standard Dirk",
+      "Standard Kindjal"
+    ],
+    "Weapons - Rifles": [
+      "Adept JABAL Spitdart",
+      "Adept Karpov 38",
+      "Aren's Vengeance",
+      "Basic JABAL Spitdart",
+      "Basic Karpov 38",
+      "House JABAL Spitdart",
+      "House Karpov 38 (Weapons)",
+      "Regis JABAL Spitdart",
+      "Regis Karpov 38",
+      "Standard JABAL Spitdart",
+      "Standard Karpov 38 (Weapons)"
+    ],
+    "Weapons - Long Blades": [
+      "Adept Rapier",
+      "Adept Sword",
+      "Basic Rapier",
+      "Basic Sword",
+      "House Rapier (Weapons)",
+      "House Sword (Weapons)",
+      "Regis Rapier (Weapons)",
+      "Regis Sword (Weapons)",
+      "Standard Rapier",
+      "Standard Sword (Weapons)"
+    ],
+    "Weapons - Heavy Weapons": [
+      "Adept Vulcan GAU-92",
+      "Basic K-28 Lasgun",
+      "Basic Vulcan GAU-92",
+      "House K-28 Lasgun",
+      "House Vulcan GAU-92 (Weapons)",
+      "Regis K-28 Lasgun",
+      "Regis Vulcan GAU-92 (Weapons)",
+      "Standard K-28 Lasgun",
+      "Standard Vulcan GAU-92"
+    ],
+    "Weapon": [
+      "Crysknife"
+    ]
+  }
+}

@@ -5,6 +5,7 @@ import asyncio
 import aiohttp
 from io import BytesIO
 import json
+from pathlib import Path
 from typing import Dict, Any, List, Tuple
 
 logger = logging.getLogger(__name__)
@@ -22,7 +23,10 @@ class MessageHandler:
             "copter": ["ornithopter"],
         }
 
-        self.game_data = self.load_game_data("dune.json")
+        self.game_data = {}
+        info_dir = Path("information")
+        for json_file in info_dir.glob("*.json"):
+            self.game_data.update(self.load_game_data(json_file))
         self.items = self._extract_items(self.game_data)
         self.item_lookup: Dict[str, Tuple[str, Dict[str, Any]]] = {
             self.normalize_text(name): (name, details) for name, details in self.items.items()

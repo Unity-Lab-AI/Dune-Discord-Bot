@@ -1,0 +1,42 @@
+{
+  "buildings": {
+    "Station": [
+      "Advanced Survival Fabricator",
+      "Refinery Station",
+      "Survival Station",
+      "Vehicle Fabricator"
+    ],
+    "Building Piece": [
+      "Building Piece - Ceiling",
+      "Building Piece - Door",
+      "Building Piece - Floor",
+      "Building Piece - Foundation",
+      "Building Piece - Gate",
+      "Building Piece - Pillar",
+      "Building Piece - Ramp",
+      "Building Piece - Roof",
+      "Building Piece - Stairs",
+      "Building Piece - Wall",
+      "Building Piece - Window"
+    ],
+    "Building Pieces": [
+      "Caladan Palace Building Set"
+    ],
+    "Building": [
+      "Fortresses",
+      "Fortresses (T2)",
+      "Shelters",
+      "Shelters (T1)",
+      "Water Cisterns (T1)"
+    ]
+  },
+  "max_build_slots": {
+    "Fabricators": 30,
+    "Refineries": 30,
+    "Generators": 30,
+    "Storage Containers": 30,
+    "Decor Items": 50,
+    "Utilities": 30,
+    "Vehicles per Player": 10
+  }
+}
