@@ -53,11 +53,19 @@ class Config:
             raise FileNotFoundError("system_instructions.txt not found")
         self.api_url = f"https://text.pollinations.ai/openai?token={self.pollinations_token}"
         self.models_url = "https://text.pollinations.ai/models"
-        allowed_channels_env = os.getenv("ALLOWED_CHANNELS")
+        allowed_channels_env = os.getenv("ALLOWED_CHANNELS", "").strip()
         if allowed_channels_env:
-            self.allowed_channels = [c.strip() for c in allowed_channels_env.split(",") if c.strip()]
+            # Support comma or whitespace separated lists and remove empty entries
+            self.allowed_channels = [
+                c.strip() for c in re.split(r"[\s,]+", allowed_channels_env) if c.strip()
+            ]
         else:
-            self.allowed_channels = ["1408772627538903060"]
+            # Empty list means all channels are allowed
+            self.allowed_channels = []
+        logger.info(
+            "Allowed channels: %s",
+            self.allowed_channels if self.allowed_channels else "all",
+        )
         self.max_history = 20
         self.max_memories = 5
         self.code_keywords = [
