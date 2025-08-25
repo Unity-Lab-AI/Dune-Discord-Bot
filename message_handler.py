@@ -6,7 +6,7 @@ import aiohttp
 from io import BytesIO
 import json
 from pathlib import Path
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, Tuple
 
 logger = logging.getLogger(__name__)
 
@@ -31,6 +31,12 @@ class MessageHandler:
         for json_file in info_dir.glob("*.json"):
             name = json_file.stem
             self.game_data[name] = self.load_game_data(json_file)
+
+        # Build a short summary of each information file so the LLM knows
+        # what domains are available when planning which files to request.
+        self.file_summaries: Dict[str, str] = {}
+        for name, data in self.game_data.items():
+            self.file_summaries[name] = self._summarize_game_data(data)
 
         # Merge item dictionaries across all loaded domains for quick lookup
         # (used when mapping user text to a canonical item name).
@@ -78,6 +84,33 @@ class MessageHandler:
                 return items
         return {}
 
+    def _summarize_game_data(self, data: Dict[str, Any]) -> str:
+        """Generate a brief, human-readable summary of a game data file.
+
+        The summary lists a handful of top-level item names or keys so the LLM
+        has an idea of what the file contains before requesting it.
+        """
+
+        if not isinstance(data, dict):
+            return ""
+
+        # Prefer explicit summaries if present
+        summary = data.get("game_summary")
+        if isinstance(summary, str) and summary.strip():
+            return summary.strip()
+
+        # Otherwise build a summary from item names or keys
+        items = self._extract_items(data)
+        if items:
+            if len(items) == 1 and isinstance(next(iter(items.values())), dict):
+                inner = next(iter(items.values()))
+                keys = list(inner.keys())[:5]
+            else:
+                keys = list(items.keys())[:5]
+        else:
+            keys = list(data.keys())[:5]
+        return ", ".join(map(str, keys))
+
     def normalize_text(self, text: str) -> str:
         text = (text or "").lower()
         synonyms = getattr(self, "synonyms", {})
@@ -103,20 +136,6 @@ class MessageHandler:
         tokens = set(norm.split())
         return bool(tokens & self.domain_terms)
 
-    def _score_item(self, message_tokens: List[str], name: str, details: Dict[str, Any]) -> float:
-        norm_name = self.normalize_text(name)
-        name_tokens = set(norm_name.split())
-        msg_tokens = set(message_tokens)
-        score = 0.0
-        score += len(msg_tokens & name_tokens)
-        for field in ("type", "usage"):
-            val = str(details.get(field, "")).lower()
-            val = self.normalize_text(val)
-            if not val:
-                continue
-            field_tokens = set(val.split())
-            score += 0.5 * len(msg_tokens & field_tokens)
-        return score
 
     async def _ai_query_plan(self, model: str, user_message: str) -> Dict[str, Any]:
         """Ask the LLM which information files and keywords are relevant.
@@ -131,7 +150,12 @@ class MessageHandler:
             "Return only JSON with keys: files (array of information file names) "
             "and keywords (array)."
         )
-        usr = f"User question: {user_message}\nReturn only JSON."
+        overview_lines = [f"{name}: {summary}" for name, summary in self.file_summaries.items()]
+        overview = "\n".join(overview_lines)
+        usr = (
+            f"Available files and summaries:\n{overview}\n\n"
+            f"User question: {user_message}\nReturn only JSON."
+        )
         try:
             out = await self.api_client.send_message(
                 [{"role": "system", "content": sys}, {"role": "user", "content": usr}],
@@ -146,43 +170,20 @@ class MessageHandler:
             logger.warning(f"Query-plan parse failed, falling back to heuristic: {e}")
             return {}
 
-    def _retrieve_data(self, user_message: str, plan: Dict[str, Any], top_k: int = 6) -> Dict[str, Dict[str, Any]]:
-        """Return top matching entries for each requested information file."""
+    def _retrieve_data(self, plan: Dict[str, Any]) -> Dict[str, Any]:
+        """Return the raw contents of each requested information file."""
 
-        norm = self.normalize_text(user_message)
-        message_tokens = norm.split()
-        message_tokens += plan.get("keywords", [])
-        seen: set = set()
-        message_tokens = [t for t in message_tokens if not (t in seen or seen.add(t))]
-
-        results: Dict[str, Dict[str, Any]] = {}
+        results: Dict[str, Any] = {}
         for file in plan.get("files", []):
             data = self.game_data.get(file)
-            if not data:
-                continue
-            items = self._extract_items(data)
-            scored = []
-            for name, details in items.items():
-                s = self._score_item(message_tokens, name, details)
-                if s > 0:
-                    scored.append((s, name, details))
-            scored.sort(reverse=True)
-            if scored:
-                results[file] = {name: details for s, name, details in scored[:top_k]}
+            if data is not None:
+                results[file] = data
         return results
 
-    def _game_context_json(self, matches: Dict[str, Dict[str, Any]]) -> str:
-        payload = {}
-        for file, items in matches.items():
-            payload[file] = {
-                name: {
-                    k: v
-                    for k, v in details.items()
-                    if isinstance(v, (str, int, float, bool)) or v is None
-                }
-                for name, details in items.items()
-            }
-        return json.dumps(payload, ensure_ascii=False, indent=2)
+    def _game_context_json(self, matches: Dict[str, Any]) -> str:
+        """Serialize matched game data to JSON for LLM consumption."""
+
+        return json.dumps(matches, ensure_ascii=False, indent=2)
 
     async def handle_message(self, message):
         channel_id = str(message.channel.id)
@@ -229,7 +230,7 @@ class MessageHandler:
         include_gamedata = self.is_item_query(user_message)
         if include_gamedata:
             plan = await self._ai_query_plan(user_model, user_message)
-            matches = self._retrieve_data(user_message, plan, top_k=6)
+            matches = self._retrieve_data(plan)
             game_context = self._game_context_json(matches)
             guardrails = (
                 "When the question concerns items, gear, or stats, use ONLY the following GameData JSON "
