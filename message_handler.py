@@ -23,15 +23,31 @@ class MessageHandler:
             "copter": ["ornithopter"],
         }
 
-        self.game_data = {}
+        # Load game data from individual JSON files in the information directory.
+        # Each file's contents are stored under a key matching the filename
+        # (without extension) so the bot can look up specific domains on demand.
+        self.game_data: Dict[str, Dict[str, Any]] = {}
         info_dir = Path("information")
         for json_file in info_dir.glob("*.json"):
-            self.game_data.update(self.load_game_data(json_file))
-        self.items = self._extract_items(self.game_data)
+            name = json_file.stem
+            self.game_data[name] = self.load_game_data(json_file)
+
+        # Merge item dictionaries across all loaded domains for quick lookup
+        # (used when mapping user text to a canonical item name).
+        self.items: Dict[str, Dict[str, Any]] = {}
+        for data in self.game_data.values():
+            self.items.update(self._extract_items(data))
+
         self.item_lookup: Dict[str, Tuple[str, Dict[str, Any]]] = {
             self.normalize_text(name): (name, details) for name, details in self.items.items()
         }
-        self.game_summary = self.game_data.get("game_summary", "")
+
+        # Grab a game summary if any file provides one
+        self.game_summary = ""
+        for data in self.game_data.values():
+            if isinstance(data, dict) and data.get("game_summary"):
+                self.game_summary = data["game_summary"]
+                break
 
         self.domain_terms = {
             "item", "items", "gear", "weapon", "weapons", "gun", "guns", "shotgun",
@@ -103,49 +119,69 @@ class MessageHandler:
         return score
 
     async def _ai_query_plan(self, model: str, user_message: str) -> Dict[str, Any]:
-        sys = "You are a query planner. Return only JSON with keys: keywords (array), types (array)."
+        """Ask the LLM which information files and keywords are relevant.
+
+        The model is prompted to return JSON with two arrays:
+        - ``files``: information domain filenames (e.g., "weapons", "armor").
+        - ``keywords``: search terms to locate specific entries.
+        """
+
+        sys = (
+            "You are a query planner for a Dune: Awakening knowledge base. "
+            "Return only JSON with keys: files (array of information file names) "
+            "and keywords (array)."
+        )
         usr = f"User question: {user_message}\nReturn only JSON."
         try:
             out = await self.api_client.send_message(
                 [{"role": "system", "content": sys}, {"role": "user", "content": usr}],
-                model
+                model,
             )
             m = re.search(r"\{[\s\S]*\}", out or "")
             plan = json.loads(m.group(0)) if m else {}
+            plan["files"] = [self.normalize_text(f) for f in plan.get("files", []) if isinstance(f, str)]
             plan["keywords"] = [self.normalize_text(k) for k in plan.get("keywords", []) if isinstance(k, str)]
-            plan["types"] = [self.normalize_text(t) for t in plan.get("types", []) if isinstance(t, str)]
             return plan
         except Exception as e:
             logger.warning(f"Query-plan parse failed, falling back to heuristic: {e}")
             return {}
 
-    def _retrieve_matches(self, user_message: str, plan: Dict[str, Any], top_k: int = 6):
+    def _retrieve_data(self, user_message: str, plan: Dict[str, Any], top_k: int = 6) -> Dict[str, Dict[str, Any]]:
+        """Return top matching entries for each requested information file."""
+
         norm = self.normalize_text(user_message)
         message_tokens = norm.split()
         message_tokens += plan.get("keywords", [])
-        message_tokens += plan.get("types", [])
-        seen = set()
+        seen: set = set()
         message_tokens = [t for t in message_tokens if not (t in seen or seen.add(t))]
-        scored = []
-        for _, (display_name, details) in self.item_lookup.items():
-            s = self._score_item(message_tokens, display_name, details)
-            if s > 0:
-                scored.append((display_name, details, s))
-        scored.sort(key=lambda x: x[2], reverse=True)
-        return scored[:top_k]
 
-    def _game_context_json(self, matches):
-        payload = {
-            "items": [
-                {
-                    "name": name,
-                    "score": round(score, 3),
-                    "fields": {k: v for k, v in details.items()
-                               if isinstance(v, (str, int, float, bool)) or v is None}
+        results: Dict[str, Dict[str, Any]] = {}
+        for file in plan.get("files", []):
+            data = self.game_data.get(file)
+            if not data:
+                continue
+            items = self._extract_items(data)
+            scored = []
+            for name, details in items.items():
+                s = self._score_item(message_tokens, name, details)
+                if s > 0:
+                    scored.append((s, name, details))
+            scored.sort(reverse=True)
+            if scored:
+                results[file] = {name: details for s, name, details in scored[:top_k]}
+        return results
+
+    def _game_context_json(self, matches: Dict[str, Dict[str, Any]]) -> str:
+        payload = {}
+        for file, items in matches.items():
+            payload[file] = {
+                name: {
+                    k: v
+                    for k, v in details.items()
+                    if isinstance(v, (str, int, float, bool)) or v is None
                 }
-                for (name, details, score) in matches
-            ]
-        }
+                for name, details in items.items()
+            }
         return json.dumps(payload, ensure_ascii=False, indent=2)
 
     async def handle_message(self, message):
@@ -193,7 +229,7 @@ class MessageHandler:
         include_gamedata = self.is_item_query(user_message)
         if include_gamedata:
             plan = await self._ai_query_plan(user_model, user_message)
-            matches = self._retrieve_matches(user_message, plan, top_k=6)
+            matches = self._retrieve_data(user_message, plan, top_k=6)
             game_context = self._game_context_json(matches)
             guardrails = (
                 "When the question concerns items, gear, or stats, use ONLY the following GameData JSON "
