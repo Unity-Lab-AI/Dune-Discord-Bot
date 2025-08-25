@@ -64,6 +64,11 @@ COMMANDS
 - !bothelp - Show commands/models
 - !setmodel - Pick AI model (DM)
 - !savememory <text> - Save channel note
+- !search <query> - Search Dune database
+- !item <name> - Lookup item info
+- !skill <name> - Lookup skill info
+- !contract <name> - Lookup contract info
+- !npc <name> - Lookup NPC info
 - !wipe - Clear chat history
 
 NATURAL CHAT
