@@ -111,7 +111,7 @@ SECURITY
 - Chats saved in chat_data.json
 - Only Pollinations.ai gets requests
 
-DUNE BOT?
+WHY UNITY?
 ----------
 - Remembers your style
 - Saves channel vibes
