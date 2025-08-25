@@ -65,6 +65,37 @@ class MessageHandler:
         }
         self.greeting_terms = {"hi","hello","hey","yo","sup","howdy","greetings","hola"}
 
+        # Map common domain terms to their corresponding JSON information files.
+        # Used when the LLM does not specify which files to consult so we can
+        # still provide at least one relevant JSON dataset.
+        self.domain_to_file = {
+            "weapon": "weapons",
+            "weapons": "weapons",
+            "gun": "weapons",
+            "guns": "weapons",
+            "armor": "armor",
+            "vehicle": "vehicles",
+            "vehicles": "vehicles",
+            "ornithopter": "vehicles",
+            "copter": "vehicles",
+            "thopter": "vehicles",
+            "tip": "tips",
+            "tips": "tips",
+            "strategy": "strategies",
+            "strategies": "strategies",
+            "skill": "skills",
+            "skills": "skills",
+            "research": "research",
+            "building": "buildings",
+            "buildings": "buildings",
+            "item": "items",
+            "items": "items",
+            "gear": "items",
+            "volume": "volumes",
+            "volumes": "volumes",
+            "gameplay": "gameplay",
+        }
+
     def load_game_data(self, path: str) -> dict:
         try:
             with open(path, "r", encoding="utf-8") as f:
@@ -137,6 +168,50 @@ class MessageHandler:
         tokens = set(norm.split())
         return bool(tokens & self.domain_terms)
 
+    def _heuristic_files(self, user_message: str) -> List[str]:
+        """Fallback selection of JSON files based on keywords in the message."""
+
+        norm = self.normalize_text(user_message)
+        tokens = norm.split()
+        files: List[str] = []
+        for tok in tokens:
+            fname = self.domain_to_file.get(tok)
+            if fname:
+                files.append(fname)
+        if not files and self.game_data:
+            # If nothing matches, include the first available file to satisfy
+            # the requirement of always providing at least one JSON dataset.
+            files.append(next(iter(self.game_data.keys())))
+        # Preserve order while removing duplicates
+        return list(dict.fromkeys(files))
+
+    def _heuristic_logic(self, user_message: str) -> List[Dict[str, Any]]:
+        """Fallback logic search using a keyword from the user's message."""
+
+        norm = self.normalize_text(user_message)
+        tokens = norm.split()
+        if not tokens:
+            return []
+        type_map = {
+            "npc": "npc",
+            "contract": "contract",
+            "building": "building",
+            "weapon": "item",
+            "weapons": "item",
+            "item": "item",
+            "vehicle": "vehicle",
+            "vehicles": "vehicle",
+            "skill": "skill",
+            "skills": "skill",
+        }
+        ltype = ""
+        for tok in tokens:
+            if tok in type_map:
+                ltype = type_map[tok]
+                break
+        keyword = tokens[0]
+        return [{"type": ltype, "terms": [keyword]}]
+
 
     async def _ai_query_plan(self, model: str, user_message: str) -> Dict[str, Any]:
         """Ask the LLM which information files and keywords are relevant.
@@ -181,10 +256,18 @@ class MessageHandler:
                     if terms:
                         logic_queries.append({"type": tp, "terms": terms})
             plan["logic"] = logic_queries
+            if not plan["files"]:
+                plan["files"] = self._heuristic_files(user_message)
+            if not plan["logic"]:
+                plan["logic"] = self._heuristic_logic(user_message)
             return plan
         except Exception as e:
             logger.warning(f"Query-plan parse failed, falling back to heuristic: {e}")
-            return {}
+            return {
+                "files": self._heuristic_files(user_message),
+                "keywords": [],
+                "logic": self._heuristic_logic(user_message),
+            }
 
     def _retrieve_data(self, plan: Dict[str, Any]) -> Dict[str, Any]:
         """Return the raw contents of each requested information file."""
