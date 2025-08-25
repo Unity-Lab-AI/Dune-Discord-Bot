@@ -55,6 +55,9 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
+    if message.guild and config.allowed_channels and str(message.channel.id) not in config.allowed_channels:
+        return
+
     channel_id = str(message.channel.id)
     guild_id = str(message.guild.id) if message.guild else "DM"
     user_id = str(message.author.id)
