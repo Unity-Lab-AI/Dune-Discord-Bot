@@ -99,6 +99,17 @@ FILES
 - RUN_BOT.bat - Start script
 - logs/ - application.log, chat_data.json
 
+DATA FILES
+----------
+Game data now lives in the `information/` directory. Each JSON file covers a domain:
+
+- `items.json` – full item list and details
+- `weapons.json`, `armor.json`, `vehicles.json`, `buildings.json`
+- `skills.json`, `research.json`
+- `tips.json`, `strategies.json`, `gameplay.json`, `volumes.json`
+
+Add or update data by editing the corresponding file or dropping a new `*.json` into `information/`. On startup the bot loads every file in that folder and merges them, so new domains are picked up automatically.
+
 TROUBLESHOOTING
 ---------------
 - Won’t start? Check .env tokens, Python version, reinstall dependencies

@@ -1,0 +1,202 @@
+{
+  "vehicles": {
+    "Vehicle Part - Wing": [
+      "Assault Ornithopter Wing Mk5",
+      "Assault Ornithopter Wing Mk6",
+      "Carrier Ornithopter Wing Mk6",
+      "Scout Ornithopter Wing Mk4",
+      "Scout Ornithopter Wing Mk5",
+      "Scout Ornithopter Wing Mk6"
+    ],
+    "Vehicle Part - Hull": [
+      "Assault Ornithopter Cabin Mk5",
+      "Assault Ornithopter Cabin Mk6",
+      "Buggy Hull Mk3",
+      "Buggy Hull Mk4",
+      "Buggy Hull Mk5",
+      "Buggy Hull Mk6",
+      "Carrier Ornithopter Main Hull Mk6",
+      "Carrier Ornithopter Side Hull Mk6",
+      "Carrier Ornithopter Tail Hull Mk6",
+      "Scout Ornithopter Hull Mk4",
+      "Scout Ornithopter Hull Mk5",
+      "Scout Ornithopter Hull Mk6"
+    ],
+    "Vehicle Part - Chassis": [
+      "Assault Ornithopter Chassis Mk5",
+      "Assault Ornithopter Chassis Mk6",
+      "Buggy Chassis Mk3",
+      "Buggy Chassis Mk4",
+      "Buggy Chassis Mk5",
+      "Buggy Chassis Mk6",
+      "Carrier Ornithopter Chassis Mk6",
+      "Sandcrawler Chassis Mk5",
+      "Sandcrawler Chassis Mk6",
+      "Scout Ornithopter Chassis Mk4",
+      "Scout Ornithopter Chassis Mk5",
+      "Scout Ornithopter Chassis Mk6"
+    ],
+    "Vehicle Part - Tread": [
+      "Assault Ornithopter Cockpit Mk5",
+      "Buggy Tread Mk3",
+      "Buggy Tread Mk4",
+      "Buggy Tread Mk5",
+      "Buggy Tread Mk6",
+      "Sandcrawler Tread Mk5",
+      "Sandcrawler Tread Mk6"
+    ],
+    "Vehicle Part - Thread": [
+      "Assault Ornithopter Cockpit Mk6"
+    ],
+    "Vehicle Part - Engine": [
+      "Assault Ornithopter Engine Mk5",
+      "Assault Ornithopter Engine Mk6",
+      "Buggy Engine Mk3",
+      "Buggy Engine Mk4",
+      "Buggy Engine Mk5",
+      "Buggy Engine Mk6",
+      "Carrier Ornithopter Engine Mk6",
+      "Sandcrawler Engine Mk5",
+      "Sandcrawler Engine Mk6",
+      "Scout Ornithopter Engine Mk4",
+      "Scout Ornithopter Engine Mk5",
+      "Scout Ornithopter Engine Mk6"
+    ],
+    "Vehicle Part - Power Supply": [
+      "Assault Ornithopter Generator Mk5",
+      "Buggy PSU Mk3",
+      "Buggy PSU Mk4",
+      "Buggy PSU Mk5",
+      "Buggy PSU Mk6"
+    ],
+    "Vehicle Part - PSU": [
+      "Assault Ornithopter Generator Mk6",
+      "Sandcrawler PSU Mk5",
+      "Sandcrawler PSU Mk6"
+    ],
+    "Vehicle Part - Rocket Launcher": [
+      "Assault Ornithopter Rocket Launcher Mk5",
+      "Assault Ornithopter Rocket Launcher Mk6"
+    ],
+    "Vehicle Part - Storage": [
+      "Assault Ornithopter Storage Mk5",
+      "Buggy Storage Mk3",
+      "Buggy Storage Mk4",
+      "Buggy Storage Mk5",
+      "Buggy Storage Mk6",
+      "Carrier Ornithopter Storage Mk6",
+      "Sandcrawler Storage Mk5",
+      "Sandcrawler Storage Mk6"
+    ],
+    "Vehicle Part - Tail": [
+      "Assault Ornithopter Tail Mk5",
+      "Assault Ornithopter Tail Mk6"
+    ],
+    "Vehicle Part - Thruster": [
+      "Assault Ornithopter Thruster Mk5",
+      "Assault Ornithopter Thruster Mk6"
+    ],
+    "Vehicle Part - Booster": [
+      "Buggy Booster Mk3",
+      "Buggy Booster Mk4",
+      "Buggy Booster Mk5",
+      "Buggy Booster Mk6"
+    ],
+    "Vehicle Part - Equipment": [
+      "Buggy Cutteray Mk3",
+      "Buggy Cutteray Mk4",
+      "Buggy Cutteray Mk5",
+      "Buggy Cutteray Mk6"
+    ],
+    "Vehicle Part - Seat": [
+      "Buggy Rear Mk3",
+      "Buggy Rear Mk4",
+      "Buggy Rear Mk5",
+      "Buggy Rear Mk6"
+    ],
+    "Vehicle Part - Utility": [
+      "Buggy Utility Rear Mk3",
+      "Buggy Utility Rear Mk4",
+      "Buggy Utility Rear Mk5",
+      "Buggy Utility Rear Mk6",
+      "Carrier Ornithopter Centrifuge Mk6",
+      "Carrier Ornithopter Vacuum Mk6",
+      "Sandcrawler Centrifuge Mk5",
+      "Sandcrawler Centrifuge Mk6",
+      "Sandcrawler Vacuum Mk5",
+      "Sandcrawler Vacuum Mk6"
+    ],
+    "Vehicle Part - Generator": [
+      "Carrier Ornithopter Generator Mk6",
+      "Scout Ornithopter Generator Mk4",
+      "Scout Ornithopter Generator Mk5",
+      "Scout Ornithopter Generator Mk6"
+    ],
+    "Vehicle Part - Tread Variant": [
+      "Dampened Sandcrawler Treads"
+    ],
+    "Vehicle Part": [
+      "Mohandis Sandbike Engine Mk1",
+      "Mohandis Sandbike Engine Mk3",
+      "Night Rider Sandbike Boost Mk2",
+      "Sandbike Backseat Mk1",
+      "Sandbike Booster Mk2",
+      "Sandbike Booster Mk3",
+      "Sandbike Booster Mk4",
+      "Sandbike Booster Mk5",
+      "Sandbike Booster Mk6",
+      "Sandbike Chassis Mk1",
+      "Sandbike Chassis Mk2",
+      "Sandbike Chassis Mk3",
+      "Sandbike Chassis Mk4",
+      "Sandbike Chassis Mk5",
+      "Sandbike Chassis Mk6",
+      "Sandbike Engine Mk1",
+      "Sandbike Engine Mk2",
+      "Sandbike Engine Mk3",
+      "Sandbike Engine Mk4",
+      "Sandbike Engine Mk5",
+      "Sandbike Engine Mk6",
+      "Sandbike Hull Mk1",
+      "Sandbike Hull Mk2",
+      "Sandbike Hull Mk3",
+      "Sandbike Hull Mk4",
+      "Sandbike Hull Mk5",
+      "Sandbike Hull Mk6",
+      "Sandbike Inventory Mk1",
+      "Sandbike Inventory Mk2",
+      "Sandbike PSU Mk1",
+      "Sandbike PSU Mk2",
+      "Sandbike PSU Mk3",
+      "Sandbike PSU Mk4",
+      "Sandbike PSU Mk5",
+      "Sandbike PSU Mk6",
+      "Sandbike Scanner Mk2",
+      "Sandbike Tread Mk1",
+      "Sandbike Tread Mk2",
+      "Sandbike Tread Mk3",
+      "Sandbike Tread Mk4",
+      "Sandbike Tread Mk5",
+      "Sandbike Tread Mk6"
+    ],
+    "Vehicle": [
+      "Ornithopters",
+      "Vehicles"
+    ],
+    "Vehicle Part - Cabin": [
+      "Sandcrawler Cabin Mk5",
+      "Sandcrawler Cabin Mk6"
+    ],
+    "Vehicle Part - Cockpit": [
+      "Scout Ornithopter Cockpit Mk4",
+      "Scout Ornithopter Cockpit Mk5",
+      "Scout Ornithopter Cockpit Mk6"
+    ],
+    "Vehicle Part - Storage Variant": [
+      "Upgraded Regis Spice Container"
+    ],
+    "Vehicle Part - Engine Variant": [
+      "Walker Sandcrawler Engine Mk6"
+    ]
+  }
+}
