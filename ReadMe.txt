@@ -91,6 +91,7 @@ FILES
 - requirements.txt - Dependencies
 - .env - Tokens (keep secret)
 - system_instructions.txt - AI rules
+- info_request_instructions.txt - info-query rules
 - RUN_BOT.bat - Start script
 - logs/ - application.log, chat_data.json
 
@@ -105,6 +106,7 @@ CONFIG TWEAKS
 -------------
 - Edit config.py: max_history (20), max_memories (5), add code/image keywords
 - Edit system_instructions.txt for AI style
+- Edit info_request_instructions.txt for data lookup behavior
 
 SECURITY
 --------
