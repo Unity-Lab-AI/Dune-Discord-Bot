@@ -31,6 +31,9 @@ bot.data_manager = data_manager
 message_handler = MessageHandler(api_client, memory_manager, config, data_manager, bot)
 memory_manager.api_client = api_client
 bot.memory_manager = memory_manager
+bot.api_client = api_client
+bot.config = config
+bot.message_handler = message_handler
 
 async def setup_bot():
     await bot.wait_until_ready()
@@ -116,6 +119,14 @@ async def wipe_logs_periodically():
             break
         except Exception as e:
             logging.error(f"Error wiping logs: {e}")
+
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CommandNotFound):
+        available = " ".join(f"!{cmd.name}" for cmd in bot.commands)
+        await ctx.send(f"The command {ctx.message.content.split()[0]} does not exist. Available commands: {available}")
+    else:
+        raise error
 
 @bot.event
 async def on_connect():
