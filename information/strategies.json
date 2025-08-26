@@ -1,3 +1,1631 @@
 {
-  "strategies": []
+  "game": "Dune: Awakening",
+  "schema_version": "1.0",
+  "updated_at": "2025-08-26",
+  "note": "All strategies compiled from public guides and community posts; verify prices/routes after patches.",
+  "strategies": [
+    {
+      "id": "solari-contract-loop",
+      "title": "Contract Loop for Fast Solari",
+      "objective": "Chain contracts from hubs for steady Solari with low risk.",
+      "steps": [
+        "Pick 3\u20135 contracts in the same quadrant (Arrakeen/Harko hub boards).",
+        "Route across rock plateaus; avoid long dune crossings.",
+        "Turn in batches; rebuy consumables and repeat."
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Basic mobility, repair kits, Literjons"
+      ],
+      "risks": [
+        "PvP ambush at hand-in points; storm interruptions"
+      ],
+      "notes": [
+        "Contracts scale well before you unlock profitable crafts; great starter income."
+      ],
+      "tags": [
+        "economy",
+        "contracts",
+        "solari"
+      ],
+      "region": "Hub-adjacent zones",
+      "timeframe": null
+    },
+    {
+      "id": "solari-exchange-flips",
+      "title": "CHOAM Exchange Flips",
+      "objective": "Buy low and sell high on the player market (CHOAM).",
+      "steps": [
+        "Track price trends for sought-after components and schematics.",
+        "Buy under average; relist at sustainable margins.",
+        "Claim purchases correctly from Exchange terminals."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Access to CHOAM Exchange terminal"
+      ],
+      "risks": [
+        "Market fees; price swings; liquidity risk"
+      ],
+      "notes": [
+        "Use Exchange when vendor prices cap profits; learn claim process to avoid lost items."
+      ],
+      "tags": [
+        "economy",
+        "exchange",
+        "trading"
+      ],
+      "region": "Arrakeen, Harko",
+      "timeframe": null
+    },
+    {
+      "id": "solari-rad-suit-vendor-flip",
+      "title": "Radiation Suit Vendor Flip (Mk4/Mk5)",
+      "objective": "Craft Radiation Suits and sell to NPC vendors for consistent Solari.",
+      "steps": [
+        "Unlock and craft Radiation Suit Mk4/Mk5.",
+        "Sell at outposts noted for good buy prices; ensure high durability.",
+        "Compare multiple vendors; prices vary by wear and location."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Radiation Suit crafting unlock, fabricator access"
+      ],
+      "risks": [
+        "Price variation; mats might be more valuable on Exchange"
+      ],
+      "notes": [
+        "Community reports highlight Mk4/Mk5 suits as reliable vendor sales; durability affects payout."
+      ],
+      "tags": [
+        "economy",
+        "crafting",
+        "vendor"
+      ],
+      "region": "Pinnacle, Crossroads (community\u2011reported)",
+      "timeframe": null
+    },
+    {
+      "id": "solari-vehicle-parts-resale",
+      "title": "Vehicle Parts Repair & Resale",
+      "objective": "Loot or salvage vehicle parts, repair them, and sell to vendors.",
+      "steps": [
+        "Collect damaged modules during wreck runs.",
+        "Use Repair Station to restore condition.",
+        "Sell at vendors known for vehicle part buy orders."
+      ],
+      "best_for": [
+        "mid-game"
+      ],
+      "requirements": [
+        "Repair Station, welding wire"
+      ],
+      "risks": [
+        "Repair costs may outweigh resale if damage is severe"
+      ],
+      "notes": [
+        "Players report good payouts at specific outposts\u2014verify prices on your shard."
+      ],
+      "tags": [
+        "economy",
+        "vehicles",
+        "vendor"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "deep-desert-weekly-wrecks",
+      "title": "Weekly Deep Desert Wreck Circuit",
+      "objective": "Farm rotating wrecks and testing stations on weekly reset for unique drops and schematics.",
+      "steps": [
+        "Consult up-to-date Deep Desert map for current POIs.",
+        "Fly to wrecks/testing stations during off-peak hours.",
+        "Extract quickly and stash before storms."
+      ],
+      "best_for": [
+        "late-game"
+      ],
+      "requirements": [
+        "Ornithopter, radiation protection, healkits"
+      ],
+      "risks": [
+        "High worm/PvP risk; storms; item loss on environmental deaths"
+      ],
+      "notes": [
+        "Tables rotate each reset\u2014use live maps to optimize route and avoid dead POIs."
+      ],
+      "tags": [
+        "loot",
+        "deep-desert",
+        "routes"
+      ],
+      "region": "Deep Desert",
+      "timeframe": null
+    },
+    {
+      "id": "shipwreck-sweep",
+      "title": "Shipwreck Sweep",
+      "objective": "Run a sequence of known shipwrecks for chests and salvage.",
+      "steps": [
+        "Use shipwreck location lists to plan a route spanning multiple wrecks.",
+        "Approach from rock ridgelines; avoid cresting dunes.",
+        "Empty packs at a hub before the next leg."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Vehicle/air access, storage room"
+      ],
+      "risks": [
+        "Worm triggers during crate looting; PvP campers at popular wrecks"
+      ],
+      "notes": [
+        "Mix with Testing Station loop to balance risk and time."
+      ],
+      "tags": [
+        "loot",
+        "routes",
+        "shipwrecks"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "testing-station-priority",
+      "title": "Imperial Testing Station Priority",
+      "objective": "Prioritize Testing Stations for high-value unique schematics.",
+      "steps": [
+        "Target known station coordinates during low-traffic windows.",
+        "Bring radiation protection and repair supplies.",
+        "Exit via rock corridors to reduce worm risk."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Radiation Suit Mk4+, repair kits"
+      ],
+      "risks": [
+        "High enemy density; timers/rotations may change"
+      ],
+      "notes": [
+        "Testing Stations are top-tier for uniques\u2014check current spawns."
+      ],
+      "tags": [
+        "loot",
+        "schematics",
+        "routes"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "erythrite-cobalt-paste",
+      "title": "Erythrite \u2192 Cobalt Paste \u2192 Mobility",
+      "objective": "Mine Erythrite in Hagga Rift to craft cobalt paste used for major unlocks like the Ornithopter.",
+      "steps": [
+        "Start at the Wreck of the Kytheria and sweep Riftwatch \u2192 Jabal Eifrit Al\u2011janub \u2192 Pinnacle Station.",
+        "Use Mk2+ Cutteray to gather crystals; pack healkits and weapons.",
+        "Craft cobalt paste back at base for key tech progression."
+      ],
+      "best_for": [
+        "mid-game"
+      ],
+      "requirements": [
+        "Mk2 Cutteray, vehicle, combat kit"
+      ],
+      "risks": [
+        "Hostile mobs and tight canyons; dehydration risk"
+      ],
+      "notes": [
+        "A focused Erythrite run accelerates aerial mobility unlocks."
+      ],
+      "tags": [
+        "resources",
+        "progression",
+        "routes"
+      ],
+      "region": "Hagga Rift",
+      "timeframe": null
+    },
+    {
+      "id": "trial-of-aql-route",
+      "title": "Trial of Aql Progression Route",
+      "objective": "Complete the 8 Aql trials to unlock survival tech and extra skill slot.",
+      "steps": [
+        "Follow regional order to minimize travel (Basin \u2192 Vermillius Gap \u2192 Rift \u2192 Shield Wall).",
+        "Prioritize trials that grant Crysknife, Stilltent, Thumper early.",
+        "Keep notes on solved riddle cues to help clanmates."
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Basic mobility and survival kit"
+      ],
+      "risks": [
+        "Some trials offer no practical reward\u2014don\u2019t overcommit time mid-run"
+      ],
+      "notes": [
+        "Target reward-rich trials first for faster power spikes."
+      ],
+      "tags": [
+        "progression",
+        "unlock",
+        "quests"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "intel-outpost-cycle",
+      "title": "Outpost Clear \u2192 Scan Cycle",
+      "objective": "Alternate outpost clears with probe scans to farm Intel safely.",
+      "steps": [
+        "Clear one or two camps for burst Intel.",
+        "Run a scan loop while crafting/repairs complete.",
+        "Repeat to keep Intel flow steady without burnout."
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Probes, basic combat kit"
+      ],
+      "risks": [
+        "PvP at busy outposts; probe yield is slower but safer"
+      ],
+      "notes": [
+        "Balanced loop avoids stalls in research progression."
+      ],
+      "tags": [
+        "intel",
+        "research",
+        "loops"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "sandwalking-night-crossings",
+      "title": "Sandwalking Night Crossings",
+      "objective": "Use the player-found sandwalking technique at night to reduce worm triggers across long dune fields.",
+      "steps": [
+        "Equip Softstep boots and a grappler.",
+        "Move in short, controlled steps; use grapples to skip longest gaps.",
+        "Abort on sustained vibration spikes; pivot to rock."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Softstep boots, grappler"
+      ],
+      "risks": [
+        "Emergent technique may be altered by patches; practice before long hauls"
+      ],
+      "notes": [
+        "Use for loot runs where rock routes are scarce."
+      ],
+      "tags": [
+        "movement",
+        "worms",
+        "advanced"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "pvp-rock-control",
+      "title": "PvP: Rock Control & Exit Lanes",
+      "objective": "Fight near rock to preserve exits and deny worm chaos.",
+      "steps": [
+        "Anchor fights on plateau edges to maintain disengage options.",
+        "Avoid crest duels; pull opponents toward safe rock.",
+        "Use grapples for vertical resets between bursts."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Mobility tools, healkits"
+      ],
+      "risks": [
+        "Low visibility storms can flip engagements"
+      ],
+      "notes": [
+        "Terrain discipline wins more fights than raw DPS in the dunes."
+      ],
+      "tags": [
+        "pvp",
+        "positioning",
+        "survival"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "pvp-loadout-meta-scan",
+      "title": "PvP: Meta Scan & Weapon Pairing",
+      "objective": "Pair a long\u2011range precision option with a close\u2011range finisher and a shield\u2011breaking sidearm.",
+      "steps": [
+        "Check current weapon tiers; carry one tool for each range band.",
+        "Rotate ammo types to match shields and targets.",
+        "Keep healkits on quick\u2011access; hydrate before commits."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Updated weapon tiers known to you"
+      ],
+      "risks": [
+        "Meta shifts with patches; respec lightly and test"
+      ],
+      "notes": [
+        "Holtzman shields and patch changes alter TTK\u2014adapt loadouts."
+      ],
+      "tags": [
+        "pvp",
+        "weapons",
+        "loadouts"
+      ],
+      "region": null,
+      "timeframe": "2025-08 tier list context"
+    },
+    {
+      "id": "quick-loot-run-hubs",
+      "title": "Quick Loot: Hub\u2011Adjacent Circuit",
+      "objective": "Hit 2\u20133 nearby POIs from a hub, stash, and repeat for safe, steady loot.",
+      "steps": [
+        "Pick short routes with rock majority.",
+        "Loot fast; skip low\u2011value crates when meter is elevated.",
+        "Bank items frequently to avoid wipe losses."
+      ],
+      "best_for": [
+        "early-game"
+      ],
+      "requirements": [
+        "Basic combat and storage"
+      ],
+      "risks": [
+        "Lower payout than Deep Desert; safer for gearing"
+      ],
+      "notes": [
+        "Good while learning worm management and storms."
+      ],
+      "tags": [
+        "loot",
+        "safe",
+        "routing"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "solari-schematic-flips",
+      "title": "Exchange: Schematic Flips",
+      "objective": "Flip high-demand schematics on CHOAM during peak demand windows.",
+      "steps": [
+        "Track newly popular builds and items after patches.",
+        "Buy under median, relist with reasonable margins.",
+        "Avoid overexposure\u2014rotate listings to reduce risk."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "CHOAM access, price awareness"
+      ],
+      "risks": [
+        "Patch swings can crater prices; fees eat narrow margins"
+      ],
+      "notes": [
+        "Safer than PvP farming; diversify across 2\u20133 items."
+      ],
+      "tags": [
+        "economy",
+        "exchange",
+        "schematics"
+      ],
+      "region": "Arrakeen/Harko",
+      "timeframe": null
+    },
+    {
+      "id": "vendor-weapons-pinnacle",
+      "title": "Vendor Targeting: Weapons at Pinnacle",
+      "objective": "Sell repaired weapons to vendors reputed to pay better for that category.",
+      "steps": [
+        "Collect drops during outpost clears.",
+        "Repair at base, then sell at weapon-favoring outposts.",
+        "Compare quotes before bulk selling."
+      ],
+      "best_for": [
+        "mid-game"
+      ],
+      "requirements": [
+        "Repair Station"
+      ],
+      "risks": [
+        "Quotes vary by durability and location"
+      ],
+      "notes": [
+        "Community thread notes Pinnacle for weapons; confirm on your shard."
+      ],
+      "tags": [
+        "economy",
+        "vendor"
+      ],
+      "region": "Pinnacle",
+      "timeframe": null
+    },
+    {
+      "id": "wrecks-then-stations",
+      "title": "Route: Wrecks \u2192 Stations",
+      "objective": "Run shipwrecks first, then testing stations to empty bag space where it matters most.",
+      "steps": [
+        "Plot a path hitting 2\u20133 wrecks from the edge inward.",
+        "Bank or scrap low\u2011value loot before stations.",
+        "Finish at a station to maximize high\u2011value capacity."
+      ],
+      "best_for": [
+        "late-game"
+      ],
+      "requirements": [
+        "Ornithopter, radiation gear"
+      ],
+      "risks": [
+        "Storms and PvP campers near interiors"
+      ],
+      "notes": [
+        "Stations often drop uniques\u2014reserve inventory."
+      ],
+      "tags": [
+        "loot",
+        "routing"
+      ],
+      "region": "Deep Desert",
+      "timeframe": null
+    },
+    {
+      "id": "offpeak-deep-desert",
+      "title": "Off\u2011Peak Deep Desert Runs",
+      "objective": "Schedule Deep Desert loops during low-population hours.",
+      "steps": [
+        "Check your server\u2019s peak windows; run early morning/late night.",
+        "Prioritize far POIs first, closer ones on return.",
+        "Fly high and land on plateaus to scout first."
+      ],
+      "best_for": [
+        "late-game"
+      ],
+      "requirements": [
+        "Ornithopter"
+      ],
+      "risks": [
+        "Lower visibility at night still risky; storms may force holds"
+      ],
+      "notes": [
+        "Lower PvP density increases survival and retention."
+      ],
+      "tags": [
+        "pvp",
+        "loot",
+        "timing"
+      ],
+      "region": "Deep Desert",
+      "timeframe": null
+    },
+    {
+      "id": "erythrite-sell-or-craft",
+      "title": "Erythrite: Craft vs Sell",
+      "objective": "Decide whether to convert Erythrite into cobalt paste for progression or sell raw when prices spike.",
+      "steps": [
+        "Run the Hagga Rift loop and tally crystal yield.",
+        "If you\u2019re close to mobility unlocks, craft paste.",
+        "If market surges, sell a portion to fund gear."
+      ],
+      "best_for": [
+        "mid-game"
+      ],
+      "requirements": [
+        "Mk2+ Cutteray, map route"
+      ],
+      "risks": [
+        "Market swings; crafting locks value into your progression path"
+      ],
+      "notes": [
+        "Mobility upgrades can be worth more than short\u2011term Solari."
+      ],
+      "tags": [
+        "resources",
+        "economy"
+      ],
+      "region": "Hagga Rift",
+      "timeframe": null
+    },
+    {
+      "id": "intel-dual-purpose",
+      "title": "Dual\u2011Purpose: Intel + Vendor Loot",
+      "objective": "When clearing outposts for Intel, prioritize salvage that vendors buy well.",
+      "steps": [
+        "Favor enemies and crates with weapon/vehicle part drops.",
+        "Repair items with good stats to improve quotes.",
+        "Deliver Intel unlocks between sell runs."
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Repair Station access helpful"
+      ],
+      "risks": [
+        "Overweight bags slow escapes on sand"
+      ],
+      "notes": [
+        "Combines progression currency with cash flow."
+      ],
+      "tags": [
+        "intel",
+        "economy",
+        "routing"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "storm-disengage",
+      "title": "Storm Disengage",
+      "objective": "Use oncoming storms to break line\u2011of\u2011sight and reset PvP.",
+      "steps": [
+        "When visibility drops, pivot to pre\u2011marked rock shelter.",
+        "Heal and hydrate before re\u2011engaging.",
+        "Avoid dune crests where worms and enemies converge."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Map waypoints for shelters"
+      ],
+      "risks": [
+        "Reduced visibility also hides enemies\u2014move deliberately"
+      ],
+      "notes": [
+        "Terrain and weather are your best peel tools against groups."
+      ],
+      "tags": [
+        "pvp",
+        "survival",
+        "weather"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "meta-checklist",
+      "title": "Meta Checklist: Patch Shifts",
+      "objective": "Refresh your loadout and routes after tier list or patch updates.",
+      "steps": [
+        "Review current weapon tiers and shield behavior.",
+        "Re-test old routes for worm risk after changes.",
+        "Adjust Exchange listings for new demand."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Awareness of patch notes"
+      ],
+      "risks": [
+        "Inertia\u2014don\u2019t cling to obsolete builds"
+      ],
+      "notes": [
+        "Small respecs first; scale changes that prove out."
+      ],
+      "tags": [
+        "pvp",
+        "builds",
+        "economy"
+      ],
+      "region": null,
+      "timeframe": "2025-08 context"
+    },
+    {
+      "id": "hub-dailies-batch",
+      "title": "Hub Batch: Dailies + Vendor Run",
+      "objective": "Batch hub errands: dailies, vendor sales, Exchange listing in one trip.",
+      "steps": [
+        "Craft/repair first; then grab dailies/contracts.",
+        "Sell vendor items, list Exchange surplus, accept new contracts.",
+        "Return to base to refill and depart for loops."
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Basic base cluster"
+      ],
+      "risks": [
+        "Camped hubs during peak hours"
+      ],
+      "notes": [
+        "Reduces wasted travel and keeps cash flowing."
+      ],
+      "tags": [
+        "economy",
+        "routing"
+      ],
+      "region": "Arrakeen/Harko",
+      "timeframe": null
+    },
+    {
+      "id": "pvp-pack-discipline",
+      "title": "PvP Pack Discipline",
+      "objective": "Travel light in PvP zones to cap losses if wiped.",
+      "steps": [
+        "Carry only what you need for the objective.",
+        "Stash excess water/consumables in vehicle or base.",
+        "Bank quickly after big wins."
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Vehicle storage helpful"
+      ],
+      "risks": [
+        "Under\u2011prepared if a fight drags; balance minimalism and readiness"
+      ],
+      "notes": [
+        "Loss caps protect long\u2011term progression."
+      ],
+      "tags": [
+        "pvp",
+        "risk"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "vendor-circuit-1",
+      "title": "Vendor Circuit Rotation",
+      "objective": "Rotate through multiple vendors to compare buy quotes and offload loot efficiently.",
+      "steps": [
+        "Pick a 3\u2011vendor loop near your hub",
+        "Sell category\u2011matched items where quotes are best",
+        "List any surplus on Exchange after the loop"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Sellable loot, repaired items"
+      ],
+      "risks": [
+        "Travel time eats margins if poorly routed"
+      ],
+      "notes": [
+        "Keep a small stash unsold in case prices rise next loop."
+      ],
+      "tags": [
+        "economy",
+        "vendor",
+        "routing"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "contract-triage-1",
+      "title": "Contract Triage",
+      "objective": "Accept only contracts along your existing routes to avoid dead miles.",
+      "steps": [
+        "Open the board after repairs",
+        "Filter by quadrant you already plan to visit",
+        "Drop any contract that drags you onto deep sand detours"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Contracts access"
+      ],
+      "risks": [
+        "Overcommitting creates hydration risk"
+      ],
+      "notes": [
+        "Reward per minute rises when you avoid off\u2011route objectives."
+      ],
+      "tags": [
+        "economy",
+        "contracts",
+        "planning"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "exchange-batch-1",
+      "title": "Exchange Batch Listing",
+      "objective": "Batch your listings to reduce time at terminals and improve pricing discipline.",
+      "steps": [
+        "Sort inventory by stack value at base",
+        "List 4\u20136 items with clear price targets",
+        "Check sold/unsold next trip\u2014adjust modestly"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Exchange access"
+      ],
+      "risks": [
+        "Undercutting too hard tanks profits"
+      ],
+      "notes": [
+        "Batching minimizes temptation to panic\u2011reprice."
+      ],
+      "tags": [
+        "economy",
+        "exchange"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "salvage-refine-sell-1",
+      "title": "Salvage \u2192 Refine \u2192 Sell",
+      "objective": "Refine low\u2011tier ores before selling to improve vendor value when markets are soft.",
+      "steps": [
+        "Route salvage to ore refinery during downtime",
+        "Sell refined outputs at vendor\u2011favoring outposts",
+        "Keep some raw for crafts you actually need"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Ore refinery access"
+      ],
+      "risks": [
+        "Fuel and time costs may offset gains"
+      ],
+      "notes": [
+        "Use when you\u2019re already near refineries for other crafts."
+      ],
+      "tags": [
+        "economy",
+        "refining",
+        "vendor"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "hub-poi-pair-1",
+      "title": "Hub POI Pairing",
+      "objective": "Pair two safe POIs near a hub for repeatable quick\u2011loot sessions.",
+      "steps": [
+        "Identify two POIs on mostly\u2011rock routes",
+        "Loot fast; skip crates when vibration is elevated",
+        "Bank and repeat while you wait on crafts"
+      ],
+      "best_for": [
+        "early-game"
+      ],
+      "requirements": [
+        "Basic kit, storage space"
+      ],
+      "risks": [
+        "Lower loot ceiling than Deep Desert"
+      ],
+      "notes": [
+        "Great for gearing while learning worm timing."
+      ],
+      "tags": [
+        "loot",
+        "safe",
+        "repeatable"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "wreck-edge-crawl-1",
+      "title": "Wreck Edge Crawl",
+      "objective": "Circle the outer edge of wrecks from rock cover before committing to the interior.",
+      "steps": [
+        "Park on a plateau; clear edge crates",
+        "Watch the meter; reset to rock between pulls",
+        "Enter interior only if safe and packs are light"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Vehicle or air access"
+      ],
+      "risks": [
+        "Campers may watch obvious entrances"
+      ],
+      "notes": [
+        "Edge first, interior second maximizes safe extraction."
+      ],
+      "tags": [
+        "loot",
+        "wrecks",
+        "safety"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "testing-station-window-1",
+      "title": "Testing Station Windowing",
+      "objective": "Time station visits during low\u2011traffic windows to reduce PvP risk.",
+      "steps": [
+        "Run early morning/late night local time",
+        "Fly high; land on rock near exits",
+        "Leave if multiple teams converge"
+      ],
+      "best_for": [
+        "late-game"
+      ],
+      "requirements": [
+        "Ornithopter, radiation gear"
+      ],
+      "risks": [
+        "Storms may force holds"
+      ],
+      "notes": [
+        "Lower traffic increases your extract rate."
+      ],
+      "tags": [
+        "loot",
+        "timing",
+        "pvp-avoidance"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "cache-and-return-1",
+      "title": "Cache & Return",
+      "objective": "Stash mid\u2011run loot at a safe plateau cache and return after finishing the route.",
+      "steps": [
+        "Carry a small container for temporary stash",
+        "Mark the plateau on your map",
+        "Retrieve after finishing high\u2011value POIs"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Container; marked waypoint"
+      ],
+      "risks": [
+        "Losing the cache in storms if poorly placed"
+      ],
+      "notes": [
+        "Travel lighter through risky interiors."
+      ],
+      "tags": [
+        "loot",
+        "routing",
+        "safety"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "camp-scan-weave-1",
+      "title": "Camp/Scan Weave",
+      "objective": "Weave camp clears with scan legs to keep Intel steady while crafts cook.",
+      "steps": [
+        "Clear a camp",
+        "Run a scan chain on the way back",
+        "Start refines; repeat another camp"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Probes; modest combat gear"
+      ],
+      "risks": [
+        "Camp timers can respawn enemies behind you"
+      ],
+      "notes": [
+        "Balanced pacing avoids gear breakage and burnout."
+      ],
+      "tags": [
+        "intel",
+        "loops",
+        "progression"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "trainer-bundle-1",
+      "title": "Trainer Bundle with Intel",
+      "objective": "Bundle trainer admission quests with Intel loops for efficient progression.",
+      "steps": [
+        "Plot a loop touching trainer hubs",
+        "Complete short admission tasks",
+        "Clear nearby outposts on the return leg"
+      ],
+      "best_for": [
+        "mid-game"
+      ],
+      "requirements": [
+        "Trainer access; probes"
+      ],
+      "risks": [
+        "Overpacked loops risk dehydration"
+      ],
+      "notes": [
+        "Two currencies (skills/Intel) move together."
+      ],
+      "tags": [
+        "intel",
+        "trainers",
+        "routing"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "unlock-priority-grid-1",
+      "title": "Unlock Priority Grid",
+      "objective": "Prioritize unlocks that uncap throughput: power, water, storage, mobility.",
+      "steps": [
+        "List bottlenecks before spending",
+        "Buy nodes you can craft today",
+        "Defer cosmetics until grid is stable"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Intel; materials on hand"
+      ],
+      "risks": [
+        "Over\u2011unlocking without materials wastes time"
+      ],
+      "notes": [
+        "Throughput first, luxuries later."
+      ],
+      "tags": [
+        "research",
+        "planning"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "rock-ring-control-1",
+      "title": "Rock Ring Control",
+      "objective": "Fight within a ring of rock exits to preserve disengage paths.",
+      "steps": [
+        "Choose plateaus with multiple exit ramps",
+        "Kite enemies around the ring",
+        "Drop off the lee side to break LOS"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Mobility, healkits"
+      ],
+      "risks": [
+        "Storms may mask third parties"
+      ],
+      "notes": [
+        "Terrain wins more fights than raw DPS."
+      ],
+      "tags": [
+        "pvp",
+        "positioning",
+        "terrain"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "bait-and-break-1",
+      "title": "Bait & Break",
+      "objective": "Bait opponents onto sand, then break contact back to rock.",
+      "steps": [
+        "Feint toward a dune edge",
+        "When they follow, pivot to rock",
+        "Punish when their exits are poor"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Grapple; mobility tools"
+      ],
+      "risks": [
+        "Worm risk if you misjudge the meter"
+      ],
+      "notes": [
+        "Use sparingly; always keep a bailout."
+      ],
+      "tags": [
+        "pvp",
+        "mindgames",
+        "terrain"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "storm-veil-1",
+      "title": "Storm Veil",
+      "objective": "Use incoming storms as a veil to rotate or disengage unnoticed.",
+      "steps": [
+        "Rotate around objectives as visibility drops",
+        "Heal and reload behind cover",
+        "Re\u2011enter from a new angle"
+      ],
+      "best_for": [
+        "late-game"
+      ],
+      "requirements": [
+        "Waypoints; knowledge of cover"
+      ],
+      "risks": [
+        "You also lose visibility\u2014move slow"
+      ],
+      "notes": [
+        "Excellent for breaking third\u2011party chains."
+      ],
+      "tags": [
+        "pvp",
+        "weather",
+        "rotation"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "duo-role-split-1",
+      "title": "Duo Role Split",
+      "objective": "Split roles in duos: one mobility scout, one anchor.",
+      "steps": [
+        "Scout sets waypoints and checks choke points",
+        "Anchor holds rock edges and covers retreats",
+        "Swap roles when kits demand"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Voice comms recommended"
+      ],
+      "risks": [
+        "If both commit, exits vanish"
+      ],
+      "notes": [
+        "Role clarity beats mirror builds."
+      ],
+      "tags": [
+        "pvp",
+        "teamplay",
+        "roles"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "grapple-lily-1",
+      "title": "Grapple Lily Pads",
+      "objective": "Set a sequence of grapple anchors across rock to minimize sand time.",
+      "steps": [
+        "Mark anchor rocks",
+        "Practice consistent angles",
+        "Chain pulls only when hydration is healthy"
+      ],
+      "best_for": [
+        "mid-game"
+      ],
+      "requirements": [
+        "Grappler"
+      ],
+      "risks": [
+        "Missed anchors leave you stranded on sand"
+      ],
+      "notes": [
+        "Consistency beats speed on long crossings."
+      ],
+      "tags": [
+        "movement",
+        "worms",
+        "routing"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "plateau-scout-1",
+      "title": "Plateau Scout",
+      "objective": "Scout plateau landing zones before committing aircraft to an interior.",
+      "steps": [
+        "Fly high; identify sheltered LZs",
+        "Land near a rock exit lane",
+        "Always have a second LZ marked"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Ornithopter"
+      ],
+      "risks": [
+        "Storms can close LZs unexpectedly"
+      ],
+      "notes": [
+        "Safe LZs shrink extract times."
+      ],
+      "tags": [
+        "movement",
+        "air",
+        "routing"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "night-sip-1",
+      "title": "Night Sip Discipline",
+      "objective": "Sip water during night runs to extend range without overconsumption.",
+      "steps": [
+        "Avoid sprinting unless crossing short sand patches",
+        "Refill before sunrise",
+        "Stash spare literjons in vehicle"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Water containers; vehicle helpful"
+      ],
+      "risks": [
+        "Under\u2011hydrating before fights backfires"
+      ],
+      "notes": [
+        "Night lowers heat but doesn\u2019t remove worm risk."
+      ],
+      "tags": [
+        "survival",
+        "hydration",
+        "night"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "pad-by-repair-1",
+      "title": "Pad by Repair",
+      "objective": "Place your vehicle pad next to repair to cut turnaround time.",
+      "steps": [
+        "Align pad within immediate reach of station",
+        "Store welding wire in adjacent crate",
+        "Run a pre\u2011sortie inspection"
+      ],
+      "best_for": [
+        "mid-game"
+      ],
+      "requirements": [
+        "Repair Station; pad"
+      ],
+      "risks": [
+        "Tight layouts limit decor space"
+      ],
+      "notes": [
+        "Uptime matters more than aesthetics."
+      ],
+      "tags": [
+        "vehicles",
+        "base",
+        "maintenance"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "module-rotation-1",
+      "title": "Module Rotation",
+      "objective": "Rotate spare vehicle modules to keep uptime high.",
+      "steps": [
+        "Keep one spare of the most\u2011worn module",
+        "Swap before deep desert legs",
+        "Repair spares between sorties"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Spare modules"
+      ],
+      "risks": [
+        "Inventory pressure if hoarded"
+      ],
+      "notes": [
+        "Rotation beats running a module to zero."
+      ],
+      "tags": [
+        "vehicles",
+        "maintenance"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "shield-first-1",
+      "title": "Shield First Repairs",
+      "objective": "Restore shielding and power lines first after storms.",
+      "steps": [
+        "Bring console back online",
+        "Verify windtraps/cisterns",
+        "Resume crafts only after grid stability"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Construction Tool; repair mats"
+      ],
+      "risks": [
+        "Restarting crafts too early causes stalls"
+      ],
+      "notes": [
+        "Production follows protection."
+      ],
+      "tags": [
+        "base",
+        "repairs",
+        "storms"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "cache-at-exit-1",
+      "title": "Cache at Exit",
+      "objective": "Create a departure cache near your base exit for faster launches.",
+      "steps": [
+        "Stock filters, fuel cells, repair kits",
+        "Refill literjons after each return",
+        "Audit cache every few runs"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Storage crate"
+      ],
+      "risks": [
+        "Cache starvation if not maintained"
+      ],
+      "notes": [
+        "Reduces prep time and forgotten items."
+      ],
+      "tags": [
+        "base",
+        "logistics",
+        "prep"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "two-route-rule-1",
+      "title": "Two\u2011Route Rule",
+      "objective": "Always keep two exit routes when entering sand basins.",
+      "steps": [
+        "Identify primary and secondary exits",
+        "Abort if either is compromised",
+        "Re\u2011engage only with clear lanes"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Map knowledge"
+      ],
+      "risks": [
+        "Storms can close both routes\u2014hold position"
+      ],
+      "notes": [
+        "Simple rule that prevents chain wipes."
+      ],
+      "tags": [
+        "routing",
+        "safety",
+        "worms"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "light-retrieval-1",
+      "title": "Light Retrieval Run",
+      "objective": "Travel ultra\u2011light for retrieval to reduce time on sand.",
+      "steps": [
+        "Carry only water, repair, and mobility",
+        "Use air if available",
+        "Prioritize irreplaceables"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Minimal kit; air helpful"
+      ],
+      "risks": [
+        "Under\u2011gearing can lose fights en route"
+      ],
+      "notes": [
+        "Speed > haul on retrievals."
+      ],
+      "tags": [
+        "retrieval",
+        "risk",
+        "routing"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "camp-first-aid-1",
+      "title": "Camp First Aid",
+      "objective": "Stabilize at a safe rock after a wipe before attempting recovery.",
+      "steps": [
+        "Rebuild water and repairs",
+        "Scout with mobility",
+        "Retrieve in one decisive pass"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Basic supplies"
+      ],
+      "risks": [
+        "Waiting too long risks despawn/looters"
+      ],
+      "notes": [
+        "Don\u2019t trickle in\u2014commit once conditions are right."
+      ],
+      "tags": [
+        "retrieval",
+        "planning"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "rotation-journal-1",
+      "title": "Rotation Journal",
+      "objective": "Keep a simple journal of profitable rotations to avoid relearning routes.",
+      "steps": [
+        "Note time, route, yield, risks",
+        "Update after patches",
+        "Share with clanmates"
+      ],
+      "best_for": [
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Note\u2011taking habit"
+      ],
+      "risks": [
+        "Bad notes waste time later"
+      ],
+      "notes": [
+        "Small habit, big payoff over weeks."
+      ],
+      "tags": [
+        "planning",
+        "routing",
+        "loot"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "hydration-check-1",
+      "title": "Hydration Checkpoints",
+      "objective": "Set hydration checkpoints along long routes.",
+      "steps": [
+        "Mark refill points on rock",
+        "Top off before big crossings",
+        "Abort if you\u2019re below safe threshold"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Literjons"
+      ],
+      "risks": [
+        "Running dry mid\u2011basin forces risky sprints"
+      ],
+      "notes": [
+        "Checkpoints keep mistakes survivable."
+      ],
+      "tags": [
+        "survival",
+        "hydration",
+        "routing"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "ammo-budget-1",
+      "title": "Ammo Budgeting",
+      "objective": "Pre\u2011craft a modest ammo buffer before camp clears.",
+      "steps": [
+        "Craft in batches between sorties",
+        "Store near weapons fab",
+        "Carry a melee fallback"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Weapons fab access"
+      ],
+      "risks": [
+        "Over\u2011weighting ammo slows travel"
+      ],
+      "notes": [
+        "Buffers prevent mid\u2011fight stalls."
+      ],
+      "tags": [
+        "combat",
+        "prep"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "storm-hold-1",
+      "title": "Storm Hold Points",
+      "objective": "Memorize safe hold points for common routes.",
+      "steps": [
+        "Pick overhangs with rock exits",
+        "Avoid dunes during low visibility",
+        "Resume when meter calms"
+      ],
+      "best_for": [
+        "mid-game"
+      ],
+      "requirements": [
+        "Map knowledge"
+      ],
+      "risks": [
+        "Holding in the open invites wipes"
+      ],
+      "notes": [
+        "Holds cut losses during bad weather."
+      ],
+      "tags": [
+        "storms",
+        "routing"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "vendor-day-1",
+      "title": "Vendor Day",
+      "objective": "Dedicate one loop to selling and buying bottlenecks.",
+      "steps": [
+        "Sort and repair first",
+        "Sell, then buy only what unblocks crafts",
+        "List extras on Exchange"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game"
+      ],
+      "requirements": [
+        "Vendor access"
+      ],
+      "risks": [
+        "Market swings between loops"
+      ],
+      "notes": [
+        "Separating sell days prevents distractions on farm days."
+      ],
+      "tags": [
+        "economy",
+        "vendor"
+      ],
+      "region": null,
+      "timeframe": null
+    },
+    {
+      "id": "repair-before-bed-1",
+      "title": "Repair Before Logoff",
+      "objective": "Repair gear and vehicles before logging off.",
+      "steps": [
+        "Queue station repairs",
+        "Restock cache",
+        "Plan next route"
+      ],
+      "best_for": [
+        "early-game",
+        "mid-game",
+        "late-game"
+      ],
+      "requirements": [
+        "Repair station"
+      ],
+      "risks": [
+        "Forgetting means cold\u2011start next session"
+      ],
+      "notes": [
+        "Starts next session strong."
+      ],
+      "tags": [
+        "maintenance",
+        "prep"
+      ],
+      "region": null,
+      "timeframe": null
+    }
+  ]
 }
