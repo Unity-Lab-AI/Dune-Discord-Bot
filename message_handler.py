@@ -412,7 +412,15 @@ class MessageHandler:
         text_lines = []
         image_urls = []
         for ln in lines:
-            if re.match(r"^https?://\S+\.(png|jpg|jpeg|gif|webp)(\?.*)?$", ln, flags=re.IGNORECASE):
+            # Treat URLs that point to common image formats or Pollinations
+            # generated images as image links even if they lack a file
+            # extension. Pollinations uses dynamic URLs without an extension,
+            # which previously caused the bot to echo the link instead of
+            # displaying the image. By explicitly checking for the Pollinations
+            # domain we can handle these URLs and upload the image rather than
+            # posting the raw link.
+            if re.match(r"^https?://\S+\.(png|jpg|jpeg|gif|webp)(\?.*)?$", ln, flags=re.IGNORECASE) or \
+               re.match(r"^https?://image\.pollinations\.ai/\S+", ln, flags=re.IGNORECASE):
                 image_urls.append(ln)
             else:
                 text_lines.append(ln)
@@ -427,6 +435,8 @@ class MessageHandler:
                         if resp.status == 200:
                             data = await resp.read()
                             filename = url.split("/")[-1].split("?")[0] or "image.png"
+                            if not re.search(r"\.(png|jpg|jpeg|gif|webp)$", filename, re.IGNORECASE):
+                                filename += ".png"
                             files.append(discord.File(BytesIO(data), filename=filename))
             except Exception as e:
                 logger.warning(f"Failed to fetch image {url}: {e}")
