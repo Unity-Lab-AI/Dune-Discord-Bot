@@ -1,8 +1,5 @@
 {
-  "game": "Dune Awakening",
-  "data_version": "2025-08-25",
-  "notes": "All stats and crafting data pulled from dune.gaming.tools pages on Aug 25, 2025. No placeholders. Only verified parts included. Volumes shown as 'V' values from item headers when present.",
-  "fuel": {
+    "fuel": {
     "small_vehicle_fuel_cell": {
       "id": "fuel_small",
       "name": "Small Vehicle Fuel Cell",
