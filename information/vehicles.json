@@ -1,202 +1,1923 @@
 {
-  "vehicles": {
-    "Vehicle Part - Wing": [
-      "Assault Ornithopter Wing Mk5",
-      "Assault Ornithopter Wing Mk6",
-      "Carrier Ornithopter Wing Mk6",
-      "Scout Ornithopter Wing Mk4",
-      "Scout Ornithopter Wing Mk5",
-      "Scout Ornithopter Wing Mk6"
+  "game": "Dune Awakening",
+  "data_version": "2025-08-25",
+  "notes": "All stats and crafting data pulled from dune.gaming.tools pages on Aug 25, 2025. No placeholders. Only verified parts included. Volumes shown as 'V' values from item headers when present.",
+  "fuel": {
+    "small_vehicle_fuel_cell": {
+      "id": "fuel_small",
+      "name": "Small Vehicle Fuel Cell",
+      "tier": 1,
+      "volume_v": 2,
+      "description": "Vehicle Fuel Cell with low capacity. Refined from Fuel Cells at a Chemical Refinery. Used to power vehicles.",
+      "crafted_at": [
+        {
+          "station": "Small Chemical Refinery",
+          "ingredients": {
+            "Fuel Cell": 25
+          },
+          "time_seconds": 15
+        },
+        {
+          "station": "Medium Chemical Refinery",
+          "ingredients": {
+            "Fuel Cell": 20
+          },
+          "time_seconds": 10
+        }
+      ],
+      "last_verified": "2025-08-25T00:00:00Z"
+    },
+    "medium_vehicle_fuel_cell": {
+      "id": "fuel_medium",
+      "name": "Medium Sized Vehicle Fuel Cell",
+      "tier": 3,
+      "volume_v": 3.333,
+      "description": "Vehicle Fuel Cell with average capacity. Refined from Fuel Cells at a Chemical Refinery. Used to power vehicles.",
+      "crafted_at": [
+        {
+          "station": "Small Chemical Refinery",
+          "ingredients": {
+            "Fuel Cell": 45,
+            "Water": 15
+          },
+          "time_seconds": 20
+        },
+        {
+          "station": "Medium Chemical Refinery",
+          "ingredients": {
+            "Fuel Cell": 40,
+            "Water": 15
+          },
+          "time_seconds": 15
+        }
+      ],
+      "last_verified": "2025-08-25T00:00:00Z"
+    },
+    "large_vehicle_fuel_cell": {
+      "id": "fuel_large",
+      "name": "Large Vehicle Fuel Cell",
+      "tier": 4,
+      "volume_v": 5,
+      "description": "Vehicle Fuel Cell with high capacity. Refined from Fuel Cells at a Chemical Refinery. Used to power vehicles.",
+      "crafted_at": [
+        {
+          "station": "Medium Chemical Refinery",
+          "ingredients": {
+            "Fuel Cell": 80,
+            "Water": 30
+          },
+          "time_seconds": 15
+        }
+      ],
+      "last_verified": "2025-08-25T00:00:00Z"
+    },
+    "vehicle_fuel_cells": {
+      "small": {
+        "crafted_at": {
+          "station": "Small Chemical Refinery",
+          "ingredients": {
+            "Fuel Cell": 25
+          },
+          "time_sec": 15
+        },
+        "alt_crafted_at": {
+          "station": "Medium Chemical Refinery",
+          "ingredients": {
+            "Fuel Cell": 20
+          },
+          "time_sec": 10
+        },
+        "uses": [
+          "Refuel vehicles"
+        ]
+      },
+      "medium": {
+        "crafted_at": {
+          "station": "Small Chemical Refinery",
+          "ingredients": {
+            "Fuel Cell": 45,
+            "Water": 15
+          },
+          "time_sec": 20,
+          "output_qty": 10
+        }
+      },
+      "large": {
+        "crafted_at": {
+          "station": "Medium Chemical Refinery",
+          "ingredients": {
+            "Fuel Cell": 80,
+            "Water": 30
+          },
+          "time_sec": 15
+        },
+        "notes": "Enough to refuel a Scout Ornithopter Mk6 twice"
+      }
+    }
+  },
+  "assembly_rules": {
+    "sandbike": {
+      "required_parts": {
+        "chassis": 1,
+        "engine": 1,
+        "psu": 1,
+        "tread": 1,
+        "hull": 1
+      },
+      "optional_parts": {
+        "booster": [
+          0,
+          1
+        ],
+        "inventory": [
+          0,
+          1
+        ],
+        "backseat": [
+          0,
+          1
+        ]
+      }
+    },
+    "buggy": {
+      "required_parts": {
+        "chassis": 1,
+        "engine": 1,
+        "psu": 1,
+        "tread": 1,
+        "front_hull": 1,
+        "rear_hull": 1
+      },
+      "optional_parts": {
+        "booster": [
+          0,
+          1
+        ],
+        "storage": [
+          0,
+          1
+        ],
+        "utility_rear": [
+          0,
+          1
+        ],
+        "mining_module": [
+          0,
+          1
+        ]
+      }
+    },
+    "scout_ornithopter": {
+      "required_parts": {
+        "chassis": 1,
+        "engine": 1,
+        "generator": 1,
+        "body_hull": 1,
+        "wings": 2
+      },
+      "optional_parts": {
+        "thruster": [
+          0,
+          1
+        ],
+        "rocket_launcher": [
+          0,
+          1
+        ],
+        "storage": [
+          0,
+          1
+        ]
+      }
+    },
+    "assault_ornithopter": {
+      "required_parts": {
+        "chassis": 1,
+        "engine": 1,
+        "generator": 1,
+        "cabin": 1,
+        "wings": 2
+      },
+      "optional_parts": {
+        "thruster": [
+          0,
+          1
+        ],
+        "rocket_launcher": [
+          0,
+          1
+        ],
+        "tail": [
+          0,
+          1
+        ],
+        "storage": [
+          0,
+          1
+        ]
+      }
+    },
+    "carrier_ornithopter": {
+      "required_parts": {
+        "chassis": 1,
+        "main_hull": 1,
+        "engine": 1,
+        "generator": 1,
+        "wings": 2
+      },
+      "optional_parts": {
+        "thruster": [
+          0,
+          1
+        ],
+        "side_hull": [
+          0,
+          2
+        ],
+        "tail_hull": [
+          0,
+          1
+        ]
+      }
+    },
+    "sandcrawler": {
+      "required_parts": {
+        "chassis": 1,
+        "engine": 1,
+        "psu": 1,
+        "treads": 1,
+        "cabin": 1,
+        "vacuum": 1,
+        "container": 1
+      }
+    }
+  },
+  "parts": {
+    "sandbike": [
+      {
+        "id": "sandbike_chassis_mk1",
+        "name": "Sandbike Chassis Mk1",
+        "category": "chassis",
+        "tier": 1,
+        "volume_v": 8,
+        "durability": 2000,
+        "armor": 250,
+        "fuel_capacity": 100,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Copper Ingot": 12,
+            "Advanced Servoks": 5
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_chassis_mk2",
+        "name": "Sandbike Chassis Mk2",
+        "category": "chassis",
+        "tier": 2,
+        "volume_v": 8,
+        "durability": 2000,
+        "armor": 500,
+        "fuel_capacity": 110,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Iron Ingot": 20,
+            "Advanced Servoks": 8
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_chassis_mk5",
+        "name": "Sandbike Chassis Mk5",
+        "category": "chassis",
+        "tier": 5,
+        "volume_v": 8,
+        "durability": 2000,
+        "armor": 1250,
+        "fuel_capacity": 140,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 70,
+            "Advanced Servoks": 20,
+            "Cobalt Paste": 25,
+            "Carbide Scraps": 10,
+            "Water": 680
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_hull_mk1",
+        "name": "Sandbike Hull Mk1",
+        "category": "hull",
+        "tier": 1,
+        "volume_v": 8,
+        "durability": 1500,
+        "armor": 250,
+        "seats": 1,
+        "utility_slots": 2,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Copper Ingot": 12,
+            "Advanced Servoks": 5
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_hull_mk2",
+        "name": "Sandbike Hull Mk2",
+        "category": "hull",
+        "tier": 2,
+        "volume_v": 8,
+        "durability": 1500,
+        "armor": 500,
+        "seats": 1,
+        "utility_slots": 2,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Iron Ingot": 20,
+            "Advanced Servoks": 8,
+            "Armor Plating": 7
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_hull_mk4",
+        "name": "Sandbike Hull Mk4",
+        "category": "hull",
+        "tier": 4,
+        "volume_v": 8,
+        "durability": 1500,
+        "armor": 1000,
+        "seats": 1,
+        "utility_slots": 2,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Aluminum Ingot": 45,
+            "Advanced Servoks": 16,
+            "Cobalt Paste": 18,
+            "Armor Plating": 21,
+            "Diamondine Dust": 7,
+            "Water": 340
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_hull_mk5",
+        "name": "Sandbike Hull Mk5",
+        "category": "hull",
+        "tier": 5,
+        "volume_v": 8,
+        "durability": 1500,
+        "armor": 1250,
+        "seats": 1,
+        "utility_slots": 2,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 60,
+            "Advanced Servoks": 20,
+            "Cobalt Paste": 25,
+            "Armor Plating": 34,
+            "Diamondine Dust": 10,
+            "Water": 680
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_engine_mk1",
+        "name": "Sandbike Engine Mk1",
+        "category": "engine",
+        "tier": 1,
+        "volume_v": 3,
+        "durability": 1000,
+        "acceleration": "Fast",
+        "speed_kmh": 70.0,
+        "power_consumption_per_sec": 5.38,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Copper Ingot": 5,
+            "Particle Capacitor": 3
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_engine_mk3",
+        "name": "Sandbike Engine Mk3",
+        "category": "engine",
+        "tier": 3,
+        "volume_v": 3,
+        "durability": 1000,
+        "acceleration": "Fast",
+        "speed_kmh": 85.2,
+        "power_consumption_per_sec": 6.45,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Steel Ingot": 10,
+            "Particle Capacitor": 16,
+            "Cobalt Paste": 11,
+            "Complex Machinery": 10,
+            "Water": 135
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_engine_mk4",
+        "name": "Sandbike Engine Mk4",
+        "category": "engine",
+        "tier": 4,
+        "volume_v": 3,
+        "durability": 1000,
+        "acceleration": "Fast",
+        "speed_kmh": 92.8,
+        "power_consumption_per_sec": 6.99,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Aluminum Ingot": 20,
+            "Cobalt Paste": 18,
+            "Particle Capacitor": 11,
+            "Complex Machinery": 15,
+            "Water": 338
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_engine_mk5",
+        "name": "Sandbike Engine Mk5",
+        "category": "engine",
+        "tier": 5,
+        "volume_v": 3,
+        "durability": 1000,
+        "acceleration": "Fast",
+        "speed_kmh": 100.4,
+        "power_consumption_per_sec": 7.52,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 30,
+            "Cobalt Paste": 25,
+            "Particle Capacitor": 14,
+            "Complex Machinery": 21,
+            "Hydraulic Piston": 7,
+            "Water": 675
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_psu_mk3",
+        "name": "Sandbike PSU Mk3",
+        "category": "psu",
+        "tier": 3,
+        "volume_v": 2,
+        "durability": 1000,
+        "temperature_rating": 6.62,
+        "fuel_efficiency": 89.5,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Steel Ingot": 10,
+            "Particle Capacitor": 12,
+            "Cobalt Paste": 11,
+            "Water": 135
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_psu_mk5",
+        "name": "Sandbike PSU Mk5",
+        "category": "psu",
+        "tier": 5,
+        "volume_v": 2,
+        "durability": 1000,
+        "temperature_rating": 9.02,
+        "fuel_efficiency": 82.5,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 30,
+            "Particle Capacitor": 20,
+            "Cobalt Paste": 25,
+            "Military Power Regulator": 7,
+            "Water": 675
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_tread_mk1",
+        "name": "Sandbike Tread Mk1",
+        "category": "tread",
+        "tier": 1,
+        "volume_v": 3,
+        "durability": 1000,
+        "armor": 250,
+        "grip_rating": 0.2,
+        "vibration_level": 15,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Copper Ingot": 3,
+            "Advanced Servoks": 1
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_booster_mk3",
+        "name": "Sandbike Booster Mk3",
+        "category": "booster",
+        "tier": 3,
+        "volume_v": 2,
+        "durability": 1000,
+        "armor": 750,
+        "boost_rating": 7.86,
+        "extra_heat": 125,
+        "power_consumption_per_sec": 6.45,
+        "assembly_requirement": "Optional",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Steel Ingot": 30,
+            "Particle Capacitor": 29,
+            "Cobalt Paste": 17,
+            "Holtzman Actuator": 25,
+            "Water": 200
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_booster_mk4",
+        "name": "Sandbike Booster Mk4",
+        "category": "booster",
+        "tier": 4,
+        "volume_v": 2,
+        "durability": 1000,
+        "armor": 1000,
+        "boost_rating": 8.57,
+        "extra_heat": 125,
+        "power_consumption_per_sec": 6.99,
+        "assembly_requirement": "Optional",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Aluminum Ingot": 60,
+            "Particle Capacitor": 40,
+            "Holtzman Actuator": 31,
+            "Cobalt Paste": 30,
+            "Water": 510
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_inventory_mk1",
+        "name": "Sandbike Inventory Mk1",
+        "category": "inventory",
+        "tier": 1,
+        "volume_v": 3,
+        "durability": 1000,
+        "armor": 250,
+        "max_volume": 250,
+        "item_slots": 10,
+        "assembly_requirement": "Optional",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Copper Ingot": 12,
+            "Advanced Servoks": 7
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_hull_mk3",
+        "name": "Sandbike Hull Mk3",
+        "category": "hull",
+        "tier": 3,
+        "volume_v": 8,
+        "durability": 1500,
+        "armor": 750,
+        "seats": 1,
+        "utility_slots": 2,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Steel Ingot": 25,
+            "Advanced Servoks": 12,
+            "Cobalt Paste": 11,
+            "Armor Plating": 13,
+            "Water": 135
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_psu_mk1",
+        "name": "Sandbike PSU Mk1",
+        "category": "psu",
+        "tier": 1,
+        "volume_v": 2.0,
+        "assembly_requirement": "Mandatory",
+        "description": "Defines power efficiency and controls temperature for the Sandbike.",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Copper Ingot": 5,
+            "Particle Capacitor": 3
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_psu_mk4",
+        "name": "Sandbike PSU Mk4",
+        "category": "psu",
+        "tier": 4,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Aluminum Ingot": 20,
+            "Particle Capacitor": 16,
+            "Cobalt Paste": 18,
+            "Water": 338
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandbike_tread_mk3",
+        "name": "Sandbike Tread Mk3",
+        "category": "tread",
+        "tier": 3,
+        "volume_v": 3.0,
+        "armor": 75,
+        "grip_rating": 8.0,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Steel Ingot": 6,
+            "Advanced Servoks": 5,
+            "Cobalt Paste": 4,
+            "Water": 45
+          },
+          "time_seconds": 20
+        },
+        "notes": "All attached treads must be of the same type.",
+        "last_verified": "2025-08-25T00:00:00Z"
+      }
     ],
-    "Vehicle Part - Hull": [
-      "Assault Ornithopter Cabin Mk5",
-      "Assault Ornithopter Cabin Mk6",
-      "Buggy Hull Mk3",
-      "Buggy Hull Mk4",
-      "Buggy Hull Mk5",
-      "Buggy Hull Mk6",
-      "Carrier Ornithopter Main Hull Mk6",
-      "Carrier Ornithopter Side Hull Mk6",
-      "Carrier Ornithopter Tail Hull Mk6",
-      "Scout Ornithopter Hull Mk4",
-      "Scout Ornithopter Hull Mk5",
-      "Scout Ornithopter Hull Mk6"
+    "buggy": [
+      {
+        "id": "buggy_chassis_mk5",
+        "name": "Buggy Chassis Mk5",
+        "category": "chassis",
+        "tier": 5,
+        "volume_v": 15,
+        "durability": 3500,
+        "armor": 1250,
+        "fuel_capacity": 280,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 70,
+            "Advanced Servoks": 20,
+            "Cobalt Paste": 25,
+            "Carbide Scraps": 10,
+            "Water": 680
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "buggy_hull_mk3",
+        "name": "Buggy Hull Mk3",
+        "category": "front_hull",
+        "tier": 3,
+        "volume_v": 15,
+        "durability": 2625,
+        "armor": 750,
+        "seats": 2,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Steel Ingot": 30,
+            "Advanced Servoks": 20,
+            "Cobalt Paste": 13,
+            "Water": 135
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "buggy_hull_mk5",
+        "name": "Buggy Hull Mk5",
+        "category": "front_hull",
+        "tier": 5,
+        "volume_v": 15,
+        "durability": 2625,
+        "armor": 1250,
+        "seats": 2,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 70,
+            "Advanced Servoks": 20,
+            "Cobalt Paste": 25,
+            "Armor Plating": 34,
+            "Diamondine Dust": 10,
+            "Water": 680
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "buggy_psu_mk5",
+        "name": "Buggy PSU Mk5",
+        "category": "psu",
+        "tier": 5,
+        "volume_v": 3,
+        "durability": 1750,
+        "temperature_rating": 8.2,
+        "fuel_efficiency": 82.5,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 50,
+            "Particle Capacitor": 30,
+            "Cobalt Paste": 25,
+            "Military Power Regulator": 7,
+            "Water": 675
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "buggy_storage_mk5",
+        "name": "Buggy Storage Mk5",
+        "category": "storage",
+        "tier": 5,
+        "volume_v": 5,
+        "durability": 1750,
+        "armor": 1250,
+        "max_volume": 2500,
+        "item_slots": 20,
+        "assembly_requirement": "Optional",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 60,
+            "Advanced Servoks": 18,
+            "Cobalt Paste": 15,
+            "Water": 845
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "buggy_engine_mk5",
+        "name": "Buggy Engine Mk5",
+        "category": "engine",
+        "tier": 5,
+        "volume_v": 5,
+        "durability": 1750,
+        "acceleration": "Medium",
+        "speed_kmh": 85,
+        "power_consumption_per_sec": 17.94,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 50,
+            "Cobalt Paste": 25,
+            "Particle Capacitor": 14,
+            "Complex Machinery": 21,
+            "Hydraulic Piston": 7,
+            "Water": 675
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "buggy_utility_rear_mk6",
+        "name": "Buggy Utility Rear Mk6",
+        "category": "utility_rear",
+        "tier": 6,
+        "volume_v": 15.0,
+        "durability": 2625,
+        "armor": 1500,
+        "turret_slots": 1,
+        "utility_slots": 1,
+        "assembly_requirement": "Mandatory",
+        "description": "Comes with a turret seat. Attach to rear of Buggy chassis.",
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "focused_buggy_cutteray_mk5",
+        "name": "Focused Buggy Cutteray Mk5",
+        "category": "mining_laser",
+        "tier": 5,
+        "unique": true,
+        "effects": {
+          "yield_modifier": {
+            "Jasmium": 1.0
+          },
+          "heat_generation_modifier": 0.1
+        },
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 110,
+            "Particle Capacitor": 50,
+            "Cobalt Paste": 40,
+            "Ray Amplifier": 26,
+            "Thermoelectric Cooler": 13,
+            "Spice-infused Duraluminum Dust": 26,
+            "Water": 1010
+          },
+          "time_sec": 20
+        }
+      },
+      {
+        "id": "bigger_buggy_boot_mk6",
+        "name": "Bigger Buggy Boot Mk6",
+        "category": "storage",
+        "tier": 6,
+        "unique": true,
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Plastanium Ingot": 100,
+            "Advanced Servoks": 62,
+            "Cobalt Paste": 77,
+            "Spice Melange": 186,
+            "Spice-infused Plastanium Dust": 31,
+            "Water": 1580
+          }
+        }
+      }
     ],
-    "Vehicle Part - Chassis": [
-      "Assault Ornithopter Chassis Mk5",
-      "Assault Ornithopter Chassis Mk6",
-      "Buggy Chassis Mk3",
-      "Buggy Chassis Mk4",
-      "Buggy Chassis Mk5",
-      "Buggy Chassis Mk6",
-      "Carrier Ornithopter Chassis Mk6",
-      "Sandcrawler Chassis Mk5",
-      "Sandcrawler Chassis Mk6",
-      "Scout Ornithopter Chassis Mk4",
-      "Scout Ornithopter Chassis Mk5",
-      "Scout Ornithopter Chassis Mk6"
+    "scout_ornithopter": [
+      {
+        "id": "scout_chassis_mk4",
+        "name": "Scout Ornithopter Chassis Mk4",
+        "category": "chassis",
+        "tier": 4,
+        "volume_v": 15,
+        "durability": 3500,
+        "armor": 1000,
+        "fuel_capacity": 300,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Aluminum Ingot": 45,
+            "Advanced Servoks": 10,
+            "Cobalt Paste": 14,
+            "Carbide Scraps": 7,
+            "Water": 340
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "scout_cockpit_mk5",
+        "name": "Scout Ornithopter Cockpit Mk5",
+        "category": "body_hull",
+        "tier": 5,
+        "volume_v": 15,
+        "durability": 2625,
+        "armor": 1250,
+        "seats": 1,
+        "utility_slots": 1,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 72,
+            "Advanced Servoks": 20,
+            "Cobalt Paste": 25,
+            "Armor Plating": 34,
+            "Diamondine Dust": 10,
+            "Water": 680
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "scout_engine_mk5",
+        "name": "Scout Ornithopter Engine Mk5",
+        "category": "engine",
+        "tier": 5,
+        "volume_v": 8,
+        "durability": 1750,
+        "speed_kmh": 95,
+        "power_consumption_per_sec": 27.76,
+        "assembly_requirement": "Mandatory",
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "scout_wing_mk5",
+        "name": "Scout Ornithopter Wing Mk5",
+        "category": "wing",
+        "tier": 5,
+        "volume_v": 5,
+        "durability": 1750,
+        "armor": 1250,
+        "type": "Normal",
+        "glide_speed_kmh": 170,
+        "turn_rating": 9,
+        "agility": 8,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 12,
+            "Advanced Servoks": 7,
+            "Cobalt Paste": 6,
+            "Industrial Pump": 3,
+            "Water": 170
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "scout_thruster_mk5",
+        "name": "Scout Ornithopter Thruster Mk5",
+        "category": "thruster",
+        "tier": 5,
+        "volume_v": 3,
+        "durability": 1750,
+        "armor": 1250,
+        "thrust_rating": 8.24,
+        "thrust_rating_glide": 17.5,
+        "extra_heat": 150,
+        "power_consumption_per_sec": 55.52,
+        "assembly_requirement": "Optional",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 80,
+            "Particle Capacitor": 50,
+            "Holtzman Actuator": 15,
+            "Water": 1010
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "scout_thruster_mk6",
+        "name": "Scout Ornithopter Thruster Mk6",
+        "category": "thruster",
+        "tier": 6,
+        "volume_v": 3,
+        "durability": 1750,
+        "armor": 1500,
+        "thrust_rating": 10.0,
+        "thrust_rating_glide": 17.86,
+        "extra_heat": 150,
+        "power_consumption_per_sec": 59.48,
+        "assembly_requirement": "Optional",
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "scout_rocket_launcher_mk5",
+        "name": "Scout Ornithopter Rocket Launcher Mk5",
+        "category": "rocket_launcher",
+        "tier": 5,
+        "volume_v": 10,
+        "durability": 1750,
+        "armor": 1250,
+        "ammo_type": "Rocket",
+        "damage": 164.46,
+        "aoe_radius_m": 6,
+        "rate_of_fire_rpm": 0.25,
+        "assembly_requirement": "Optional",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 70,
+            "Advanced Servoks": 40,
+            "Cobalt Paste": 36,
+            "Range Finder": 15,
+            "Spice Melange": 10,
+            "Water": 1010
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "scout_generator_mk5",
+        "name": "Scout Ornithopter Generator Mk5",
+        "category": "generator",
+        "tier": 5,
+        "volume_v": 3,
+        "durability": 1750,
+        "temperature_rating": 7.43,
+        "fuel_efficiency": 82.5,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 50,
+            "Particle Capacitor": 20,
+            "Cobalt Paste": 25,
+            "Military Power Regulator": 7,
+            "Water": 675
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "scout_generator_mk6",
+        "name": "Scout Ornithopter Generator Mk6",
+        "category": "generator",
+        "tier": 6,
+        "volume_v": 3.0,
+        "durability": 1750,
+        "temperature_rating": 10.0,
+        "fuel_efficiency": 79.0,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Plastanium Ingot": 60,
+            "Particle Capacitor": 36,
+            "Cobalt Paste": 45,
+            "Spice Melange": 54,
+            "Overclocked Power Regulator": 9,
+            "Water": 1050
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "stormrider_boost_mk6",
+        "name": "Stormrider Boost Module Mk6",
+        "category": "boost_module",
+        "tier": 6,
+        "unique": true,
+        "effects": {
+          "boost_speed_modifier": -0.1,
+          "heat_build_up_modifier": -0.1
+        },
+        "compatible_with": [
+          "scout_ornithopter"
+        ]
+      },
+      {
+        "id": "albatross_wing_module_mk6",
+        "name": "Albatross Wing Module Mk6",
+        "category": "wing_module",
+        "tier": 6,
+        "unique": true,
+        "assembly_requirement": "Optional",
+        "armor": 750,
+        "glide_speed_kmh": 180.0,
+        "turn_rating": 5.0,
+        "agility": 6.0,
+        "type": "Normal",
+        "compatible_with": [
+          "scout_ornithopter"
+        ]
+      },
+      {
+        "id": "scout_chassis_mk6",
+        "name": "Scout Ornithopter Chassis Mk6",
+        "category": "chassis",
+        "tier": 6,
+        "assembly_requirement": "Mandatory",
+        "armor": 750,
+        "fuel_capacity": 1250,
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Water": 1050,
+            "Spice Melange": 54,
+            "Cobalt Paste": 45,
+            "Diamondine Dust": 15,
+            "Plastanium Ingot": 85,
+            "Advanced Servoks": 36
+          }
+        }
+      },
+      {
+        "id": "scout_cockpit_mk6",
+        "name": "Scout Ornithopter Cockpit Mk6",
+        "category": "cockpit",
+        "tier": 6,
+        "assembly_requirement": "Mandatory",
+        "armor": 750,
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator"
+        }
+      },
+      {
+        "id": "scout_engine_mk6",
+        "name": "Scout Ornithopter Engine Mk6",
+        "category": "engine",
+        "tier": 6,
+        "assembly_requirement": "Mandatory",
+        "speed_kmh": 180.0,
+        "power_consumption_per_sec": 8.77,
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Water": 1050,
+            "Plastanium Ingot": 60,
+            "Particle Capacitor": 18,
+            "Cobalt Paste": 45,
+            "Complex Machinery": 30,
+            "Spice Melange": 54,
+            "Tri-Forged Hydraulic Piston": 9
+          }
+        }
+      },
+      {
+        "id": "scout_wing_mk6",
+        "name": "Scout Ornithopter Wing Mk6",
+        "category": "wing",
+        "tier": 6,
+        "assembly_requirement": "Mandatory",
+        "armor": 1500,
+        "glide_speed_kmh": 180.0,
+        "turn_rating": 10.0,
+        "agility": 10.0,
+        "type": "Normal"
+      }
     ],
-    "Vehicle Part - Tread": [
-      "Assault Ornithopter Cockpit Mk5",
-      "Buggy Tread Mk3",
-      "Buggy Tread Mk4",
-      "Buggy Tread Mk5",
-      "Buggy Tread Mk6",
-      "Sandcrawler Tread Mk5",
-      "Sandcrawler Tread Mk6"
+    "assault_ornithopter": [
+      {
+        "id": "assault_chassis_mk5",
+        "name": "Assault Ornithopter Chassis Mk5",
+        "category": "chassis",
+        "tier": 5,
+        "volume_v": 23,
+        "durability": 4000,
+        "armor": 1250,
+        "fuel_capacity": 750,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 70,
+            "Advanced Servoks": 20,
+            "Cobalt Paste": 25,
+            "Carbide Scraps": 10,
+            "Water": 680
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "assault_cabin_mk5",
+        "name": "Assault Ornithopter Cabin Mk5",
+        "category": "cabin",
+        "tier": 5,
+        "volume_v": 23,
+        "durability": 3000,
+        "armor": 1250,
+        "seats": 2,
+        "utility_slots": 2,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 70,
+            "Advanced Servoks": 20,
+            "Cobalt Paste": 25,
+            "Armor Plating": 34,
+            "Diamondine Dust": 10,
+            "Water": 680
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "assault_engine_mk5",
+        "name": "Assault Ornithopter Engine Mk5",
+        "category": "engine",
+        "tier": 5,
+        "volume_v": 8,
+        "durability": 2000,
+        "speed_kmh": 90,
+        "power_consumption_per_sec": 44.85,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 50,
+            "Cobalt Paste": 25,
+            "Particle Capacitor": 14,
+            "Complex Machinery": 21,
+            "Hydraulic Piston": 7,
+            "Water": 675
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "assault_generator_mk5",
+        "name": "Assault Ornithopter Generator Mk5",
+        "category": "generator",
+        "tier": 5,
+        "volume_v": 8,
+        "durability": 2000,
+        "temperature_rating": 6.06,
+        "fuel_efficiency": 82.5,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 50,
+            "Particle Capacitor": 30,
+            "Cobalt Paste": 25,
+            "Military Power Regulator": 7,
+            "Water": 675
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "assault_wing_mk5",
+        "name": "Assault Ornithopter Wing Mk5",
+        "category": "wing",
+        "tier": 5,
+        "volume_v": 8,
+        "durability": 2000,
+        "armor": 1250,
+        "type": "Normal",
+        "glide_speed_kmh": 150,
+        "turn_rating": 4,
+        "agility": 3,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 8,
+            "Advanced Servoks": 5,
+            "Cobalt Paste": 4,
+            "Industrial Pump": 2,
+            "Water": 135
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "assault_thruster_mk5",
+        "name": "Assault Ornithopter Thruster Mk5",
+        "category": "thruster",
+        "tier": 5,
+        "volume_v": 5,
+        "durability": 2000,
+        "armor": 1250,
+        "thrust_rating": 8.24,
+        "thrust_rating_glide": 16.79,
+        "extra_heat": 150,
+        "power_consumption_per_sec": 89.7,
+        "assembly_requirement": "Optional",
+        "crafted_at": {
+          "station": "Vehicles Fabricator",
+          "ingredients": {
+            "Duraluminum Ingot": 80,
+            "Particle Capacitor": 50,
+            "Cobalt Paste": 36,
+            "Holtzman Actuator": 15,
+            "Water": 1010
+          },
+          "time_seconds": 15
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      }
     ],
-    "Vehicle Part - Thread": [
-      "Assault Ornithopter Cockpit Mk6"
+    "carrier_ornithopter": [
+      {
+        "id": "carrier_chassis_mk6",
+        "name": "Carrier Ornithopter Chassis Mk6",
+        "category": "chassis",
+        "tier": 6,
+        "volume_v": 30,
+        "durability": 6000,
+        "armor": 1500,
+        "fuel_capacity": 2500,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Plastanium Ingot": 85,
+            "Advanced Servoks": 36,
+            "Cobalt Paste": 45,
+            "Spice Melange": 54,
+            "Carbide Scraps": 15,
+            "Water": 1050
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "carrier_main_hull_mk6",
+        "name": "Carrier Ornithopter Main Hull Mk6",
+        "category": "main_hull",
+        "tier": 6,
+        "volume_v": 30,
+        "durability": 4500,
+        "armor": 1500,
+        "seats": 6,
+        "utility_slots": 1,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Plastanium Ingot": 100,
+            "Advanced Servoks": 36,
+            "Cobalt Paste": 45,
+            "Plasteel Composite Armor Plating": 28,
+            "Spice Melange": 54,
+            "Diamondine Dust": 15,
+            "Water": 1050
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "carrier_thruster_mk6",
+        "name": "Carrier Ornithopter Thruster Mk6",
+        "category": "thruster",
+        "tier": 6,
+        "volume_v": 10,
+        "durability": 3000,
+        "armor": 1500,
+        "thrust_rating": 10.0,
+        "thrust_rating_glide": 19.29,
+        "extra_heat": 150,
+        "power_consumption_per_sec": 208.26,
+        "assembly_requirement": "Optional",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Plastanium Ingot": 95,
+            "Particle Capacitor": 68,
+            "Improved Holtzman Actuator": 17,
+            "Spice Melange": 81,
+            "Water": 1580
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "carrier_engine_mk6",
+        "name": "Carrier Ornithopter Engine Mk6",
+        "category": "engine",
+        "tier": 6,
+        "speed_kmh": 100.0,
+        "power_consumption_per_sec": 13.17,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Water": 1050,
+            "Spice Melange": 54,
+            "Plastanium Ingot": 60,
+            "Cobalt Paste": 45,
+            "Complex Machinery": 30,
+            "Particle Capacitor": 18,
+            "Tri-Forged Hydraulic Piston": 9
+          },
+          "time_sec": 20
+        }
+      },
+      {
+        "id": "carrier_generator_mk6",
+        "name": "Carrier Ornithopter Generator Mk6",
+        "category": "generator",
+        "tier": 6,
+        "temperature_rating": 10.0,
+        "fuel_efficiency": 79.0,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Water": 1050,
+            "Spice Melange": 54,
+            "Plastanium Ingot": 60,
+            "Cobalt Paste": 45,
+            "Complex Machinery": 30,
+            "Particle Capacitor": 18,
+            "Tri-Forged Hydraulic Piston": 9
+          },
+          "time_sec": 20
+        }
+      },
+      {
+        "id": "carrier_wing_mk6",
+        "name": "Carrier Ornithopter Wing Mk6",
+        "category": "wing",
+        "tier": 6,
+        "assembly_requirement": "Mandatory",
+        "armor": 1500,
+        "glide_speed_kmh": 140.0,
+        "turn_rating": 2.0,
+        "agility": 3.0,
+        "type": "Normal",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Water": 250,
+            "Spice Melange": 8,
+            "Industrial Pump": 2,
+            "Cobalt Paste": 6,
+            "Plastanium Ingot": 8,
+            "Advanced Servoks": 5
+          },
+          "research": {
+            "intel_points": 60,
+            "intel_spent": 1200
+          }
+        }
+      },
+      {
+        "id": "carrier_tail_hull_mk6",
+        "name": "Carrier Ornithopter Tail Hull Mk6",
+        "category": "hull",
+        "subtype": "tail",
+        "tier": 6,
+        "assembly_requirement": "Mandatory",
+        "armor": 1500,
+        "durability": 1750,
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator"
+        }
+      },
+      {
+        "id": "roc_carrier_wing",
+        "name": "Roc Carrier Wing",
+        "category": "wing",
+        "tier": 6,
+        "unique": true,
+        "assembly_requirement": "Optional",
+        "armor": 750,
+        "glide_speed_kmh": 140.0,
+        "turn_rating": 5.0,
+        "agility": 5.0,
+        "type": "Normal"
+      },
+      {
+        "id": "steady_carrier_boost_mk6",
+        "name": "Steady Carrier Boost Module Mk6",
+        "category": "boost_module",
+        "tier": 6,
+        "unique": true,
+        "effects": {
+          "boost_speed_modifier": -0.1,
+          "heat_decay_modifier": 0.1
+        },
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Water": 100,
+            "Spice Melange": 10,
+            "Particle Capacitor": 6,
+            "Plastanium Ingot": 12,
+            "Advanced Servoks": 6
+          }
+        }
+      }
     ],
-    "Vehicle Part - Engine": [
-      "Assault Ornithopter Engine Mk5",
-      "Assault Ornithopter Engine Mk6",
-      "Buggy Engine Mk3",
-      "Buggy Engine Mk4",
-      "Buggy Engine Mk5",
-      "Buggy Engine Mk6",
-      "Carrier Ornithopter Engine Mk6",
-      "Sandcrawler Engine Mk5",
-      "Sandcrawler Engine Mk6",
-      "Scout Ornithopter Engine Mk4",
-      "Scout Ornithopter Engine Mk5",
-      "Scout Ornithopter Engine Mk6"
-    ],
-    "Vehicle Part - Power Supply": [
-      "Assault Ornithopter Generator Mk5",
-      "Buggy PSU Mk3",
-      "Buggy PSU Mk4",
-      "Buggy PSU Mk5",
-      "Buggy PSU Mk6"
-    ],
-    "Vehicle Part - PSU": [
-      "Assault Ornithopter Generator Mk6",
-      "Sandcrawler PSU Mk5",
-      "Sandcrawler PSU Mk6"
-    ],
-    "Vehicle Part - Rocket Launcher": [
-      "Assault Ornithopter Rocket Launcher Mk5",
-      "Assault Ornithopter Rocket Launcher Mk6"
-    ],
-    "Vehicle Part - Storage": [
-      "Assault Ornithopter Storage Mk5",
-      "Buggy Storage Mk3",
-      "Buggy Storage Mk4",
-      "Buggy Storage Mk5",
-      "Buggy Storage Mk6",
-      "Carrier Ornithopter Storage Mk6",
-      "Sandcrawler Storage Mk5",
-      "Sandcrawler Storage Mk6"
-    ],
-    "Vehicle Part - Tail": [
-      "Assault Ornithopter Tail Mk5",
-      "Assault Ornithopter Tail Mk6"
-    ],
-    "Vehicle Part - Thruster": [
-      "Assault Ornithopter Thruster Mk5",
-      "Assault Ornithopter Thruster Mk6"
-    ],
-    "Vehicle Part - Booster": [
-      "Buggy Booster Mk3",
-      "Buggy Booster Mk4",
-      "Buggy Booster Mk5",
-      "Buggy Booster Mk6"
-    ],
-    "Vehicle Part - Equipment": [
-      "Buggy Cutteray Mk3",
-      "Buggy Cutteray Mk4",
-      "Buggy Cutteray Mk5",
-      "Buggy Cutteray Mk6"
-    ],
-    "Vehicle Part - Seat": [
-      "Buggy Rear Mk3",
-      "Buggy Rear Mk4",
-      "Buggy Rear Mk5",
-      "Buggy Rear Mk6"
-    ],
-    "Vehicle Part - Utility": [
-      "Buggy Utility Rear Mk3",
-      "Buggy Utility Rear Mk4",
-      "Buggy Utility Rear Mk5",
-      "Buggy Utility Rear Mk6",
-      "Carrier Ornithopter Centrifuge Mk6",
-      "Carrier Ornithopter Vacuum Mk6",
-      "Sandcrawler Centrifuge Mk5",
-      "Sandcrawler Centrifuge Mk6",
-      "Sandcrawler Vacuum Mk5",
-      "Sandcrawler Vacuum Mk6"
-    ],
-    "Vehicle Part - Generator": [
-      "Carrier Ornithopter Generator Mk6",
-      "Scout Ornithopter Generator Mk4",
-      "Scout Ornithopter Generator Mk5",
-      "Scout Ornithopter Generator Mk6"
-    ],
-    "Vehicle Part - Tread Variant": [
-      "Dampened Sandcrawler Treads"
-    ],
-    "Vehicle Part": [
-      "Mohandis Sandbike Engine Mk1",
-      "Mohandis Sandbike Engine Mk3",
-      "Night Rider Sandbike Boost Mk2",
-      "Sandbike Backseat Mk1",
-      "Sandbike Booster Mk2",
-      "Sandbike Booster Mk3",
-      "Sandbike Booster Mk4",
-      "Sandbike Booster Mk5",
-      "Sandbike Booster Mk6",
-      "Sandbike Chassis Mk1",
-      "Sandbike Chassis Mk2",
-      "Sandbike Chassis Mk3",
-      "Sandbike Chassis Mk4",
-      "Sandbike Chassis Mk5",
-      "Sandbike Chassis Mk6",
-      "Sandbike Engine Mk1",
-      "Sandbike Engine Mk2",
-      "Sandbike Engine Mk3",
-      "Sandbike Engine Mk4",
-      "Sandbike Engine Mk5",
-      "Sandbike Engine Mk6",
-      "Sandbike Hull Mk1",
-      "Sandbike Hull Mk2",
-      "Sandbike Hull Mk3",
-      "Sandbike Hull Mk4",
-      "Sandbike Hull Mk5",
-      "Sandbike Hull Mk6",
-      "Sandbike Inventory Mk1",
-      "Sandbike Inventory Mk2",
-      "Sandbike PSU Mk1",
-      "Sandbike PSU Mk2",
-      "Sandbike PSU Mk3",
-      "Sandbike PSU Mk4",
-      "Sandbike PSU Mk5",
-      "Sandbike PSU Mk6",
-      "Sandbike Scanner Mk2",
-      "Sandbike Tread Mk1",
-      "Sandbike Tread Mk2",
-      "Sandbike Tread Mk3",
-      "Sandbike Tread Mk4",
-      "Sandbike Tread Mk5",
-      "Sandbike Tread Mk6"
-    ],
-    "Vehicle": [
-      "Ornithopters",
-      "Vehicles"
-    ],
-    "Vehicle Part - Cabin": [
-      "Sandcrawler Cabin Mk5",
-      "Sandcrawler Cabin Mk6"
-    ],
-    "Vehicle Part - Cockpit": [
-      "Scout Ornithopter Cockpit Mk4",
-      "Scout Ornithopter Cockpit Mk5",
-      "Scout Ornithopter Cockpit Mk6"
-    ],
-    "Vehicle Part - Storage Variant": [
-      "Upgraded Regis Spice Container"
-    ],
-    "Vehicle Part - Engine Variant": [
-      "Walker Sandcrawler Engine Mk6"
+    "sandcrawler": [
+      {
+        "id": "sandcrawler_cabin_mk6",
+        "name": "Sandcrawler Cabin Mk6",
+        "category": "cabin",
+        "tier": 6,
+        "volume_v": 30,
+        "durability": 3750,
+        "armor": 1500,
+        "seats": 2,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Plastanium Ingot": 13,
+            "Advanced Servoks": 30,
+            "Cobalt Paste": 27,
+            "Armor Plating": 45,
+            "Spice Melange": 54,
+            "Water": 1050
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandcrawler_engine_mk6",
+        "name": "Sandcrawler Engine Mk6",
+        "category": "engine",
+        "tier": 6,
+        "volume_v": 10.0,
+        "durability": 2500,
+        "acceleration": "Slow",
+        "speed_kmh": 60.0,
+        "power_consumption_per_sec": 62.5,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Plastanium Ingot": 60,
+            "Cobalt Paste": 45,
+            "Particle Capacitor": 18,
+            "Complex Machinery": 30,
+            "Spice Melange": 54,
+            "Tri-Forged Hydraulic Piston": 9,
+            "Water": 1050
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandcrawler_psu_mk6",
+        "name": "Sandcrawler PSU Mk6",
+        "category": "psu",
+        "tier": 6,
+        "volume_v": 10.0,
+        "durability": 2500,
+        "temperature_rating": 10.0,
+        "fuel_efficiency": 79.0,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Plastanium Ingot": 60,
+            "Particle Capacitor": 36,
+            "Cobalt Paste": 45,
+            "Spice Melange": 54,
+            "Overclocked Power Regulator": 9,
+            "Water": 1050
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandcrawler_treads_mk6",
+        "name": "Sandcrawler Tread Mk6",
+        "category": "treads",
+        "tier": 6,
+        "volume_v": 10,
+        "durability": 2500,
+        "armor": 1500,
+        "grip_rating": 1.0,
+        "vibration_level": 6,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Plastanium Ingot": 15,
+            "Advanced Servoks": 9,
+            "Cobalt Paste": 12,
+            "Spice Melange": 14,
+            "Water": 250
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandcrawler_vacuum_mk6",
+        "name": "Sandcrawler Vacuum Mk6",
+        "category": "vacuum",
+        "tier": 6,
+        "volume_v": 30,
+        "durability": 2500,
+        "armor": 1500,
+        "assembly_requirement": "Optional",
+        "description": "Spice Header (scoop) for collecting Spice Sand. Requires a Spice Container to function.",
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandcrawler_container_mk6",
+        "name": "Sandcrawler Centrifuge Mk6",
+        "category": "container",
+        "tier": 6,
+        "volume_v": 30,
+        "durability": 3750,
+        "armor": 1500,
+        "max_volume": 7500,
+        "item_slots": 20,
+        "assembly_requirement": "Optional",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Plastanium Ingot": 85,
+            "Advanced Servoks": 35,
+            "Cobalt Paste": 45,
+            "Plasteel Composite Armor Plating": 30,
+            "Spice Melange": 55,
+            "Diamondine Dust": 15,
+            "Water": 1050
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandcrawler_container_unique_mk6",
+        "name": "Upgraded Regis Spice Container",
+        "category": "container",
+        "tier": 6,
+        "unique": true,
+        "volume_v": 30,
+        "durability": 3750,
+        "armor": 1500,
+        "max_volume": 11250,
+        "item_slots": 30,
+        "assembly_requirement": "Optional",
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandcrawler_treads_unique_mk6",
+        "name": "Dampened Sandcrawler Treads",
+        "category": "treads",
+        "tier": 6,
+        "unique": true,
+        "volume_v": 10,
+        "durability": 2500,
+        "armor": 1500,
+        "grip_rating": 1.0,
+        "vibration_level": 4,
+        "assembly_requirement": "Mandatory",
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandcrawler_engine_unique_mk6",
+        "name": "Walker Sandcrawler Engine Mk6",
+        "category": "engine",
+        "tier": 6,
+        "unique": true,
+        "volume_v": 10,
+        "durability": 2500,
+        "acceleration": "Very Slow",
+        "speed_kmh": 80,
+        "power_consumption_per_sec": 62.5,
+        "assembly_requirement": "Mandatory",
+        "last_verified": "2025-08-25T00:00:00Z"
+      },
+      {
+        "id": "sandcrawler_chassis_mk6",
+        "name": "Sandcrawler Chassis Mk6",
+        "category": "chassis",
+        "tier": 6,
+        "assembly_requirement": "Mandatory",
+        "crafted_at": {
+          "station": "Advanced Vehicle Fabricator",
+          "ingredients": {
+            "Water": 1050,
+            "Plastanium Ingot": 80,
+            "Advanced Servoks": 36,
+            "Cobalt Paste": 45,
+            "Spice Melange": 55,
+            "Carbide Scraps": 15
+          },
+          "time_seconds": 20
+        },
+        "last_verified": "2025-08-25T00:00:00Z"
+      }
     ]
+  },
+  "tools": {
+    "welding_torch_mk1": {
+      "id": "welding_torch_mk1",
+      "name": "Welding Torch Mk1",
+      "type": "utility_tool",
+      "volume_v": 1.0,
+      "repair_quality_pct": 76,
+      "repair_speed": 10.0,
+      "detach_speed": 12.5,
+      "power_consumption": 17.0,
+      "crafted_at": {
+        "station": "Survival Fabricator",
+        "ingredients": {
+          "Copper Ingot": 6
+        },
+        "time_seconds": 20
+      },
+      "notes": "Used to assemble/detach vehicle parts and repair with Welding Wire.",
+      "last_verified": "2025-08-25T00:00:00Z"
+    },
+    "welding_torch_mk2": {
+      "id": "welding_torch_mk2",
+      "name": "Welding Torch Mk2",
+      "type": "utility_tool",
+      "crafted_at": {
+        "station": "Survival Fabricator",
+        "ingredients": {
+          "Steel Ingot": 8,
+          "Advanced Servoks": 14,
+          "Cobalt Paste": 9,
+          "Water": 90
+        },
+        "time_seconds": 20
+      },
+      "notes": "Faster repairs and higher quality than Mk1.",
+      "last_verified": "2025-08-25T00:00:00Z"
+    },
+    "welding_torch_mk3": {
+      "id": "welding_torch_mk3",
+      "name": "Welding Torch Mk3",
+      "type": "utility_tool",
+      "crafted_at": {
+        "station": "Survival Fabricator",
+        "ingredients": {
+          "Steel Ingot": 12,
+          "Advanced Servoks": 8,
+          "Cobalt Paste": 8,
+          "Water": 90
+        },
+        "time_seconds": 20
+      },
+      "notes": "Top-tier torch for assembly, detach, and repairs.",
+      "last_verified": "2025-08-25T00:00:00Z"
+    },
+    "Welding Torch Mk5": {
+      "category": "utility_tool",
+      "uses": [
+        "Assemble/disassemble vehicle parts",
+        "Repair attached vehicle parts"
+      ],
+      "ammo": "Welding Wire",
+      "crafted_at": {
+        "station": "Survival Fabricator",
+        "ingredients": {
+          "Water": 450,
+          "Duraluminum Ingot": 16,
+          "Advanced Servoks": 14,
+          "Cobalt Paste": 16
+        }
+      },
+      "research": {
+        "intel_points": 30,
+        "intel_spent": 700
+      }
+    },
+    "Vehicle Backup Tool": {
+      "category": "utility_tool",
+      "uses": [
+        "Store and restore Sandbike or Scout Ornithopter"
+      ],
+      "crafted_at": {
+        "station": "Fabricator",
+        "ingredients": {
+          "Copper Ingot": 6,
+          "Particle Capacitor": 2
+        },
+        "time_sec": 3
+      },
+      "notes": "Cannot store Buggy or Sandcrawler"
+    }
+  },
+  "stations": {
+    "vehicles_fabricator": {
+      "id": "vehicles_fabricator",
+      "name": "Vehicles Fabricator",
+      "tier": 1,
+      "build_cost": {
+        "Steel Ingot": 40,
+        "Complex Machinery": 30
+      },
+      "placement": "Place near a Sub-Fief Console with the Construction Tool. Requires base power to operate.",
+      "capabilities": {
+        "recipe_count_known": 135,
+        "produces": [
+          "Sandbike parts",
+          "Buggy parts",
+          "Ornithopter parts"
+        ]
+      },
+      "last_verified": "2025-08-25T00:00:00Z"
+    },
+    "advanced_vehicle_fabricator": {
+      "id": "advanced_vehicle_fabricator",
+      "name": "Advanced Vehicle Fabricator",
+      "tier": 6,
+      "build_cost": {
+        "Plastanium Ingot": 140,
+        "Silicone Block": 180,
+        "Complex Machinery": 100,
+        "Spice Melange": 45,
+        "Cobalt Paste": 150,
+        "Industrial Pump": 50
+      },
+      "placement": "Place near a Sub-Fief Console with the Construction Tool. Requires base power to operate.",
+      "capabilities": {
+        "produces": [
+          "Advanced Sandbike/Buggy/Ornithopter parts (Mk6)"
+        ]
+      },
+      "last_verified": "2025-08-25T00:00:00Z"
+    },
+    "Vehicles Fabricator": {
+      "category": "fabricator",
+      "build_cost": {
+        "Steel Ingot": 40,
+        "Complex Machinery": 30
+      },
+      "power_requirement": 10,
+      "notes": "Place close to Sub-Fief Console and provide power"
+    },
+    "Advanced Vehicle Fabricator": {
+      "category": "fabricator",
+      "build_cost": {
+        "Plastanium Ingot": 140,
+        "Silicone Block": 180,
+        "Complex Machinery": 100,
+        "Spice Melange": 45,
+        "Cobalt Paste": 150,
+        "Industrial Pump": 50
+      },
+      "power_requirement": 10,
+      "notes": "Used for Tier 6 vehicle parts; place near Sub-Fief Console and provide power"
+    }
   }
 }
