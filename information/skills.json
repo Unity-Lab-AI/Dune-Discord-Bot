@@ -1,3 +1,646 @@
 {
-  "skills": {}
+  "game": "Dune: Awakening",
+  "schema_version": "1.0",
+  "updated_at": "2025-08-25",
+  "schema": {
+    "id": "kebab-case unique id",
+    "name": "in-game name",
+    "klass": "Trooper|Planetologist|Bene Gesserit|Mentat|Swordmaster",
+    "tree": "sub-tree within class (e.g., Suspensor, Weirding Way)",
+    "type": "ability|technique|passive",
+    "cooldown_s": "omit if not applicable",
+    "resource_cost": {
+      "stamina": "omit if not applicable",
+      "power": "omit if not applicable"
+    },
+    "effects": [
+      "concise effect statements in plain language"
+    ],
+    "notes": "optional clarifier"
+  },
+  "skills": [
+    {
+      "id": "energy-capsule",
+      "name": "Energy Capsule",
+      "klass": "Trooper",
+      "tree": "Gunnery",
+      "type": "ability",
+      "cooldown_s": 25,
+      "effects": [
+        "Temporarily increases ranged weapon damage"
+      ]
+    },
+    {
+      "id": "anti-gravity-field",
+      "name": "Anti-Gravity Field",
+      "klass": "Trooper",
+      "tree": "Suspensor",
+      "type": "ability",
+      "cooldown_s": 25,
+      "resource_cost": {
+        "power": 45
+      },
+      "effects": [
+        "Creates a field that lifts enemies, interrupting actions"
+      ]
+    },
+    {
+      "id": "suspensor-dash",
+      "name": "Suspensor Dash",
+      "klass": "Trooper",
+      "tree": "Suspensor",
+      "type": "technique",
+      "cooldown_s": 2,
+      "resource_cost": {
+        "power": 75
+      },
+      "effects": [
+        "Mid-air dash using suspensor tech"
+      ]
+    },
+    {
+      "id": "gravity-field",
+      "name": "Gravity Field",
+      "klass": "Trooper",
+      "tree": "Suspensor",
+      "type": "ability",
+      "cooldown_s": 30,
+      "resource_cost": {
+        "power": 45
+      },
+      "effects": [
+        "Creates a field that slows enemies"
+      ]
+    },
+    {
+      "id": "death-from-above",
+      "name": "Death from Above",
+      "klass": "Trooper",
+      "tree": "Suspensor",
+      "type": "technique",
+      "effects": [
+        "Deals increased weapon damage while suspended"
+      ]
+    },
+    {
+      "id": "collapse-grenade",
+      "name": "Collapse Grenade",
+      "klass": "Trooper",
+      "tree": "Tactical Tech",
+      "type": "ability",
+      "cooldown_s": 35,
+      "effects": [
+        "Area explosion that briefly stuns enemies"
+      ]
+    },
+    {
+      "id": "explosive-grenade",
+      "name": "Explosive Grenade",
+      "klass": "Trooper",
+      "tree": "Tactical Tech",
+      "type": "ability",
+      "cooldown_s": 16,
+      "effects": [
+        "Throws a grenade that deals explosive damage"
+      ]
+    },
+    {
+      "id": "shigawire-claw",
+      "name": "Shigawire Claw",
+      "klass": "Trooper",
+      "tree": "Tactical Tech",
+      "type": "ability",
+      "effects": [
+        "Launches a shigawire claw to pull or traverse"
+      ]
+    },
+    {
+      "id": "assault-seeker",
+      "name": "Assault Seeker",
+      "klass": "Trooper",
+      "tree": "Tactical Tech",
+      "type": "ability",
+      "effects": [
+        "Deploys a seeker that tracks and damages a target"
+      ]
+    },
+    {
+      "id": "center-of-mass",
+      "name": "Center of Mass",
+      "klass": "Trooper",
+      "tree": "Gunnery",
+      "type": "technique",
+      "effects": [
+        "Increases body-shot damage while reducing headshot bonuses"
+      ]
+    },
+    {
+      "id": "underslung-agility",
+      "name": "Underslung Agility",
+      "klass": "Trooper",
+      "tree": "Gunnery",
+      "type": "technique",
+      "effects": [
+        "Reduces movement penalties for heavy weapons"
+      ]
+    },
+    {
+      "id": "ranged-damage-trooper",
+      "name": "Ranged Damage",
+      "klass": "Trooper",
+      "tree": "Gunnery",
+      "type": "passive",
+      "effects": [
+        "Increases ranged weapon damage"
+      ]
+    },
+    {
+      "id": "scattergun-damage",
+      "name": "Scattergun Damage",
+      "klass": "Trooper",
+      "tree": "Gunnery",
+      "type": "passive",
+      "effects": [
+        "Increases scattergun damage"
+      ]
+    },
+    {
+      "id": "disruptor-damage",
+      "name": "Disruptor Damage",
+      "klass": "Trooper",
+      "tree": "Gunnery",
+      "type": "passive",
+      "effects": [
+        "Increases disruptor weapon damage"
+      ]
+    },
+    {
+      "id": "heavy-weapon-damage",
+      "name": "Heavy Weapon Damage",
+      "klass": "Trooper",
+      "tree": "Gunnery",
+      "type": "passive",
+      "effects": [
+        "Increases heavy weapon damage"
+      ]
+    },
+    {
+      "id": "field-maintenance",
+      "name": "Field Maintenance",
+      "klass": "Trooper",
+      "tree": "Gunnery",
+      "type": "passive",
+      "effects": [
+        "Reduces weapon durability loss during use"
+      ]
+    },
+    {
+      "id": "gunsmith",
+      "name": "Gunsmith",
+      "klass": "Trooper",
+      "tree": "Gunnery",
+      "type": "passive",
+      "effects": [
+        "Reduces max-durability loss on repairs"
+      ]
+    },
+    {
+      "id": "battle-hardened",
+      "name": "Battle Hardened",
+      "klass": "Trooper",
+      "tree": "Tactical Tech",
+      "type": "technique",
+      "effects": [
+        "Reduces ability cooldowns for a short duration"
+      ]
+    },
+    {
+      "id": "suspensor-pad",
+      "name": "Suspensor Pad",
+      "klass": "Planetologist",
+      "tree": "Explorer",
+      "type": "ability",
+      "effects": [
+        "Teleport to a placed pad using suspensor tech"
+      ]
+    },
+    {
+      "id": "cartographer",
+      "name": "Cartographer",
+      "klass": "Planetologist",
+      "tree": "Explorer",
+      "type": "passive",
+      "effects": [
+        "Improves map reveals and sinkchart visibility"
+      ]
+    },
+    {
+      "id": "mountaineer",
+      "name": "Mountaineer",
+      "klass": "Planetologist",
+      "tree": "Explorer",
+      "type": "passive",
+      "effects": [
+        "Reduces stamina drain while climbing"
+      ]
+    },
+    {
+      "id": "scanner-mastery",
+      "name": "Scanner Mastery",
+      "klass": "Planetologist",
+      "tree": "Explorer",
+      "type": "passive",
+      "effects": [
+        "Increases scanner detection range and speed"
+      ]
+    },
+    {
+      "id": "stillsuit-seals",
+      "name": "Stillsuit Seals",
+      "klass": "Planetologist",
+      "tree": "Explorer",
+      "type": "passive",
+      "effects": [
+        "Improves water retention and evaporation resistance"
+      ]
+    },
+    {
+      "id": "spice-surveyor",
+      "name": "Spice Surveyor",
+      "klass": "Planetologist",
+      "tree": "Explorer",
+      "type": "passive",
+      "effects": [
+        "Highlights spice density and bloom locations"
+      ]
+    },
+    {
+      "id": "vehicle-repair",
+      "name": "Vehicle Repair",
+      "klass": "Planetologist",
+      "tree": "Mechanic",
+      "type": "passive",
+      "effects": [
+        "Reduces vehicle repair durability loss"
+      ]
+    },
+    {
+      "id": "fuel-efficient-driver",
+      "name": "Fuel Efficient Driver",
+      "klass": "Planetologist",
+      "tree": "Mechanic",
+      "type": "passive",
+      "effects": [
+        "Reduces vehicle fuel consumption"
+      ]
+    },
+    {
+      "id": "vehicle-mining",
+      "name": "Vehicle Mining",
+      "klass": "Planetologist",
+      "tree": "Mechanic",
+      "type": "passive",
+      "effects": [
+        "Increases mining yield when using vehicles"
+      ]
+    },
+    {
+      "id": "vehicle-scanning",
+      "name": "Vehicle Scanning",
+      "klass": "Planetologist",
+      "tree": "Mechanic",
+      "type": "passive",
+      "effects": [
+        "Extends scan radius when piloting vehicles"
+      ]
+    },
+    {
+      "id": "fuel-efficient-pilot",
+      "name": "Fuel Efficient Pilot",
+      "klass": "Planetologist",
+      "tree": "Mechanic",
+      "type": "passive",
+      "effects": [
+        "Reduces ornithopter fuel usage"
+      ]
+    },
+    {
+      "id": "sandcrawler-yield",
+      "name": "Sandcrawler Yield",
+      "klass": "Planetologist",
+      "tree": "Mechanic",
+      "type": "passive",
+      "effects": [
+        "Increases spice harvest efficiency from sandcrawlers"
+      ]
+    },
+    {
+      "id": "bindu-sprint",
+      "name": "Bindu Sprint",
+      "klass": "Bene Gesserit",
+      "tree": "Weirding Way",
+      "type": "ability",
+      "cooldown_s": 20,
+      "resource_cost": {
+        "stamina": 30
+      },
+      "effects": [
+        "Burst sprint with reduced stamina startup and drain"
+      ]
+    },
+    {
+      "id": "prana-bindu-strikes",
+      "name": "Prana-Bindu Strikes",
+      "klass": "Bene Gesserit",
+      "tree": "Weirding Way",
+      "type": "ability",
+      "cooldown_s": 20,
+      "resource_cost": {
+        "stamina": 38
+      },
+      "effects": [
+        "Rapid melee combo exploiting precise timing"
+      ]
+    },
+    {
+      "id": "weirding-step",
+      "name": "Weirding Step",
+      "klass": "Bene Gesserit",
+      "tree": "Weirding Way",
+      "type": "ability",
+      "cooldown_s": 15,
+      "resource_cost": {
+        "stamina": 45
+      },
+      "effects": [
+        "Short-range teleport/dodge to enemy's rear"
+      ]
+    },
+    {
+      "id": "bindu-dodge",
+      "name": "Bindu Dodge",
+      "klass": "Bene Gesserit",
+      "tree": "Weirding Way",
+      "type": "technique",
+      "effects": [
+        "Successful parry enables phasing through the next attack"
+      ]
+    },
+    {
+      "id": "blade-damage-bg",
+      "name": "Blade Damage",
+      "klass": "Bene Gesserit",
+      "tree": "The Blade",
+      "type": "passive",
+      "effects": [
+        "Increases blade weapon damage"
+      ]
+    },
+    {
+      "id": "short-blade-damage",
+      "name": "Short Blade Damage",
+      "klass": "Bene Gesserit",
+      "tree": "The Blade",
+      "type": "passive",
+      "effects": [
+        "Increases short-blade weapon damage"
+      ]
+    },
+    {
+      "id": "manipulate-instability",
+      "name": "Manipulate Instability",
+      "klass": "Bene Gesserit",
+      "tree": "The Blade",
+      "type": "passive",
+      "effects": [
+        "Deal increased damage to staggered targets"
+      ]
+    },
+    {
+      "id": "the-voice-compel",
+      "name": "Compel",
+      "klass": "Bene Gesserit",
+      "tree": "The Voice",
+      "type": "ability",
+      "cooldown_s": 35,
+      "resource_cost": {
+        "power": 45
+      },
+      "effects": [
+        "Command a target to act briefly against their interest"
+      ]
+    },
+    {
+      "id": "the-voice-ignore",
+      "name": "Ignore",
+      "klass": "Bene Gesserit",
+      "tree": "The Voice",
+      "type": "ability",
+      "cooldown_s": 25,
+      "resource_cost": {
+        "power": 45
+      },
+      "effects": [
+        "Force enemies to ignore you for a short duration"
+      ]
+    },
+    {
+      "id": "voice-training",
+      "name": "Voice Training",
+      "klass": "Bene Gesserit",
+      "tree": "The Voice",
+      "type": "passive",
+      "effects": [
+        "Reduces Voice ability cooldowns"
+      ]
+    },
+    {
+      "id": "screech",
+      "name": "Screech",
+      "klass": "Bene Gesserit",
+      "tree": "The Voice",
+      "type": "ability",
+      "effects": [
+        "Emit a destabilizing shout that staggers nearby enemies"
+      ]
+    },
+    {
+      "id": "the-sentinel",
+      "name": "The Sentinel",
+      "klass": "Mentat",
+      "tree": "Tactician",
+      "type": "ability",
+      "cooldown_s": 45,
+      "resource_cost": {
+        "power": 40
+      },
+      "effects": [
+        "Deploy an automated turret providing covering fire"
+      ]
+    },
+    {
+      "id": "assassins-shot",
+      "name": "Assassin's Shot",
+      "klass": "Mentat",
+      "tree": "Assassination",
+      "type": "ability",
+      "effects": [
+        "Aimed shot that deals bonus damage to marked or unaware targets"
+      ]
+    },
+    {
+      "id": "mentat-calculus",
+      "name": "Mentat Calculus",
+      "klass": "Mentat",
+      "tree": "Tactician",
+      "type": "technique",
+      "effects": [
+        "Temporarily increases tactical analysis, boosting ally effectiveness"
+      ]
+    },
+    {
+      "id": "confidence-mentat",
+      "name": "Confidence",
+      "klass": "Mentat",
+      "tree": "Tactician",
+      "type": "passive",
+      "effects": [
+        "Gain a brief damage bonus after eliminating an enemy"
+      ]
+    },
+    {
+      "id": "garment-keeper",
+      "name": "Garment Keeper",
+      "klass": "Mentat",
+      "tree": "Tactician",
+      "type": "passive",
+      "effects": [
+        "Reduces garment durability loss in combat"
+      ]
+    },
+    {
+      "id": "tailoring",
+      "name": "Tailoring",
+      "klass": "Mentat",
+      "tree": "Tactician",
+      "type": "passive",
+      "effects": [
+        "Reduces max durability loss when repairing garments"
+      ]
+    },
+    {
+      "id": "ranged-damage-mentat",
+      "name": "Ranged Damage",
+      "klass": "Mentat",
+      "tree": "Tactician",
+      "type": "passive",
+      "effects": [
+        "Increases ranged weapon damage"
+      ]
+    },
+    {
+      "id": "assassination-drone",
+      "name": "Assassination Drone",
+      "klass": "Mentat",
+      "tree": "Assassination",
+      "type": "ability",
+      "effects": [
+        "Deploy a drone to track and strike a priority target"
+      ]
+    },
+    {
+      "id": "eye-of-the-storm",
+      "name": "Eye of the Storm",
+      "klass": "Swordmaster",
+      "tree": "The Blade",
+      "type": "ability",
+      "cooldown_s": 20,
+      "resource_cost": {
+        "stamina": 45
+      },
+      "effects": [
+        "Radial blade strike around the user"
+      ]
+    },
+    {
+      "id": "retaliate",
+      "name": "Retaliate",
+      "klass": "Swordmaster",
+      "tree": "The Blade",
+      "type": "ability",
+      "effects": [
+        "Auto-counter after a successful block or parry, applying bleed"
+      ]
+    },
+    {
+      "id": "dance-of-blades",
+      "name": "Dance of Blades",
+      "klass": "Swordmaster",
+      "tree": "The Blade",
+      "type": "technique",
+      "effects": [
+        "Next strike is empowered after a kill"
+      ]
+    },
+    {
+      "id": "long-blade-damage",
+      "name": "Long Blade Damage",
+      "klass": "Swordmaster",
+      "tree": "The Blade",
+      "type": "passive",
+      "effects": [
+        "Increases long-blade weapon damage"
+      ]
+    },
+    {
+      "id": "precise-parry",
+      "name": "Precise Parry",
+      "klass": "Swordmaster",
+      "tree": "The Way",
+      "type": "passive",
+      "effects": [
+        "Successful parry reduces target mitigation"
+      ]
+    },
+    {
+      "id": "foil",
+      "name": "Foil",
+      "klass": "Swordmaster",
+      "tree": "The Will",
+      "type": "ability",
+      "effects": [
+        "Parry stance that reduces incoming damage while timed counters deal more"
+      ]
+    },
+    {
+      "id": "deflection",
+      "name": "Deflection",
+      "klass": "Swordmaster",
+      "tree": "The Will",
+      "type": "ability",
+      "effects": [
+        "Brief window of near-total mitigation against projectiles"
+      ]
+    },
+    {
+      "id": "crippling-blow",
+      "name": "Crippling Blow",
+      "klass": "Swordmaster",
+      "tree": "The Way",
+      "type": "ability",
+      "effects": [
+        "Strike that slows movement and attack speed"
+      ]
+    },
+    {
+      "id": "knee-charge",
+      "name": "Knee Charge",
+      "klass": "Swordmaster",
+      "tree": "The Way",
+      "type": "ability",
+      "effects": [
+        "Short rush ending with a knee strike that staggers"
+      ]
+    }
+  ]
 }
