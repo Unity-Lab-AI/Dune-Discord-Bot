@@ -4,6 +4,7 @@ import json
 import logging
 from io import BytesIO
 import aiohttp
+import re
 
 from dune_logic import search as dune_search
 
@@ -66,6 +67,8 @@ def setup_commands(bot):
                         if resp.status == 200:
                             data = await resp.read()
                             filename = url.split("/")[-1].split("?")[0] or "image.png"
+                            if not re.search(r"\.(png|jpg|jpeg|gif|webp)$", filename, re.IGNORECASE):
+                                filename += ".png"
                             files.append(discord.File(BytesIO(data), filename=filename))
             except Exception as e:
                 logger.warning(f"Failed to fetch image {url}: {e}")
