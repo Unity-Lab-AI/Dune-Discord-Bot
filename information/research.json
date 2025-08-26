@@ -1,0 +1,1155 @@
+{
+  "game": "Dune: Awakening",
+  "schema_version": "1.0",
+  "updated_at": "2025-08-25",
+  "intel_tiers": {
+    "Copper": 0,
+    "Iron": 0,
+    "Steel": 100,
+    "Aluminum": 300,
+    "Duraluminum": 700,
+    "Plastanium": 1200
+  },
+  "categories": [
+    "Essentials",
+    "Water Discipline",
+    "Combat",
+    "Construction",
+    "Exploration",
+    "Vehicles",
+    "Uniques"
+  ],
+  "schema": {
+    "id": "kebab-case unique id",
+    "name": "in-game name",
+    "category": "Essentials|Water Discipline|Combat|Construction|Exploration|Vehicles|Uniques",
+    "tier": "Copper|Iron|Steel|Aluminum|Duraluminum|Plastanium",
+    "intel_cost": "omit if unknown",
+    "requirements": {
+      "schematic": "true if separate schematic item is also required",
+      "story_progression": "true if gated by questline"
+    },
+    "unlocks": [
+      "list of items/workbenches/structures this research enables"
+    ]
+  },
+  "research_items": [
+    {
+      "id": "basic-tools",
+      "name": "Basic Tools",
+      "category": "Essentials",
+      "tier": "Copper",
+      "intel_cost": 20,
+      "unlocks": [
+        "Improvised Pick",
+        "Improvised Knife",
+        "Improvised Axe"
+      ]
+    },
+    {
+      "id": "survey-gear",
+      "name": "Survey Gear",
+      "category": "Essentials",
+      "tier": "Copper",
+      "intel_cost": 25,
+      "unlocks": [
+        "Survey Probe",
+        "Survey Probe Launcher"
+      ]
+    },
+    {
+      "id": "stillsuit-standard",
+      "name": "Stillsuit (Standard)",
+      "category": "Essentials",
+      "tier": "Copper",
+      "intel_cost": 25,
+      "unlocks": [
+        "Hollower Stillsuit Garment",
+        "Hollower Stillsuit Mask",
+        "Hollower Stillsuit Gloves",
+        "Hollower Stillsuit Pants",
+        "Hollower Stillsuit Boots"
+      ]
+    },
+    {
+      "id": "stillsuit-improved",
+      "name": "Stillsuit (Improved)",
+      "category": "Essentials",
+      "tier": "Steel",
+      "intel_cost": 100,
+      "unlocks": [
+        "Improved Stillsuit Garment",
+        "Improved Stillsuit Mask",
+        "Improved Stillsuit Gloves",
+        "Improved Stillsuit Pants",
+        "Improved Stillsuit Boots"
+      ]
+    },
+    {
+      "id": "repair-kits",
+      "name": "Repair Kits",
+      "category": "Essentials",
+      "tier": "Iron",
+      "intel_cost": 35,
+      "unlocks": [
+        "Welding Torch Mk1",
+        "Basic Repair Kit"
+      ]
+    },
+    {
+      "id": "welding-torch-mk2",
+      "name": "Welding Torch Mk2",
+      "category": "Essentials",
+      "tier": "Steel",
+      "intel_cost": 60,
+      "unlocks": [
+        "Welding Torch Mk2"
+      ]
+    },
+    {
+      "id": "literjon",
+      "name": "Literjon",
+      "category": "Water Discipline",
+      "tier": "Copper",
+      "intel_cost": 20,
+      "unlocks": [
+        "Literjon"
+      ]
+    },
+    {
+      "id": "hajra-literjon-series",
+      "name": "Hajra Literjon Series",
+      "category": "Water Discipline",
+      "tier": "Iron",
+      "intel_cost": 45,
+      "unlocks": [
+        "Hajra Literjon Mk1",
+        "Hajra Literjon Mk2",
+        "Hajra Literjon Mk3",
+        "Hajra Literjon Mk4",
+        "Hajra Literjon Mk5"
+      ]
+    },
+    {
+      "id": "dew-reapers",
+      "name": "Dew Reapers",
+      "category": "Water Discipline",
+      "tier": "Steel",
+      "intel_cost": 100,
+      "unlocks": [
+        "Dew Reaper Mk2",
+        "Dew Reaper Mk4",
+        "Dew Reaper Mk6"
+      ]
+    },
+    {
+      "id": "dew-scythes",
+      "name": "Dew Scythes",
+      "category": "Water Discipline",
+      "tier": "Steel",
+      "intel_cost": 120,
+      "unlocks": [
+        "Dew Scythe Mk4",
+        "Dew Scythe Mk6"
+      ]
+    },
+    {
+      "id": "filter-extractors",
+      "name": "Filter Extractors",
+      "category": "Water Discipline",
+      "tier": "Aluminum",
+      "intel_cost": 300,
+      "unlocks": [
+        "Filter Extractor Mk3",
+        "Filter Extractor Mk4",
+        "Filter Extractor Mk5",
+        "Filter Extractor Mk6"
+      ]
+    },
+    {
+      "id": "buoyant-collapsible-reapers",
+      "name": "Buoyant/Collapsible Reapers",
+      "category": "Water Discipline",
+      "tier": "Aluminum",
+      "intel_cost": 300,
+      "unlocks": [
+        "Buoyant Reaper Mk2",
+        "Buoyant Reaper Mk3",
+        "Buoyant Reaper Mk4",
+        "Buoyant Reaper Mk5",
+        "Buoyant Reaper Mk6",
+        "Collapsible Dew Reaper Mk4",
+        "Collapsible Dew Reaper Mk5",
+        "Collapsible Dew Reaper Mk6",
+        "Focused Reaper Mk5"
+      ]
+    },
+    {
+      "id": "blood-extraction",
+      "name": "Blood Extraction",
+      "category": "Water Discipline",
+      "tier": "Steel",
+      "intel_cost": 100,
+      "unlocks": [
+        "Improvised Blood Extractor",
+        "Small Blood Sack"
+      ]
+    },
+    {
+      "id": "blood-purifier",
+      "name": "Blood Purifier",
+      "category": "Water Discipline",
+      "tier": "Steel",
+      "intel_cost": 150,
+      "requirements": {
+        "story_progression": true
+      },
+      "unlocks": [
+        "Blood Purifier (Placeable)"
+      ]
+    },
+    {
+      "id": "improved-blood-purifier",
+      "name": "Improved Blood Purifier",
+      "category": "Water Discipline",
+      "tier": "Duraluminum",
+      "intel_cost": 700,
+      "unlocks": [
+        "Improved Blood Purifier (Placeable)"
+      ]
+    },
+    {
+      "id": "fremen-deathstill",
+      "name": "Fremen Deathstill",
+      "category": "Water Discipline",
+      "tier": "Aluminum",
+      "intel_cost": 300,
+      "unlocks": [
+        "Fremen Deathstill (Placeable)"
+      ]
+    },
+    {
+      "id": "stilltent",
+      "name": "Double-sealed Stilltent",
+      "category": "Water Discipline",
+      "tier": "Plastanium",
+      "intel_cost": 1200,
+      "unlocks": [
+        "Double-sealed Stilltent"
+      ]
+    },
+    {
+      "id": "filters",
+      "name": "Filters",
+      "category": "Water Discipline",
+      "tier": "Copper",
+      "intel_cost": 10,
+      "unlocks": [
+        "Makeshift Filter",
+        "Standard Filter",
+        "Particulate Filter",
+        "Advanced Particulate Filter"
+      ]
+    },
+    {
+      "id": "water-storage",
+      "name": "Water Storage",
+      "category": "Water Discipline",
+      "tier": "Iron",
+      "intel_cost": 45,
+      "unlocks": [
+        "Water Cistern",
+        "Medium Water Cistern",
+        "Large Water Cistern"
+      ]
+    },
+    {
+      "id": "windtrap",
+      "name": "Windtrap",
+      "category": "Water Discipline",
+      "tier": "Steel",
+      "intel_cost": 75,
+      "unlocks": [
+        "Windtrap",
+        "Large Windtrap"
+      ]
+    },
+    {
+      "id": "melee-weapons-copper",
+      "name": "Melee Weapons I",
+      "category": "Combat",
+      "tier": "Copper",
+      "intel_cost": 30,
+      "unlocks": [
+        "Kindjal",
+        "Rapier",
+        "Sword"
+      ]
+    },
+    {
+      "id": "sidearms-iron",
+      "name": "Sidearms I",
+      "category": "Combat",
+      "tier": "Iron",
+      "intel_cost": 40,
+      "unlocks": [
+        "Maula Pistol",
+        "Rafiq Snubnose",
+        "Karpov 38"
+      ]
+    },
+    {
+      "id": "rifles-iron",
+      "name": "Rifles I",
+      "category": "Combat",
+      "tier": "Iron",
+      "intel_cost": 50,
+      "unlocks": [
+        "JABAL Spitdart",
+        "Karpov 38 (Rifle variant)"
+      ]
+    },
+    {
+      "id": "scatterguns-iron",
+      "name": "Scatterguns I",
+      "category": "Combat",
+      "tier": "Iron",
+      "intel_cost": 50,
+      "unlocks": [
+        "GRDA 44",
+        "Drillshot FK7"
+      ]
+    },
+    {
+      "id": "disruptors-steel",
+      "name": "Disruptors I",
+      "category": "Combat",
+      "tier": "Steel",
+      "intel_cost": 110,
+      "unlocks": [
+        "Disruptor M11",
+        "Disruptor Pistol"
+      ]
+    },
+    {
+      "id": "heavy-weapons-steel",
+      "name": "Heavy Weapons I",
+      "category": "Combat",
+      "tier": "Steel",
+      "intel_cost": 140,
+      "unlocks": [
+        "Vulcan GAU-92",
+        "Arhun K-28 Lasgun"
+      ]
+    },
+    {
+      "id": "grenades",
+      "name": "Grenades",
+      "category": "Combat",
+      "tier": "Iron",
+      "intel_cost": 60,
+      "unlocks": [
+        "Explosive Grenade",
+        "Collapse Grenade"
+      ]
+    },
+    {
+      "id": "combat-armor-iron",
+      "name": "Combat Armor I",
+      "category": "Combat",
+      "tier": "Iron",
+      "intel_cost": 120,
+      "unlocks": [
+        "Scavenger Chestpiece",
+        "Scavenger Pants",
+        "Scavenger Boots",
+        "Scavenger Gloves",
+        "Scavenger Hood"
+      ]
+    },
+    {
+      "id": "combat-armor-steel",
+      "name": "Combat Armor II",
+      "category": "Combat",
+      "tier": "Steel",
+      "intel_cost": 250,
+      "unlocks": [
+        "Medium Armor Set (generic)"
+      ]
+    },
+    {
+      "id": "combat-armor-duraluminum",
+      "name": "Heavy Armor",
+      "category": "Combat",
+      "tier": "Duraluminum",
+      "intel_cost": 700,
+      "unlocks": [
+        "Acheronian Chestplate",
+        "Acheronian Helmet",
+        "Acheronian Gauntlets",
+        "Acheronian Pants",
+        "Acheronian Boots"
+      ]
+    },
+    {
+      "id": "fabricator",
+      "name": "Fabricator",
+      "category": "Construction",
+      "tier": "Iron",
+      "intel_cost": 80,
+      "unlocks": [
+        "Fabricator (Placeable)"
+      ]
+    },
+    {
+      "id": "advanced-fabricators",
+      "name": "Advanced Fabricators",
+      "category": "Construction",
+      "tier": "Steel",
+      "intel_cost": 250,
+      "unlocks": [
+        "Advanced Survival Fabricator",
+        "Advanced Vehicle Fabricator",
+        "Advanced Weapons Fabricator (Placeable)",
+        "Advanced Garment Fabricator"
+      ]
+    },
+    {
+      "id": "repair-station",
+      "name": "Repair Station",
+      "category": "Construction",
+      "tier": "Iron",
+      "intel_cost": 90,
+      "unlocks": [
+        "Repair Station (Placeable)"
+      ]
+    },
+    {
+      "id": "recycler",
+      "name": "Recycler",
+      "category": "Construction",
+      "tier": "Iron",
+      "intel_cost": 75,
+      "unlocks": [
+        "Recycler (Placeable)"
+      ]
+    },
+    {
+      "id": "fuel-generator",
+      "name": "Fuel-Powered Generator",
+      "category": "Construction",
+      "tier": "Steel",
+      "intel_cost": 100,
+      "unlocks": [
+        "Fuel-Powered Generator (Placeable)"
+      ]
+    },
+    {
+      "id": "spice-generator",
+      "name": "Spice-Powered Generator",
+      "category": "Construction",
+      "tier": "Duraluminum",
+      "intel_cost": 700,
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Spice-Powered Generator (Placeable)"
+      ]
+    },
+    {
+      "id": "wind-turbines",
+      "name": "Wind Turbines",
+      "category": "Construction",
+      "tier": "Aluminum",
+      "intel_cost": 300,
+      "unlocks": [
+        "Wind Turbine (Directional)",
+        "Wind Turbine (Omnidirectional)"
+      ]
+    },
+    {
+      "id": "ore-refineries",
+      "name": "Ore Refineries",
+      "category": "Construction",
+      "tier": "Iron",
+      "intel_cost": 90,
+      "unlocks": [
+        "Small Ore Refinery",
+        "Medium Ore Refinery",
+        "Large Ore Refinery"
+      ]
+    },
+    {
+      "id": "chemical-refineries",
+      "name": "Chemical Refineries",
+      "category": "Construction",
+      "tier": "Steel",
+      "intel_cost": 180,
+      "unlocks": [
+        "Small Chemical Refinery",
+        "Medium Chemical Refinery"
+      ]
+    },
+    {
+      "id": "spice-refineries",
+      "name": "Spice Refineries",
+      "category": "Construction",
+      "tier": "Steel",
+      "intel_cost": 200,
+      "unlocks": [
+        "Spice Refinery",
+        "Medium Spice Refinery",
+        "Large Spice Refinery"
+      ]
+    },
+    {
+      "id": "storage",
+      "name": "Storage Containers",
+      "category": "Construction",
+      "tier": "Iron",
+      "intel_cost": 60,
+      "unlocks": [
+        "Small Storage Container",
+        "Storage Container",
+        "Medium Storage Container",
+        "Chest"
+      ]
+    },
+    {
+      "id": "sub-fief-console",
+      "name": "Sub-Fief Consoles",
+      "category": "Construction",
+      "tier": "Iron",
+      "intel_cost": 50,
+      "unlocks": [
+        "Sub-Fief Console",
+        "Advanced Sub-Fief Console"
+      ]
+    },
+    {
+      "id": "pentashield",
+      "name": "Pentashield Surfaces",
+      "category": "Construction",
+      "tier": "Duraluminum",
+      "intel_cost": 500,
+      "unlocks": [
+        "Pentashield Surface Vertical",
+        "Pentashield Surface Horizontal"
+      ]
+    },
+    {
+      "id": "lighting",
+      "name": "Basic Lighting",
+      "category": "Construction",
+      "tier": "Copper",
+      "intel_cost": 10,
+      "unlocks": [
+        "Basic Lighting"
+      ]
+    },
+    {
+      "id": "scanner-upgrades",
+      "name": "Scanner Upgrades",
+      "category": "Exploration",
+      "tier": "Steel",
+      "intel_cost": 150,
+      "unlocks": [
+        "Improved Scanner",
+        "Extended Scan Module"
+      ]
+    },
+    {
+      "id": "sinkchart",
+      "name": "Sinkchart Tools",
+      "category": "Exploration",
+      "tier": "Copper",
+      "intel_cost": 10,
+      "unlocks": [
+        "Blank Sinkchart",
+        "Survey Tools"
+      ]
+    },
+    {
+      "id": "ornithopter",
+      "name": "Scout Ornithopter",
+      "category": "Exploration",
+      "tier": "Aluminum",
+      "intel_cost": 300,
+      "unlocks": [
+        "Scout Ornithopter Cabin Mk4",
+        "Scout Ornithopter Wing Module Mk4",
+        "Scout Ornithopter Engine Mk4",
+        "Scout Ornithopter Generator Mk4",
+        "Scout Ornithopter Storage Mk4",
+        "Scout Ornithopter Thruster Mk4",
+        "Scout Ornithopter Tail Mk4"
+      ]
+    },
+    {
+      "id": "ornithopter-adv",
+      "name": "Assault Ornithopter",
+      "category": "Exploration",
+      "tier": "Plastanium",
+      "intel_cost": 1200,
+      "unlocks": [
+        "Assault Ornithopter Cabin Mk5",
+        "Assault Ornithopter Wing Mk5",
+        "Assault Ornithopter Engine Mk5",
+        "Assault Ornithopter Generator Mk5",
+        "Assault Ornithopter Rocket Launcher Mk5",
+        "Assault Ornithopter Thruster Mk5",
+        "Assault Ornithopter Chassis Mk5",
+        "Assault Ornithopter Tail Mk5",
+        "Assault Ornithopter Cockpit Mk5",
+        "Assault Ornithopter Storage Mk5"
+      ]
+    },
+    {
+      "id": "sandbike",
+      "name": "Sandbike (Mk1)",
+      "category": "Vehicles",
+      "tier": "Copper",
+      "intel_cost": 80,
+      "unlocks": [
+        "Sandbike Engine Mk1",
+        "Sandbike Hull Mk1",
+        "Sandbike Chassis Mk1",
+        "Sandbike Inventory Mk1",
+        "Sandbike Tread Mk1",
+        "Sandbike Backseat Mk1"
+      ]
+    },
+    {
+      "id": "groundcar",
+      "name": "Four-Man Groundcar",
+      "category": "Vehicles",
+      "tier": "Steel",
+      "intel_cost": 200,
+      "unlocks": [
+        "Buggy Engine Mk3-6",
+        "Buggy Chassis Mk3-6",
+        "Buggy Power Supply Mk3-6",
+        "Buggy Inventory Mk3-6",
+        "Buggy Wheels Mk3-6"
+      ]
+    },
+    {
+      "id": "sandcrawler",
+      "name": "CHOAM Sandcrawler",
+      "category": "Vehicles",
+      "tier": "Plastanium",
+      "intel_cost": 1200,
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Sandcrawler Chassis",
+        "Sandcrawler Engine",
+        "Sandcrawler Storage",
+        "Sandcrawler Harvester"
+      ]
+    },
+    {
+      "id": "faction-banners",
+      "name": "Faction Banners",
+      "category": "Uniques",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Atreides Banner",
+        "Harkonnen Banner",
+        "CHOAM Banner"
+      ]
+    },
+    {
+      "id": "choam-terminal",
+      "name": "CHOAM Trading Terminal",
+      "category": "Uniques",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "CHOAM Trading Terminal (Placeable)"
+      ]
+    },
+    {
+      "id": "observer-set",
+      "name": "Observer D\u00e9cor Set",
+      "category": "Uniques",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Observer D\u00e9cor Pieces"
+      ]
+    },
+    {
+      "id": "armor-set-bulwark",
+      "name": "Bulwark Armor Set",
+      "category": "Combat",
+      "tier": "Plastanium",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Bulwark Boots",
+        "Bulwark Chest",
+        "Bulwark Gloves",
+        "Bulwark Helmet",
+        "Bulwark Pants"
+      ]
+    },
+    {
+      "id": "armor-set-choam-heavy",
+      "name": "CHOAM Heavy Armor Set",
+      "category": "Combat",
+      "tier": "Plastanium",
+      "unlocks": [
+        "CHOAM Heavy Boots",
+        "CHOAM Heavy Chest",
+        "CHOAM Heavy Gloves",
+        "CHOAM Heavy Helmet",
+        "CHOAM Heavy Pants"
+      ]
+    },
+    {
+      "id": "armor-set-choam-scout",
+      "name": "CHOAM Scout Armor Set",
+      "category": "Combat",
+      "tier": "Plastanium",
+      "unlocks": [
+        "CHOAM Scout Boots",
+        "CHOAM Scout Chest",
+        "CHOAM Scout Gloves",
+        "CHOAM Scout Helmet",
+        "CHOAM Scout Pants"
+      ]
+    },
+    {
+      "id": "armor-set-duneman-heavy",
+      "name": "Duneman Heavy Armor Set",
+      "category": "Combat",
+      "tier": "Aluminum",
+      "unlocks": [
+        "Duneman Heavy Boots",
+        "Duneman Heavy Gloves",
+        "Duneman Heavy Jacket",
+        "Duneman Heavy Mask",
+        "Duneman Heavy Pants"
+      ]
+    },
+    {
+      "id": "armor-set-duneman-scout",
+      "name": "Duneman Scout Armor Set",
+      "category": "Combat",
+      "tier": "Aluminum",
+      "unlocks": [
+        "Duneman Scout Boots",
+        "Duneman Scout Gloves",
+        "Duneman Scout Helmet",
+        "Duneman Scout Jacket",
+        "Duneman Scout Pants"
+      ]
+    },
+    {
+      "id": "armor-set-desert-garb",
+      "name": "Desert Garb Armor Set",
+      "category": "Combat",
+      "tier": "Plastanium",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Desert Garb Chest"
+      ]
+    },
+    {
+      "id": "armor-set-power-harness",
+      "name": "Power Harness Armor Set",
+      "category": "Combat",
+      "tier": "Plastanium",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Power Harness Chest"
+      ]
+    },
+    {
+      "id": "armor-set-wayfinder-helm",
+      "name": "Wayfinder Helm Armor Set",
+      "category": "Combat",
+      "tier": "Plastanium",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Wayfinder Helm Helmet"
+      ]
+    },
+    {
+      "id": "armor-set-the-forge",
+      "name": "The Forge Armor Set",
+      "category": "Combat",
+      "tier": "Plastanium",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "The Forge Helmet"
+      ]
+    },
+    {
+      "id": "armor-set-radiation-suit",
+      "name": "Radiation Suit Armor Set",
+      "category": "Combat",
+      "tier": "Plastanium",
+      "unlocks": [
+        "Radiation Suit Garment"
+      ]
+    },
+    {
+      "id": "armor-set-choam-stillsuit",
+      "name": "CHOAM Stillsuit Armor Set",
+      "category": "Combat",
+      "tier": "Plastanium",
+      "unlocks": [
+        "CHOAM Stillsuit Body",
+        "CHOAM Stillsuit Boots",
+        "CHOAM Stillsuit Gloves",
+        "CHOAM Stillsuit Mask"
+      ]
+    },
+    {
+      "id": "armor-set-imperial-stillsuit",
+      "name": "Imperial Stillsuit Armor Set",
+      "category": "Combat",
+      "tier": "Plastanium",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Imperial Stillsuit Body"
+      ]
+    },
+    {
+      "id": "armor-set-menol's-stillsuit",
+      "name": "Menol's Stillsuit Armor Set",
+      "category": "Combat",
+      "tier": "Iron",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Menol's Stillsuit Body"
+      ]
+    },
+    {
+      "id": "armor-set-maraqeb-stillsuit",
+      "name": "Maraqeb Stillsuit Armor Set",
+      "category": "Combat",
+      "tier": "Aluminum",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Maraqeb Stillsuit Body"
+      ]
+    },
+    {
+      "id": "armor-set-batigh-stillsuit",
+      "name": "Batigh Stillsuit Armor Set",
+      "category": "Combat",
+      "tier": "Duraluminum",
+      "requirements": {
+        "schematic": true
+      },
+      "unlocks": [
+        "Batigh Stillsuit Body"
+      ]
+    },
+    {
+      "id": "armor-set-native-stillsuit",
+      "name": "Native Stillsuit Armor Set",
+      "category": "Combat",
+      "tier": "Aluminum",
+      "unlocks": [
+        "Native Stillsuit Body",
+        "Native Stillsuit Mask"
+      ]
+    },
+    {
+      "id": "armor-set-kirab-stillsuit",
+      "name": "Kirab Stillsuit Armor Set",
+      "category": "Combat",
+      "tier": "Iron",
+      "unlocks": [
+        "Kirab Stillsuit Body"
+      ]
+    },
+    {
+      "id": "vehicle-sandbike",
+      "name": "Sandbike",
+      "category": "Vehicles",
+      "tier": "Copper",
+      "unlocks": [
+        "Sandbike Chassis Mk1",
+        "Sandbike Chassis Mk2",
+        "Sandbike Chassis Mk5",
+        "Sandbike Hull Mk1",
+        "Sandbike Hull Mk2",
+        "Sandbike Hull Mk4",
+        "Sandbike Hull Mk5",
+        "Sandbike Engine Mk1",
+        "Sandbike Engine Mk3",
+        "Sandbike Engine Mk4",
+        "Sandbike Engine Mk5",
+        "Sandbike PSU Mk3",
+        "Sandbike PSU Mk5",
+        "Sandbike Tread Mk1",
+        "Sandbike Booster Mk3",
+        "Sandbike Booster Mk4",
+        "Sandbike Inventory Mk1",
+        "Sandbike Hull Mk3",
+        "Sandbike PSU Mk1",
+        "Sandbike PSU Mk4",
+        "Sandbike Tread Mk3"
+      ]
+    },
+    {
+      "id": "vehicle-buggy",
+      "name": "Buggy",
+      "category": "Vehicles",
+      "tier": "Steel",
+      "unlocks": [
+        "Buggy Chassis Mk5",
+        "Buggy Hull Mk3",
+        "Buggy Hull Mk5",
+        "Buggy PSU Mk5",
+        "Buggy Storage Mk5",
+        "Buggy Engine Mk5",
+        "Buggy Utility Rear Mk6",
+        "Focused Buggy Cutteray Mk5",
+        "Bigger Buggy Boot Mk6"
+      ]
+    },
+    {
+      "id": "vehicle-scout_ornithopter",
+      "name": "Scout Ornithopter",
+      "category": "Vehicles",
+      "tier": "Aluminum",
+      "unlocks": [
+        "Scout Ornithopter Chassis Mk4",
+        "Scout Ornithopter Cockpit Mk5",
+        "Scout Ornithopter Engine Mk5",
+        "Scout Ornithopter Wing Mk5",
+        "Scout Ornithopter Thruster Mk5",
+        "Scout Ornithopter Thruster Mk6",
+        "Scout Ornithopter Rocket Launcher Mk5",
+        "Scout Ornithopter Generator Mk5",
+        "Scout Ornithopter Generator Mk6",
+        "Stormrider Boost Module Mk6",
+        "Albatross Wing Module Mk6",
+        "Scout Ornithopter Chassis Mk6",
+        "Scout Ornithopter Cockpit Mk6",
+        "Scout Ornithopter Engine Mk6",
+        "Scout Ornithopter Wing Mk6"
+      ]
+    },
+    {
+      "id": "vehicle-assault_ornithopter",
+      "name": "Assault Ornithopter",
+      "category": "Vehicles",
+      "tier": "Plastanium",
+      "unlocks": [
+        "Assault Ornithopter Chassis Mk5",
+        "Assault Ornithopter Cabin Mk5",
+        "Assault Ornithopter Engine Mk5",
+        "Assault Ornithopter Generator Mk5",
+        "Assault Ornithopter Wing Mk5",
+        "Assault Ornithopter Thruster Mk5"
+      ]
+    },
+    {
+      "id": "vehicle-carrier_ornithopter",
+      "name": "Carrier Ornithopter",
+      "category": "Vehicles",
+      "tier": "Plastanium",
+      "unlocks": [
+        "Carrier Ornithopter Chassis Mk6",
+        "Carrier Ornithopter Main Hull Mk6",
+        "Carrier Ornithopter Thruster Mk6",
+        "Carrier Ornithopter Engine Mk6",
+        "Carrier Ornithopter Generator Mk6",
+        "Carrier Ornithopter Wing Mk6",
+        "Carrier Ornithopter Tail Hull Mk6",
+        "Roc Carrier Wing",
+        "Steady Carrier Boost Module Mk6"
+      ]
+    },
+    {
+      "id": "vehicle-sandcrawler",
+      "name": "Sandcrawler",
+      "category": "Vehicles",
+      "tier": "Plastanium",
+      "unlocks": [
+        "Sandcrawler Cabin Mk6",
+        "Sandcrawler Engine Mk6",
+        "Sandcrawler PSU Mk6",
+        "Sandcrawler Tread Mk6",
+        "Sandcrawler Vacuum Mk6",
+        "Sandcrawler Centrifuge Mk6",
+        "Upgraded Regis Spice Container",
+        "Dampened Sandcrawler Treads",
+        "Walker Sandcrawler Engine Mk6",
+        "Sandcrawler Chassis Mk6"
+      ]
+    },
+    {
+      "id": "weapons-sidearms",
+      "name": "Sidearms Research",
+      "category": "Combat",
+      "unlocks": [
+        "A Dart for Every Man",
+        "Abulurd's Rapture",
+        "Adept Disruptor M11",
+        "Adept Disruptor Pistol",
+        "Adept Maula Pistol",
+        "Adept Rafiq Snubnose",
+        "Ari's Pistol",
+        "Artisan Disruptor M11",
+        "Artisan Disruptor Pistol",
+        "Artisan Maula Pistol",
+        "Artisan Rafiq Snubnose",
+        "Basic Disruptor M11",
+        "Basic Maula Pistol",
+        "Basic Rafiq Snubnose",
+        "Cope",
+        "House Disruptor M11",
+        "House Maula Pistol",
+        "House Rafiq Snubnose",
+        "Regis Disruptor M11",
+        "Regis Maula Pistol",
+        "Regis Rafiq Snubnose",
+        "Standard Disruptor M11",
+        "Standard Maula Pistol",
+        "Standard Rafiq Snubnose",
+        "Way of the Fallen"
+      ]
+    },
+    {
+      "id": "weapons-heavy-weapon",
+      "name": "Heavy Weapon Research",
+      "category": "Combat",
+      "unlocks": [
+        "Arhun K-28 Lasgun",
+        "Bashar's Command",
+        "Black Market K-28 Lasgun",
+        "Experimental Vulcan GAU-94",
+        "Extravagant Message",
+        "House Vulcan GAU-92",
+        "Plasma Cannon",
+        "Regis Missile Launcher",
+        "Regis Vulcan GAU-92",
+        "Shaitan's Tongue",
+        "The Ancient Way"
+      ]
+    },
+    {
+      "id": "weapons-scatterguns",
+      "name": "Scatterguns Research",
+      "category": "Combat",
+      "unlocks": [
+        "Adept Burst Drillshot",
+        "Adept Drillshot FK7",
+        "Adept GRDA 44",
+        "Basic Drillshot FK7",
+        "Basic GRDA 44",
+        "House Drillshot FK7",
+        "House GRDA 44",
+        "Regis Drillshot FK7",
+        "Regis GRDA 44",
+        "Standard Drillshot FK7",
+        "Standard GRDA 44"
+      ]
+    },
+    {
+      "id": "weapons-short-blades",
+      "name": "Short Blades Research",
+      "category": "Combat",
+      "unlocks": [
+        "Adept Dirk",
+        "Adept Kindjal",
+        "Basic Dirk",
+        "Basic Kindjal",
+        "House Dirk",
+        "House Kindjal",
+        "Regis Dirk",
+        "Regis Kindjal",
+        "Standard Dirk",
+        "Standard Kindjal"
+      ]
+    },
+    {
+      "id": "weapons-rifles",
+      "name": "Rifles Research",
+      "category": "Combat",
+      "unlocks": [
+        "Adept JABAL Spitdart",
+        "Adept Karpov 38",
+        "Aren's Vengeance",
+        "Basic JABAL Spitdart",
+        "Basic Karpov 38",
+        "House JABAL Spitdart",
+        "House Karpov 38 (Weapons)",
+        "Regis JABAL Spitdart",
+        "Regis Karpov 38",
+        "Standard JABAL Spitdart",
+        "Standard Karpov 38 (Weapons)"
+      ]
+    },
+    {
+      "id": "weapons-long-blades",
+      "name": "Long Blades Research",
+      "category": "Combat",
+      "unlocks": [
+        "Adept Rapier",
+        "Adept Sword",
+        "Basic Rapier",
+        "Basic Sword",
+        "House Rapier (Weapons)",
+        "House Sword (Weapons)",
+        "Regis Rapier (Weapons)",
+        "Regis Sword (Weapons)",
+        "Standard Rapier",
+        "Standard Sword (Weapons)"
+      ]
+    },
+    {
+      "id": "weapons-heavy-weapons",
+      "name": "Heavy Weapons Research",
+      "category": "Combat",
+      "unlocks": [
+        "Adept Vulcan GAU-92",
+        "Basic K-28 Lasgun",
+        "Basic Vulcan GAU-92",
+        "House K-28 Lasgun",
+        "House Vulcan GAU-92 (Weapons)",
+        "Regis K-28 Lasgun",
+        "Regis Vulcan GAU-92 (Weapons)",
+        "Standard K-28 Lasgun",
+        "Standard Vulcan GAU-92"
+      ]
+    },
+    {
+      "id": "weapons-weapon",
+      "name": "Weapon Research",
+      "category": "Combat",
+      "unlocks": [
+        "Crysknife"
+      ]
+    }
+  ]
+}

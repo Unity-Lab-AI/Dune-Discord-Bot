@@ -1,0 +1,1505 @@
+{
+  "armor_items": [
+    {
+      "name": "Bulwark Boots",
+      "set": "Bulwark",
+      "slot": "Boots",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 194,
+        "dash_stamina_cost_pct": 0.0,
+        "light_dart_mitigation_pct": 2.3,
+        "blade_mitigation_pct": 11.3,
+        "concussive_mitigation_pct": 11.3,
+        "heavy_dart_mitigation_pct": 2.3
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 45,
+          "Ballistic Weave Fabric": 7,
+          "Silicone Block": 31,
+          "Plasteel Composite Armor Plating": 10,
+          "Spice Melange": 62,
+          "Spice-infused Plastanium Dust": 10
+        },
+        "water_cost": 350,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Rotation-based unique schematic drop; not available every week"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Bulwark Chest",
+      "set": "Bulwark",
+      "slot": "Chest",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 450,
+        "dash_stamina_cost_pct": 7.5,
+        "light_dart_mitigation_pct": 6.0,
+        "blade_mitigation_pct": 12.0,
+        "concussive_mitigation_pct": 6.0,
+        "heavy_dart_mitigation_pct": 6.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 60,
+          "Plasteel Microflora Fiber": 18,
+          "Silicone Block": 27,
+          "Plasteel Composite Armor Plating": 12,
+          "Spice Melange": 36
+        },
+        "water_cost": 700,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Rotation-based unique schematic drop; not available every week"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Bulwark Gloves",
+      "set": "Bulwark",
+      "slot": "Gloves",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 225,
+        "dash_stamina_cost_pct": 3.8,
+        "light_dart_mitigation_pct": 3.0,
+        "blade_mitigation_pct": 6.0,
+        "concussive_mitigation_pct": 3.0,
+        "heavy_dart_mitigation_pct": 3.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 30,
+          "Plasteel Microflora Fiber": 9,
+          "Silicone Block": 14,
+          "Plasteel Composite Armor Plating": 6,
+          "Spice Melange": 14
+        },
+        "water_cost": 350,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Rotation-based unique schematic drop; not available every week"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Bulwark Helmet",
+      "set": "Bulwark",
+      "slot": "Helmet",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 300,
+        "dash_stamina_cost_pct": 5.0,
+        "light_dart_mitigation_pct": 4.0,
+        "blade_mitigation_pct": 8.0,
+        "concussive_mitigation_pct": 4.0,
+        "heavy_dart_mitigation_pct": 4.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 45,
+          "Plasteel Microflora Fiber": 14,
+          "Silicone Block": 21,
+          "Plasteel Composite Armor Plating": 9,
+          "Spice Melange": 21
+        },
+        "water_cost": 530,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Rotation-based unique schematic drop; not available every week"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Bulwark Leggings",
+      "set": "Bulwark",
+      "slot": "Pants",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 300,
+        "dash_stamina_cost_pct": 5.0,
+        "light_dart_mitigation_pct": 4.0,
+        "blade_mitigation_pct": 8.0,
+        "concussive_mitigation_pct": 4.0,
+        "heavy_dart_mitigation_pct": 4.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 50,
+          "Plasteel Microflora Fiber": 16,
+          "Silicone Block": 24,
+          "Plasteel Composite Armor Plating": 11,
+          "Spice Melange": 24
+        },
+        "water_cost": 610,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Rotation-based unique schematic drop; not available every week"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "CHOAM Heavy Boots",
+      "set": "CHOAM Heavy",
+      "slot": "Boots",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 225,
+        "dash_stamina_cost_pct": 3.8,
+        "light_dart_mitigation_pct": 3.0,
+        "blade_mitigation_pct": 6.0,
+        "concussive_mitigation_pct": 3.0,
+        "heavy_dart_mitigation_pct": 3.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 30,
+          "Plasteel Microflora Fiber": 9,
+          "Silicone Block": 14,
+          "Plasteel Composite Armor Plating": 6,
+          "Spice Melange": 14
+        },
+        "water_cost": 350,
+        "time_seconds": 15
+      },
+      "sold_by": [
+        {
+          "vendor": "Landsraad Armor Vendor",
+          "price": 92000,
+          "requirements": "Stock 5-"
+        }
+      ],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Heavy Chestplate",
+      "set": "CHOAM Heavy",
+      "slot": "Chest",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 450,
+        "dash_stamina_cost_pct": 7.5,
+        "light_dart_mitigation_pct": 6.0,
+        "blade_mitigation_pct": 12.0,
+        "concussive_mitigation_pct": 6.0,
+        "heavy_dart_mitigation_pct": 6.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 60,
+          "Plasteel Microflora Fiber": 18,
+          "Silicone Block": 27,
+          "Plasteel Composite Armor Plating": 12,
+          "Spice Melange": 36
+        },
+        "water_cost": 700,
+        "time_seconds": 15
+      },
+      "sold_by": [
+        {
+          "vendor": "Landsraad Armor Vendor",
+          "price": 144000,
+          "requirements": "Stock 5-"
+        }
+      ],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Heavy Gauntlets",
+      "set": "CHOAM Heavy",
+      "slot": "Gloves",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 225,
+        "dash_stamina_cost_pct": 3.8,
+        "light_dart_mitigation_pct": 3.0,
+        "blade_mitigation_pct": 6.0,
+        "concussive_mitigation_pct": 3.0,
+        "heavy_dart_mitigation_pct": 3.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 30,
+          "Plasteel Microflora Fiber": 9,
+          "Silicone Block": 14,
+          "Plasteel Composite Armor Plating": 6,
+          "Spice Melange": 14
+        },
+        "water_cost": 350,
+        "time_seconds": 15
+      },
+      "sold_by": [
+        {
+          "vendor": "Landsraad Armor Vendor",
+          "price": 74000,
+          "requirements": "Stock 5-"
+        }
+      ],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Heavy Greaves",
+      "set": "CHOAM Heavy",
+      "slot": "Pants",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 300,
+        "dash_stamina_cost_pct": 5.0,
+        "light_dart_mitigation_pct": 4.0,
+        "blade_mitigation_pct": 8.0,
+        "concussive_mitigation_pct": 4.0,
+        "heavy_dart_mitigation_pct": 4.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 50,
+          "Plasteel Microflora Fiber": 16,
+          "Silicone Block": 24,
+          "Plasteel Composite Armor Plating": 11,
+          "Spice Melange": 24
+        },
+        "water_cost": 610,
+        "time_seconds": 15
+      },
+      "sold_by": [
+        {
+          "vendor": "Landsraad Armor Vendor",
+          "price": 130000,
+          "requirements": "Stock 5-"
+        }
+      ],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Heavy Helmet",
+      "set": "CHOAM Heavy",
+      "slot": "Helmet",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 300,
+        "dash_stamina_cost_pct": 5.0,
+        "light_dart_mitigation_pct": 4.0,
+        "blade_mitigation_pct": 8.0,
+        "concussive_mitigation_pct": 4.0,
+        "heavy_dart_mitigation_pct": 4.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 45,
+          "Plasteel Microflora Fiber": 14,
+          "Silicone Block": 21,
+          "Plasteel Composite Armor Plating": 9,
+          "Spice Melange": 21
+        },
+        "water_cost": 530,
+        "time_seconds": 15
+      },
+      "sold_by": [
+        {
+          "vendor": "Landsraad Armor Vendor",
+          "price": 112000,
+          "requirements": "Stock 5-"
+        }
+      ],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Scout Boots",
+      "set": "CHOAM Scout",
+      "slot": "Boots",
+      "type": "Light",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 147,
+        "dash_stamina_cost_pct": -3.0,
+        "blade_mitigation_pct": 9.0,
+        "heat_protection": 1.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 40,
+          "Plasteel Microflora Fiber": 11,
+          "Silicone Block": 31,
+          "Sandtrout Leathers": 5,
+          "Spice Melange": 62,
+          "Spice-infused Plastanium Dust": 10
+        },
+        "water_cost": 410,
+        "time_seconds": 15
+      },
+      "sold_by": [
+        {
+          "vendor": "Landsraad Armor Vendor",
+          "price": 106000,
+          "requirements": "Stock 5-"
+        }
+      ],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Scout Chestplate",
+      "set": "CHOAM Scout",
+      "slot": "Chest",
+      "type": "Light",
+      "tier": 6,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 276,
+        "dash_stamina_cost_pct": -6.0,
+        "blade_mitigation_pct": 14.0,
+        "heat_protection": 1.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 65,
+          "Plasteel Microflora Fiber": 23,
+          "Silicone Block": 44,
+          "Sandtrout Leathers": 9,
+          "Spice Melange": 62,
+          "Spice-infused Plastanium Dust": 16
+        },
+        "water_cost": 700,
+        "time_seconds": 15
+      },
+      "sold_by": [
+        {
+          "vendor": "Landsraad Armor Vendor",
+          "price": 160000,
+          "requirements": "Stock 5-"
+        }
+      ],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Scout Gloves",
+      "set": "CHOAM Scout",
+      "slot": "Gloves",
+      "type": "Light",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 147,
+        "dash_stamina_cost_pct": -3.0,
+        "blade_mitigation_pct": 9.0,
+        "heat_protection": 1.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 35,
+          "Plasteel Microflora Fiber": 12,
+          "Silicone Block": 26,
+          "Sandtrout Leathers": 5,
+          "Spice Melange": 62,
+          "Spice-infused Plastanium Dust": 10
+        },
+        "water_cost": 350,
+        "time_seconds": 15
+      },
+      "sold_by": [
+        {
+          "vendor": "Landsraad Armor Vendor",
+          "price": 86000,
+          "requirements": "Stock 5-"
+        }
+      ],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Scout Helmet",
+      "set": "CHOAM Scout",
+      "slot": "Helmet",
+      "type": "Light",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 184,
+        "dash_stamina_cost_pct": -4.0,
+        "blade_mitigation_pct": 11.0,
+        "heat_protection": 1.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 50,
+          "Plasteel Microflora Fiber": 17,
+          "Silicone Block": 37,
+          "Sandtrout Leathers": 6,
+          "Spice Melange": 62,
+          "Spice-infused Plastanium Dust": 13
+        },
+        "water_cost": 500,
+        "time_seconds": 15
+      },
+      "sold_by": [
+        {
+          "vendor": "Landsraad Armor Vendor",
+          "price": 130000,
+          "requirements": "Stock 5-"
+        }
+      ],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Scout Pants",
+      "set": "CHOAM Scout",
+      "slot": "Pants",
+      "type": "Light",
+      "tier": 6,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 184,
+        "dash_stamina_cost_pct": -4.0,
+        "blade_mitigation_pct": 11.0,
+        "heat_protection": 1.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 55,
+          "Plasteel Microflora Fiber": 19,
+          "Silicone Block": 41,
+          "Sandtrout Leathers": 7,
+          "Spice Melange": 62,
+          "Spice-infused Plastanium Dust": 14
+        },
+        "water_cost": 570,
+        "time_seconds": 15
+      },
+      "sold_by": [
+        {
+          "vendor": "Landsraad Armor Vendor",
+          "price": 138000,
+          "requirements": "Stock 5-"
+        }
+      ],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Duneman Heavy Boots",
+      "set": "Duneman Heavy",
+      "slot": "Boots",
+      "type": "Heavy",
+      "tier": 4,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 150,
+        "dash_stamina_cost_pct": 5.0,
+        "light_dart_mitigation_pct": 4.0,
+        "blade_mitigation_pct": 8.0,
+        "concussive_mitigation_pct": 4.0,
+        "heavy_dart_mitigation_pct": 4.0
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 30,
+          "Plasteel Microflora Fiber": 9,
+          "Silicone Block": 12,
+          "Armor Plating": 12
+        },
+        "water_cost": 200,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "map_area": "Small Falling Shipwrecks",
+          "details": "Tier 4, Qty 1-3, ~3.77% drop"
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Duneman Heavy Gloves",
+      "set": "Duneman Heavy",
+      "slot": "Gloves",
+      "type": "Heavy",
+      "tier": 4,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 113,
+        "dash_stamina_cost_pct": 3.8,
+        "light_dart_mitigation_pct": 3.0,
+        "blade_mitigation_pct": 6.0,
+        "concussive_mitigation_pct": 3.0,
+        "heavy_dart_mitigation_pct": 3.0
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 18,
+          "Plasteel Microflora Fiber": 6,
+          "Silicone Block": 7,
+          "Armor Plating": 7
+        },
+        "water_cost": 115,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "map_area": "Small Falling Shipwrecks",
+          "details": "Tier 4, Qty 1-3, ~3.77% drop"
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Duneman Heavy Jacket",
+      "set": "Duneman Heavy",
+      "slot": "Jacket",
+      "type": "Heavy",
+      "tier": 4,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 300,
+        "dash_stamina_cost_pct": 7.5,
+        "light_dart_mitigation_pct": 6.0,
+        "blade_mitigation_pct": 12.0,
+        "concussive_mitigation_pct": 6.0,
+        "heavy_dart_mitigation_pct": 6.0
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 60,
+          "Plasteel Microflora Fiber": 18,
+          "Silicone Block": 23,
+          "Armor Plating": 23
+        },
+        "water_cost": 350,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "map_area": "Small Falling Shipwrecks",
+          "details": "Tier 4, Qty 1-3, ~3.77% drop"
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Duneman Heavy Mask",
+      "set": "Duneman Heavy",
+      "slot": "Mask",
+      "type": "Heavy",
+      "tier": 4,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 184,
+        "dash_stamina_cost_pct": 5.0,
+        "light_dart_mitigation_pct": 4.0,
+        "blade_mitigation_pct": 8.0,
+        "concussive_mitigation_pct": 4.0,
+        "heavy_dart_mitigation_pct": 4.0
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 45,
+          "Plasteel Microflora Fiber": 14,
+          "Silicone Block": 17,
+          "Armor Plating": 17
+        },
+        "water_cost": 300,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "map_area": "Small Falling Shipwrecks",
+          "details": "Tier 4, Qty 1-3, ~3.77% drop"
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Duneman Heavy Pants",
+      "set": "Duneman Heavy",
+      "slot": "Pants",
+      "type": "Heavy",
+      "tier": 4,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 150,
+        "dash_stamina_cost_pct": 5.0,
+        "light_dart_mitigation_pct": 4.0,
+        "blade_mitigation_pct": 8.0,
+        "concussive_mitigation_pct": 4.0,
+        "heavy_dart_mitigation_pct": 4.0
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 30,
+          "Plasteel Microflora Fiber": 9,
+          "Silicone Block": 12,
+          "Armor Plating": 12
+        },
+        "water_cost": 200,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "map_area": "Small Falling Shipwrecks",
+          "details": "Tier 4, Qty 1-3, ~3.77% drop"
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Duneman Scout Boots",
+      "set": "Duneman Scout",
+      "slot": "Boots",
+      "type": "Light",
+      "tier": 4,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 62,
+        "dash_stamina_cost_pct": -3.0,
+        "blade_mitigation_pct": 6.0,
+        "heat_protection": 0.5
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 15,
+          "Plasteel Microflora Fiber": 9,
+          "Silicone Block": 11,
+          "Sandtrout Leathers": 3
+        },
+        "water_cost": 140,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "map_area": "Small Falling Shipwrecks",
+          "details": "Tier 4, Qty 1-3, ~3.77% drop"
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Duneman Scout Gloves",
+      "set": "Duneman Scout",
+      "slot": "Gloves",
+      "type": "Light",
+      "tier": 4,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 62,
+        "dash_stamina_cost_pct": -3.0,
+        "blade_mitigation_pct": 6.0,
+        "heat_protection": 0.5
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 12,
+          "Plasteel Microflora Fiber": 7,
+          "Silicone Block": 9,
+          "Sandtrout Leathers": 3
+        },
+        "water_cost": 110,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "map_area": "Small Falling Shipwrecks",
+          "details": "Tier 4, Qty 1-3, ~3.77% drop"
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Duneman Scout Helmet",
+      "set": "Duneman Scout",
+      "slot": "Helmet",
+      "type": "Light",
+      "tier": 4,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 83,
+        "dash_stamina_cost_pct": -4.0,
+        "blade_mitigation_pct": 8.0,
+        "heat_protection": 0.5
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 18,
+          "Plasteel Microflora Fiber": 11,
+          "Silicone Block": 13,
+          "Sandtrout Leathers": 4
+        },
+        "water_cost": 170,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "map_area": "Small Falling Shipwrecks",
+          "details": "Tier 4, Qty 1-3, ~3.77% drop"
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Duneman Scout Jacket",
+      "set": "Duneman Scout",
+      "slot": "Jacket",
+      "type": "Light",
+      "tier": 4,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 114,
+        "dash_stamina_cost_pct": -5.0,
+        "blade_mitigation_pct": 10.0,
+        "heat_protection": 0.5,
+        "energy_mitigation_pct": 0.4,
+        "chemical_mitigation_pct": 0.4
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 30,
+          "Plasteel Microflora Fiber": 16,
+          "Silicone Block": 20,
+          "Sandtrout Leathers": 6
+        },
+        "water_cost": 300,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "map_area": "Small Falling Shipwrecks",
+          "details": "Tier 4, Qty 1-3, ~3.77% drop"
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Duneman Scout Pants",
+      "set": "Duneman Scout",
+      "slot": "Pants",
+      "type": "Light",
+      "tier": 4,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 83,
+        "dash_stamina_cost_pct": -4.0,
+        "blade_mitigation_pct": 8.0,
+        "heat_protection": 0.5
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 20,
+          "Plasteel Microflora Fiber": 12,
+          "Silicone Block": 15,
+          "Sandtrout Leathers": 4
+        },
+        "water_cost": 200,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "map_area": "Small Falling Shipwrecks",
+          "details": "Tier 4, Qty 1-3, ~3.77% drop"
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Desert Garb",
+      "set": "Desert Garb",
+      "slot": "Chest",
+      "type": "Light",
+      "tier": 6,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 291,
+        "dash_stamina_cost_pct": -6.0,
+        "blade_mitigation_pct": 12.0,
+        "heat_protection": 1.5
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 45,
+          "Plasteel Microflora Fiber": 28,
+          "Silicone Block": 41,
+          "Ballistic Weave Fabric": 7,
+          "Spice Melange": 83,
+          "Spice-infused Plastanium Dust": 14
+        },
+        "water_cost": 700,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Rotation-based unique schematic drop; not available every week"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Power Harness",
+      "set": "Power Harness",
+      "slot": "Chest",
+      "type": "Heavy",
+      "tier": 6,
+      "volume": 2.0,
+      "stats": {
+        "armor_value": 525,
+        "dash_stamina_cost_pct": 7.5,
+        "maximum_power": 50,
+        "light_dart_mitigation_pct": 6.0,
+        "blade_mitigation_pct": 12.0,
+        "concussive_mitigation_pct": 6.0,
+        "heavy_dart_mitigation_pct": 6.0
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 65,
+          "Plasteel Microflora Fiber": 21,
+          "Silicone Block": 31,
+          "Plasteel Composite Armor Plating": 14,
+          "Spice Melange": 83,
+          "Spice-infused Plastanium Dust": 14,
+          "Irradiated Core": 3
+        },
+        "water_cost": 700,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Rotation-based unique schematic drop; not available every week"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Wayfinder Helm (Tier 6)",
+      "set": "Wayfinder Helm",
+      "slot": "Helmet",
+      "type": "Light",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 194,
+        "dash_stamina_cost_pct": -4.0,
+        "fire_mitigation_pct": 10.0,
+        "energy_mitigation_pct": 5.0,
+        "blade_mitigation_pct": 8.0,
+        "poison_mitigation_pct": 8.0,
+        "heat_protection": 0.7
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 50,
+          "Plasteel Microflora Fiber": 16,
+          "Silicone Block": 24,
+          "Plasteel Composite Armor Plating": 10
+        },
+        "water_cost": 530,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Rotation-based unique schematic drop; not available every week"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "The Forge Helmet",
+      "set": "The Forge",
+      "slot": "Helmet",
+      "type": "Light",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 194,
+        "dash_stamina_cost_pct": -4.0,
+        "fire_mitigation_pct": 10.0,
+        "energy_mitigation_pct": 5.0,
+        "blade_mitigation_pct": 8.0,
+        "poison_mitigation_pct": 8.0,
+        "heat_protection": 0.7
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 50,
+          "Plasteel Microflora Fiber": 16,
+          "Silicone Block": 24,
+          "Plasteel Composite Armor Plating": 10,
+          "Spice Melange": 62,
+          "Spice-infused Plastanium Dust": 10
+        },
+        "water_cost": 530,
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Rotation-based unique schematic drop; not available every week"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Radiation Suit Mk4",
+      "set": "Radiation Suit",
+      "slot": "Garment",
+      "type": "Utility",
+      "tier": 4,
+      "volume": 6.0,
+      "stats": {
+        "armor_value": 278,
+        "fire_mitigation_pct": 30.0,
+        "radiation_mitigation_pct": 90.0,
+        "heat_protection": 2.4
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 35,
+          "Plasteel Microflora Fiber": 21,
+          "Silicone Block": 25,
+          "Water": 340
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "details": "Small Falling Shipwrecks (Tier 4)",
+          "chance_pct": 3.77
+        }
+      ],
+      "requires_unique_schematic": false,
+      "research_unlock": {
+        "tree": "Combat",
+        "intel_spent_requirement": 300,
+        "intel_cost": 20,
+        "tier": 4
+      }
+    },
+    {
+      "name": "Radiation Suit Mk5",
+      "set": "Radiation Suit",
+      "slot": "Garment",
+      "type": "Utility",
+      "tier": 5,
+      "volume": 6.0,
+      "stats": {
+        "armor_value": 648,
+        "fire_mitigation_pct": 30.0,
+        "radiation_mitigation_pct": 92.0,
+        "heat_protection": 2.4
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Duraluminum Ingot": 50,
+          "Silicone Block": 50,
+          "Sandtrout Leathers": 10,
+          "Water": 675
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "details": "Small Falling Shipwrecks (Tier 5)",
+          "chance_pct": 4.47
+        },
+        {
+          "location": "Deep Desert",
+          "details": "Small Falling Shipwrecks (Tier 6)",
+          "chance_pct": 4.47
+        }
+      ],
+      "requires_unique_schematic": false,
+      "research_unlock": {
+        "tree": "Combat",
+        "intel_spent_requirement": 700,
+        "intel_cost": 30,
+        "tier": 5
+      }
+    },
+    {
+      "name": "Radiation Suit Mk6",
+      "set": "Radiation Suit",
+      "slot": "Garment",
+      "type": "Utility",
+      "tier": 6,
+      "volume": 6.0,
+      "stats": {
+        "armor_value": 833,
+        "fire_mitigation_pct": 30.0,
+        "radiation_mitigation_pct": 93.0,
+        "heat_protection": 2.4
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 60,
+          "Silicone Block": 54,
+          "Ballistic Weave Fabric": 9,
+          "Spice Melange": 54,
+          "Water": 1050
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [],
+      "requires_unique_schematic": false,
+      "research_unlock": {
+        "tree": "Combat",
+        "intel_spent_requirement": 1200,
+        "intel_cost": 40,
+        "tier": 6
+      }
+    },
+    {
+      "name": "CHOAM Stillsuit Body",
+      "set": "CHOAM Stillsuit",
+      "slot": "Body",
+      "type": "Stillsuit",
+      "tier": 6,
+      "volume": 4.0,
+      "stats": {
+        "armor_value": 195,
+        "heat_protection": 1.5,
+        "catchpocket_size": 500
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 60,
+          "Micro-sandwich Fabric": 54,
+          "Silicone Block": 81,
+          "Improved Watertube": 9,
+          "Spice Melange": 54,
+          "Water": 1050
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Stillsuit Boots",
+      "set": "CHOAM Stillsuit",
+      "slot": "Boots",
+      "type": "Stillsuit",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 59,
+        "heat_protection": 1.5
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 25,
+          "Micro-sandwich Fabric": 23,
+          "Silicone Block": 35,
+          "Improved Watertube": 4,
+          "Spice Melange": 18,
+          "Water": 440
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Stillsuit Gloves",
+      "set": "CHOAM Stillsuit",
+      "slot": "Gloves",
+      "type": "Stillsuit",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 59,
+        "heat_protection": 1.5
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 19,
+          "Micro-sandwich Fabric": 18,
+          "Silicone Block": 27,
+          "Improved Watertube": 3,
+          "Spice Melange": 14,
+          "Water": 350
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "CHOAM Stillsuit Mask",
+      "set": "CHOAM Stillsuit",
+      "slot": "Mask",
+      "type": "Stillsuit",
+      "tier": 6,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 78,
+        "heat_protection": 1.5
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 30,
+          "Micro-sandwich Fabric": 27,
+          "Silicone Block": 41,
+          "Improved Watertube": 5,
+          "Spice Melange": 21,
+          "Water": 530
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Imperial Stillsuit Garment",
+      "set": "Imperial Stillsuit",
+      "slot": "Body",
+      "type": "Stillsuit",
+      "tier": 6,
+      "volume": 4.0,
+      "stats": {
+        "armor_value": 486,
+        "heat_protection": 1.5,
+        "catchpocket_size": 500
+      },
+      "crafting": {
+        "station": "Advanced Garment Fabricator",
+        "ingredients": {
+          "Plastanium Ingot": 70,
+          "Micro-sandwich Fabric": 62,
+          "Silicone Block": 93,
+          "Improved Watertube": 10,
+          "Spice Melange": 124,
+          "Spice-infused Plastanium Dust": 21,
+          "Water": 1050
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Rotation-based Tier 6 drop; noted 'not in this rotation'"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Menol's Stillsuit Garment",
+      "set": "Menol's Stillsuit",
+      "slot": "Body",
+      "type": "Stillsuit",
+      "tier": 2,
+      "volume": 4.0,
+      "stats": {
+        "armor_value": 156,
+        "heat_protection": 0.4,
+        "catchpocket_size": 500
+      },
+      "crafting": {
+        "station": "Fabricator / Garment Fabricator",
+        "ingredients": {
+          "Iron Ingot": 14,
+          "Micro-sandwich Fabric": 17,
+          "Plant Fiber": 8,
+          "Spice-infused Iron Dust": 8
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "details": "Unique schematic drop"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Maraqeb Stillsuit Garment",
+      "set": "Maraqeb Stillsuit",
+      "slot": "Body",
+      "type": "Stillsuit",
+      "tier": 4,
+      "volume": 4.0,
+      "stats": {
+        "armor_value": 163,
+        "hydration_capture_pct": 1.0,
+        "heat_protection": 0.9,
+        "catchpocket_size": 500
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 30,
+          "Micro-sandwich Fabric": 45,
+          "Silicone Block": 45,
+          "Stillsuit Tubing": 8,
+          "Spice-infused Aluminum Dust": 15,
+          "Water": 340
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "details": "Reward from 'Crysknife Bounty'"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Batigh Stillsuit Garment",
+      "set": "Batigh Stillsuit",
+      "slot": "Body",
+      "type": "Stillsuit",
+      "tier": 5,
+      "volume": 4.0,
+      "stats": {
+        "armor_value": 184,
+        "hydration_capture_pct": 2.0,
+        "heat_protection": 1.2,
+        "catchpocket_size": 500
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Duraluminum Ingot": 40,
+          "Micro-sandwich Fabric": 50,
+          "Silicone Block": 89,
+          "Stillsuit Tubing": 12,
+          "Spice-infused Duraluminum Dust": 17,
+          "Water": 675
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Deep Desert",
+          "details": "Unique schematic drop across I1\u2013A9 Deep Desert grid"
+        }
+      ],
+      "requires_unique_schematic": true
+    },
+    {
+      "name": "Native Stillsuit Body",
+      "set": "Native Stillsuit",
+      "slot": "Body",
+      "type": "Stillsuit",
+      "tier": 4,
+      "volume": 4.0,
+      "stats": {
+        "armor_value": 98,
+        "heat_protection": 0.9,
+        "catchpocket_size": 500
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 27,
+          "Micro-sandwich Fabric": 40,
+          "Silicone Block": 39,
+          "Stillsuit Tubing": 7,
+          "Water": 340
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "details": "Small Falling Shipwrecks (Tier 4)",
+          "chance_pct": 3.77
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Native Stillsuit Mask",
+      "set": "Native Stillsuit",
+      "slot": "Mask",
+      "type": "Stillsuit",
+      "tier": 4,
+      "volume": 1.0,
+      "stats": {
+        "armor_value": 39,
+        "heat_protection": 0.9
+      },
+      "crafting": {
+        "station": "Garment Fabricator",
+        "ingredients": {
+          "Aluminum Ingot": 14,
+          "Micro-sandwich Fabric": 17,
+          "Silicone Block": 20,
+          "Stillsuit Tubing": 4,
+          "Water": 170
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "details": "Small Falling Shipwrecks (Tier 4)",
+          "chance_pct": 3.77
+        }
+      ],
+      "requires_unique_schematic": false
+    },
+    {
+      "name": "Kirab Stillsuit Body",
+      "set": "Kirab Stillsuit",
+      "slot": "Body",
+      "type": "Stillsuit",
+      "tier": 2,
+      "volume": 4.0,
+      "stats": {
+        "armor_value": 43,
+        "heat_protection": 0.4,
+        "catchpocket_size": 500
+      },
+      "crafting": {
+        "station": "Fabricator / Garment Fabricator",
+        "ingredients": {
+          "Iron Ingot": 18,
+          "Micro-sandwich Fabric": 15,
+          "Plant Fiber": 7
+        },
+        "time_seconds": 15
+      },
+      "sold_by": [],
+      "drops": [
+        {
+          "location": "Hagga Basin",
+          "details": "Small Falling Shipwrecks (Tier 2)",
+          "chance_pct": 4.76
+        }
+      ],
+      "requires_unique_schematic": false
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "game": "Dune: Awakening",
+  "schema_version": "1.0",
+  "updated_at": "2025-08-25",
+  "categories": [
+    "utilities",
+    "fabricators",
+    "refineries",
+    "storage",
+    "defenses",
+    "decorations"
+  ],
+  "placeables": [
+    {
+      "id": "sub_fief_console",
+      "name": "Sub-Fief Console",
+      "category": "utilities",
+      "health": 1250,
+      "power_cost": 15,
+      "functions": [
+        "claim-territory",
+        "route-power",
+        "route-water",
+        "base-permissions",
+        "enable-shield-when-powered"
+      ],
+      "build_cost": {
+        "Salvaged Metal": 25
+      }
+    },
+    {
+      "id": "sub_fief_console_advanced",
+      "name": "Advanced Sub-Fief Console",
+      "category": "utilities",
+      "functions": [
+        "claim-territory",
+        "route-power",
+        "route-water",
+        "base-permissions",
+        "enable-shield-when-powered"
+      ]
+    },
+    {
+      "id": "fuel_powered_generator",
+      "name": "Fuel-Powered Generator",
+      "category": "utilities",
+      "health": 1250,
+      "power_generated": 75,
+      "inventory": {
+        "slots": 5,
+        "volume": 100
+      },
+      "consumables": [
+        {
+          "item": "Fuel Cell",
+          "burn_time_hours": 1.0
+        }
+      ],
+      "functions": [
+        "generate-power"
+      ],
+      "build_cost": {
+        "Salvaged Metal": 45
+      }
+    },
+    {
+      "id": "spice_powered_generator",
+      "name": "Spice-Powered Generator",
+      "category": "utilities",
+      "health": 4000,
+      "power_generated": 1000,
+      "inventory": {
+        "slots": 5,
+        "volume": 100
+      },
+      "consumables": [
+        {
+          "item": "Spice-Infused Fuel Cell",
+          "burn_time_hours": 1.5
+        }
+      ],
+      "functions": [
+        "generate-power"
+      ],
+      "build_cost": {
+        "Plastanium Ingot": 430,
+        "Silicone Block": 180,
+        "Spice Melange": 270,
+        "Complex Machinery": 100,
+        "Cobalt Paste": 300,
+        "Advanced Machinery": 40
+      }
+    },
+    {
+      "id": "wind_turbine_directional",
+      "name": "Wind Turbine (Directional)",
+      "category": "utilities",
+      "health": 3500,
+      "power_generated": 350,
+      "inventory": {
+        "slots": 5,
+        "volume": 100
+      },
+      "consumables": [
+        {
+          "item": "Industrial-grade Lubricant",
+          "burn_time_hours": 1.5
+        }
+      ],
+      "functions": [
+        "generate-power"
+      ],
+      "build_cost": {
+        "Duraluminum Ingot": 120,
+        "Cobalt Paste": 160,
+        "Calibrated Servok": 50,
+        "Spice Melange": 3
+      }
+    },
+    {
+      "id": "wind_turbine_omnidirectional",
+      "name": "Wind Turbine (Omnidirectional)",
+      "category": "utilities",
+      "health": 2500,
+      "power_generated": 150,
+      "inventory": {
+        "slots": 5,
+        "volume": 100
+      },
+      "consumables": [
+        {
+          "item": "Low-grade Lubricant",
+          "burn_time_hours": 1.5
+        }
+      ],
+      "functions": [
+        "generate-power"
+      ],
+      "build_cost": {
+        "Steel Ingot": 45,
+        "Cobalt Paste": 65,
+        "Calibrated Servok": 20
+      }
+    },
+    {
+      "id": "windtrap",
+      "name": "Windtrap",
+      "category": "utilities",
+      "health": 3500,
+      "power_cost": 75,
+      "water": {
+        "capacity": 500,
+        "gather_rate": 0.75
+      },
+      "inventory": {
+        "slots": 5,
+        "volume": 25
+      },
+      "consumables": [
+        {
+          "item": "Makeshift Filter",
+          "uptime_hours": 3
+        },
+        {
+          "item": "Standard Filter",
+          "uptime_hours": 8
+        }
+      ],
+      "functions": [
+        "collect-water",
+        "route-water"
+      ]
+    },
+    {
+      "id": "large_windtrap",
+      "name": "Large Windtrap",
+      "category": "utilities",
+      "health": 3500,
+      "power_cost": 150,
+      "water": {
+        "capacity": 500,
+        "gather_rate": 1.4
+      },
+      "inventory": {
+        "slots": 5,
+        "volume": 25
+      },
+      "consumables": [
+        {
+          "item": "Particulate Filter",
+          "uptime_hours": 12
+        },
+        {
+          "item": "Advanced Particulate Filter",
+          "uptime_hours": 24
+        }
+      ],
+      "functions": [
+        "collect-water",
+        "route-water"
+      ],
+      "build_cost": {
+        "Duraluminum Ingot": 240,
+        "Silicone Block": 250,
+        "Calibrated Servok": 70,
+        "Spice Melange": 5
+      }
+    },
+    {
+      "id": "water_cistern",
+      "name": "Water Cistern",
+      "category": "storage",
+      "health": 1250,
+      "functions": [
+        "store-water",
+        "auto-link-to-network"
+      ],
+      "build_cost": {
+        "Copper Ingot": 20
+      }
+    },
+    {
+      "id": "medium_water_cistern",
+      "name": "Medium Water Cistern",
+      "category": "storage",
+      "health": 2500,
+      "water": {
+        "capacity": 25000
+      },
+      "functions": [
+        "store-water",
+        "auto-link-to-network"
+      ]
+    },
+    {
+      "id": "large_water_cistern",
+      "name": "Large Water Cistern",
+      "category": "storage",
+      "health": 2500,
+      "water": {
+        "capacity": 100000
+      },
+      "functions": [
+        "store-water",
+        "auto-link-to-network"
+      ],
+      "build_cost": {
+        "Duraluminum Ingot": 150,
+        "Silicone Block": 160,
+        "Industrial Pump": 25
+      }
+    },
+    {
+      "id": "small_storage_container",
+      "name": "Small Storage Container",
+      "category": "storage",
+      "health": 1250,
+      "inventory": {
+        "slots": 10,
+        "volume": 250
+      },
+      "functions": [
+        "store-items",
+        "auto-link-to-network"
+      ],
+      "build_cost": {
+        "Salvaged Metal": 35
+      }
+    },
+    {
+      "id": "chest",
+      "name": "Chest",
+      "category": "storage",
+      "health": 1250,
+      "inventory": {
+        "slots": 20,
+        "volume": 750
+      },
+      "functions": [
+        "store-items",
+        "auto-link-to-network"
+      ],
+      "build_cost": {
+        "Iron Ingot": 20
+      }
+    },
+    {
+      "id": "storage_container",
+      "name": "Storage Container",
+      "category": "storage",
+      "inventory": {
+        "slots": 45,
+        "volume": 1750
+      },
+      "functions": [
+        "store-items",
+        "auto-link-to-network"
+      ],
+      "build_cost": {
+        "Aluminum Ingot": 45,
+        "Silicone Block": 8
+      }
+    },
+    {
+      "id": "medium_storage_container",
+      "name": "Medium Storage Container",
+      "category": "storage",
+      "inventory": {
+        "slots": 100,
+        "volume": 3500
+      },
+      "functions": [
+        "store-items",
+        "auto-link-to-network"
+      ],
+      "build_cost": {
+        "Plastanium Ingot": 70,
+        "Silicone Block": 14,
+        "Spice Melange": 4
+      }
+    },
+    {
+      "id": "fabricator",
+      "name": "Fabricator",
+      "category": "fabricators",
+      "health": 1250,
+      "power_cost": 10,
+      "inventory": {
+        "slots": 10,
+        "volume": 200
+      },
+      "functions": [
+        "craft-general-items"
+      ],
+      "build_cost": {
+        "Salvaged Metal": 75
+      }
+    },
+    {
+      "id": "survival_fabricator",
+      "name": "Survival Fabricator",
+      "category": "fabricators",
+      "health": 1250,
+      "power_cost": 40,
+      "inventory": {
+        "slots": 10,
+        "volume": 200
+      },
+      "functions": [
+        "craft-survival-gear"
+      ],
+      "build_cost": {
+        "Steel Ingot": 40,
+        "Complex Machinery": 30
+      }
+    },
+    {
+      "id": "garment_fabricator",
+      "name": "Garment Fabricator",
+      "category": "fabricators",
+      "health": 1250,
+      "power_cost": 40,
+      "inventory": {
+        "slots": 10,
+        "volume": 200
+      },
+      "functions": [
+        "craft-armor-clothing"
+      ],
+      "build_cost": {
+        "Steel Ingot": 40,
+        "Complex Machinery": 30
+      }
+    },
+    {
+      "id": "weapons_fabricator",
+      "name": "Weapons Fabricator",
+      "category": "fabricators",
+      "health": 1250,
+      "power_cost": 40,
+      "inventory": {
+        "slots": 10,
+        "volume": 200
+      },
+      "functions": [
+        "craft-weapons"
+      ],
+      "build_cost": {
+        "Steel Ingot": 40,
+        "Complex Machinery": 30
+      }
+    },
+    {
+      "id": "vehicles_fabricator",
+      "name": "Vehicles Fabricator",
+      "category": "fabricators",
+      "health": 1250,
+      "power_cost": 40,
+      "inventory": {
+        "slots": 10,
+        "volume": 200
+      },
+      "functions": [
+        "craft-vehicles"
+      ],
+      "build_cost": {
+        "Steel Ingot": 40,
+        "Complex Machinery": 30
+      }
+    },
+    {
+      "id": "personal_fabricator",
+      "name": "Personal Fabricator",
+      "category": "fabricators",
+      "functions": [
+        "player-crafting-menu"
+      ]
+    },
+    {
+      "id": "small_ore_refinery",
+      "name": "Small Ore Refinery",
+      "category": "refineries",
+      "health": 1250,
+      "power_cost": 15,
+      "inventory": {
+        "slots": 5,
+        "volume": 200
+      },
+      "functions": [
+        "refine-ore-to-ingots"
+      ],
+      "build_cost": {
+        "Salvaged Metal": 90
+      }
+    },
+    {
+      "id": "medium_ore_refinery",
+      "name": "Medium Ore Refinery",
+      "category": "refineries",
+      "functions": [
+        "refine-ore-to-ingots"
+      ]
+    },
+    {
+      "id": "small_chemical_refinery",
+      "name": "Small Chemical Refinery",
+      "category": "refineries",
+      "functions": [
+        "refine-chemicals"
+      ]
+    },
+    {
+      "id": "medium_chemical_refinery",
+      "name": "Medium Chemical Refinery",
+      "category": "refineries",
+      "build_cost": {
+        "Duraluminum Ingot": 150,
+        "Silicone Block": 90,
+        "Complex Machinery": 50,
+        "Spice Melange": 35
+      },
+      "functions": [
+        "refine-chemicals"
+      ]
+    },
+    {
+      "id": "spice_refinery",
+      "name": "Spice Refinery",
+      "category": "refineries",
+      "health": 1250,
+      "power_cost": 200,
+      "inventory": {
+        "slots": 5,
+        "volume": 200
+      },
+      "functions": [
+        "refine-spice-sand-to-melange"
+      ],
+      "build_cost": {
+        "Duraluminum Ingot": 160,
+        "Silicone Block": 130,
+        "Cobalt Paste": 80,
+        "Complex Machinery": 70
+      }
+    },
+    {
+      "id": "large_spice_refinery",
+      "name": "Large Spice Refinery",
+      "category": "refineries",
+      "functions": [
+        "refine-spice-sand-to-melange"
+      ]
+    },
+    {
+      "id": "blood_purifier",
+      "name": "Blood Purifier",
+      "category": "refineries",
+      "health": 1250,
+      "power_cost": 10,
+      "water": {
+        "capacity": 1000,
+        "extraction_efficiency": 0.2
+      },
+      "functions": [
+        "extract-water-from-blood"
+      ],
+      "build_cost": {
+        "Salvaged Metal": 70
+      }
+    },
+    {
+      "id": "improved_blood_purifier",
+      "name": "Improved Blood Purifier",
+      "category": "refineries",
+      "water": {
+        "extraction_efficiency": 0.4
+      },
+      "functions": [
+        "extract-water-from-blood"
+      ],
+      "build_cost": {
+        "Iron Ingot": 50,
+        "Silicone Block": 16,
+        "Complex Machinery": 20
+      }
+    },
+    {
+      "id": "fremen_deathstill",
+      "name": "Fremen Deathstill",
+      "category": "refineries",
+      "health": 1250,
+      "power_cost": 200,
+      "process": {
+        "total_time_hours": 1,
+        "water_yield": 25000
+      },
+      "functions": [
+        "extract-water-from-corpses"
+      ],
+      "build_cost": {
+        "Steel Ingot": 60,
+        "Silicone Block": 28,
+        "Complex Machinery": 32
+      }
+    },
+    {
+      "id": "advanced_fremen_deathstill",
+      "name": "Advanced Fremen Deathstill",
+      "category": "refineries",
+      "functions": [
+        "extract-water-from-corpses"
+      ]
+    },
+    {
+      "id": "recycler",
+      "name": "Recycler",
+      "category": "utilities",
+      "health": 1250,
+      "power_cost": 15,
+      "inventory": {
+        "slots": 20,
+        "volume": 100
+      },
+      "functions": [
+        "recycle-items-to-materials"
+      ],
+      "build_cost": {
+        "Copper Ingot": 30
+      }
+    },
+    {
+      "id": "repair_station",
+      "name": "Repair Station",
+      "category": "utilities",
+      "functions": [
+        "repair-items",
+        "repair-vehicle-parts"
+      ],
+      "build_cost": {
+        "Iron Ingot": 40
+      }
+    },
+    {
+      "id": "pentashield_surface_vertical",
+      "name": "Pentashield Surface Vertical",
+      "category": "defenses",
+      "health": 3500,
+      "power_cost": 3,
+      "functions": [
+        "energy-barrier-door",
+        "permission-gated"
+      ],
+      "build_cost": {
+        "Steel Ingot": 2,
+        "Cobalt Paste": 20,
+        "Calibrated Servok": 6
+      }
+    },
+    {
+      "id": "pentashield_surface_horizontal",
+      "name": "Pentashield Surface Horizontal",
+      "category": "defenses",
+      "power_cost": 3,
+      "functions": [
+        "energy-barrier-ceiling",
+        "permission-gated"
+      ]
+    },
+    {
+      "id": "basic_lighting",
+      "name": "Basic Lighting",
+      "category": "decorations",
+      "functions": [
+        "lighting"
+      ],
+      "build_cost": {
+        "Base Vendor Price": 2500
+      }
+    }
+  ],
+  "building_sets": [
+    "Atreides Stronghold",
+    "Harkonnen Stronghold",
+    "CHOAM Shelter",
+    "CHOAM Facility",
+    "Observer"
+  ]
+}

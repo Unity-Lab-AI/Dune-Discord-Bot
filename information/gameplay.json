@@ -1,0 +1,2504 @@
+{
+  "game": "Dune: Awakening",
+  "schema_version": "1.0",
+  "updated_at": "2025-08-26",
+  "schema": {
+    "id": "kebab-case unique id",
+    "title": "section title",
+    "overview": "short paragraph summarizing the system",
+    "key_points": [
+      "bullet facts focused on what to expect and how it works"
+    ],
+    "mechanics": [
+      {
+        "name": "mechanic label",
+        "how_it_works": "plain-language explanation"
+      }
+    ],
+    "warnings": [
+      "edge cases, pitfalls, irreversible consequences"
+    ],
+    "notes": [
+      "useful clarifications or extra context"
+    ]
+  },
+  "sections": [
+    {
+      "id": "survival-hydration",
+      "title": "Survival & Hydration",
+      "overview": "Hydration governs stamina recovery and overall survivability; sunstroke accelerates water loss.",
+      "key_points": [
+        "Traveling during the day increases water consumption due to heat exposure.",
+        "Night runs and shade management reduce sunstroke and water burn.",
+        "Stillsuits slow evaporation; better suits noticeably extend range.",
+        "Literjons and water-processing stations cover most early hydration needs."
+      ],
+      "mechanics": [
+        {
+          "name": "Hydration Loop",
+          "how_it_works": "Carry Literjons, fill at base or hubs, and refill on every return trip."
+        },
+        {
+          "name": "Sunstroke",
+          "how_it_works": "Heat exposure adds a debuff that raises water burn; plan travel during cooler hours."
+        },
+        {
+          "name": "Water Stations",
+          "how_it_works": "Windtraps and purifiers convert inputs into potable water; keep filters and power steady."
+        },
+        {
+          "name": "Trip Planning",
+          "how_it_works": "Stage a water cache at or near your base exit to reduce prep time."
+        }
+      ],
+      "warnings": [
+        "Ignoring sunstroke can lead to rapid dehydration during fights or sprints."
+      ],
+      "notes": [
+        "Route long paths across rock where possible to combine safety and lower water use."
+      ]
+    },
+    {
+      "id": "heat-and-exposure",
+      "title": "Heat & Exposure",
+      "overview": "Heat impacts stamina, hydration, and combat tempo; managing exposure keeps you mobile.",
+      "key_points": [
+        "Direct sun raises consumption; shade and night travel mitigate it.",
+        "Climbing and sprinting under heat burn water faster than walking on rock.",
+        "Regroup on plateaus to clear debuffs before crossing another dune.",
+        "Equipment upgrades (suits, containers) multiply how far you can go."
+      ],
+      "mechanics": [
+        {
+          "name": "Heat Windows",
+          "how_it_works": "Plan objectives to align with the cooler parts of the day."
+        },
+        {
+          "name": "Cooldown Spots",
+          "how_it_works": "Use overhangs, caves, and hub structures to reset exposure."
+        },
+        {
+          "name": "Pacing",
+          "how_it_works": "Alternate sprints with short walks to prevent cascading resource drain."
+        },
+        {
+          "name": "Stacking Effects",
+          "how_it_works": "Heat + combat + climbing compounds water loss\u2014avoid doing all three at once."
+        }
+      ]
+    },
+    {
+      "id": "sandworms",
+      "title": "Sandworms",
+      "overview": "Worms punish time spent on deep sand; the vibration meter indicates risk.",
+      "key_points": [
+        "The meter rises with movement, fights, vehicles, and harvesting on dunes.",
+        "Rock neutralizes vibration; plateaus are safe staging points.",
+        "Breaches are telegraphed; change course immediately when spikes occur.",
+        "Air or rock breaks contact; straight-line sprints across dunes rarely work."
+      ],
+      "mechanics": [
+        {
+          "name": "Meter Reading",
+          "how_it_works": "Treat high readings as a hard stop\u2014pivot to rock rather than outrunning a breach."
+        },
+        {
+          "name": "Route Design",
+          "how_it_works": "Leapfrog between rock spines; avoid long, flat sand corridors."
+        },
+        {
+          "name": "Vehicle Use",
+          "how_it_works": "Vehicles amplify vibration; chain short bursts between rocks."
+        },
+        {
+          "name": "Travel Timing",
+          "how_it_works": "Night travel reduces heat load so you can focus on managing vibration."
+        }
+      ],
+      "warnings": [
+        "Crossing sand during spikes risks losing carried items if you cannot retrieve them."
+      ]
+    },
+    {
+      "id": "sandwalking-technique",
+      "title": "Sandwalking (Player-Discovered)",
+      "overview": "Some players report night-time traversal methods that reduce worm triggers using careful footing and traversal tools.",
+      "key_points": [
+        "Softstep\u2011style footwear and grappling can help shorten exposed segments.",
+        "Performed well, long crossings are possible without a breach.",
+        "Execution is sensitive to terrain and timing.",
+        "As an emergent technique, behavior can change with patches."
+      ],
+      "mechanics": [
+        {
+          "name": "Footwork",
+          "how_it_works": "Short, deliberate steps and controlled movement minimize vibration during crossings."
+        },
+        {
+          "name": "Grapples",
+          "how_it_works": "Use grapples to skip the longest sand stretches between rocks."
+        },
+        {
+          "name": "Night Advantage",
+          "how_it_works": "Lower heat at night lets you manage hydration while focusing on footing."
+        },
+        {
+          "name": "Contingency",
+          "how_it_works": "Always maintain a bailout path to nearby rock."
+        }
+      ],
+      "notes": [
+        "If a patch alters traversal, re-test routes before committing to long runs."
+      ]
+    },
+    {
+      "id": "coriolis-storms",
+      "title": "Coriolis Storms",
+      "overview": "Region-spanning sandstorms reduce visibility and damage exposed structures and players.",
+      "key_points": [
+        "Storms punish foundations placed directly on sand.",
+        "Shielded, rock-anchored bases take far less damage.",
+        "Shelter planning is essential for long routes.",
+        "Power outages during storms cascade into water outages."
+      ],
+      "mechanics": [
+        {
+          "name": "Forecasting",
+          "how_it_works": "Carry enough water to hold position until the storm passes."
+        },
+        {
+          "name": "Base Hardening",
+          "how_it_works": "Place critical structures within shield coverage on rock."
+        },
+        {
+          "name": "Travel Abort",
+          "how_it_works": "Turn back to your previous plateau if visibility drops and vibration rises."
+        },
+        {
+          "name": "Recovery",
+          "how_it_works": "Repair structures promptly to prevent deferred damage from compounding."
+        }
+      ],
+      "warnings": [
+        "Traveling blind into open dunes during storms often ends in worm or exposure deaths."
+      ]
+    },
+    {
+      "id": "visibility-and-navigation",
+      "title": "Visibility & Navigation",
+      "overview": "Dust and storm conditions obscure landmarks; clean routing prevents panic detours.",
+      "key_points": [
+        "Use map waypoints to string safe plateaus together.",
+        "Avoid featureless flats where orientation is easy to lose.",
+        "Mark shelters and refuel points during clear weather.",
+        "Do not cross vast dunes in low visibility unless necessary."
+      ],
+      "mechanics": [
+        {
+          "name": "Landmarks",
+          "how_it_works": "Memorize silhouettes of ridgelines and hub towers for quick bearings."
+        },
+        {
+          "name": "Backstops",
+          "how_it_works": "Keep a known plateau behind you so you can reverse course quickly."
+        },
+        {
+          "name": "Breadcrumbs",
+          "how_it_works": "Set interim waypoints near resource nodes to aid later loops."
+        },
+        {
+          "name": "Route Discipline",
+          "how_it_works": "Resist \u2018just this once\u2019 shortcuts across open sand."
+        }
+      ]
+    },
+    {
+      "id": "subfief-overview",
+      "title": "Sub\u2011Fief Overview",
+      "overview": "The Sub\u2011Fief Console claims territory and powers shielding for safer building.",
+      "key_points": [
+        "Place the console first; stations must sit within its range.",
+        "Keep it powered; shield coverage reduces environmental damage.",
+        "Rock placement shortens cable runs and reduces storm risk.",
+        "Re\u2011placement is possible but plan for downtime and power."
+      ],
+      "mechanics": [
+        {
+          "name": "Claim Flow",
+          "how_it_works": "Equip Construction Tool \u2192 place Console \u2192 wire power \u2192 expand stations."
+        },
+        {
+          "name": "Shielding",
+          "how_it_works": "Protect Windtraps, cisterns, and refineries inside the shield."
+        },
+        {
+          "name": "Center Mass",
+          "how_it_works": "Anchor console and generators centrally to maximize coverage."
+        },
+        {
+          "name": "Relocation",
+          "how_it_works": "Stagger teardown so critical services remain online."
+        }
+      ],
+      "warnings": [
+        "If the console loses power, structures can start taking damage until you restore coverage."
+      ]
+    },
+    {
+      "id": "base-foundations",
+      "title": "Base Foundations",
+      "overview": "Foundations on sand are vulnerable to erosion and storms; rock is the superior substrate.",
+      "key_points": [
+        "Rock plateaus resist storm damage and simplify expansion.",
+        "Short cable runs are easier to maintain under pressure.",
+        "Consolidated layouts are cheaper to defend and repair.",
+        "Spread-out mini-bases multiply failure points."
+      ],
+      "mechanics": [
+        {
+          "name": "Footprint",
+          "how_it_works": "Use a compact grid for stations, storage, and lines."
+        },
+        {
+          "name": "Choke Points",
+          "how_it_works": "Shape entry lanes with natural rock to control threats."
+        },
+        {
+          "name": "Service Aisles",
+          "how_it_works": "Leave narrow walk lanes to swap filters and clear jams."
+        },
+        {
+          "name": "Upgrade Path",
+          "how_it_works": "Reserve central plots for bigger stations you\u2019ll unlock later."
+        }
+      ]
+    },
+    {
+      "id": "cabling-and-lines",
+      "title": "Cabling & Lines",
+      "overview": "Power and water lines are your base\u2019s arteries; keep routes short and covered.",
+      "key_points": [
+        "Cable only what you must; excess line length increases troubleshooting time.",
+        "Run water lines directly into cisterns to buffer outages.",
+        "Shielded routes reduce damage during storms.",
+        "Label mentally where mains and branches run."
+      ],
+      "mechanics": [
+        {
+          "name": "Main Bus",
+          "how_it_works": "Run a short, central trunk with measured branches to stations."
+        },
+        {
+          "name": "Critical Split",
+          "how_it_works": "Place water systems on a small independent feed to survive brownouts."
+        },
+        {
+          "name": "Storm Checks",
+          "how_it_works": "Inspect mains after every storm before resuming long crafts."
+        },
+        {
+          "name": "Access",
+          "how_it_works": "Keep lines visible enough to diagnose breaks quickly."
+        }
+      ]
+    },
+    {
+      "id": "storage-and-logistics",
+      "title": "Storage & Logistics",
+      "overview": "Short transfer runs and clear labeling make or break crafting tempo.",
+      "key_points": [
+        "Put storage next to refineries and fabricators.",
+        "Isolate consumables: filters, fuel cells, repair kits near their stations.",
+        "Overflow cisterns reduce micromanagement during outages.",
+        "Keep a departures cache near your base exit."
+      ],
+      "mechanics": [
+        {
+          "name": "Input Bins",
+          "how_it_works": "Dedicated containers for ore, chemicals, and spice stabilize queues."
+        },
+        {
+          "name": "Output Bins",
+          "how_it_works": "Separate refined materials so they don\u2019t clog inputs."
+        },
+        {
+          "name": "Departure Cache",
+          "how_it_works": "Drop night-run kits (water, filters, wire) where you spawn vehicles."
+        },
+        {
+          "name": "Audit",
+          "how_it_works": "Periodically clear junk to keep slots free for high-value mats."
+        }
+      ]
+    },
+    {
+      "id": "windtraps-and-cisterns",
+      "title": "Windtraps & Cisterns",
+      "overview": "Windtraps automate water collection; cisterns buffer for expeditions.",
+      "key_points": [
+        "Windtraps require filters and steady power to run.",
+        "Link their output to one or more cisterns.",
+        "Keep spare filters in nearby storage to minimize downtime.",
+        "Backup power prevents surprise water stalls."
+      ],
+      "mechanics": [
+        {
+          "name": "Filter Routine",
+          "how_it_works": "Swap filters proactively rather than waiting for expiry."
+        },
+        {
+          "name": "Primary/Overflow",
+          "how_it_works": "Designate a primary cistern and an overflow to simplify routing."
+        },
+        {
+          "name": "Shielding",
+          "how_it_works": "Protect water rooms within sub\u2011fief coverage."
+        },
+        {
+          "name": "Power Budget",
+          "how_it_works": "Size power to keep water online during peak crafting."
+        }
+      ]
+    },
+    {
+      "id": "generators-vs-turbines",
+      "title": "Generators vs Turbines",
+      "overview": "Fuel generators provide predictable output; turbines pair well with Windtraps for low\u2011maintenance grids.",
+      "key_points": [
+        "Generators cost fuel but ignore weather fluctuations.",
+        "Turbines save fuel and pair naturally with water production.",
+        "A hybrid grid reduces single\u2011point failures.",
+        "Keep both inside shield coverage where possible."
+      ],
+      "mechanics": [
+        {
+          "name": "Fuel Buffer",
+          "how_it_works": "Maintain a small reserve of fuel cells for stability."
+        },
+        {
+          "name": "Hybrid Layout",
+          "how_it_works": "Put water on the renewable leg and heavy crafts on the fueled leg."
+        },
+        {
+          "name": "Redundancy",
+          "how_it_works": "Split critical lines so a single outage doesn\u2019t halt everything."
+        },
+        {
+          "name": "Maintenance",
+          "how_it_works": "Inspect turbines after storms and check generator fuel before long crafts."
+        }
+      ]
+    },
+    {
+      "id": "research-menu-modes",
+      "title": "Research Menu Modes",
+      "overview": "Choose between a guided (locked) path or an open (unlocked) view of the tech tree.",
+      "key_points": [
+        "Locked surfaces nodes as you progress through story and tutorials.",
+        "Unlocked shows the entire tree so you can plan freely.",
+        "Neither changes total costs; it\u2019s a pacing preference.",
+        "Pick based on whether you want structure or sandbox planning."
+      ],
+      "mechanics": [
+        {
+          "name": "Switching",
+          "how_it_works": "You can change presentations based on comfort as you learn systems."
+        },
+        {
+          "name": "Planning",
+          "how_it_works": "Unlocked helps you blueprint bases; locked helps you focus on essentials."
+        },
+        {
+          "name": "Cost Reality",
+          "how_it_works": "Unlocks still require Intel and materials either way."
+        },
+        {
+          "name": "Onboarding",
+          "how_it_works": "New players often benefit from locked to avoid over\u2011spending."
+        }
+      ]
+    },
+    {
+      "id": "intel-earning",
+      "title": "Intel Earning",
+      "overview": "Intel points come from exploration, leveling, and clearing hostile sites; they gate research unlocks.",
+      "key_points": [
+        "Camp clears and activity hubs are strong Intel sources.",
+        "Probe scans and passive exploration add a safer trickle.",
+        "Leveling contributes steady points over time.",
+        "Group runs accelerate Intel if roles are coordinated."
+      ],
+      "mechanics": [
+        {
+          "name": "Loop Design",
+          "how_it_works": "Alternate high\u2011risk clears with low\u2011risk scans to maintain flow."
+        },
+        {
+          "name": "Avoid Waste",
+          "how_it_works": "Don\u2019t unlock crafts you can\u2019t build yet; match Intel to inventory."
+        },
+        {
+          "name": "Milestones",
+          "how_it_works": "Target unlocks that stabilize power, water, and mobility first."
+        },
+        {
+          "name": "Solo Play",
+          "how_it_works": "Favor safer exploration loops if under\u2011geared."
+        }
+      ]
+    },
+    {
+      "id": "material-tiers",
+      "title": "Material Tiers",
+      "overview": "Higher tiers unlock advanced recipes and components across steel, aluminum, duraluminum, plastanium, and more.",
+      "key_points": [
+        "Tiers appear as you invest Intel and progress.",
+        "Advanced materials back new armor, weapons, vehicles, and structures.",
+        "Refinery and fabricator upgrades track tier growth.",
+        "Stockpiling low\u2011tier mats still matters for baseline upkeep."
+      ],
+      "mechanics": [
+        {
+          "name": "Tier Planning",
+          "how_it_works": "Queue refined materials before opening new tier crafts."
+        },
+        {
+          "name": "Bottlenecks",
+          "how_it_works": "Expect specific chemicals or alloys to gate late crafts."
+        },
+        {
+          "name": "Refinery Scaling",
+          "how_it_works": "Upgrade refinery capacity to keep pace with unlocks."
+        },
+        {
+          "name": "Fallbacks",
+          "how_it_works": "Trade or contracts can bridge rare material gaps."
+        }
+      ]
+    },
+    {
+      "id": "schematics-and-uniques",
+      "title": "Schematics & Uniques",
+      "overview": "Some unlocks require a one\u2011time schematic in addition to Intel; these are often found through exploration or vendors.",
+      "key_points": [
+        "Schematics expand the craft list beyond standard research.",
+        "They\u2019re consumed to teach a recipe; keep track of what\u2019s learned.",
+        "Vendors, contracts, and exploration are common sources.",
+        "Hold unique crafts until you can actually build the chain."
+      ],
+      "mechanics": [
+        {
+          "name": "Tracking",
+          "how_it_works": "Label storage for learned vs. unlearned schematics."
+        },
+        {
+          "name": "Timing",
+          "how_it_works": "Avoid learning vanity items before stabilizing essentials."
+        },
+        {
+          "name": "Team Play",
+          "how_it_works": "Coordinate who learns what to minimize duplication."
+        },
+        {
+          "name": "Backups",
+          "how_it_works": "Keep a few unspent schematics for future patches."
+        }
+      ]
+    },
+    {
+      "id": "refineries-overview",
+      "title": "Refineries Overview",
+      "overview": "Ore, chemical, and spice refineries convert gathered materials into refined outputs.",
+      "key_points": [
+        "Small/medium/large variants differ by throughput and footprint.",
+        "Chemical chains introduce solvents, filters, and reagents.",
+        "Spice refining has its own inputs and outputs for later crafts.",
+        "Refinery placement near storage cuts transfer time."
+      ],
+      "mechanics": [
+        {
+          "name": "Ore Refining",
+          "how_it_works": "Turn ores into ingots for armor, weapons, and structures."
+        },
+        {
+          "name": "Chemical Lines",
+          "how_it_works": "Produce compounds, lubricants, and advanced reagents."
+        },
+        {
+          "name": "Spice Lines",
+          "how_it_works": "Process spice inputs into derivatives needed for endgame tech."
+        },
+        {
+          "name": "Queue Hygiene",
+          "how_it_works": "Keep input bins stocked and outputs clear to avoid jams."
+        }
+      ]
+    },
+    {
+      "id": "fabricators-overview",
+      "title": "Fabricators Overview",
+      "overview": "Survival, Garment, Weapons, and Vehicle fabricators cover most crafting; advanced variants add specialized recipes.",
+      "key_points": [
+        "Unlock advanced fabricators as material tiers rise.",
+        "Keep them near storage and within shield coverage.",
+        "Match fabricator unlocks to your immediate goals.",
+        "Repair stations round out the crafting cluster."
+      ],
+      "mechanics": [
+        {
+          "name": "Survival",
+          "how_it_works": "General tools, stillsuit pieces, and field necessities."
+        },
+        {
+          "name": "Garment",
+          "how_it_works": "Armor fabrics and tailored components."
+        },
+        {
+          "name": "Weapons",
+          "how_it_works": "Weapon bodies, parts, and some ammo types."
+        },
+        {
+          "name": "Vehicle",
+          "how_it_works": "Vehicle modules and parts for mobility."
+        }
+      ]
+    },
+    {
+      "id": "ammo-and-consumables",
+      "title": "Ammo & Consumables",
+      "overview": "Ammunition, filters, fuel cells, and repair kits underpin all activity; keep a buffer.",
+      "key_points": [
+        "Run a dedicated chest for filters and repair kits.",
+        "Carry field kits so mistakes don\u2019t force long retreats.",
+        "Don\u2019t starve ammo production when planning boss clears.",
+        "Vehicles need welding wire for field stabilizations."
+      ],
+      "mechanics": [
+        {
+          "name": "Ammo Budget",
+          "how_it_works": "Craft a buffer before entering hostile zones."
+        },
+        {
+          "name": "Filter Buffer",
+          "how_it_works": "Swap filters proactively during long crafts."
+        },
+        {
+          "name": "Wire & Kits",
+          "how_it_works": "Stock vehicle storage with welding wire and repair kits."
+        },
+        {
+          "name": "Logistics",
+          "how_it_works": "Place consumables next to their stations for muscle memory."
+        }
+      ]
+    },
+    {
+      "id": "repairs-items",
+      "title": "Repairs: Items",
+      "overview": "Gear repairs at the Repair Station; frequent maintenance avoids harsher penalties on some items.",
+      "key_points": [
+        "Don\u2019t let durability reach zero on important tools.",
+        "Top off before night runs to avoid surprises.",
+        "Keep repair mats in a dedicated chest near the station.",
+        "Schedule post-sortie repairs while debriefing."
+      ],
+      "mechanics": [
+        {
+          "name": "Station Use",
+          "how_it_works": "Queue items and confirm mats are available before long crafts."
+        },
+        {
+          "name": "Preventive Care",
+          "how_it_works": "Fix small dings early to avoid max-durability loss on certain items."
+        },
+        {
+          "name": "Loadout Discipline",
+          "how_it_works": "Rotate backups while primaries are in repair."
+        },
+        {
+          "name": "Pre-Run Check",
+          "how_it_works": "Add repairs to your night-run checklist."
+        }
+      ]
+    },
+    {
+      "id": "repairs-vehicles",
+      "title": "Repairs: Vehicles",
+      "overview": "Vehicle parts degrade when exposed; field patches use welding tools with wire, full restores need a station.",
+      "key_points": [
+        "Shelter vehicles to slow decay when not in use.",
+        "Carry wire for field stabilizations during long runs.",
+        "Park near the station to cut downtime.",
+        "Swap heavily worn modules before deep desert trips."
+      ],
+      "mechanics": [
+        {
+          "name": "Field Patch",
+          "how_it_works": "Use welding wire to stabilize until you reach base."
+        },
+        {
+          "name": "Full Restore",
+          "how_it_works": "Run a complete repair cycle at the station as needed."
+        },
+        {
+          "name": "Storage",
+          "how_it_works": "Covered parking preserves module health between runs."
+        },
+        {
+          "name": "Inspection",
+          "how_it_works": "Check parts after storms or long sand crossings."
+        }
+      ]
+    },
+    {
+      "id": "repairs-structures",
+      "title": "Repairs: Structures",
+      "overview": "Use the Construction Tool\u2019s repair mode to restore damaged buildings within your sub\u2011fief.",
+      "key_points": [
+        "Keep the console powered to prevent additional damage during repair.",
+        "Prioritize water and power infrastructure before decor.",
+        "Inspect for damage after every storm.",
+        "Pre-stage repair materials near your main cluster."
+      ],
+      "mechanics": [
+        {
+          "name": "Repair Mode",
+          "how_it_works": "Swap the Construction Tool to repair and apply required mats."
+        },
+        {
+          "name": "Shield First",
+          "how_it_works": "Restore shielding and power lines before anything else."
+        },
+        {
+          "name": "Triage",
+          "how_it_works": "Fix production and storage before cosmetic pieces."
+        },
+        {
+          "name": "Downtime",
+          "how_it_works": "Plan quick repair windows between crafts."
+        }
+      ]
+    },
+    {
+      "id": "trainers-basics",
+      "title": "Trainers: Basics",
+      "overview": "Basic trainers unlock early abilities and core movement/utility options.",
+      "key_points": [
+        "Visiting trainers early widens your toolkit before difficult zones.",
+        "Short admission quests unlock their first offerings.",
+        "Trainer locations cluster around hubs and safe routes.",
+        "Hybrid play starts once basics are cleared."
+      ],
+      "mechanics": [
+        {
+          "name": "Order of Ops",
+          "how_it_works": "Complete basics in a single route to save time and water."
+        },
+        {
+          "name": "Quest Tips",
+          "how_it_works": "Bring a modest kit; tasks aren\u2019t gear-intensive but may require travel."
+        },
+        {
+          "name": "Mapping",
+          "how_it_works": "Mark trainer hubs so you can revisit with friends quickly."
+        },
+        {
+          "name": "Next Steps",
+          "how_it_works": "Advanced trainers open later with stronger abilities."
+        }
+      ]
+    },
+    {
+      "id": "trainers-advanced",
+      "title": "Trainers: Advanced",
+      "overview": "Advanced trainers unlock higher-impact abilities and deeper hybrids after progression milestones.",
+      "key_points": [
+        "Expect quests to be longer or require stronger kits.",
+        "Unlocks can reshape builds; respec if needed.",
+        "Ornithopter travel simplifies reaching city trainers.",
+        "Coordinate unlocks with your group to diversify roles."
+      ],
+      "mechanics": [
+        {
+          "name": "Preparation",
+          "how_it_works": "Repair, restock, and set waypoints before starting an advanced chain."
+        },
+        {
+          "name": "Build Sync",
+          "how_it_works": "Plan upgrades around new abilities to avoid resource waste."
+        },
+        {
+          "name": "Mobility",
+          "how_it_works": "Use aircraft to bypass worm corridors en route to trainers."
+        },
+        {
+          "name": "Respec",
+          "how_it_works": "Don\u2019t hesitate to reallocate points as your kit changes."
+        }
+      ]
+    },
+    {
+      "id": "hybridization",
+      "title": "Hybridization",
+      "overview": "Mixing class abilities lets you tailor combat and traversal.",
+      "key_points": [
+        "Trooper firepower pairs well with Bene Gesserit mobility.",
+        "Mentat tactical tools complement ranged play.",
+        "Planetologist exploration perks speed Intel farming loops.",
+        "Swordmaster defensive timing helps survive late-game zones."
+      ],
+      "mechanics": [
+        {
+          "name": "Synergy Planning",
+          "how_it_works": "Pick a mobility core first, then layer damage or control."
+        },
+        {
+          "name": "Trainer Order",
+          "how_it_works": "Unlock movement and survival before niche damage spikes."
+        },
+        {
+          "name": "Loadout Edits",
+          "how_it_works": "Adjust weapons and armor to support the hybrid\u2019s rhythm."
+        },
+        {
+          "name": "Group Roles",
+          "how_it_works": "Split responsibilities\u2014scanner, driver, turret, crowd control."
+        }
+      ]
+    },
+    {
+      "id": "ornithopter-travel",
+      "title": "Ornithopter Travel",
+      "overview": "Aerial travel changes routing and safety; it\u2019s a major milestone.",
+      "key_points": [
+        "Aircraft bypass ground hazards and shorten routes.",
+        "Fuel and maintenance still matter\u2014don\u2019t launch under-repaired.",
+        "Use aircraft to reach city trainers and far hubs.",
+        "Storms still reduce visibility; avoid blind flying into dunes."
+      ],
+      "mechanics": [
+        {
+          "name": "Preflight",
+          "how_it_works": "Top off repairs and supplies before long sorties."
+        },
+        {
+          "name": "Waypointing",
+          "how_it_works": "Plan landing spots on plateaus near objectives."
+        },
+        {
+          "name": "Cargo",
+          "how_it_works": "Use storage modules to stage expedition kits."
+        },
+        {
+          "name": "Emergency",
+          "how_it_works": "Keep a ground route in mind if weather closes in."
+        }
+      ]
+    },
+    {
+      "id": "vehicle-ops",
+      "title": "Vehicle Operations",
+      "overview": "Ground vehicles extend range when maintained and parked under cover.",
+      "key_points": [
+        "Shelter vehicles to slow module decay.",
+        "Carry wire and kits for field patches.",
+        "Plan rock-to-rock moves across worm country.",
+        "Park beside the repair bay to streamline upkeep."
+      ],
+      "mechanics": [
+        {
+          "name": "Fuel Plan",
+          "how_it_works": "Keep a small fuel buffer in base storage."
+        },
+        {
+          "name": "Module Swaps",
+          "how_it_works": "Rotate spares into the field when parts are near wear caps."
+        },
+        {
+          "name": "Team Seats",
+          "how_it_works": "Use multi-seat vehicles to move crew and gear efficiently."
+        },
+        {
+          "name": "Storm Prep",
+          "how_it_works": "Shelter vehicles ahead of forecast storms."
+        }
+      ]
+    },
+    {
+      "id": "contracts-and-vendors",
+      "title": "Contracts & Vendors",
+      "overview": "Contracts, trading, and vendor stock smooth progression bottlenecks.",
+      "key_points": [
+        "Sell surplus and buy bottleneck components as needed.",
+        "Faction standing can expand vendor offerings.",
+        "Turn in contracts that align with your exploration loops.",
+        "Keep cash buffers for emergency purchases (filters, wire, fuel)."
+      ],
+      "mechanics": [
+        {
+          "name": "Loop Alignment",
+          "how_it_works": "Pick contracts along routes you already run."
+        },
+        {
+          "name": "Reputation",
+          "how_it_works": "Raising reputation unlocks better stock and missions over time."
+        },
+        {
+          "name": "Resource Swaps",
+          "how_it_works": "Trade low-value extras for a few key bottlenecks."
+        },
+        {
+          "name": "Stash",
+          "how_it_works": "Maintain a sell bin near your departure cache."
+        }
+      ]
+    },
+    {
+      "id": "probes-and-scans",
+      "title": "Probes & Scans",
+      "overview": "Scanning adds safe Intel and reveals resource nodes for future runs.",
+      "key_points": [
+        "Probe loops are a low-risk way to progress between major clears.",
+        "Mark high-yield nodes for later extraction.",
+        "Use scans to test routes through new regions.",
+        "Pair scans with night travel to minimize risk."
+      ],
+      "mechanics": [
+        {
+          "name": "Loadout",
+          "how_it_works": "Carry enough probes for your intended loop length."
+        },
+        {
+          "name": "Waypointing",
+          "how_it_works": "Chain scanned nodes into efficient harvest runs."
+        },
+        {
+          "name": "Recon",
+          "how_it_works": "Scout enemy density ahead of combat pushes."
+        },
+        {
+          "name": "Solo Play",
+          "how_it_works": "Favor scans when under-geared or low on ammo."
+        }
+      ]
+    },
+    {
+      "id": "route-planning",
+      "title": "Route Planning",
+      "overview": "Success depends on efficient, safe routes with fallback options.",
+      "key_points": [
+        "Create waypoint chains across rock and plateaus.",
+        "Stage supplies at launch points to speed restarts.",
+        "Alternate risky camp clears with safer probe loops.",
+        "Avoid long, flat sand corridors that invite worm breaches."
+      ],
+      "mechanics": [
+        {
+          "name": "Checkpoints",
+          "how_it_works": "Set staging points at natural choke-free plateaus."
+        },
+        {
+          "name": "Supply Handoff",
+          "how_it_works": "Swap kits at base exit for faster relaunches."
+        },
+        {
+          "name": "Two-Route Rule",
+          "how_it_works": "Always know your exit route before crossing a dune field."
+        },
+        {
+          "name": "Time Boxing",
+          "how_it_works": "Cap time spent on sand between safe rocks."
+        }
+      ]
+    },
+    {
+      "id": "death-and-retrieval",
+      "title": "Death & Retrieval",
+      "overview": "Some deaths drop items for recovery; environmental deaths can make recovery unlikely.",
+      "key_points": [
+        "Plan retrieval routes before deep dives.",
+        "Avoid risky crossings when heavily loaded.",
+        "Use vehicles or aircraft to shorten retrieval time.",
+        "If conditions worsen, cut losses rather than chain-wiping."
+      ],
+      "mechanics": [
+        {
+          "name": "Staging",
+          "how_it_works": "Cache extra water and kits near likely retrieval paths."
+        },
+        {
+          "name": "Weather Hold",
+          "how_it_works": "Wait out storms before attempting recovery."
+        },
+        {
+          "name": "Escort",
+          "how_it_works": "Bring a partner to cover you during retrievals."
+        },
+        {
+          "name": "Triage",
+          "how_it_works": "Retrieve irreplaceables first; leave salvage for later."
+        }
+      ]
+    },
+    {
+      "id": "roles-and-synergy",
+      "title": "Group Roles & Synergy",
+      "overview": "Splitting roles keeps runs efficient and safer under pressure.",
+      "key_points": [
+        "Assign scanning, driving, turret duty, and repair tasks.",
+        "Hybrid builds cover gaps between roles.",
+        "Use shared caches for filters, wire, and water.",
+        "Coordinate trainer unlocks to diversify abilities."
+      ],
+      "mechanics": [
+        {
+          "name": "Command",
+          "how_it_works": "Nominate a route lead to keep the group on schedule."
+        },
+        {
+          "name": "Supply Sgt",
+          "how_it_works": "One player maintains consumables at base."
+        },
+        {
+          "name": "Scout",
+          "how_it_works": "A mobility build runs ahead to mark safe landing zones."
+        },
+        {
+          "name": "Medic",
+          "how_it_works": "Carry extra water and repair kits to stabilize others."
+        }
+      ]
+    },
+    {
+      "id": "solo-play",
+      "title": "Solo Play",
+      "overview": "Solo is viable by prioritizing safer loops and mobility.",
+      "key_points": [
+        "Favor probe loops and night runs until gear improves.",
+        "Use compact bases with short lines for low-maintenance play.",
+        "Prioritize mobility and hydration unlocks.",
+        "Trade for bottleneck parts you can\u2019t safely farm."
+      ],
+      "mechanics": [
+        {
+          "name": "Load Discipline",
+          "how_it_works": "Carry only what you need to survive and craft your next step."
+        },
+        {
+          "name": "Exit Plans",
+          "how_it_works": "Keep bailouts on your map; risky sand is optional, not mandatory."
+        },
+        {
+          "name": "Base Checks",
+          "how_it_works": "Audit power/water after storms before setting out."
+        },
+        {
+          "name": "Vendor Use",
+          "how_it_works": "Buy small quantities to bridge rare mats."
+        }
+      ]
+    },
+    {
+      "id": "settings-and-modes",
+      "title": "Settings & Modes",
+      "overview": "Presentation settings like research view help tailor pace and planning to your preference.",
+      "key_points": [
+        "Unlocked research shows all nodes, aiding planners.",
+        "Locked keeps focus on guided progression.",
+        "Experiment and switch modes as you learn.",
+        "Accessibility options can reduce strain during long runs."
+      ],
+      "mechanics": [
+        {
+          "name": "UI Habits",
+          "how_it_works": "Pin key menus you visit often (research, map, crafting)."
+        },
+        {
+          "name": "Audio Cues",
+          "how_it_works": "Listen for breach telegraphs in low visibility."
+        },
+        {
+          "name": "Color Clarity",
+          "how_it_works": "Adjust contrast to keep dunes vs. rock obvious."
+        },
+        {
+          "name": "Crosshair",
+          "how_it_works": "Pick a reticle visible against sand glare."
+        }
+      ]
+    },
+    {
+      "id": "patch-awareness",
+      "title": "Patch Awareness",
+      "overview": "System behavior can shift after updates; re-validate routes and techniques.",
+      "key_points": [
+        "Emergent methods like sandwalking may change.",
+        "Zone rules (PvE vs PvP) can be adjusted over time.",
+        "Unlock pacing may be tuned.",
+        "Revisit trainers and vendors after major patches."
+      ],
+      "mechanics": [
+        {
+          "name": "Test Flights",
+          "how_it_works": "Scout old routes post-patch before committing heavy loads."
+        },
+        {
+          "name": "Read Notes",
+          "how_it_works": "Scan patch notes to preempt surprises."
+        },
+        {
+          "name": "Backup Stock",
+          "how_it_works": "Keep some materials uncommitted for quick pivots."
+        },
+        {
+          "name": "Community Check",
+          "how_it_works": "Sync with guides after significant changes."
+        }
+      ]
+    },
+    {
+      "id": "hydration-micro-1",
+      "title": "Hydration Micro: Shade Tactics",
+      "overview": "Minute-to-minute choices preserve water over long sessions.",
+      "key_points": [
+        "Move under overhangs during midday crossings",
+        "Pause on shadowed rock to reset debuffs",
+        "Use cliffs as windbreaks before sprinting"
+      ],
+      "mechanics": [
+        {
+          "name": "Windbreaks",
+          "how_it_works": "Face away from storm direction to read the meter and plan next hop"
+        },
+        {
+          "name": "Pulse Movement",
+          "how_it_works": "Short controlled bursts, then cooldown in shade"
+        },
+        {
+          "name": "Cache Spots",
+          "how_it_works": "Place small water caches at recurring break points"
+        }
+      ]
+    },
+    {
+      "id": "hydration-micro-2",
+      "title": "Hydration Micro: Container Discipline",
+      "overview": "Minute-to-minute choices preserve water over long sessions.",
+      "key_points": [
+        "Standardize Literjon storage near exits",
+        "Refill habit: top off before crafting",
+        "Label a chest for filters, fuel cells, repair kits"
+      ],
+      "mechanics": [
+        {
+          "name": "Exit Cache",
+          "how_it_works": "Bundle expedition consumables in one accessible crate"
+        },
+        {
+          "name": "Refill Cycle",
+          "how_it_works": "Refill on return before you do anything else"
+        },
+        {
+          "name": "Roster",
+          "how_it_works": "If in a group, rotate who restocks the cache"
+        }
+      ]
+    },
+    {
+      "id": "worm-micro-1",
+      "title": "Worm Risk Micro: Edge Riding",
+      "overview": "Trim seconds off sand time and react to early warnings correctly.",
+      "key_points": [
+        "Walk dune edges rather than crests",
+        "Cut diagonals to reach rock sooner",
+        "Abort if the meter spikes twice rapidly"
+      ],
+      "mechanics": [
+        {
+          "name": "Edge Lines",
+          "how_it_works": "Skirt dune shoulders to reduce time on deep sand"
+        },
+        {
+          "name": "Angle of Attack",
+          "how_it_works": "Diagonal routes shorten exposed time"
+        },
+        {
+          "name": "Spike Rule",
+          "how_it_works": "Two quick spikes = immediate course change"
+        }
+      ]
+    },
+    {
+      "id": "worm-micro-2",
+      "title": "Worm Risk Micro: Signal Reading",
+      "overview": "Trim seconds off sand time and react to early warnings correctly.",
+      "key_points": [
+        "Treat rumble and geysers as a hard warning",
+        "Don\u2019t stop to loot with meter elevated",
+        "Prefer backtracking to gambling a sprint"
+      ],
+      "mechanics": [
+        {
+          "name": "Audio First",
+          "how_it_works": "Rumble is your earliest tell\u2014react immediately"
+        },
+        {
+          "name": "Loot Triage",
+          "how_it_works": "Skip salvage when risk is rising"
+        },
+        {
+          "name": "Backstop",
+          "how_it_works": "Keep a known rock in reach at all times"
+        }
+      ]
+    },
+    {
+      "id": "base-micro-1",
+      "title": "Base Ops Micro: Power Hygiene",
+      "overview": "Small structural choices prevent avoidable outages.",
+      "key_points": [
+        "Audit generator fuel before big crafts",
+        "Test turbines after storms",
+        "Place water on a redundant line"
+      ],
+      "mechanics": [
+        {
+          "name": "Fuel Log",
+          "how_it_works": "Keep a mental log of consumption per craft session"
+        },
+        {
+          "name": "Turbine Check",
+          "how_it_works": "Spin-up tests confirm output after weather"
+        },
+        {
+          "name": "Redundant Tap",
+          "how_it_works": "A small independent line sustains Windtraps"
+        }
+      ]
+    },
+    {
+      "id": "base-micro-2",
+      "title": "Base Ops Micro: Station Spacing",
+      "overview": "Small structural choices prevent avoidable outages.",
+      "key_points": [
+        "Leave maintenance aisles",
+        "Keep storage at arm\u2019s length from stations",
+        "Avoid long cable loops that cross paths"
+      ],
+      "mechanics": [
+        {
+          "name": "Aisles",
+          "how_it_works": "Two-tile aisles let you swap filters rapidly"
+        },
+        {
+          "name": "Reachability",
+          "how_it_works": "Reduce trip distance between input and output bins"
+        },
+        {
+          "name": "Line Clarity",
+          "how_it_works": "Avoid spaghetti so breaks are visible"
+        }
+      ]
+    },
+    {
+      "id": "intel-micro-1",
+      "title": "Intel Planning Micro: Loop Design",
+      "overview": "Keep research in step with what you can actually craft.",
+      "key_points": [
+        "Alternate outposts with probe loops",
+        "Slot low-risk scans while crafting finishes",
+        "Bundle trainer visits with Intel runs"
+      ],
+      "mechanics": [
+        {
+          "name": "Alternation",
+          "how_it_works": "Switch risk profiles to maintain steady Intel"
+        },
+        {
+          "name": "Downtime Use",
+          "how_it_works": "Scan while waiting on refined mats"
+        },
+        {
+          "name": "Combo Runs",
+          "how_it_works": "End loops at hubs with trainers and vendors"
+        }
+      ]
+    },
+    {
+      "id": "intel-micro-2",
+      "title": "Intel Planning Micro: Spend Discipline",
+      "overview": "Keep research in step with what you can actually craft.",
+      "key_points": [
+        "Unlock power/water before late-tier crafts",
+        "Hold vanity items for later",
+        "Match unlocks to materials in storage"
+      ],
+      "mechanics": [
+        {
+          "name": "Essentials First",
+          "how_it_works": "Stabilize base throughput then branch out"
+        },
+        {
+          "name": "Defer Cosmetics",
+          "how_it_works": "A stable grid beats fancy d\u00e9cor"
+        },
+        {
+          "name": "Inventory Match",
+          "how_it_works": "Open nodes you can build today"
+        }
+      ]
+    },
+    {
+      "id": "trooper-overview",
+      "title": "Trooper Overview",
+      "overview": "A straightforward combat specialization built around reliable ranged damage and survivability.",
+      "key_points": [
+        "Strong baseline for PvE and early PvP.",
+        "Pairs well with mobility unlocks for route control.",
+        "Easy admission quests at basic trainers.",
+        "Hybridizes cleanly with utility from other trees."
+      ],
+      "mechanics": [
+        {
+          "name": "Core Loop",
+          "how_it_works": "Simple ranged engagements with clear upgrade paths."
+        },
+        {
+          "name": "Trainer Path",
+          "how_it_works": "Finish basic quests first before advanced unlocks."
+        },
+        {
+          "name": "Synergy",
+          "how_it_works": "Layer movement tools to dictate fight range."
+        },
+        {
+          "name": "Loadout",
+          "how_it_works": "Carry ammo buffers to avoid stalling mid-fight."
+        }
+      ]
+    },
+    {
+      "id": "bene-gesserit-overview",
+      "title": "Bene Gesserit Overview",
+      "overview": "A tactical kit emphasizing agility and control; rewards precise execution.",
+      "key_points": [
+        "High mobility supports night runs and worm avoidance.",
+        "Pairs with ranged kits to control engagements.",
+        "Advanced trainers deepen the control toolkit.",
+        "Ideal for route scouting in groups."
+      ],
+      "mechanics": [
+        {
+          "name": "Mobility Focus",
+          "how_it_works": "Movement tools enable disengage and reposition."
+        },
+        {
+          "name": "Trainer Order",
+          "how_it_works": "Unlock basics early for a safe exploration core."
+        },
+        {
+          "name": "Hybrid Focus",
+          "how_it_works": "Combine with Trooper for damage plus control."
+        },
+        {
+          "name": "Prep",
+          "how_it_works": "Maintain water for chase/disengage sequences."
+        }
+      ]
+    },
+    {
+      "id": "mentat-overview",
+      "title": "Mentat Overview",
+      "overview": "A planning/utility specialization that augments team efficiency and routing.",
+      "key_points": [
+        "Complements scanning and contract loops.",
+        "Supports resource management and safe progression.",
+        "Trainer visits slot naturally into hub loops.",
+        "Valuable in groups that split roles."
+      ],
+      "mechanics": [
+        {
+          "name": "Planner Role",
+          "how_it_works": "Optimizes runs via tools and information."
+        },
+        {
+          "name": "Loop Integration",
+          "how_it_works": "Weave trainer stops into Intel routes."
+        },
+        {
+          "name": "Team Value",
+          "how_it_works": "Buffs logistics and exploration pacing."
+        },
+        {
+          "name": "Loadout",
+          "how_it_works": "Carry probes and route tools alongside basics."
+        }
+      ]
+    },
+    {
+      "id": "planetologist-overview",
+      "title": "Planetologist Overview",
+      "overview": "Exploration-forward toolkit that speeds resource discovery and Intel trickles.",
+      "key_points": [
+        "Supports safer solo loops and resource scouting.",
+        "Pairs well with night travel and rock routing.",
+        "Advanced unlocks reinforce exploration tempo.",
+        "Natural fit for group recon roles."
+      ],
+      "mechanics": [
+        {
+          "name": "Recon Role",
+          "how_it_works": "Charts safe paths and resource pockets."
+        },
+        {
+          "name": "Loop Design",
+          "how_it_works": "Alternate scanning and harvesting shifts."
+        },
+        {
+          "name": "Hybrid",
+          "how_it_works": "Pair with mobility or defense for survivability."
+        },
+        {
+          "name": "Supplies",
+          "how_it_works": "Bring probes, water, and repair kits."
+        }
+      ]
+    },
+    {
+      "id": "swordmaster-overview",
+      "title": "Swordmaster Overview",
+      "overview": "Defensive timing and close-quarters reliability for players who favor measured fights.",
+      "key_points": [
+        "Durable frontline option in mixed teams.",
+        "Pairs with ranged hybrids for flexibility.",
+        "Trainer path benefits from solid gear upkeep.",
+        "Good for holding choke points around bases."
+      ],
+      "mechanics": [
+        {
+          "name": "Defense Loop",
+          "how_it_works": "Mitigate risks while teammates handle ranged threats."
+        },
+        {
+          "name": "Choke Use",
+          "how_it_works": "Anchor narrow approaches during storms or raids."
+        },
+        {
+          "name": "Hybrid",
+          "how_it_works": "Blend in a ranged core for open desert fights."
+        },
+        {
+          "name": "Upkeep",
+          "how_it_works": "Keep repairs current to retain durability edges."
+        }
+      ]
+    },
+    {
+      "id": "pve-pvp-ops",
+      "title": "PvE/PvP Operations",
+      "overview": "Different zones emphasize different risks; plan routes and loadouts accordingly.",
+      "key_points": [
+        "PvE spaces focus on environment and NPC threats.",
+        "PvP sectors add player risk over scarce resources.",
+        "Route variety prevents predictable ambush points.",
+        "Travel during off-peak times for safer runs."
+      ],
+      "mechanics": [
+        {
+          "name": "Risk Bands",
+          "how_it_works": "Expect higher risk near rare resource sites and wrecks."
+        },
+        {
+          "name": "Ambush Avoidance",
+          "how_it_works": "Use rock spines and air routes to skip choke points."
+        },
+        {
+          "name": "Extraction",
+          "how_it_works": "Plan clean exits before harvesting in hot zones."
+        },
+        {
+          "name": "Noise Discipline",
+          "how_it_works": "Minimize on-sand time to avoid worm chaos during PvP."
+        }
+      ],
+      "warnings": [
+        "Don\u2019t take heavy loads through known PvP chokepoints without an exit plan."
+      ]
+    },
+    {
+      "id": "grappling-and-climbing",
+      "title": "Grappling & Climbing",
+      "overview": "Grapples shorten exposed sand segments and enable vertical shortcuts on rock.",
+      "key_points": [
+        "Chain short grapples between rock to minimize worm exposure.",
+        "Climb to vantage points to re-orient during storms.",
+        "Pair grapples with night runs for safest long crossings.",
+        "Practice timing to avoid stalling mid-swing."
+      ],
+      "mechanics": [
+        {
+          "name": "Rock-to-Rock",
+          "how_it_works": "Anchor lines to high points for reliable arcs."
+        },
+        {
+          "name": "Bailouts",
+          "how_it_works": "Pick anchors that leave you an immediate rock landing."
+        },
+        {
+          "name": "Combat Use",
+          "how_it_works": "Grapple to high ground to break line-of-sight."
+        },
+        {
+          "name": "Fatigue",
+          "how_it_works": "Avoid repeated grapples with low hydration."
+        }
+      ]
+    },
+    {
+      "id": "map-and-waypoints",
+      "title": "Map & Waypoints",
+      "overview": "Clean waypoint chains reduce wasted time and panic decisions.",
+      "key_points": [
+        "Mark refuel, repair, and water caches explicitly.",
+        "Use natural landmarks to string routes together.",
+        "Pre-mark trainer hubs and vendors you plan to visit.",
+        "Remove obsolete markers to keep the map readable."
+      ],
+      "mechanics": [
+        {
+          "name": "Checkpoint Spacing",
+          "how_it_works": "Keep waypoints close across dangerous sand."
+        },
+        {
+          "name": "Landing Zones",
+          "how_it_works": "Flag plateau landing spots for aircraft."
+        },
+        {
+          "name": "Iteration",
+          "how_it_works": "Review your markers after each patch or base move."
+        },
+        {
+          "name": "Color Discipline",
+          "how_it_works": "Use consistent icon choices for clarity."
+        }
+      ]
+    },
+    {
+      "id": "salvage-and-trade",
+      "title": "Salvage & Trade",
+      "overview": "Salvage keeps income steady; trade fills recipe bottlenecks.",
+      "key_points": [
+        "Sell excess low-tier mats to fund specialty buys.",
+        "Buy small amounts of bottleneck reagents to keep queues moving.",
+        "Time market trips with trainer visits and contract turn-ins.",
+        "Keep a cash buffer for emergency consumables."
+      ],
+      "mechanics": [
+        {
+          "name": "Sell Bin",
+          "how_it_works": "Maintain a crate for vendor runs."
+        },
+        {
+          "name": "Targeted Buys",
+          "how_it_works": "Only purchase what unblocks a recipe chain."
+        },
+        {
+          "name": "Contracts",
+          "how_it_works": "Stack turn-ins to minimize downtime."
+        },
+        {
+          "name": "Route Sync",
+          "how_it_works": "Shop when passing through hubs you already visit."
+        }
+      ]
+    },
+    {
+      "id": "night-run-sop",
+      "title": "Night Run SOP",
+      "overview": "A short checklist to streamline safe long-distance runs.",
+      "key_points": [
+        "Repairs and refuels complete before dusk",
+        "Water and filters staged",
+        "Route waypoints set",
+        "Emergency exit identified"
+      ],
+      "mechanics": [
+        {
+          "name": "Preflight",
+          "how_it_works": "Finish base upkeep before leaving"
+        },
+        {
+          "name": "Cache Check",
+          "how_it_works": "Grab kits from departure cache"
+        },
+        {
+          "name": "Route Confirm",
+          "how_it_works": "Confirm plateau sequence in map"
+        },
+        {
+          "name": "Abort Rule",
+          "how_it_works": "Return to last rock on meter spikes"
+        }
+      ]
+    },
+    {
+      "id": "storm-shelter-sop",
+      "title": "Storm Shelter SOP",
+      "overview": "How to hold safely when a storm rolls in.",
+      "key_points": [
+        "Shelter on rock under overhang if possible",
+        "Conserve water and avoid unnecessary movement",
+        "Delay fights to reduce exposure",
+        "Resume travel when visibility returns"
+      ],
+      "mechanics": [
+        {
+          "name": "Shelter",
+          "how_it_works": "Pick a spot with cover and a view of your next rock"
+        },
+        {
+          "name": "Consumption",
+          "how_it_works": "Sip water; avoid sprinting"
+        },
+        {
+          "name": "Visibility",
+          "how_it_works": "Don\u2019t cross open sand blind"
+        },
+        {
+          "name": "Repair Check",
+          "how_it_works": "Patch gear before moving out"
+        }
+      ]
+    },
+    {
+      "id": "retrieval-sop",
+      "title": "Retrieval SOP",
+      "overview": "Recover drops without chain-wiping.",
+      "key_points": [
+        "Wait out storms if visibility is bad",
+        "Travel light and fast",
+        "Prioritize irreplaceables",
+        "Use air where possible"
+      ],
+      "mechanics": [
+        {
+          "name": "Timing",
+          "how_it_works": "Choose cooler, calmer windows"
+        },
+        {
+          "name": "Weight",
+          "how_it_works": "Carry only recovery essentials"
+        },
+        {
+          "name": "Escort",
+          "how_it_works": "Bring a partner to cover you"
+        },
+        {
+          "name": "Fallback",
+          "how_it_works": "If risk spikes, abandon and rebuild"
+        }
+      ]
+    },
+    {
+      "id": "combat-micro-1",
+      "title": "Combat Micro: Openers",
+      "overview": "Minute tactics reduce needless risk while keeping uptime high.",
+      "key_points": [
+        "Start from rock cover whenever possible",
+        "Avoid firing while meter is high on sand",
+        "Close distance only when exits are clear",
+        "Disengage if a storm rolls in"
+      ],
+      "mechanics": [
+        {
+          "name": "Cover",
+          "how_it_works": "Use rock edges to break enemy sightlines"
+        },
+        {
+          "name": "Meter Discipline",
+          "how_it_works": "Do not extend across dunes with elevated vibration"
+        },
+        {
+          "name": "Angles",
+          "how_it_works": "Fight perpendicular to sand fields to keep exits open"
+        },
+        {
+          "name": "Visibility",
+          "how_it_works": "Abort sand pushes in low visibility"
+        }
+      ]
+    },
+    {
+      "id": "combat-micro-2",
+      "title": "Combat Micro: Ammunition",
+      "overview": "Minute tactics reduce needless risk while keeping uptime high.",
+      "key_points": [
+        "Budget ammo before camp clears",
+        "Craft buffers between sorties",
+        "Swap to melee if low during retreats",
+        "Store surplus in vehicle bins"
+      ],
+      "mechanics": [
+        {
+          "name": "Pre-Stack",
+          "how_it_works": "Craft a modest reserve to avoid stalls"
+        },
+        {
+          "name": "Resupply",
+          "how_it_works": "Re-arm at base before the next loop"
+        },
+        {
+          "name": "Fallback",
+          "how_it_works": "Carry a reliable blade as backup"
+        },
+        {
+          "name": "Logistics",
+          "how_it_works": "Keep ammo near the weapons fabricator"
+        }
+      ]
+    },
+    {
+      "id": "combat-micro-3",
+      "title": "Combat Micro: Positioning",
+      "overview": "Minute tactics reduce needless risk while keeping uptime high.",
+      "key_points": [
+        "Use high ground vs ranged enemies",
+        "Pull enemies toward rock",
+        "Avoid fighting on dune crests",
+        "Break contact with grapples"
+      ],
+      "mechanics": [
+        {
+          "name": "Elevation",
+          "how_it_works": "Height control wins long trades"
+        },
+        {
+          "name": "Pullback",
+          "how_it_works": "Draw threats into safer terrain"
+        },
+        {
+          "name": "Crests",
+          "how_it_works": "Crests expose you to breaches and fire"
+        },
+        {
+          "name": "Escape",
+          "how_it_works": "Use grapples to reset fights"
+        }
+      ]
+    },
+    {
+      "id": "vehicle-micro-1",
+      "title": "Vehicle Micro: Field Care",
+      "overview": "Vehicles multiply reach when maintained and routed smartly.",
+      "key_points": [
+        "Patch with wire to reach base",
+        "Avoid parking on dunes",
+        "Shelter during storms",
+        "Swap damaged modules before long trips"
+      ],
+      "mechanics": [
+        {
+          "name": "Wire Patch",
+          "how_it_works": "Stabilize damage and drive to repair"
+        },
+        {
+          "name": "Parking",
+          "how_it_works": "Covered pads slow decay"
+        },
+        {
+          "name": "Storms",
+          "how_it_works": "Store vehicles under cover before weather hits"
+        },
+        {
+          "name": "Rotation",
+          "how_it_works": "Keep a spare module to swap in"
+        }
+      ]
+    },
+    {
+      "id": "vehicle-micro-2",
+      "title": "Vehicle Micro: Routing",
+      "overview": "Vehicles multiply reach when maintained and routed smartly.",
+      "key_points": [
+        "Plan rock corridors for vehicles",
+        "Avoid long sand drags",
+        "Land aircraft near plateaus",
+        "Pre-mark refuel points"
+      ],
+      "mechanics": [
+        {
+          "name": "Corridors",
+          "how_it_works": "Chain rock lanes between objectives"
+        },
+        {
+          "name": "Drag Risk",
+          "how_it_works": "Heavy sand time invites breaches"
+        },
+        {
+          "name": "LZs",
+          "how_it_works": "Pick landing zones with cover"
+        },
+        {
+          "name": "Fuel Map",
+          "how_it_works": "Record reliable refuel hubs"
+        }
+      ]
+    },
+    {
+      "id": "vendor-micro-1",
+      "title": "Vendor Micro: Stock Checks",
+      "overview": "Smart buying and selling smooths out bottlenecks.",
+      "key_points": [
+        "Visit vendors after patches",
+        "Watch for schematics and rare reagents",
+        "Sell low-value bulk to clear space",
+        "Buy emergency filters and fuel"
+      ],
+      "mechanics": [
+        {
+          "name": "Patch Day",
+          "how_it_works": "Stock can change; check often"
+        },
+        {
+          "name": "Schematics",
+          "how_it_works": "Grab must-haves that fit your plan"
+        },
+        {
+          "name": "Bulk Sales",
+          "how_it_works": "Convert clutter into currency"
+        },
+        {
+          "name": "Emergency Buys",
+          "how_it_works": "Keep production from stalling"
+        }
+      ]
+    },
+    {
+      "id": "vendor-micro-2",
+      "title": "Vendor Micro: Contract Timing",
+      "overview": "Smart buying and selling smooths out bottlenecks.",
+      "key_points": [
+        "Turn in contracts on the way to trainers",
+        "Stack deliveries for efficiency",
+        "Pick safe routes when carrying valuables",
+        "Keep a cash buffer"
+      ],
+      "mechanics": [
+        {
+          "name": "Bundling",
+          "how_it_works": "Combine errands along a loop"
+        },
+        {
+          "name": "Safety",
+          "how_it_works": "Avoid hot zones while loaded"
+        },
+        {
+          "name": "Buffer",
+          "how_it_works": "Maintain funds for refits"
+        },
+        {
+          "name": "Efficiency",
+          "how_it_works": "Minimize hub downtime"
+        }
+      ]
+    },
+    {
+      "id": "trainer-micro-1",
+      "title": "Trainer Micro: Batching",
+      "overview": "Trainers are milestones\u2014optimize the sequence and testing routine.",
+      "key_points": [
+        "Do basics in one tour",
+        "Unlock movement tools early",
+        "Preview advanced trainer requirements",
+        "Bring a modest kit"
+      ],
+      "mechanics": [
+        {
+          "name": "Tour",
+          "how_it_works": "Visit basics back-to-back"
+        },
+        {
+          "name": "Movement",
+          "how_it_works": "Mobility unlocks help everywhere"
+        },
+        {
+          "name": "Preview",
+          "how_it_works": "Scout requirements ahead of time"
+        },
+        {
+          "name": "Kit",
+          "how_it_works": "Don\u2019t overpack\u2014travel light"
+        }
+      ]
+    },
+    {
+      "id": "trainer-micro-2",
+      "title": "Trainer Micro: Hybrid Testing",
+      "overview": "Trainers are milestones\u2014optimize the sequence and testing routine.",
+      "key_points": [
+        "Try small respecs before big rebuilds",
+        "Practice new movement in safe zones",
+        "Adjust weapon choices to ability cadence",
+        "Refine routes after new unlocks"
+      ],
+      "mechanics": [
+        {
+          "name": "Small Steps",
+          "how_it_works": "Change a few points and test"
+        },
+        {
+          "name": "Safe Practice",
+          "how_it_works": "Learn timings near base"
+        },
+        {
+          "name": "Cadence",
+          "how_it_works": "Weapons should match ability rhythm"
+        },
+        {
+          "name": "Route Update",
+          "how_it_works": "Rework loops with new tools"
+        }
+      ]
+    },
+    {
+      "id": "refinery-micro-1",
+      "title": "Refinery Micro: Ore Queues",
+      "overview": "Small habits keep refineries running smoothly.",
+      "key_points": [
+        "Keep ore inputs stocked before long crafts",
+        "Stage outputs in separate bins",
+        "Avoid mixing inputs in one container",
+        "Audit after storms"
+      ],
+      "mechanics": [
+        {
+          "name": "Input Discipline",
+          "how_it_works": "Dedicated ore bins prevent queue stalls"
+        },
+        {
+          "name": "Output Flow",
+          "how_it_works": "Empty outputs to keep refineries working"
+        },
+        {
+          "name": "Separation",
+          "how_it_works": "Don\u2019t mix ore types in input bins"
+        },
+        {
+          "name": "Post-Storm Check",
+          "how_it_works": "Restart halted lines immediately"
+        }
+      ],
+      "notes": [
+        "crafting"
+      ]
+    },
+    {
+      "id": "refinery-micro-2",
+      "title": "Refinery Micro: Chemical Lines",
+      "overview": "Small habits keep refineries running smoothly.",
+      "key_points": [
+        "Keep reagents near chemical stations",
+        "Route power redundantly",
+        "Watch filter needs for any sub-processes",
+        "Label containers by chain"
+      ],
+      "mechanics": [
+        {
+          "name": "Reagent Bins",
+          "how_it_works": "Place solvents and catalysts within reach"
+        },
+        {
+          "name": "Redundant Power",
+          "how_it_works": "Chem lines stall first during brownouts"
+        },
+        {
+          "name": "Filter Use",
+          "how_it_works": "Swap when uptime dips"
+        },
+        {
+          "name": "Chain Labels",
+          "how_it_works": "Mark bins by step to avoid confusion"
+        }
+      ],
+      "notes": [
+        "crafting"
+      ]
+    },
+    {
+      "id": "fabricator-micro-1",
+      "title": "Fabricator Micro: Survival Fab",
+      "overview": "Fabricators are faster with clean inputs and batch habits.",
+      "key_points": [
+        "Queue field tools before expeditions",
+        "Craft spare blades",
+        "Maintain a kit chest near the station",
+        "Refill Literjons before leaving"
+      ],
+      "mechanics": [
+        {
+          "name": "Pre-Queue",
+          "how_it_works": "Start basics while planning routes"
+        },
+        {
+          "name": "Spare Tools",
+          "how_it_works": "Avoid stalls from broken gear"
+        },
+        {
+          "name": "Kit Chest",
+          "how_it_works": "One-stop grab-and-go supplies"
+        },
+        {
+          "name": "Final Refill",
+          "how_it_works": "Top water last before departure"
+        }
+      ],
+      "notes": [
+        "crafting"
+      ]
+    },
+    {
+      "id": "fabricator-micro-2",
+      "title": "Fabricator Micro: Weapons Fab",
+      "overview": "Fabricators are faster with clean inputs and batch habits.",
+      "key_points": [
+        "Batch ammo crafts",
+        "Check component stock",
+        "Repair before crafting weapons",
+        "Stage test range near base"
+      ],
+      "mechanics": [
+        {
+          "name": "Batching",
+          "how_it_works": "Reduce back-and-forth by crafting in batches"
+        },
+        {
+          "name": "Components",
+          "how_it_works": "Ensure barrels/receivers are ready"
+        },
+        {
+          "name": "Sequence",
+          "how_it_works": "Repair, then craft to test durability"
+        },
+        {
+          "name": "Testing",
+          "how_it_works": "Fire a few rounds to confirm function"
+        }
+      ],
+      "notes": [
+        "crafting"
+      ]
+    },
+    {
+      "id": "power-micro-1",
+      "title": "Power Micro: Generator Flow",
+      "overview": "Keep the grid balanced and easy to service.",
+      "key_points": [
+        "Track fuel use per session",
+        "Store fuel near generators",
+        "Avoid overloading a single leg",
+        "Inspect after storms"
+      ],
+      "mechanics": [
+        {
+          "name": "Session Log",
+          "how_it_works": "Remember typical fuel burn for planning"
+        },
+        {
+          "name": "Local Storage",
+          "how_it_works": "Keep cells beside the unit"
+        },
+        {
+          "name": "Load Split",
+          "how_it_works": "Distribute heavy draws across legs"
+        },
+        {
+          "name": "Storm Check",
+          "how_it_works": "Confirm output before resuming crafts"
+        }
+      ],
+      "notes": [
+        "power"
+      ]
+    },
+    {
+      "id": "power-micro-2",
+      "title": "Power Micro: Turbine Flow",
+      "overview": "Keep the grid balanced and easy to service.",
+      "key_points": [
+        "Place turbines in clear, shielded areas",
+        "Run short cables to water gear",
+        "Keep a spare for replacements",
+        "Check bearings after sand events"
+      ],
+      "mechanics": [
+        {
+          "name": "Placement",
+          "how_it_works": "Give room for maintenance"
+        },
+        {
+          "name": "Cable Length",
+          "how_it_works": "Short runs reduce losses and breaks"
+        },
+        {
+          "name": "Spare Unit",
+          "how_it_works": "Swap quickly if one fails"
+        },
+        {
+          "name": "Maintenance",
+          "how_it_works": "Listen for changes after storms"
+        }
+      ],
+      "notes": [
+        "power"
+      ]
+    },
+    {
+      "id": "water-micro-1",
+      "title": "Water Micro: Filter Routine",
+      "overview": "Water is your limiting reagent\u2014guard uptime.",
+      "key_points": [
+        "Schedule swaps during daylight at base",
+        "Keep a labeled filter crate",
+        "Train everyone on swap steps",
+        "Log rough lifetimes mentally"
+      ],
+      "mechanics": [
+        {
+          "name": "Day Swaps",
+          "how_it_works": "Avoid night downtime mid-run"
+        },
+        {
+          "name": "Labeling",
+          "how_it_works": "Crates reduce search time"
+        },
+        {
+          "name": "Shared SOP",
+          "how_it_works": "Any teammate can recover production"
+        },
+        {
+          "name": "Heuristic",
+          "how_it_works": "Remember approximate uptime windows"
+        }
+      ],
+      "notes": [
+        "water"
+      ]
+    },
+    {
+      "id": "water-micro-2",
+      "title": "Water Micro: Cistern Strategy",
+      "overview": "Water is your limiting reagent\u2014guard uptime.",
+      "key_points": [
+        "Primary cistern near stations",
+        "Overflow cistern for expedition stock",
+        "Protect with shielding",
+        "Run short, visible water lines"
+      ],
+      "mechanics": [
+        {
+          "name": "Primary/Overflow",
+          "how_it_works": "Divide storage so you always have a reserve"
+        },
+        {
+          "name": "Shielded",
+          "how_it_works": "Protect tanks during storms"
+        },
+        {
+          "name": "Visibility",
+          "how_it_works": "Expose lines enough to spot breaks"
+        },
+        {
+          "name": "Access",
+          "how_it_works": "Leave aisle space for quick fixes"
+        }
+      ],
+      "notes": [
+        "water"
+      ]
+    },
+    {
+      "id": "route-micro-adv-1",
+      "title": "Route Planning Advanced: Plateau Chains",
+      "overview": "Advanced planning turns multiple errands into one safe loop.",
+      "key_points": [
+        "Use S-shaped chains across dune fields",
+        "Favor ridgeline shadows",
+        "Record safe hops for future runs",
+        "Avoid crest traversals"
+      ],
+      "mechanics": [
+        {
+          "name": "S-Chains",
+          "how_it_works": "S-curves shorten exposed time"
+        },
+        {
+          "name": "Shadow Use",
+          "how_it_works": "Shadows mark rock and cooler temps"
+        },
+        {
+          "name": "Route Memory",
+          "how_it_works": "Reuse proven links"
+        },
+        {
+          "name": "Crests",
+          "how_it_works": "Stay off the highest dune lines"
+        }
+      ],
+      "notes": [
+        "routing"
+      ]
+    },
+    {
+      "id": "route-micro-adv-2",
+      "title": "Route Planning Advanced: Multi-Objective Runs",
+      "overview": "Advanced planning turns multiple errands into one safe loop.",
+      "key_points": [
+        "Cluster tasks by region",
+        "Sequence objectives to end near a hub",
+        "Cache salvage mid-run",
+        "Abort if vibration spikes repeatedly"
+      ],
+      "mechanics": [
+        {
+          "name": "Clustering",
+          "how_it_works": "Group nearby targets"
+        },
+        {
+          "name": "Hub Finish",
+          "how_it_works": "End where you can repair and sell"
+        },
+        {
+          "name": "Mid-Cache",
+          "how_it_works": "Stash items to travel light"
+        },
+        {
+          "name": "Abort Logic",
+          "how_it_works": "Repeated spikes mean reset the segment"
+        }
+      ],
+      "notes": [
+        "routing"
+      ]
+    },
+    {
+      "id": "pvp-micro-1",
+      "title": "PvP Micro: Engagement Rules",
+      "overview": "Fight the terrain first, the players second.",
+      "key_points": [
+        "Avoid dune crest stand-offs",
+        "Fight near rock exits",
+        "Don\u2019t loot in the open with high meter",
+        "Use storms to disengage"
+      ],
+      "mechanics": [
+        {
+          "name": "Terrain Bias",
+          "how_it_works": "Rock gives exits and cover"
+        },
+        {
+          "name": "Exit Lanes",
+          "how_it_works": "Keep retreat options clear"
+        },
+        {
+          "name": "Loot Discipline",
+          "how_it_works": "Secure area before looting"
+        },
+        {
+          "name": "Weather Play",
+          "how_it_works": "Low visibility helps escapes"
+        }
+      ],
+      "notes": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "pvp-micro-2",
+      "title": "PvP Micro: Ambush Avoidance",
+      "overview": "Fight the terrain first, the players second.",
+      "key_points": [
+        "Vary routes to objectives",
+        "Travel at off-peak hours",
+        "Fly over predictable chokepoints",
+        "Scout ahead with a mobility build"
+      ],
+      "mechanics": [
+        {
+          "name": "Variability",
+          "how_it_works": "Avoid being patterned"
+        },
+        {
+          "name": "Off-Peak",
+          "how_it_works": "Fewer hunters are active"
+        },
+        {
+          "name": "Air Gaps",
+          "how_it_works": "Skip ground ambushes"
+        },
+        {
+          "name": "Scout",
+          "how_it_works": "Confirm path safety"
+        }
+      ],
+      "notes": [
+        "pvp"
+      ]
+    },
+    {
+      "id": "storm-micro-1",
+      "title": "Storm Micro: Base Prep",
+      "overview": "Storms are attrition events\u2014win by waiting them out smartly.",
+      "key_points": [
+        "Store vehicles under cover",
+        "Verify power to shields",
+        "Stock filters before the front hits",
+        "Pause nonessential crafts"
+      ],
+      "mechanics": [
+        {
+          "name": "Parking",
+          "how_it_works": "Protect modules from sandblast"
+        },
+        {
+          "name": "Shield Power",
+          "how_it_works": "Keep console online"
+        },
+        {
+          "name": "Filter Stash",
+          "how_it_works": "Have spares for quick swap"
+        },
+        {
+          "name": "Pause",
+          "how_it_works": "Reduce grid load"
+        }
+      ],
+      "notes": [
+        "storms"
+      ]
+    },
+    {
+      "id": "storm-micro-2",
+      "title": "Storm Micro: Travel Prep",
+      "overview": "Storms are attrition events\u2014win by waiting them out smartly.",
+      "key_points": [
+        "Avoid starting long sand segments",
+        "Flag shelters ahead of time",
+        "Carry extra water",
+        "Use rock for navigational checkpoints"
+      ],
+      "mechanics": [
+        {
+          "name": "Segment Choice",
+          "how_it_works": "Stick to rock segments"
+        },
+        {
+          "name": "Shelter Flag",
+          "how_it_works": "Pre-mark overhangs"
+        },
+        {
+          "name": "Water Buffer",
+          "how_it_works": "Double-check Literjons"
+        },
+        {
+          "name": "Checkpoints",
+          "how_it_works": "Use reliable rocks to reorient"
+        }
+      ],
+      "notes": [
+        "storms"
+      ]
+    },
+    {
+      "id": "death-micro-1",
+      "title": "Death & Risk Micro: Prevention",
+      "overview": "Most losses are preventable with conservative choices.",
+      "key_points": [
+        "Plan gear repairs before big pushes",
+        "Carry minimal valuables across dunes",
+        "Route retrieval-friendly paths",
+        "Abort when risk escalates"
+      ],
+      "mechanics": [
+        {
+          "name": "Upkeep",
+          "how_it_works": "Repair reduces failure points"
+        },
+        {
+          "name": "Pack Light",
+          "how_it_works": "Limit losses on wipe"
+        },
+        {
+          "name": "Retrieval Routes",
+          "how_it_works": "Pick paths you can re-run"
+        },
+        {
+          "name": "Escalation",
+          "how_it_works": "Recognize when to reset"
+        }
+      ],
+      "notes": [
+        "risk"
+      ]
+    },
+    {
+      "id": "death-micro-2",
+      "title": "Death & Risk Micro: Recovery",
+      "overview": "Most losses are preventable with conservative choices.",
+      "key_points": [
+        "Travel during safer windows",
+        "Bring backup kits",
+        "Use air if possible",
+        "Triaging items on pickup"
+      ],
+      "mechanics": [
+        {
+          "name": "Windowing",
+          "how_it_works": "Pick cooler, calmer times"
+        },
+        {
+          "name": "Backups",
+          "how_it_works": "Spare tools and water stabilize you"
+        },
+        {
+          "name": "Air Use",
+          "how_it_works": "Shortcut back to safety"
+        },
+        {
+          "name": "Triage",
+          "how_it_works": "Grab irreplaceables first"
+        }
+      ],
+      "notes": [
+        "risk"
+      ]
+    },
+    {
+      "id": "economy-micro-1",
+      "title": "Economy Micro: Cache Discipline",
+      "overview": "A lean economy keeps crafting queues moving.",
+      "key_points": [
+        "Maintain separate crates for sellables and keepers",
+        "Review storage after each loop",
+        "Liquidate clutter before runs",
+        "Buy only to unblock"
+      ],
+      "mechanics": [
+        {
+          "name": "Separation",
+          "how_it_works": "Avoid selling needed mats"
+        },
+        {
+          "name": "Review",
+          "how_it_works": "Keep slots free for high-value drops"
+        },
+        {
+          "name": "Pre-Run Sell",
+          "how_it_works": "Leave with space and cash"
+        },
+        {
+          "name": "Unblock Buys",
+          "how_it_works": "Buy the minimum to progress"
+        }
+      ],
+      "notes": [
+        "economy"
+      ]
+    },
+    {
+      "id": "economy-micro-2",
+      "title": "Economy Micro: Faction Links",
+      "overview": "A lean economy keeps crafting queues moving.",
+      "key_points": [
+        "Do reputation tasks gradually",
+        "Check vendors after rank-ups",
+        "Use contracts to target missing parts",
+        "Coordinate purchases with team"
+      ],
+      "mechanics": [
+        {
+          "name": "Gradual Rep",
+          "how_it_works": "Avoid burnout by mixing tasks"
+        },
+        {
+          "name": "Vendor Checks",
+          "how_it_works": "Stock often improves with rank"
+        },
+        {
+          "name": "Targeted Contracts",
+          "how_it_works": "Chase parts you actually need"
+        },
+        {
+          "name": "Team Economy",
+          "how_it_works": "Avoid duplicate buys"
+        }
+      ],
+      "notes": [
+        "economy"
+      ]
+    },
+    {
+      "id": "settings-micro-1",
+      "title": "Settings Micro: Research View",
+      "overview": "UI and presentation choices reduce mistakes over long sessions.",
+      "key_points": [
+        "Use unlocked view to plan base layouts",
+        "Switch to locked to focus",
+        "Toggle based on current goals",
+        "Re-evaluate after learning systems"
+      ],
+      "mechanics": [
+        {
+          "name": "Planning",
+          "how_it_works": "Unlocked view aids long-term planning"
+        },
+        {
+          "name": "Focus Mode",
+          "how_it_works": "Locked view reduces distractions"
+        },
+        {
+          "name": "Goal-Based",
+          "how_it_works": "Change mode per stage"
+        },
+        {
+          "name": "Revisit",
+          "how_it_works": "Adjust as comfort grows"
+        }
+      ],
+      "notes": [
+        "settings"
+      ]
+    },
+    {
+      "id": "settings-micro-2",
+      "title": "Settings Micro: Accessibility",
+      "overview": "UI and presentation choices reduce mistakes over long sessions.",
+      "key_points": [
+        "Tune contrast for glare",
+        "Pick visible reticles",
+        "Adjust audio for breach cues",
+        "Reduce motion if needed"
+      ],
+      "mechanics": [
+        {
+          "name": "Glare",
+          "how_it_works": "High contrast helps dune edges"
+        },
+        {
+          "name": "Reticle",
+          "how_it_works": "Choose visibility over style"
+        },
+        {
+          "name": "Audio",
+          "how_it_works": "Telegraphs matter in storms"
+        },
+        {
+          "name": "Comfort",
+          "how_it_works": "Use settings that reduce fatigue"
+        }
+      ],
+      "notes": [
+        "settings"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2580 @@
+{
+  "game": "Dune: Awakening",
+  "schema_version": "1.0",
+  "updated_at": "2025-08-26",
+  "schema": {
+    "id": "kebab-case unique id",
+    "title": "short tip headline",
+    "description": "expanded detail about the tip (factual, sourced)",
+    "category": "early-game|mid-game|late-game",
+    "tags": [
+      "strings"
+    ],
+    "source": {
+      "domain": "site",
+      "title": "article title",
+      "url": "https://...",
+      "published": "YYYY-MM-DD or None"
+    }
+  },
+  "tips": [
+    {
+      "id": "build-on-rock-not-sand",
+      "title": "Build on rock, not sand",
+      "description": "Anchor your first sub\u2011fief and structures to solid rock or plateaus. Sandstorms can erase foundations on dunes, and rock makes it easier to expand power and water lines safely.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "storms",
+        "placement"
+      ]
+    },
+    {
+      "id": "build-on-rock-not-sand-expanded",
+      "title": "Build on rock, not sand (Expanded)",
+      "description": "Anchor your first sub\u2011fief and structures to solid rock or plateaus. Sandstorms can erase foundations on dunes, and rock makes it easier to expand power and water lines safely. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "storms",
+        "placement"
+      ]
+    },
+    {
+      "id": "build-on-rock-not-sand-pro",
+      "title": "Pro Tip: Build on rock, not sand",
+      "description": "Expert-level strategy built on the original tip: Anchor your first sub\u2011fief and structures to solid rock or plateaus. Sandstorms can erase foundations on dunes, and rock makes it easier to expand power and water lines safely. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "storms",
+        "placement",
+        "pro"
+      ]
+    },
+    {
+      "id": "dont-overinvest-first-base",
+      "title": "Treat your first base as temporary",
+      "description": "You\u2019ll likely relocate as quests and faction ranks unlock better zones and travel tech. Spend only what you need to survive and craft key stations before moving on.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "progression"
+      ]
+    },
+    {
+      "id": "dont-overinvest-first-base-expanded",
+      "title": "Treat your first base as temporary (Expanded)",
+      "description": "You\u2019ll likely relocate as quests and faction ranks unlock better zones and travel tech. Spend only what you need to survive and craft key stations before moving on. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "progression"
+      ]
+    },
+    {
+      "id": "dont-overinvest-first-base-pro",
+      "title": "Pro Tip: Treat your first base as temporary",
+      "description": "Expert-level strategy built on the original tip: You\u2019ll likely relocate as quests and faction ranks unlock better zones and travel tech. Spend only what you need to survive and craft key stations before moving on. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "progression",
+        "pro"
+      ]
+    },
+    {
+      "id": "claim-land-early",
+      "title": "Claim land with a Sub\u2011Fief Console early",
+      "description": "Use the Construction Tool to place a Sub\u2011Fief Console and claim a buildable area. Keep it powered to enable a protective shield and prevent base damage when storms hit.",
+      "category": "early-game",
+      "tags": [
+        "sub-fief",
+        "power",
+        "shield"
+      ]
+    },
+    {
+      "id": "claim-land-early-expanded",
+      "title": "Claim land with a Sub\u2011Fief Console early (Expanded)",
+      "description": "Use the Construction Tool to place a Sub\u2011Fief Console and claim a buildable area. Keep it powered to enable a protective shield and prevent base damage when storms hit. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "sub-fief",
+        "power",
+        "shield"
+      ]
+    },
+    {
+      "id": "claim-land-early-pro",
+      "title": "Pro Tip: Claim land with a Sub\u2011Fief Console early",
+      "description": "Expert-level strategy built on the original tip: Use the Construction Tool to place a Sub\u2011Fief Console and claim a buildable area. Keep it powered to enable a protective shield and prevent base damage when storms hit. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "sub-fief",
+        "power",
+        "shield",
+        "pro"
+      ]
+    },
+    {
+      "id": "keep-subfief-powered",
+      "title": "Keep the sub\u2011fief powered 24/7",
+      "description": "A powered sub\u2011fief can project a shield that protects structures. If the console loses power, buildings can start taking damage. Plan fuel, wind, and battery backups.",
+      "category": "early-game",
+      "tags": [
+        "sub-fief",
+        "power",
+        "defense"
+      ]
+    },
+    {
+      "id": "keep-subfief-powered-expanded",
+      "title": "Keep the sub\u2011fief powered 24/7 (Expanded)",
+      "description": "A powered sub\u2011fief can project a shield that protects structures. If the console loses power, buildings can start taking damage. Plan fuel, wind, and battery backups. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "sub-fief",
+        "power",
+        "defense"
+      ]
+    },
+    {
+      "id": "keep-subfief-powered-pro",
+      "title": "Pro Tip: Keep the sub\u2011fief powered 24/7",
+      "description": "Expert-level strategy built on the original tip: A powered sub\u2011fief can project a shield that protects structures. If the console loses power, buildings can start taking damage. Plan fuel, wind, and battery backups. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "sub-fief",
+        "power",
+        "defense",
+        "pro"
+      ]
+    },
+    {
+      "id": "windtrap-automation",
+      "title": "Automate water with Windtraps and cisterns",
+      "description": "Unlock and place Windtraps to passively generate water, and route output into Water Cisterns. Maintain filters and keep enough power available for constant production.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "automation",
+        "filters"
+      ]
+    },
+    {
+      "id": "windtrap-automation-expanded",
+      "title": "Automate water with Windtraps and cisterns (Expanded)",
+      "description": "Unlock and place Windtraps to passively generate water, and route output into Water Cisterns. Maintain filters and keep enough power available for constant production. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "automation",
+        "filters"
+      ]
+    },
+    {
+      "id": "windtrap-automation-pro",
+      "title": "Pro Tip: Automate water with Windtraps and cisterns",
+      "description": "Expert-level strategy built on the original tip: Unlock and place Windtraps to passively generate water, and route output into Water Cisterns. Maintain filters and keep enough power available for constant production. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "automation",
+        "filters",
+        "pro"
+      ]
+    },
+    {
+      "id": "carry-literjons",
+      "title": "Carry Literjons and respect sunstroke",
+      "description": "Dehydration tanks stamina and then your health. Travel during cooler hours, refill often, and use stillsuit upgrades to slow water loss.",
+      "category": "early-game",
+      "tags": [
+        "hydration",
+        "stillsuit",
+        "heat"
+      ]
+    },
+    {
+      "id": "carry-literjons-expanded",
+      "title": "Carry Literjons and respect sunstroke (Expanded)",
+      "description": "Dehydration tanks stamina and then your health. Travel during cooler hours, refill often, and use stillsuit upgrades to slow water loss. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "hydration",
+        "stillsuit",
+        "heat"
+      ]
+    },
+    {
+      "id": "carry-literjons-pro",
+      "title": "Pro Tip: Carry Literjons and respect sunstroke",
+      "description": "Expert-level strategy built on the original tip: Dehydration tanks stamina and then your health. Travel during cooler hours, refill often, and use stillsuit upgrades to slow water loss. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "hydration",
+        "stillsuit",
+        "heat",
+        "pro"
+      ]
+    },
+    {
+      "id": "early-loot-priorities",
+      "title": "Grab granite, fiber, copper, and salvaged metal first",
+      "description": "These materials cover your first tools, weapons, and workstations. Stock up before heading deeper into the desert so you can craft and repair without backtracking.",
+      "category": "early-game",
+      "tags": [
+        "resources",
+        "crafting"
+      ]
+    },
+    {
+      "id": "early-loot-priorities-expanded",
+      "title": "Grab granite, fiber, copper, and salvaged metal first (Expanded)",
+      "description": "These materials cover your first tools, weapons, and workstations. Stock up before heading deeper into the desert so you can craft and repair without backtracking. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "resources",
+        "crafting"
+      ]
+    },
+    {
+      "id": "early-loot-priorities-pro",
+      "title": "Pro Tip: Grab granite, fiber, copper, and salvaged metal first",
+      "description": "Expert-level strategy built on the original tip: These materials cover your first tools, weapons, and workstations. Stock up before heading deeper into the desert so you can craft and repair without backtracking. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "resources",
+        "crafting",
+        "pro"
+      ]
+    },
+    {
+      "id": "learn-repair-flows",
+      "title": "Learn repairs for gear, buildings, and vehicles",
+      "description": "Items repair at a Repair Station; vehicles need Welding Wire and repair tools; buildings repair via Construction Tool. Don\u2019t run durability to zero or you\u2019ll lose max durability on some items.",
+      "category": "early-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "stations"
+      ]
+    },
+    {
+      "id": "learn-repair-flows-expanded",
+      "title": "Learn repairs for gear, buildings, and vehicles (Expanded)",
+      "description": "Items repair at a Repair Station; vehicles need Welding Wire and repair tools; buildings repair via Construction Tool. Don\u2019t run durability to zero or you\u2019ll lose max durability on some items. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "stations"
+      ]
+    },
+    {
+      "id": "learn-repair-flows-pro",
+      "title": "Pro Tip: Learn repairs for gear, buildings, and vehicles",
+      "description": "Expert-level strategy built on the original tip: Items repair at a Repair Station; vehicles need Welding Wire and repair tools; buildings repair via Construction Tool. Don\u2019t run durability to zero or you\u2019ll lose max durability on some items. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "stations",
+        "pro"
+      ]
+    },
+    {
+      "id": "store-vehicles-sheltered",
+      "title": "Store vehicles under cover to slow decay",
+      "description": "Vehicle parts degrade when left out. Park in sheltered areas or bases, and bring them into the Repair Station when fully restoring modules.",
+      "category": "early-game",
+      "tags": [
+        "vehicles",
+        "repairs",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "store-vehicles-sheltered-expanded",
+      "title": "Store vehicles under cover to slow decay (Expanded)",
+      "description": "Vehicle parts degrade when left out. Park in sheltered areas or bases, and bring them into the Repair Station when fully restoring modules. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "vehicles",
+        "repairs",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "store-vehicles-sheltered-pro",
+      "title": "Pro Tip: Store vehicles under cover to slow decay",
+      "description": "Expert-level strategy built on the original tip: Vehicle parts degrade when left out. Park in sheltered areas or bases, and bring them into the Repair Station when fully restoring modules. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "vehicles",
+        "repairs",
+        "maintenance",
+        "pro"
+      ]
+    },
+    {
+      "id": "research-mode-choice",
+      "title": "Choose research mode: locked vs unlocked",
+      "description": "Locked ties research to story progression and feels guided; unlocked exposes the whole tree for sandbox play. Pick based on whether you want curated pacing or open planning.",
+      "category": "early-game",
+      "tags": [
+        "research",
+        "progression",
+        "settings"
+      ]
+    },
+    {
+      "id": "research-mode-choice-expanded",
+      "title": "Choose research mode: locked vs unlocked (Expanded)",
+      "description": "Locked ties research to story progression and feels guided; unlocked exposes the whole tree for sandbox play. Pick based on whether you want curated pacing or open planning. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "research",
+        "progression",
+        "settings"
+      ]
+    },
+    {
+      "id": "research-mode-choice-pro",
+      "title": "Pro Tip: Choose research mode: locked vs unlocked",
+      "description": "Expert-level strategy built on the original tip: Locked ties research to story progression and feels guided; unlocked exposes the whole tree for sandbox play. Pick based on whether you want curated pacing or open planning. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "research",
+        "progression",
+        "settings",
+        "pro"
+      ]
+    },
+    {
+      "id": "focus-intel",
+      "title": "Focus Intel on what you\u2019ll actually craft",
+      "description": "Intel unlocks research but is limited early on. Don\u2019t unlock everything; target the items you need now and the near\u2011term upgrades that support your build.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "focus-intel-expanded",
+      "title": "Focus Intel on what you\u2019ll actually craft (Expanded)",
+      "description": "Intel unlocks research but is limited early on. Don\u2019t unlock everything; target the items you need now and the near\u2011term upgrades that support your build. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "focus-intel-pro",
+      "title": "Pro Tip: Focus Intel on what you\u2019ll actually craft",
+      "description": "Expert-level strategy built on the original tip: Intel unlocks research but is limited early on. Don\u2019t unlock everything; target the items you need now and the near\u2011term upgrades that support your build. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "efficiency",
+        "pro"
+      ]
+    },
+    {
+      "id": "farm-outposts-for-intel",
+      "title": "Farm outposts for reliable Intel gains",
+      "description": "Clearing enemy outposts and activity hubs yields strong Intel. Combine with exploration and leveling to keep research flowing without stalling crafting plans.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "combat",
+        "exploration"
+      ]
+    },
+    {
+      "id": "farm-outposts-for-intel-expanded",
+      "title": "Farm outposts for reliable Intel gains (Expanded)",
+      "description": "Clearing enemy outposts and activity hubs yields strong Intel. Combine with exploration and leveling to keep research flowing without stalling crafting plans. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "combat",
+        "exploration"
+      ]
+    },
+    {
+      "id": "farm-outposts-for-intel-pro",
+      "title": "Pro Tip: Farm outposts for reliable Intel gains",
+      "description": "Expert-level strategy built on the original tip: Clearing enemy outposts and activity hubs yields strong Intel. Combine with exploration and leveling to keep research flowing without stalling crafting plans. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "combat",
+        "exploration",
+        "pro"
+      ]
+    },
+    {
+      "id": "probe-scans-for-safe-intel",
+      "title": "Use probe scans for safer Intel trickle",
+      "description": "When you\u2019re light on gear or solo, run probe scans and exploration loops. It\u2019s slower than big camp clears but safer and keeps your Intel climbing.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "exploration",
+        "solo"
+      ]
+    },
+    {
+      "id": "probe-scans-for-safe-intel-expanded",
+      "title": "Use probe scans for safer Intel trickle (Expanded)",
+      "description": "When you\u2019re light on gear or solo, run probe scans and exploration loops. It\u2019s slower than big camp clears but safer and keeps your Intel climbing. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "exploration",
+        "solo"
+      ]
+    },
+    {
+      "id": "probe-scans-for-safe-intel-pro",
+      "title": "Pro Tip: Use probe scans for safer Intel trickle",
+      "description": "Expert-level strategy built on the original tip: When you\u2019re light on gear or solo, run probe scans and exploration loops. It\u2019s slower than big camp clears but safer and keeps your Intel climbing. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "exploration",
+        "solo",
+        "pro"
+      ]
+    },
+    {
+      "id": "find-basic-trainers",
+      "title": "Visit basic trainers early",
+      "description": "Train core abilities from the five basic trainers before committing to a build. Each trainer has a short admission quest you\u2019ll want to knock out as you explore hubs.",
+      "category": "early-game",
+      "tags": [
+        "trainers",
+        "skills"
+      ]
+    },
+    {
+      "id": "find-basic-trainers-expanded",
+      "title": "Visit basic trainers early (Expanded)",
+      "description": "Train core abilities from the five basic trainers before committing to a build. Each trainer has a short admission quest you\u2019ll want to knock out as you explore hubs. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "trainers",
+        "skills"
+      ]
+    },
+    {
+      "id": "find-basic-trainers-pro",
+      "title": "Pro Tip: Visit basic trainers early",
+      "description": "Expert-level strategy built on the original tip: Train core abilities from the five basic trainers before committing to a build. Each trainer has a short admission quest you\u2019ll want to knock out as you explore hubs. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "trainers",
+        "skills",
+        "pro"
+      ]
+    },
+    {
+      "id": "advanced-trainers",
+      "title": "Seek advanced trainers as you rank up",
+      "description": "Advanced trainers unlock as you progress. Their quests open powerful techniques that let you hybridize roles\u2014great if you favor mixed ranged/melee or utility combos.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "builds"
+      ]
+    },
+    {
+      "id": "advanced-trainers-expanded",
+      "title": "Seek advanced trainers as you rank up (Expanded)",
+      "description": "Advanced trainers unlock as you progress. Their quests open powerful techniques that let you hybridize roles\u2014great if you favor mixed ranged/melee or utility combos. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "builds"
+      ]
+    },
+    {
+      "id": "advanced-trainers-pro",
+      "title": "Pro Tip: Seek advanced trainers as you rank up",
+      "description": "Expert-level strategy built on the original tip: Advanced trainers unlock as you progress. Their quests open powerful techniques that let you hybridize roles\u2014great if you favor mixed ranged/melee or utility combos. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "builds",
+        "pro"
+      ]
+    },
+    {
+      "id": "use-trainer-map",
+      "title": "Use trainer maps and quest hints",
+      "description": "If you\u2019re stuck, pull up trainer maps and follow their quest requirements. Nabbing all core abilities early saves you from backtracking later.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "navigation"
+      ]
+    },
+    {
+      "id": "use-trainer-map-expanded",
+      "title": "Use trainer maps and quest hints (Expanded)",
+      "description": "If you\u2019re stuck, pull up trainer maps and follow their quest requirements. Nabbing all core abilities early saves you from backtracking later. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "navigation"
+      ]
+    },
+    {
+      "id": "use-trainer-map-pro",
+      "title": "Pro Tip: Use trainer maps and quest hints",
+      "description": "Expert-level strategy built on the original tip: If you\u2019re stuck, pull up trainer maps and follow their quest requirements. Nabbing all core abilities early saves you from backtracking later. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "navigation",
+        "pro"
+      ]
+    },
+    {
+      "id": "travel-at-night",
+      "title": "Travel at night to cut heat and worm risk",
+      "description": "Night runs reduce sunstroke risk and water burn. Plan long treks for evening hours and keep to rock whenever possible to avoid triggering sandworms.",
+      "category": "mid-game",
+      "tags": [
+        "travel",
+        "heat",
+        "worms"
+      ]
+    },
+    {
+      "id": "travel-at-night-expanded",
+      "title": "Travel at night to cut heat and worm risk (Expanded)",
+      "description": "Night runs reduce sunstroke risk and water burn. Plan long treks for evening hours and keep to rock whenever possible to avoid triggering sandworms. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "travel",
+        "heat",
+        "worms"
+      ]
+    },
+    {
+      "id": "travel-at-night-pro",
+      "title": "Pro Tip: Travel at night to cut heat and worm risk",
+      "description": "Expert-level strategy built on the original tip: Night runs reduce sunstroke risk and water burn. Plan long treks for evening hours and keep to rock whenever possible to avoid triggering sandworms. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "travel",
+        "heat",
+        "worms",
+        "pro"
+      ]
+    },
+    {
+      "id": "sandwalking-technique",
+      "title": "Master the player\u2011found sandwalking technique",
+      "description": "Players discovered a night\u2011time \u2018sandwalking\u2019 method using Softstep Boots and a grappler to cross dunes without triggering worms. It\u2019s emergent, effective, and could change with patches.",
+      "category": "late-game",
+      "tags": [
+        "mobility",
+        "worms",
+        "movement-tech"
+      ]
+    },
+    {
+      "id": "sandwalking-technique-expanded",
+      "title": "Master the player\u2011found sandwalking technique (Expanded)",
+      "description": "Players discovered a night\u2011time \u2018sandwalking\u2019 method using Softstep Boots and a grappler to cross dunes without triggering worms. It\u2019s emergent, effective, and could change with patches. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "late-game",
+      "tags": [
+        "mobility",
+        "worms",
+        "movement-tech"
+      ]
+    },
+    {
+      "id": "sandwalking-technique-pro",
+      "title": "Pro Tip: Master the player\u2011found sandwalking technique",
+      "description": "Expert-level strategy built on the original tip: Players discovered a night\u2011time \u2018sandwalking\u2019 method using Softstep Boots and a grappler to cross dunes without triggering worms. It\u2019s emergent, effective, and could change with patches. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "late-game",
+      "tags": [
+        "mobility",
+        "worms",
+        "movement-tech",
+        "pro"
+      ]
+    },
+    {
+      "id": "windtrap-needs-power",
+      "title": "Budget power for Windtraps",
+      "description": "Windtraps draw power; plan generators or turbines so water production doesn\u2019t stall. Keep spare filters in nearby storage to minimize downtime.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "power",
+        "filters"
+      ]
+    },
+    {
+      "id": "windtrap-needs-power-expanded",
+      "title": "Budget power for Windtraps (Expanded)",
+      "description": "Windtraps draw power; plan generators or turbines so water production doesn\u2019t stall. Keep spare filters in nearby storage to minimize downtime. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "power",
+        "filters"
+      ]
+    },
+    {
+      "id": "windtrap-needs-power-pro",
+      "title": "Pro Tip: Budget power for Windtraps",
+      "description": "Expert-level strategy built on the original tip: Windtraps draw power; plan generators or turbines so water production doesn\u2019t stall. Keep spare filters in nearby storage to minimize downtime. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "power",
+        "filters",
+        "pro"
+      ]
+    },
+    {
+      "id": "cistern-linking",
+      "title": "Link Windtraps into cisterns",
+      "description": "Set up water lines from Windtraps into Water Cisterns so you can stockpile for trips. This is foundational for solo and small\u2011group play.",
+      "category": "early-game",
+      "tags": [
+        "automation",
+        "storage",
+        "survival"
+      ]
+    },
+    {
+      "id": "cistern-linking-expanded",
+      "title": "Link Windtraps into cisterns (Expanded)",
+      "description": "Set up water lines from Windtraps into Water Cisterns so you can stockpile for trips. This is foundational for solo and small\u2011group play. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "automation",
+        "storage",
+        "survival"
+      ]
+    },
+    {
+      "id": "cistern-linking-pro",
+      "title": "Pro Tip: Link Windtraps into cisterns",
+      "description": "Expert-level strategy built on the original tip: Set up water lines from Windtraps into Water Cisterns so you can stockpile for trips. This is foundational for solo and small\u2011group play. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "automation",
+        "storage",
+        "survival",
+        "pro"
+      ]
+    },
+    {
+      "id": "placeables-proximity",
+      "title": "Know placeable proximity rules",
+      "description": "Many stations must sit within sub\u2011fief range. Drop the console first, then lay out stations in a tight grid to share power and water lines efficiently.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "layout",
+        "stations"
+      ]
+    },
+    {
+      "id": "placeables-proximity-expanded",
+      "title": "Know placeable proximity rules (Expanded)",
+      "description": "Many stations must sit within sub\u2011fief range. Drop the console first, then lay out stations in a tight grid to share power and water lines efficiently. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "layout",
+        "stations"
+      ]
+    },
+    {
+      "id": "placeables-proximity-pro",
+      "title": "Pro Tip: Know placeable proximity rules",
+      "description": "Expert-level strategy built on the original tip: Many stations must sit within sub\u2011fief range. Drop the console first, then lay out stations in a tight grid to share power and water lines efficiently. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "layout",
+        "stations",
+        "pro"
+      ]
+    },
+    {
+      "id": "shield-priority",
+      "title": "Prioritize shielding over decor",
+      "description": "Until you have reliable power, route resources into shielding and water over cosmetic builds. Repairs and relocation cost more than a spartan early base.",
+      "category": "early-game",
+      "tags": [
+        "defense",
+        "priorities"
+      ]
+    },
+    {
+      "id": "shield-priority-expanded",
+      "title": "Prioritize shielding over decor (Expanded)",
+      "description": "Until you have reliable power, route resources into shielding and water over cosmetic builds. Repairs and relocation cost more than a spartan early base. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "defense",
+        "priorities"
+      ]
+    },
+    {
+      "id": "shield-priority-pro",
+      "title": "Pro Tip: Prioritize shielding over decor",
+      "description": "Expert-level strategy built on the original tip: Until you have reliable power, route resources into shielding and water over cosmetic builds. Repairs and relocation cost more than a spartan early base. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "defense",
+        "priorities",
+        "pro"
+      ]
+    },
+    {
+      "id": "avoid-zero-durability",
+      "title": "Avoid hitting zero durability",
+      "description": "Some items lose maximum durability when repaired from zero. Schedule light repairs often and carry materials so you don\u2019t eat permanent stat loss.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability"
+      ]
+    },
+    {
+      "id": "avoid-zero-durability-expanded",
+      "title": "Avoid hitting zero durability (Expanded)",
+      "description": "Some items lose maximum durability when repaired from zero. Schedule light repairs often and carry materials so you don\u2019t eat permanent stat loss. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability"
+      ]
+    },
+    {
+      "id": "avoid-zero-durability-pro",
+      "title": "Pro Tip: Avoid hitting zero durability",
+      "description": "Expert-level strategy built on the original tip: Some items lose maximum durability when repaired from zero. Schedule light repairs often and carry materials so you don\u2019t eat permanent stat loss. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "pro"
+      ]
+    },
+    {
+      "id": "vehicle-wire-and-shelter",
+      "title": "Carry Welding Wire; shelter your ride",
+      "description": "Welding Wire and repair tools keep vehicles running in the field, but full restores need a Repair Station. Park under cover to slow part decay.",
+      "category": "mid-game",
+      "tags": [
+        "vehicles",
+        "repairs"
+      ]
+    },
+    {
+      "id": "vehicle-wire-and-shelter-expanded",
+      "title": "Carry Welding Wire; shelter your ride (Expanded)",
+      "description": "Welding Wire and repair tools keep vehicles running in the field, but full restores need a Repair Station. Park under cover to slow part decay. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "vehicles",
+        "repairs"
+      ]
+    },
+    {
+      "id": "vehicle-wire-and-shelter-pro",
+      "title": "Pro Tip: Carry Welding Wire; shelter your ride",
+      "description": "Expert-level strategy built on the original tip: Welding Wire and repair tools keep vehicles running in the field, but full restores need a Repair Station. Park under cover to slow part decay. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "vehicles",
+        "repairs",
+        "pro"
+      ]
+    },
+    {
+      "id": "find-plant-fiber",
+      "title": "Farm plant fiber near start zones",
+      "description": "Plant fiber fuels early crafting. Sweep starter biomes and salvage routes around hubs before pushing deeper into high\u2011risk areas.",
+      "category": "early-game",
+      "tags": [
+        "resources",
+        "crafting"
+      ]
+    },
+    {
+      "id": "find-plant-fiber-expanded",
+      "title": "Farm plant fiber near start zones (Expanded)",
+      "description": "Plant fiber fuels early crafting. Sweep starter biomes and salvage routes around hubs before pushing deeper into high\u2011risk areas. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "resources",
+        "crafting"
+      ]
+    },
+    {
+      "id": "find-plant-fiber-pro",
+      "title": "Pro Tip: Farm plant fiber near start zones",
+      "description": "Expert-level strategy built on the original tip: Plant fiber fuels early crafting. Sweep starter biomes and salvage routes around hubs before pushing deeper into high\u2011risk areas. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "resources",
+        "crafting",
+        "pro"
+      ]
+    },
+    {
+      "id": "flour-sand-uses",
+      "title": "Learn Flour Sand uses early",
+      "description": "Flour Sand factors into several recipes and quests. Scoop it when you pass through rather than detouring back later.",
+      "category": "mid-game",
+      "tags": [
+        "resources",
+        "crafting"
+      ]
+    },
+    {
+      "id": "flour-sand-uses-expanded",
+      "title": "Learn Flour Sand uses early (Expanded)",
+      "description": "Flour Sand factors into several recipes and quests. Scoop it when you pass through rather than detouring back later. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "resources",
+        "crafting"
+      ]
+    },
+    {
+      "id": "flour-sand-uses-pro",
+      "title": "Pro Tip: Learn Flour Sand uses early",
+      "description": "Expert-level strategy built on the original tip: Flour Sand factors into several recipes and quests. Scoop it when you pass through rather than detouring back later. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "resources",
+        "crafting",
+        "pro"
+      ]
+    },
+    {
+      "id": "erythrite-is-valuable",
+      "title": "Treat Erythrite as high\u2011value",
+      "description": "Erythrite crystals are worth side trips. They feed higher\u2011tier crafts, so route your patrols through known Erythrite spots whenever your pack has room.",
+      "category": "mid-game",
+      "tags": [
+        "resources",
+        "upgrades"
+      ]
+    },
+    {
+      "id": "erythrite-is-valuable-expanded",
+      "title": "Treat Erythrite as high\u2011value (Expanded)",
+      "description": "Erythrite crystals are worth side trips. They feed higher\u2011tier crafts, so route your patrols through known Erythrite spots whenever your pack has room. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "resources",
+        "upgrades"
+      ]
+    },
+    {
+      "id": "erythrite-is-valuable-pro",
+      "title": "Pro Tip: Treat Erythrite as high\u2011value",
+      "description": "Expert-level strategy built on the original tip: Erythrite crystals are worth side trips. They feed higher\u2011tier crafts, so route your patrols through known Erythrite spots whenever your pack has room. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "resources",
+        "upgrades",
+        "pro"
+      ]
+    },
+    {
+      "id": "push-main-quests",
+      "title": "Push main quests for key unlocks",
+      "description": "Core quests gate travel and crafting unlocks. Don\u2019t ignore the story\u2014several mobility milestones are tied to it, including access to aerial options.",
+      "category": "early-game",
+      "tags": [
+        "quests",
+        "mobility",
+        "unlocks"
+      ]
+    },
+    {
+      "id": "push-main-quests-expanded",
+      "title": "Push main quests for key unlocks (Expanded)",
+      "description": "Core quests gate travel and crafting unlocks. Don\u2019t ignore the story\u2014several mobility milestones are tied to it, including access to aerial options. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "quests",
+        "mobility",
+        "unlocks"
+      ]
+    },
+    {
+      "id": "push-main-quests-pro",
+      "title": "Pro Tip: Push main quests for key unlocks",
+      "description": "Expert-level strategy built on the original tip: Core quests gate travel and crafting unlocks. Don\u2019t ignore the story\u2014several mobility milestones are tied to it, including access to aerial options. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "quests",
+        "mobility",
+        "unlocks",
+        "pro"
+      ]
+    },
+    {
+      "id": "faction-rep-matters",
+      "title": "Work on faction reputation",
+      "description": "Faction reputation opens vendors, contracts, and some unlocks. Doing this steadily prevents bottlenecks when you pivot into advanced gear or vehicles.",
+      "category": "mid-game",
+      "tags": [
+        "factions",
+        "vendors",
+        "progression"
+      ]
+    },
+    {
+      "id": "faction-rep-matters-expanded",
+      "title": "Work on faction reputation (Expanded)",
+      "description": "Faction reputation opens vendors, contracts, and some unlocks. Doing this steadily prevents bottlenecks when you pivot into advanced gear or vehicles. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "factions",
+        "vendors",
+        "progression"
+      ]
+    },
+    {
+      "id": "faction-rep-matters-pro",
+      "title": "Pro Tip: Work on faction reputation",
+      "description": "Expert-level strategy built on the original tip: Faction reputation opens vendors, contracts, and some unlocks. Doing this steadily prevents bottlenecks when you pivot into advanced gear or vehicles. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "factions",
+        "vendors",
+        "progression",
+        "pro"
+      ]
+    },
+    {
+      "id": "stagger-research",
+      "title": "Stagger research to match inventory",
+      "description": "Time unlocks with what you can actually craft. It\u2019s wasted Intel to open tech you can\u2019t build yet due to material or power bottlenecks.",
+      "category": "mid-game",
+      "tags": [
+        "research",
+        "planning",
+        "crafting"
+      ]
+    },
+    {
+      "id": "stagger-research-expanded",
+      "title": "Stagger research to match inventory (Expanded)",
+      "description": "Time unlocks with what you can actually craft. It\u2019s wasted Intel to open tech you can\u2019t build yet due to material or power bottlenecks. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "research",
+        "planning",
+        "crafting"
+      ]
+    },
+    {
+      "id": "stagger-research-pro",
+      "title": "Pro Tip: Stagger research to match inventory",
+      "description": "Expert-level strategy built on the original tip: Time unlocks with what you can actually craft. It\u2019s wasted Intel to open tech you can\u2019t build yet due to material or power bottlenecks. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "research",
+        "planning",
+        "crafting",
+        "pro"
+      ]
+    },
+    {
+      "id": "use-scans-between-runs",
+      "title": "Run scans between big outpost clears",
+      "description": "Alternate high\u2011risk camp clears with safer survey loops so Intel keeps climbing while you restock ammo, water, and repair mats.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "rotation",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "use-scans-between-runs-expanded",
+      "title": "Run scans between big outpost clears (Expanded)",
+      "description": "Alternate high\u2011risk camp clears with safer survey loops so Intel keeps climbing while you restock ammo, water, and repair mats. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "rotation",
+        "efficiency"
+      ]
+    },
+    {
+      "id": "use-scans-between-runs-pro",
+      "title": "Pro Tip: Run scans between big outpost clears",
+      "description": "Expert-level strategy built on the original tip: Alternate high\u2011risk camp clears with safer survey loops so Intel keeps climbing while you restock ammo, water, and repair mats. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "rotation",
+        "efficiency",
+        "pro"
+      ]
+    },
+    {
+      "id": "tight-grid-layout",
+      "title": "Use a tight grid layout",
+      "description": "Cluster power, water, and stations close to reduce cable runs and keep everything inside sub\u2011fief range. It\u2019s easier to defend and cheaper to expand.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "layout"
+      ]
+    },
+    {
+      "id": "tight-grid-layout-expanded",
+      "title": "Use a tight grid layout (Expanded)",
+      "description": "Cluster power, water, and stations close to reduce cable runs and keep everything inside sub\u2011fief range. It\u2019s easier to defend and cheaper to expand. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "layout"
+      ]
+    },
+    {
+      "id": "tight-grid-layout-pro",
+      "title": "Pro Tip: Use a tight grid layout",
+      "description": "Expert-level strategy built on the original tip: Cluster power, water, and stations close to reduce cable runs and keep everything inside sub\u2011fief range. It\u2019s easier to defend and cheaper to expand. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "layout",
+        "pro"
+      ]
+    },
+    {
+      "id": "route-cables-cleanly",
+      "title": "Route power and water cleanly",
+      "description": "Keep lines short and labeled in your head\u2014power drops mean idle Windtraps and stalled refineries. Short routes are easier to debug mid\u2011storm.",
+      "category": "mid-game",
+      "tags": [
+        "base-building",
+        "power",
+        "water"
+      ]
+    },
+    {
+      "id": "route-cables-cleanly-expanded",
+      "title": "Route power and water cleanly (Expanded)",
+      "description": "Keep lines short and labeled in your head\u2014power drops mean idle Windtraps and stalled refineries. Short routes are easier to debug mid\u2011storm. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "base-building",
+        "power",
+        "water"
+      ]
+    },
+    {
+      "id": "route-cables-cleanly-pro",
+      "title": "Pro Tip: Route power and water cleanly",
+      "description": "Expert-level strategy built on the original tip: Keep lines short and labeled in your head\u2014power drops mean idle Windtraps and stalled refineries. Short routes are easier to debug mid\u2011storm. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "base-building",
+        "power",
+        "water",
+        "pro"
+      ]
+    },
+    {
+      "id": "move-on-rock",
+      "title": "Move on rock to avoid worms",
+      "description": "Cross rock spines and plateaus whenever possible. The less time you spend on deep sand, the fewer worm encounters you\u2019ll trigger.",
+      "category": "early-game",
+      "tags": [
+        "travel",
+        "worms",
+        "safety"
+      ]
+    },
+    {
+      "id": "move-on-rock-expanded",
+      "title": "Move on rock to avoid worms (Expanded)",
+      "description": "Cross rock spines and plateaus whenever possible. The less time you spend on deep sand, the fewer worm encounters you\u2019ll trigger. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "travel",
+        "worms",
+        "safety"
+      ]
+    },
+    {
+      "id": "move-on-rock-pro",
+      "title": "Pro Tip: Move on rock to avoid worms",
+      "description": "Expert-level strategy built on the original tip: Cross rock spines and plateaus whenever possible. The less time you spend on deep sand, the fewer worm encounters you\u2019ll trigger. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "travel",
+        "worms",
+        "safety",
+        "pro"
+      ]
+    },
+    {
+      "id": "watch-vibration-meter",
+      "title": "Watch the vibration meter",
+      "description": "If the meter spikes while you\u2019re on sand, shift routes immediately. Don\u2019t try to out\u2011run a full trigger; pivot to rock or use grapples to break contact.",
+      "category": "mid-game",
+      "tags": [
+        "travel",
+        "worms"
+      ]
+    },
+    {
+      "id": "watch-vibration-meter-expanded",
+      "title": "Watch the vibration meter (Expanded)",
+      "description": "If the meter spikes while you\u2019re on sand, shift routes immediately. Don\u2019t try to out\u2011run a full trigger; pivot to rock or use grapples to break contact. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "travel",
+        "worms"
+      ]
+    },
+    {
+      "id": "watch-vibration-meter-pro",
+      "title": "Pro Tip: Watch the vibration meter",
+      "description": "Expert-level strategy built on the original tip: If the meter spikes while you\u2019re on sand, shift routes immediately. Don\u2019t try to out\u2011run a full trigger; pivot to rock or use grapples to break contact. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "travel",
+        "worms",
+        "pro"
+      ]
+    },
+    {
+      "id": "hybridize-builds",
+      "title": "Hybridize builds via trainers",
+      "description": "Mix class abilities\u2014Trooper firepower plus Bene Gesserit mobility is a reliable combo. Trainers let you cherry\u2011pick tools to fit your playstyle.",
+      "category": "mid-game",
+      "tags": [
+        "builds",
+        "trainers",
+        "skills"
+      ]
+    },
+    {
+      "id": "hybridize-builds-expanded",
+      "title": "Hybridize builds via trainers (Expanded)",
+      "description": "Mix class abilities\u2014Trooper firepower plus Bene Gesserit mobility is a reliable combo. Trainers let you cherry\u2011pick tools to fit your playstyle. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "builds",
+        "trainers",
+        "skills"
+      ]
+    },
+    {
+      "id": "hybridize-builds-pro",
+      "title": "Pro Tip: Hybridize builds via trainers",
+      "description": "Expert-level strategy built on the original tip: Mix class abilities\u2014Trooper firepower plus Bene Gesserit mobility is a reliable combo. Trainers let you cherry\u2011pick tools to fit your playstyle. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "builds",
+        "trainers",
+        "skills",
+        "pro"
+      ]
+    },
+    {
+      "id": "plan-trainer-route",
+      "title": "Plan a trainer route",
+      "description": "String trainer visits into a single loop so you finish admission quests efficiently. You\u2019ll get a strong kit faster than bouncing one at a time.",
+      "category": "mid-game",
+      "tags": [
+        "routing",
+        "trainers"
+      ]
+    },
+    {
+      "id": "plan-trainer-route-expanded",
+      "title": "Plan a trainer route (Expanded)",
+      "description": "String trainer visits into a single loop so you finish admission quests efficiently. You\u2019ll get a strong kit faster than bouncing one at a time. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "routing",
+        "trainers"
+      ]
+    },
+    {
+      "id": "plan-trainer-route-pro",
+      "title": "Pro Tip: Plan a trainer route",
+      "description": "Expert-level strategy built on the original tip: String trainer visits into a single loop so you finish admission quests efficiently. You\u2019ll get a strong kit faster than bouncing one at a time. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "routing",
+        "trainers",
+        "pro"
+      ]
+    },
+    {
+      "id": "carry-repair-kits",
+      "title": "Carry repair kits and spare wire",
+      "description": "A small stash of Repair Kits and Welding Wire lets you bounce back from mistakes without a full base trip. Keep them in your vehicle storage.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "supplies",
+        "vehicles"
+      ]
+    },
+    {
+      "id": "carry-repair-kits-expanded",
+      "title": "Carry repair kits and spare wire (Expanded)",
+      "description": "A small stash of Repair Kits and Welding Wire lets you bounce back from mistakes without a full base trip. Keep them in your vehicle storage. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "supplies",
+        "vehicles"
+      ]
+    },
+    {
+      "id": "carry-repair-kits-pro",
+      "title": "Pro Tip: Carry repair kits and spare wire",
+      "description": "Expert-level strategy built on the original tip: A small stash of Repair Kits and Welding Wire lets you bounce back from mistakes without a full base trip. Keep them in your vehicle storage. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "supplies",
+        "vehicles",
+        "pro"
+      ]
+    },
+    {
+      "id": "schedule-maintenance",
+      "title": "Schedule maintenance before big runs",
+      "description": "Top up durability and fuel/power at base before entering deep desert. You\u2019ll save more time than trying to recover mid\u2011mission.",
+      "category": "mid-game",
+      "tags": [
+        "planning",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "schedule-maintenance-expanded",
+      "title": "Schedule maintenance before big runs (Expanded)",
+      "description": "Top up durability and fuel/power at base before entering deep desert. You\u2019ll save more time than trying to recover mid\u2011mission. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "planning",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "schedule-maintenance-pro",
+      "title": "Pro Tip: Schedule maintenance before big runs",
+      "description": "Expert-level strategy built on the original tip: Top up durability and fuel/power at base before entering deep desert. You\u2019ll save more time than trying to recover mid\u2011mission. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "planning",
+        "maintenance",
+        "pro"
+      ]
+    },
+    {
+      "id": "stash-spare-filters",
+      "title": "Stash spare filters at the pump room",
+      "description": "Filters are a small item that can halt water production when they expire. Keep a buffer in nearby storage so you can swap quickly and keep cisterns filling.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "filters",
+        "storage"
+      ]
+    },
+    {
+      "id": "stash-spare-filters-expanded",
+      "title": "Stash spare filters at the pump room (Expanded)",
+      "description": "Filters are a small item that can halt water production when they expire. Keep a buffer in nearby storage so you can swap quickly and keep cisterns filling. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "filters",
+        "storage"
+      ]
+    },
+    {
+      "id": "stash-spare-filters-pro",
+      "title": "Pro Tip: Stash spare filters at the pump room",
+      "description": "Expert-level strategy built on the original tip: Filters are a small item that can halt water production when they expire. Keep a buffer in nearby storage so you can swap quickly and keep cisterns filling. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "filters",
+        "storage",
+        "pro"
+      ]
+    },
+    {
+      "id": "backup-power-for-water",
+      "title": "Add backup power for water systems",
+      "description": "If your base brownouts, Windtraps stall first. A small generator on a separate line can keep water trickling even when the main grid is compromised.",
+      "category": "mid-game",
+      "tags": [
+        "power",
+        "water",
+        "redundancy"
+      ]
+    },
+    {
+      "id": "backup-power-for-water-expanded",
+      "title": "Add backup power for water systems (Expanded)",
+      "description": "If your base brownouts, Windtraps stall first. A small generator on a separate line can keep water trickling even when the main grid is compromised. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "power",
+        "water",
+        "redundancy"
+      ]
+    },
+    {
+      "id": "backup-power-for-water-pro",
+      "title": "Pro Tip: Add backup power for water systems",
+      "description": "Expert-level strategy built on the original tip: If your base brownouts, Windtraps stall first. A small generator on a separate line can keep water trickling even when the main grid is compromised. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "power",
+        "water",
+        "redundancy",
+        "pro"
+      ]
+    },
+    {
+      "id": "optimize-power-budget",
+      "title": "Optimize your power budget",
+      "description": "Map total draw from Windtraps, refineries, and stations; size generators/turbines accordingly so nothing stalls mid\u2011craft.",
+      "category": "mid-game",
+      "tags": [
+        "power",
+        "planning"
+      ]
+    },
+    {
+      "id": "optimize-power-budget-expanded",
+      "title": "Optimize your power budget (Expanded)",
+      "description": "Map total draw from Windtraps, refineries, and stations; size generators/turbines accordingly so nothing stalls mid\u2011craft. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "power",
+        "planning"
+      ]
+    },
+    {
+      "id": "optimize-power-budget-pro",
+      "title": "Pro Tip: Optimize your power budget",
+      "description": "Expert-level strategy built on the original tip: Map total draw from Windtraps, refineries, and stations; size generators/turbines accordingly so nothing stalls mid\u2011craft. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "power",
+        "planning",
+        "pro"
+      ]
+    },
+    {
+      "id": "stockpile-fuel",
+      "title": "Stockpile fuel and filters",
+      "description": "Keep a small buffer of Fuel Cells and filters in base storage; running dry can halt production and water.",
+      "category": "early-game",
+      "tags": [
+        "supplies",
+        "power",
+        "water"
+      ]
+    },
+    {
+      "id": "stockpile-fuel-expanded",
+      "title": "Stockpile fuel and filters (Expanded)",
+      "description": "Keep a small buffer of Fuel Cells and filters in base storage; running dry can halt production and water. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "supplies",
+        "power",
+        "water"
+      ]
+    },
+    {
+      "id": "stockpile-fuel-pro",
+      "title": "Pro Tip: Stockpile fuel and filters",
+      "description": "Expert-level strategy built on the original tip: Keep a small buffer of Fuel Cells and filters in base storage; running dry can halt production and water. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "supplies",
+        "power",
+        "water",
+        "pro"
+      ]
+    },
+    {
+      "id": "night-run-checklist",
+      "title": "Run a night\u2011expedition checklist",
+      "description": "Before dusk: repair, refuel, fill Literjons, set waypoints, and pack spare filters.",
+      "category": "mid-game",
+      "tags": [
+        "planning",
+        "night",
+        "survival"
+      ]
+    },
+    {
+      "id": "night-run-checklist-expanded",
+      "title": "Run a night\u2011expedition checklist (Expanded)",
+      "description": "Before dusk: repair, refuel, fill Literjons, set waypoints, and pack spare filters. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "planning",
+        "night",
+        "survival"
+      ]
+    },
+    {
+      "id": "night-run-checklist-pro",
+      "title": "Pro Tip: Run a night\u2011expedition checklist",
+      "description": "Expert-level strategy built on the original tip: Before dusk: repair, refuel, fill Literjons, set waypoints, and pack spare filters. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "planning",
+        "night",
+        "survival",
+        "pro"
+      ]
+    },
+    {
+      "id": "quest-sync",
+      "title": "Sync crafting with quest beats",
+      "description": "Hold big crafts until quest steps that unlock better versions, saving Intel and inventory churn.",
+      "category": "mid-game",
+      "tags": [
+        "quests",
+        "crafting"
+      ]
+    },
+    {
+      "id": "quest-sync-expanded",
+      "title": "Sync crafting with quest beats (Expanded)",
+      "description": "Hold big crafts until quest steps that unlock better versions, saving Intel and inventory churn. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "quests",
+        "crafting"
+      ]
+    },
+    {
+      "id": "quest-sync-pro",
+      "title": "Pro Tip: Sync crafting with quest beats",
+      "description": "Expert-level strategy built on the original tip: Hold big crafts until quest steps that unlock better versions, saving Intel and inventory churn. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "quests",
+        "crafting",
+        "pro"
+      ]
+    },
+    {
+      "id": "trainer-hybrid-synergy",
+      "title": "Build synergy via trainer hybrids",
+      "description": "Pair Trooper burst with Bene Gesserit gap\u2011close or Weirding Step to control fights.",
+      "category": "mid-game",
+      "tags": [
+        "builds",
+        "combat"
+      ]
+    },
+    {
+      "id": "trainer-hybrid-synergy-expanded",
+      "title": "Build synergy via trainer hybrids (Expanded)",
+      "description": "Pair Trooper burst with Bene Gesserit gap\u2011close or Weirding Step to control fights. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "builds",
+        "combat"
+      ]
+    },
+    {
+      "id": "trainer-hybrid-synergy-pro",
+      "title": "Pro Tip: Build synergy via trainer hybrids",
+      "description": "Expert-level strategy built on the original tip: Pair Trooper burst with Bene Gesserit gap\u2011close or Weirding Step to control fights. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "builds",
+        "combat",
+        "pro"
+      ]
+    },
+    {
+      "id": "park-near-repair",
+      "title": "Park vehicles near your repair bay",
+      "description": "Position parking pads beside your Repair Station to cut downtime after sorties.",
+      "category": "mid-game",
+      "tags": [
+        "vehicles",
+        "repairs"
+      ]
+    },
+    {
+      "id": "park-near-repair-expanded",
+      "title": "Park vehicles near your repair bay (Expanded)",
+      "description": "Position parking pads beside your Repair Station to cut downtime after sorties. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "vehicles",
+        "repairs"
+      ]
+    },
+    {
+      "id": "park-near-repair-pro",
+      "title": "Pro Tip: Park vehicles near your repair bay",
+      "description": "Expert-level strategy built on the original tip: Position parking pads beside your Repair Station to cut downtime after sorties. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "vehicles",
+        "repairs",
+        "pro"
+      ]
+    },
+    {
+      "id": "water-priority-over-decor",
+      "title": "Prioritize water over decor",
+      "description": "Cosmetics can wait. Early game is about survival throughput: water, power, storage.",
+      "category": "early-game",
+      "tags": [
+        "priorities",
+        "survival"
+      ]
+    },
+    {
+      "id": "water-priority-over-decor-expanded",
+      "title": "Prioritize water over decor (Expanded)",
+      "description": "Cosmetics can wait. Early game is about survival throughput: water, power, storage. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "priorities",
+        "survival"
+      ]
+    },
+    {
+      "id": "water-priority-over-decor-pro",
+      "title": "Pro Tip: Prioritize water over decor",
+      "description": "Expert-level strategy built on the original tip: Cosmetics can wait. Early game is about survival throughput: water, power, storage. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "priorities",
+        "survival",
+        "pro"
+      ]
+    },
+    {
+      "id": "unlock-ornithopter",
+      "title": "Aim for Ornithopter unlocks",
+      "description": "Aerial mobility changes everything\u2014plan Intel and faction progression to hit this milestone quickly.",
+      "category": "mid-game",
+      "tags": [
+        "mobility",
+        "goals"
+      ]
+    },
+    {
+      "id": "unlock-ornithopter-expanded",
+      "title": "Aim for Ornithopter unlocks (Expanded)",
+      "description": "Aerial mobility changes everything\u2014plan Intel and faction progression to hit this milestone quickly. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "mobility",
+        "goals"
+      ]
+    },
+    {
+      "id": "unlock-ornithopter-pro",
+      "title": "Pro Tip: Aim for Ornithopter unlocks",
+      "description": "Expert-level strategy built on the original tip: Aerial mobility changes everything\u2014plan Intel and faction progression to hit this milestone quickly. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "mobility",
+        "goals",
+        "pro"
+      ]
+    },
+    {
+      "id": "intel-routing-1",
+      "title": "Route Intel into bottlenecks first",
+      "description": "Spend Intel where it unblocks real crafts\u2014generators, Windtraps, storage, and core weapons\u2014before sidegrades. This keeps your power and water stable so every future unlock is actually buildable.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities"
+      ]
+    },
+    {
+      "id": "intel-routing-1-expanded",
+      "title": "Route Intel into bottlenecks first (Expanded)",
+      "description": "Spend Intel where it unblocks real crafts\u2014generators, Windtraps, storage, and core weapons\u2014before sidegrades. This keeps your power and water stable so every future unlock is actually buildable. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities"
+      ]
+    },
+    {
+      "id": "intel-routing-1-pro",
+      "title": "Pro Tip: Route Intel into bottlenecks first",
+      "description": "Expert-level strategy built on the original tip: Spend Intel where it unblocks real crafts\u2014generators, Windtraps, storage, and core weapons\u2014before sidegrades. This keeps your power and water stable so every future unlock is actually buildable. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities",
+        "pro"
+      ]
+    },
+    {
+      "id": "intel-routing-2",
+      "title": "Route Intel into bottlenecks first",
+      "description": "Spend Intel where it unblocks real crafts\u2014generators, Windtraps, storage, and core weapons\u2014before sidegrades. If you\u2019re solo, prioritize water and mobility first; groups can split roles.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities"
+      ]
+    },
+    {
+      "id": "intel-routing-2-expanded",
+      "title": "Route Intel into bottlenecks first (Expanded)",
+      "description": "Spend Intel where it unblocks real crafts\u2014generators, Windtraps, storage, and core weapons\u2014before sidegrades. If you\u2019re solo, prioritize water and mobility first; groups can split roles. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities"
+      ]
+    },
+    {
+      "id": "intel-routing-2-pro",
+      "title": "Pro Tip: Route Intel into bottlenecks first",
+      "description": "Expert-level strategy built on the original tip: Spend Intel where it unblocks real crafts\u2014generators, Windtraps, storage, and core weapons\u2014before sidegrades. If you\u2019re solo, prioritize water and mobility first; groups can split roles. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities",
+        "pro"
+      ]
+    },
+    {
+      "id": "intel-routing-3",
+      "title": "Route Intel into bottlenecks first",
+      "description": "Spend Intel where it unblocks real crafts\u2014generators, Windtraps, storage, and core weapons\u2014before sidegrades. Avoid unlocking vanity items until you\u2019ve secured a fuel/water surplus.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities"
+      ]
+    },
+    {
+      "id": "intel-routing-3-expanded",
+      "title": "Route Intel into bottlenecks first (Expanded)",
+      "description": "Spend Intel where it unblocks real crafts\u2014generators, Windtraps, storage, and core weapons\u2014before sidegrades. Avoid unlocking vanity items until you\u2019ve secured a fuel/water surplus. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities"
+      ]
+    },
+    {
+      "id": "intel-routing-3-pro",
+      "title": "Pro Tip: Route Intel into bottlenecks first",
+      "description": "Expert-level strategy built on the original tip: Spend Intel where it unblocks real crafts\u2014generators, Windtraps, storage, and core weapons\u2014before sidegrades. Avoid unlocking vanity items until you\u2019ve secured a fuel/water surplus. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities",
+        "pro"
+      ]
+    },
+    {
+      "id": "trainer-admissions-1",
+      "title": "Clear trainer admission quests in batches",
+      "description": "Trainer quests are short but scattered. Chain them during a single world loop so you minimize travel time between hubs.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing"
+      ]
+    },
+    {
+      "id": "trainer-admissions-1-expanded",
+      "title": "Clear trainer admission quests in batches (Expanded)",
+      "description": "Trainer quests are short but scattered. Chain them during a single world loop so you minimize travel time between hubs. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing"
+      ]
+    },
+    {
+      "id": "trainer-admissions-1-pro",
+      "title": "Pro Tip: Clear trainer admission quests in batches",
+      "description": "Expert-level strategy built on the original tip: Trainer quests are short but scattered. Chain them during a single world loop so you minimize travel time between hubs. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing",
+        "pro"
+      ]
+    },
+    {
+      "id": "trainer-admissions-2",
+      "title": "Clear trainer admission quests in batches",
+      "description": "Trainer quests are short but scattered. Finishing all basics early gives you more flexibility for story bosses.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing"
+      ]
+    },
+    {
+      "id": "trainer-admissions-2-expanded",
+      "title": "Clear trainer admission quests in batches (Expanded)",
+      "description": "Trainer quests are short but scattered. Finishing all basics early gives you more flexibility for story bosses. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing"
+      ]
+    },
+    {
+      "id": "trainer-admissions-2-pro",
+      "title": "Pro Tip: Clear trainer admission quests in batches",
+      "description": "Expert-level strategy built on the original tip: Trainer quests are short but scattered. Finishing all basics early gives you more flexibility for story bosses. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing",
+        "pro"
+      ]
+    },
+    {
+      "id": "trainer-admissions-3",
+      "title": "Clear trainer admission quests in batches",
+      "description": "Trainer quests are short but scattered. Advanced trainer unlocks often assume you\u2019ve cleared basics\u2014get that done first.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing"
+      ]
+    },
+    {
+      "id": "trainer-admissions-3-expanded",
+      "title": "Clear trainer admission quests in batches (Expanded)",
+      "description": "Trainer quests are short but scattered. Advanced trainer unlocks often assume you\u2019ve cleared basics\u2014get that done first. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing"
+      ]
+    },
+    {
+      "id": "trainer-admissions-3-pro",
+      "title": "Pro Tip: Clear trainer admission quests in batches",
+      "description": "Expert-level strategy built on the original tip: Trainer quests are short but scattered. Advanced trainer unlocks often assume you\u2019ve cleared basics\u2014get that done first. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing",
+        "pro"
+      ]
+    },
+    {
+      "id": "storm-proofing-1",
+      "title": "Storm-proof your footprint",
+      "description": "Storms punish careless placement on dunes. Favor elevated rock shelves where cables are short and shield coverage is easy.",
+      "category": "early-game",
+      "tags": [
+        "storms",
+        "base-building",
+        "defense"
+      ]
+    },
+    {
+      "id": "storm-proofing-1-expanded",
+      "title": "Storm-proof your footprint (Expanded)",
+      "description": "Storms punish careless placement on dunes. Favor elevated rock shelves where cables are short and shield coverage is easy. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "storms",
+        "base-building",
+        "defense"
+      ]
+    },
+    {
+      "id": "storm-proofing-1-pro",
+      "title": "Pro Tip: Storm-proof your footprint",
+      "description": "Expert-level strategy built on the original tip: Storms punish careless placement on dunes. Favor elevated rock shelves where cables are short and shield coverage is easy. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "storms",
+        "base-building",
+        "defense",
+        "pro"
+      ]
+    },
+    {
+      "id": "storm-proofing-2",
+      "title": "Storm-proof your footprint",
+      "description": "Storms punish careless placement on dunes. Avoid scattered outposts; one stronghold is easier to defend and repair.",
+      "category": "early-game",
+      "tags": [
+        "storms",
+        "base-building",
+        "defense"
+      ]
+    },
+    {
+      "id": "storm-proofing-2-expanded",
+      "title": "Storm-proof your footprint (Expanded)",
+      "description": "Storms punish careless placement on dunes. Avoid scattered outposts; one stronghold is easier to defend and repair. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "storms",
+        "base-building",
+        "defense"
+      ]
+    },
+    {
+      "id": "storm-proofing-2-pro",
+      "title": "Pro Tip: Storm-proof your footprint",
+      "description": "Expert-level strategy built on the original tip: Storms punish careless placement on dunes. Avoid scattered outposts; one stronghold is easier to defend and repair. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "storms",
+        "base-building",
+        "defense",
+        "pro"
+      ]
+    },
+    {
+      "id": "storm-proofing-3",
+      "title": "Storm-proof your footprint",
+      "description": "Storms punish careless placement on dunes. Keep sub\u2011fief and generators central so a single shield bubble covers most stations.",
+      "category": "early-game",
+      "tags": [
+        "storms",
+        "base-building",
+        "defense"
+      ]
+    },
+    {
+      "id": "storm-proofing-3-expanded",
+      "title": "Storm-proof your footprint (Expanded)",
+      "description": "Storms punish careless placement on dunes. Keep sub\u2011fief and generators central so a single shield bubble covers most stations. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "storms",
+        "base-building",
+        "defense"
+      ]
+    },
+    {
+      "id": "storm-proofing-3-pro",
+      "title": "Pro Tip: Storm-proof your footprint",
+      "description": "Expert-level strategy built on the original tip: Storms punish careless placement on dunes. Keep sub\u2011fief and generators central so a single shield bubble covers most stations. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "storms",
+        "base-building",
+        "defense",
+        "pro"
+      ]
+    },
+    {
+      "id": "repair-discipline-1",
+      "title": "Practice repair discipline",
+      "description": "Topping off durability early prevents expensive max\u2011durability loss later. When a tool dips, fix it before you log out; decay won\u2019t surprise you next session.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "checklist"
+      ]
+    },
+    {
+      "id": "repair-discipline-1-expanded",
+      "title": "Practice repair discipline (Expanded)",
+      "description": "Topping off durability early prevents expensive max\u2011durability loss later. When a tool dips, fix it before you log out; decay won\u2019t surprise you next session. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "checklist"
+      ]
+    },
+    {
+      "id": "repair-discipline-1-pro",
+      "title": "Pro Tip: Practice repair discipline",
+      "description": "Expert-level strategy built on the original tip: Topping off durability early prevents expensive max\u2011durability loss later. When a tool dips, fix it before you log out; decay won\u2019t surprise you next session. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "checklist",
+        "pro"
+      ]
+    },
+    {
+      "id": "repair-discipline-2",
+      "title": "Practice repair discipline",
+      "description": "Topping off durability early prevents expensive max\u2011durability loss later. Add a pre\u2011run checklist: water, fuel, filters, Welding Wire, spare parts.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "checklist"
+      ]
+    },
+    {
+      "id": "repair-discipline-2-expanded",
+      "title": "Practice repair discipline (Expanded)",
+      "description": "Topping off durability early prevents expensive max\u2011durability loss later. Add a pre\u2011run checklist: water, fuel, filters, Welding Wire, spare parts. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "checklist"
+      ]
+    },
+    {
+      "id": "repair-discipline-2-pro",
+      "title": "Pro Tip: Practice repair discipline",
+      "description": "Expert-level strategy built on the original tip: Topping off durability early prevents expensive max\u2011durability loss later. Add a pre\u2011run checklist: water, fuel, filters, Welding Wire, spare parts. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "checklist",
+        "pro"
+      ]
+    },
+    {
+      "id": "repair-discipline-3",
+      "title": "Practice repair discipline",
+      "description": "Topping off durability early prevents expensive max\u2011durability loss later. Store damaged vehicle parts under cover until you can run a full station repair.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "checklist"
+      ]
+    },
+    {
+      "id": "repair-discipline-3-expanded",
+      "title": "Practice repair discipline (Expanded)",
+      "description": "Topping off durability early prevents expensive max\u2011durability loss later. Store damaged vehicle parts under cover until you can run a full station repair. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "checklist"
+      ]
+    },
+    {
+      "id": "repair-discipline-3-pro",
+      "title": "Pro Tip: Practice repair discipline",
+      "description": "Expert-level strategy built on the original tip: Topping off durability early prevents expensive max\u2011durability loss later. Store damaged vehicle parts under cover until you can run a full station repair. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "checklist",
+        "pro"
+      ]
+    },
+    {
+      "id": "water-lines-1",
+      "title": "Harden your water lines",
+      "description": "Your water network is your lifeline. Label cisterns mentally as primary/overflow so you know what to prioritize during blackouts.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "layout",
+        "defense"
+      ]
+    },
+    {
+      "id": "water-lines-1-expanded",
+      "title": "Harden your water lines (Expanded)",
+      "description": "Your water network is your lifeline. Label cisterns mentally as primary/overflow so you know what to prioritize during blackouts. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "layout",
+        "defense"
+      ]
+    },
+    {
+      "id": "water-lines-1-pro",
+      "title": "Pro Tip: Harden your water lines",
+      "description": "Expert-level strategy built on the original tip: Your water network is your lifeline. Label cisterns mentally as primary/overflow so you know what to prioritize during blackouts. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "layout",
+        "defense",
+        "pro"
+      ]
+    },
+    {
+      "id": "water-lines-2",
+      "title": "Harden your water lines",
+      "description": "Your water network is your lifeline. Protect water rooms inside shield coverage to avoid storm damage headaches.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "layout",
+        "defense"
+      ]
+    },
+    {
+      "id": "water-lines-2-expanded",
+      "title": "Harden your water lines (Expanded)",
+      "description": "Your water network is your lifeline. Protect water rooms inside shield coverage to avoid storm damage headaches. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "layout",
+        "defense"
+      ]
+    },
+    {
+      "id": "water-lines-2-pro",
+      "title": "Pro Tip: Harden your water lines",
+      "description": "Expert-level strategy built on the original tip: Your water network is your lifeline. Protect water rooms inside shield coverage to avoid storm damage headaches. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "layout",
+        "defense",
+        "pro"
+      ]
+    },
+    {
+      "id": "water-lines-3",
+      "title": "Harden your water lines",
+      "description": "Your water network is your lifeline. Run short routes to make filter swaps and troubleshooting faster.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "layout",
+        "defense"
+      ]
+    },
+    {
+      "id": "water-lines-3-expanded",
+      "title": "Harden your water lines (Expanded)",
+      "description": "Your water network is your lifeline. Run short routes to make filter swaps and troubleshooting faster. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "layout",
+        "defense"
+      ]
+    },
+    {
+      "id": "water-lines-3-pro",
+      "title": "Pro Tip: Harden your water lines",
+      "description": "Expert-level strategy built on the original tip: Your water network is your lifeline. Run short routes to make filter swaps and troubleshooting faster. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "layout",
+        "defense",
+        "pro"
+      ]
+    },
+    {
+      "id": "worm-avoidance-1",
+      "title": "Reduce time spent on deep sand",
+      "description": "Every minute on deep sand increases worm risk. If you must cross, plot a rock\u2011to\u2011rock path and chain grapples to minimize sand time.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "survival"
+      ]
+    },
+    {
+      "id": "worm-avoidance-1-expanded",
+      "title": "Reduce time spent on deep sand (Expanded)",
+      "description": "Every minute on deep sand increases worm risk. If you must cross, plot a rock\u2011to\u2011rock path and chain grapples to minimize sand time. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "survival"
+      ]
+    },
+    {
+      "id": "worm-avoidance-1-pro",
+      "title": "Pro Tip: Reduce time spent on deep sand",
+      "description": "Expert-level strategy built on the original tip: Every minute on deep sand increases worm risk. If you must cross, plot a rock\u2011to\u2011rock path and chain grapples to minimize sand time. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "survival",
+        "pro"
+      ]
+    },
+    {
+      "id": "worm-avoidance-2",
+      "title": "Reduce time spent on deep sand",
+      "description": "Every minute on deep sand increases worm risk. Night travel plus Softstep Boots reduces noise and heat\u2014ideal for long crossings.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "survival"
+      ]
+    },
+    {
+      "id": "worm-avoidance-2-expanded",
+      "title": "Reduce time spent on deep sand (Expanded)",
+      "description": "Every minute on deep sand increases worm risk. Night travel plus Softstep Boots reduces noise and heat\u2014ideal for long crossings. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "survival"
+      ]
+    },
+    {
+      "id": "worm-avoidance-2-pro",
+      "title": "Pro Tip: Reduce time spent on deep sand",
+      "description": "Expert-level strategy built on the original tip: Every minute on deep sand increases worm risk. Night travel plus Softstep Boots reduces noise and heat\u2014ideal for long crossings. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "survival",
+        "pro"
+      ]
+    },
+    {
+      "id": "worm-avoidance-3",
+      "title": "Reduce time spent on deep sand",
+      "description": "Every minute on deep sand increases worm risk. Abort crossings when the vibration meter spikes; a detour is faster than a respawn.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "survival"
+      ]
+    },
+    {
+      "id": "worm-avoidance-3-expanded",
+      "title": "Reduce time spent on deep sand (Expanded)",
+      "description": "Every minute on deep sand increases worm risk. Abort crossings when the vibration meter spikes; a detour is faster than a respawn. This expanded version adds more context and practical application details for different playstyles, including solo vs group, and ties it to faction progression and long-term planning.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "survival"
+      ]
+    },
+    {
+      "id": "worm-avoidance-3-pro",
+      "title": "Pro Tip: Reduce time spent on deep sand",
+      "description": "Expert-level strategy built on the original tip: Every minute on deep sand increases worm risk. Abort crossings when the vibration meter spikes; a detour is faster than a respawn. Consider how this scales when managing multiple bases or in PvP contexts.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "survival",
+        "pro"
+      ]
+    },
+    {
+      "id": "night-prep-x1",
+      "title": "Night Run Prep",
+      "description": "Prep for night travel to cut heat and water loss. Plot a rock-to-rock route in the map before dusk to minimize time on deep sand.",
+      "category": "mid-game",
+      "tags": [
+        "night",
+        "planning",
+        "hydration"
+      ]
+    },
+    {
+      "id": "night-prep-x2",
+      "title": "Night Run Prep",
+      "description": "Prep for night travel to cut heat and water loss. Stage spare literjons, filters, and repair kits near your base exit for quick grabs.",
+      "category": "mid-game",
+      "tags": [
+        "night",
+        "planning",
+        "hydration"
+      ]
+    },
+    {
+      "id": "night-prep-x3",
+      "title": "Night Run Prep",
+      "description": "Prep for night travel to cut heat and water loss. Repair gear and top vehicles so you don\u2019t need to stop mid-crossing.",
+      "category": "mid-game",
+      "tags": [
+        "night",
+        "planning",
+        "hydration"
+      ]
+    },
+    {
+      "id": "night-prep-x4",
+      "title": "Night Run Prep",
+      "description": "Prep for night travel to cut heat and water loss. Mark safe plateaus as waypoints to break up long legs across open desert.",
+      "category": "mid-game",
+      "tags": [
+        "night",
+        "planning",
+        "hydration"
+      ]
+    },
+    {
+      "id": "windtrap-ops-x1",
+      "title": "Windtrap Ops",
+      "description": "Keep wind and water production stable with simple routines. Swap filters on a schedule rather than waiting for them to expire.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "power",
+        "filters"
+      ]
+    },
+    {
+      "id": "windtrap-ops-x2",
+      "title": "Windtrap Ops",
+      "description": "Keep wind and water production stable with simple routines. Route windtrap output into a dedicated primary cistern and a separate overflow cistern.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "power",
+        "filters"
+      ]
+    },
+    {
+      "id": "windtrap-ops-x3",
+      "title": "Windtrap Ops",
+      "description": "Keep wind and water production stable with simple routines. Place filters in a nearby storage container so everyone knows where to restock.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "power",
+        "filters"
+      ]
+    },
+    {
+      "id": "windtrap-ops-x4",
+      "title": "Windtrap Ops",
+      "description": "Keep wind and water production stable with simple routines. Put windtraps and cisterns inside your sub\u2011fief shield to reduce storm damage risk.",
+      "category": "early-game",
+      "tags": [
+        "water",
+        "power",
+        "filters"
+      ]
+    },
+    {
+      "id": "intel-planning-x1",
+      "title": "Intel Planning",
+      "description": "Spend Intel where it unblocks real crafts. Unlock power and water first so stations don\u2019t stall mid\u2011craft.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities"
+      ]
+    },
+    {
+      "id": "intel-planning-x2",
+      "title": "Intel Planning",
+      "description": "Spend Intel where it unblocks real crafts. Time unlocks with inventory and nearby resources to avoid running dry.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities"
+      ]
+    },
+    {
+      "id": "intel-planning-x3",
+      "title": "Intel Planning",
+      "description": "Spend Intel where it unblocks real crafts. Hold off on cosmetics until you\u2019ve stabilized power, water, and storage.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities"
+      ]
+    },
+    {
+      "id": "intel-planning-x4",
+      "title": "Intel Planning",
+      "description": "Spend Intel where it unblocks real crafts. If you\u2019re solo, mobility and hydration unlocks come before late\u2011tier combat toys.",
+      "category": "mid-game",
+      "tags": [
+        "intel",
+        "research",
+        "priorities"
+      ]
+    },
+    {
+      "id": "trainer-loop-x1",
+      "title": "Trainer Loop",
+      "description": "Bundle trainer admission quests into a single loop. Finish all basic trainers first, then circle back for advanced trainers.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing",
+        "builds"
+      ]
+    },
+    {
+      "id": "trainer-loop-x2",
+      "title": "Trainer Loop",
+      "description": "Bundle trainer admission quests into a single loop. Hybridize builds only after you can reliably survive long treks between hubs.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing",
+        "builds"
+      ]
+    },
+    {
+      "id": "trainer-loop-x3",
+      "title": "Trainer Loop",
+      "description": "Bundle trainer admission quests into a single loop. Keep a vehicle fueled so you can pivot between hubs without wasting water.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing",
+        "builds"
+      ]
+    },
+    {
+      "id": "trainer-loop-x4",
+      "title": "Trainer Loop",
+      "description": "Bundle trainer admission quests into a single loop. Use your map notes to record which trainers you\u2019ve completed.",
+      "category": "mid-game",
+      "tags": [
+        "trainers",
+        "routing",
+        "builds"
+      ]
+    },
+    {
+      "id": "base-layout-x1",
+      "title": "Base Layout",
+      "description": "Compact station layout reduces cable runs and downtime. Center the sub\u2011fief and generators so a single shield bubble covers most stations.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "layout",
+        "defense"
+      ]
+    },
+    {
+      "id": "base-layout-x2",
+      "title": "Base Layout",
+      "description": "Compact station layout reduces cable runs and downtime. Keep refineries close to storage to shorten transfer runs.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "layout",
+        "defense"
+      ]
+    },
+    {
+      "id": "base-layout-x3",
+      "title": "Base Layout",
+      "description": "Compact station layout reduces cable runs and downtime. Use rock shelves to create natural choke points around your base.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "layout",
+        "defense"
+      ]
+    },
+    {
+      "id": "base-layout-x4",
+      "title": "Base Layout",
+      "description": "Compact station layout reduces cable runs and downtime. Park vehicles under cover next to the repair station to encourage frequent upkeep.",
+      "category": "early-game",
+      "tags": [
+        "base-building",
+        "layout",
+        "defense"
+      ]
+    },
+    {
+      "id": "repair-discipline-2-x1",
+      "title": "Repair Discipline",
+      "description": "Prevent max-durability loss with light, frequent repairs. Repair gear before logging out so passive decay doesn\u2019t stack with field damage.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "repair-discipline-2-x2",
+      "title": "Repair Discipline",
+      "description": "Prevent max-durability loss with light, frequent repairs. Carry welding wire and a minimal kit to stabilize items in the field.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "repair-discipline-2-x3",
+      "title": "Repair Discipline",
+      "description": "Prevent max-durability loss with light, frequent repairs. Schedule full station repairs after major sorties to keep gear at peak.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "repair-discipline-2-x4",
+      "title": "Repair Discipline",
+      "description": "Prevent max-durability loss with light, frequent repairs. Store damaged parts under cover until you can finish a full repair cycle.",
+      "category": "mid-game",
+      "tags": [
+        "repairs",
+        "durability",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "worm-safety-x1",
+      "title": "Worm Safety",
+      "description": "Cut worm risk by reducing time on deep sand. Switch to rock as soon as the vibration meter spikes instead of sprinting straight ahead.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "safety"
+      ]
+    },
+    {
+      "id": "worm-safety-x2",
+      "title": "Worm Safety",
+      "description": "Cut worm risk by reducing time on deep sand. Plot crossings that leapfrog between plateaus and rock spines.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "safety"
+      ]
+    },
+    {
+      "id": "worm-safety-x3",
+      "title": "Worm Safety",
+      "description": "Cut worm risk by reducing time on deep sand. Use grappler pulls to shorten exposed segments over dunes.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "safety"
+      ]
+    },
+    {
+      "id": "worm-safety-x4",
+      "title": "Worm Safety",
+      "description": "Cut worm risk by reducing time on deep sand. Travel at night when planning long sand segments.",
+      "category": "mid-game",
+      "tags": [
+        "worms",
+        "mobility",
+        "safety"
+      ]
+    },
+    {
+      "id": "resource-routines-x1",
+      "title": "Resource Routines",
+      "description": "Front\u2011load early resource gathering to avoid backtracking. Sweep starter zones for fiber and granite before chasing quests into the deep desert.",
+      "category": "early-game",
+      "tags": [
+        "resources",
+        "crafting",
+        "planning"
+      ]
+    },
+    {
+      "id": "resource-routines-x2",
+      "title": "Resource Routines",
+      "description": "Front\u2011load early resource gathering to avoid backtracking. Set a minimum stash of copper and salvaged metal before building complex stations.",
+      "category": "early-game",
+      "tags": [
+        "resources",
+        "crafting",
+        "planning"
+      ]
+    },
+    {
+      "id": "resource-routines-x3",
+      "title": "Resource Routines",
+      "description": "Front\u2011load early resource gathering to avoid backtracking. Keep a chest labeled for filters, fuel cells, and repair kits near your base entrance.",
+      "category": "early-game",
+      "tags": [
+        "resources",
+        "crafting",
+        "planning"
+      ]
+    },
+    {
+      "id": "resource-routines-x4",
+      "title": "Resource Routines",
+      "description": "Front\u2011load early resource gathering to avoid backtracking. Route ore and chemical refinery outputs into clearly labeled storage containers.",
+      "category": "early-game",
+      "tags": [
+        "resources",
+        "crafting",
+        "planning"
+      ]
+    }
+  ]
+}

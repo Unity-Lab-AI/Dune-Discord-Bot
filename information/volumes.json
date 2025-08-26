@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "version": "2025-08-26",
+    "units": {
+      "inventory_volume": "V",
+      "liquid": "ml",
+      "slots": "count"
+    },
+    "notes": [
+      "Inventory V = total volume capacity your backpack/containers can hold.",
+      "Liquid ml = water volume held by containers/cisterns.",
+      "Only verified, in-game values included—no placeholders."
+    ]
+  },
+
+  "player_inventory": {
+    "max_volume_v": 175,
+    "slots": 35
+  },
+
+  "bank_storage": {
+    "max_volume_v": 1500
+  },
+
+  "placeable_containers": [
+    {
+      "id": "small_storage_container",
+      "name": "Small Storage Container",
+      "slots": 10,
+      "max_volume_v": 250
+    },
+    {
+      "id": "chest",
+      "name": "Chest",
+      "slots": 20,
+      "max_volume_v": 750
+    },
+    {
+      "id": "storage_container",
+      "name": "Storage Container",
+      "slots": 45,
+      "max_volume_v": 1750
+    },
+    {
+      "id": "medium_storage_container",
+      "name": "Medium Storage Container",
+      "slots": 100,
+      "max_volume_v": 3500
+    }
+  ],
+
+  "hydration_portables": [
+    {
+      "id": "literjon",
+      "name": "Literjon",
+      "container_capacity_ml": 1000
+    },
+    {
+      "id": "decaliterjon",
+      "name": "Decaliterjon",
+      "container_capacity_ml": 10000
+    },
+    {
+      "id": "literjon_mk6",
+      "name": "Literjon Mk6",
+      "container_capacity_ml": 20000,
+      "item_volume_v": 25
+    },
+    {
+      "id": "hajra_literjon_mk6",
+      "name": "Hajra Literjon Mk6 (Unique)",
+      "container_capacity_ml": 3000,
+      "item_volume_v": 2
+    }
+  ],
+
+  "cisterns_and_generation": {
+    "cisterns": [
+      {
+        "id": "water_cistern_small",
+        "name": "Water Cistern",
+        "container_capacity_ml": 5000
+      },
+      {
+        "id": "water_cistern_medium",
+        "name": "Medium Water Cistern",
+        "container_capacity_ml": 25000
+      },
+      {
+        "id": "water_cistern_large",
+        "name": "Large Water Cistern",
+        "container_capacity_ml": 100000
+      }
+    ],
+    "windtrap": {
+      "output_ml_per_hour": 2700,
+      "internal_reservoir_ml": 500
+    }
+  },
+
+  "vehicle_storage_modules": [
+    {
+      "vehicle": "Buggy",
+      "module": "Buggy Storage Mk5",
+      "max_volume_v": 2500,
+      "slots": 20
+    },
+    {
+      "vehicle": "Buggy",
+      "module": "Bigger Buggy Boot Mk6 (Unique)",
+      "max_volume_v": 3500,
+      "slots": 35
+    },
+    {
+      "vehicle": "Scout Ornithopter",
+      "module": "Scout Ornithopter Storage Mk4",
+      "max_volume_v": 500,
+      "slots": 10
+    },
+    {
+      "vehicle": "Assault Ornithopter",
+      "module": "Assault Ornithopter Storage Mk5",
+      "max_volume_v": 1000,
+      "slots": 15
+    }
+  ],
+
+  "vehicle_part_requirements": {
+    "sandbike": {
+      "mandatory": {
+        "chassis": 1,
+        "engine": 1,
+        "hull": 1,
+        "psu": 1,
+        "treads": 3
+      },
+      "notes": [
+        "Booster/Scanner/Backseat/Inventory are optional modules."
+      ]
+    },
+    "buggy": {
+      "mandatory": {
+        "chassis": 1,
+        "engine": 1,
+        "hull": 1,
+        "psu": 1,
+        "treads": 4
+      },
+      "notes": [
+        "Rear/Storage/Utility/Weapons are optional modules."
+      ]
+    },
+    "scout_ornithopter": {
+      "mandatory": {
+        "chassis": 1,
+        "cockpit": 1,
+        "hull": 1,
+        "engine": 1,
+        "generator": 1,
+        "wings": 4,
+        "thruster": 1,
+        "tail": 0
+      },
+      "notes": [
+        "Scan/Storage/Boost/Weapons occupy side utility; only one may be equipped at a time."
+      ]
+    },
+    "assault_ornithopter": {
+      "mandatory": {
+        "chassis": 1,
+        "cockpit": 1,
+        "hull": 1,
+        "engine": 1,
+        "generator": 1,
+        "wings": 6,
+        "thruster": 1,
+        "tail": 1
+      },
+      "notes": [
+        "Rockets and other weapon modules are optional loadouts."
+      ]
+    },
+    "carrier_ornithopter": {
+      "mandatory": {
+        "chassis": 1,
+        "main_hull": 1,
+        "side_hull": 2,
+        "engine": 1,
+        "generator": 1,
+        "thruster": 1,
+        "tail_hull": 1,
+        "wings": 8
+      }
+    },
+    "sandcrawler": {
+      "mandatory": {
+        "chassis": 1,
+        "cabin": 1,
+        "engine": 1,
+        "psu": 1,
+        "treads": 2
+      },
+      "required_utilities_for_harvest": [
+        "sandcrawler_vacuum",
+        "sandcrawler_centrifuge"
+      ]
+    }
+  }
+}

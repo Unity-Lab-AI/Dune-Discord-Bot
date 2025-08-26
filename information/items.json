@@ -1,0 +1,948 @@
+{
+  "game": "Dune: Awakening",
+  "schema_version": "1.0",
+  "updated_at": "2025-08-25",
+  "schema": {
+    "id": "kebab-case unique id",
+    "name": "in-game name",
+    "category": "materials|components|consumables|tools|spice|ammo",
+    "sub_category": "e.g., ingots|ores|chemicals|mechanical|filters|power|water|surveying|repair|melange|derivatives",
+    "crafted_at": [
+      "station names where crafted, if known"
+    ],
+    "used_in": [
+      "list of things that consume this item (recipes, builds, etc.)"
+    ]
+  },
+  "items": [
+    {
+      "id": "heavy-caliber-ammunition",
+      "name": "Heavy Caliber Ammunition",
+      "category": "ammo",
+      "sub_category": "general",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "light-caliber-ammunition",
+      "name": "Light Caliber Ammunition",
+      "category": "ammo",
+      "sub_category": "general",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "advanced-machinery",
+      "name": "Advanced Machinery",
+      "category": "components",
+      "sub_category": "mechanical",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "armor-plating",
+      "name": "Armor Plating",
+      "category": "components",
+      "sub_category": "mechanical",
+      "used_in": [
+        "Duneman Heavy Boots",
+        "Duneman Heavy Gloves",
+        "Duneman Heavy Jacket",
+        "Duneman Heavy Mask",
+        "Duneman Heavy Pants"
+      ],
+      "crafted_at": [
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "calibrated-servok",
+      "name": "Calibrated Servok",
+      "category": "components",
+      "sub_category": "mechanical",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "complex-machinery",
+      "name": "Complex Machinery",
+      "category": "components",
+      "sub_category": "mechanical",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "industrial-pump",
+      "name": "Industrial Pump",
+      "category": "components",
+      "sub_category": "mechanical",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "plasteel-composite-armor-plating",
+      "name": "Plasteel Composite Armor Plating",
+      "category": "components",
+      "sub_category": "mechanical",
+      "used_in": [
+        "(various)",
+        "Bulwark Boots",
+        "Bulwark Chest",
+        "Bulwark Gloves",
+        "Bulwark Helmet",
+        "Bulwark Leggings",
+        "CHOAM Heavy Boots",
+        "CHOAM Heavy Chestplate",
+        "CHOAM Heavy Gauntlets",
+        "CHOAM Heavy Greaves",
+        "CHOAM Heavy Helmet",
+        "Power Harness",
+        "The Forge Helmet",
+        "Wayfinder Helm (Tier 6)"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator"
+      ]
+    },
+    {
+      "id": "spice-stabilizer",
+      "name": "Spice Stabilizer",
+      "category": "components",
+      "sub_category": "mechanical",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "advanced-particulate-filter",
+      "name": "Advanced Particulate Filter",
+      "category": "consumables",
+      "sub_category": "filters",
+      "used_in": [
+        "(various)",
+        "Large Windtrap"
+      ]
+    },
+    {
+      "id": "filter-extractor-mk3",
+      "name": "Filter Extractor Mk3",
+      "category": "consumables",
+      "sub_category": "filters",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "filter-extractor-mk4",
+      "name": "Filter Extractor Mk4",
+      "category": "consumables",
+      "sub_category": "filters",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "filter-extractor-mk5",
+      "name": "Filter Extractor Mk5",
+      "category": "consumables",
+      "sub_category": "filters",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "filter-extractor-mk6",
+      "name": "Filter Extractor Mk6",
+      "category": "consumables",
+      "sub_category": "filters",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "makeshift-filter",
+      "name": "Makeshift Filter",
+      "category": "consumables",
+      "sub_category": "filters",
+      "used_in": [
+        "(various)",
+        "Windtrap"
+      ]
+    },
+    {
+      "id": "particulate-filter",
+      "name": "Particulate Filter",
+      "category": "consumables",
+      "sub_category": "filters",
+      "used_in": [
+        "(various)",
+        "Large Windtrap"
+      ]
+    },
+    {
+      "id": "standard-filter",
+      "name": "Standard Filter",
+      "category": "consumables",
+      "sub_category": "filters",
+      "used_in": [
+        "(various)",
+        "Windtrap"
+      ]
+    },
+    {
+      "id": "industrial-grade-lubricant",
+      "name": "Industrial-grade Lubricant",
+      "category": "consumables",
+      "sub_category": "maintenance",
+      "used_in": [
+        "(various)",
+        "Wind Turbine (Directional)"
+      ]
+    },
+    {
+      "id": "low-grade-lubricant",
+      "name": "Low-grade Lubricant",
+      "category": "consumables",
+      "sub_category": "maintenance",
+      "used_in": [
+        "(various)",
+        "Wind Turbine (Omnidirectional)"
+      ]
+    },
+    {
+      "id": "disruptor-battery",
+      "name": "Disruptor Battery",
+      "category": "consumables",
+      "sub_category": "power",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "fuel-cell",
+      "name": "Fuel Cell",
+      "category": "consumables",
+      "sub_category": "power",
+      "used_in": [
+        "(various)",
+        "Fuel-Powered Generator"
+      ]
+    },
+    {
+      "id": "rocket-fuel",
+      "name": "Rocket Fuel",
+      "category": "consumables",
+      "sub_category": "power",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "spice-infused-fuel-cell",
+      "name": "Spice-Infused Fuel Cell",
+      "category": "consumables",
+      "sub_category": "power",
+      "used_in": [
+        "(various)",
+        "Spice-Powered Generator"
+      ]
+    },
+    {
+      "id": "hajra-literjon-mk1",
+      "name": "Hajra Literjon Mk1",
+      "category": "consumables",
+      "sub_category": "water",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "hajra-literjon-mk2",
+      "name": "Hajra Literjon Mk2",
+      "category": "consumables",
+      "sub_category": "water",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "hajra-literjon-mk3",
+      "name": "Hajra Literjon Mk3",
+      "category": "consumables",
+      "sub_category": "water",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "hajra-literjon-mk4",
+      "name": "Hajra Literjon Mk4",
+      "category": "consumables",
+      "sub_category": "water",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "hajra-literjon-mk5",
+      "name": "Hajra Literjon Mk5",
+      "category": "consumables",
+      "sub_category": "water",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "improved-watertube",
+      "name": "Improved Watertube",
+      "category": "consumables",
+      "sub_category": "water",
+      "used_in": [
+        "CHOAM Stillsuit Body",
+        "CHOAM Stillsuit Boots",
+        "CHOAM Stillsuit Gloves",
+        "CHOAM Stillsuit Mask",
+        "Imperial Stillsuit Garment"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator"
+      ]
+    },
+    {
+      "id": "literjon",
+      "name": "Literjon",
+      "category": "consumables",
+      "sub_category": "water",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "water",
+      "name": "Water",
+      "category": "consumables",
+      "sub_category": "water",
+      "used_in": [
+        "Batigh Stillsuit Garment",
+        "CHOAM Stillsuit Body",
+        "CHOAM Stillsuit Boots",
+        "CHOAM Stillsuit Gloves",
+        "CHOAM Stillsuit Mask",
+        "Imperial Stillsuit Garment",
+        "Maraqeb Stillsuit Garment",
+        "Native Stillsuit Body",
+        "Native Stillsuit Mask",
+        "Radiation Suit Mk4",
+        "Radiation Suit Mk5",
+        "Radiation Suit Mk6"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator",
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "water-ml",
+      "name": "Water (ml)",
+      "category": "consumables",
+      "sub_category": "water",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "silicone-block",
+      "name": "Silicone Block",
+      "category": "materials",
+      "sub_category": "blocks",
+      "used_in": [
+        "(various)",
+        "Batigh Stillsuit Garment",
+        "Bulwark Boots",
+        "Bulwark Chest",
+        "Bulwark Gloves",
+        "Bulwark Helmet",
+        "Bulwark Leggings",
+        "CHOAM Heavy Boots",
+        "CHOAM Heavy Chestplate",
+        "CHOAM Heavy Gauntlets",
+        "CHOAM Heavy Greaves",
+        "CHOAM Heavy Helmet",
+        "CHOAM Scout Boots",
+        "CHOAM Scout Chestplate",
+        "CHOAM Scout Gloves",
+        "CHOAM Scout Helmet",
+        "CHOAM Scout Pants",
+        "CHOAM Stillsuit Body",
+        "CHOAM Stillsuit Boots",
+        "CHOAM Stillsuit Gloves",
+        "CHOAM Stillsuit Mask",
+        "Desert Garb",
+        "Duneman Heavy Boots",
+        "Duneman Heavy Gloves",
+        "Duneman Heavy Jacket",
+        "Duneman Heavy Mask",
+        "Duneman Heavy Pants",
+        "Duneman Scout Boots",
+        "Duneman Scout Gloves",
+        "Duneman Scout Helmet",
+        "Duneman Scout Jacket",
+        "Duneman Scout Pants",
+        "Imperial Stillsuit Garment",
+        "Maraqeb Stillsuit Garment",
+        "Native Stillsuit Body",
+        "Native Stillsuit Mask",
+        "Power Harness",
+        "Radiation Suit Mk4",
+        "Radiation Suit Mk5",
+        "Radiation Suit Mk6",
+        "The Forge Helmet",
+        "Wayfinder Helm (Tier 6)"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator",
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "cobalt-paste",
+      "name": "Cobalt Paste",
+      "category": "materials",
+      "sub_category": "chemicals",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "explosive-compound",
+      "name": "Explosive Compound",
+      "category": "materials",
+      "sub_category": "chemicals",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "spice-essence",
+      "name": "Spice Essence",
+      "category": "materials",
+      "sub_category": "chemicals",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "spice-resin",
+      "name": "Spice Resin",
+      "category": "materials",
+      "sub_category": "chemicals",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "aluminum-ingot",
+      "name": "Aluminum Ingot",
+      "category": "materials",
+      "sub_category": "ingots",
+      "used_in": [
+        "(various)",
+        "Duneman Heavy Boots",
+        "Duneman Heavy Gloves",
+        "Duneman Heavy Jacket",
+        "Duneman Heavy Mask",
+        "Duneman Heavy Pants",
+        "Duneman Scout Boots",
+        "Duneman Scout Gloves",
+        "Duneman Scout Helmet",
+        "Duneman Scout Jacket",
+        "Duneman Scout Pants",
+        "Maraqeb Stillsuit Garment",
+        "Native Stillsuit Body",
+        "Native Stillsuit Mask",
+        "Radiation Suit Mk4"
+      ],
+      "crafted_at": [
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "copper-ingot",
+      "name": "Copper Ingot",
+      "category": "materials",
+      "sub_category": "ingots",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "duraluminum-ingot",
+      "name": "Duraluminum Ingot",
+      "category": "materials",
+      "sub_category": "ingots",
+      "used_in": [
+        "(various)",
+        "Batigh Stillsuit Garment",
+        "Radiation Suit Mk5"
+      ],
+      "crafted_at": [
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "iron-ingot",
+      "name": "Iron Ingot",
+      "category": "materials",
+      "sub_category": "ingots",
+      "used_in": [
+        "(various)",
+        "Kirab Stillsuit Body",
+        "Menol's Stillsuit Garment"
+      ],
+      "crafted_at": [
+        "Fabricator / Garment Fabricator"
+      ]
+    },
+    {
+      "id": "plastanium-ingot",
+      "name": "Plastanium Ingot",
+      "category": "materials",
+      "sub_category": "ingots",
+      "used_in": [
+        "(various)",
+        "Bulwark Boots",
+        "Bulwark Chest",
+        "Bulwark Gloves",
+        "Bulwark Helmet",
+        "Bulwark Leggings",
+        "CHOAM Heavy Boots",
+        "CHOAM Heavy Chestplate",
+        "CHOAM Heavy Gauntlets",
+        "CHOAM Heavy Greaves",
+        "CHOAM Heavy Helmet",
+        "CHOAM Scout Boots",
+        "CHOAM Scout Chestplate",
+        "CHOAM Scout Gloves",
+        "CHOAM Scout Helmet",
+        "CHOAM Scout Pants",
+        "CHOAM Stillsuit Body",
+        "CHOAM Stillsuit Boots",
+        "CHOAM Stillsuit Gloves",
+        "CHOAM Stillsuit Mask",
+        "Desert Garb",
+        "Imperial Stillsuit Garment",
+        "Power Harness",
+        "Radiation Suit Mk6",
+        "The Forge Helmet",
+        "Wayfinder Helm (Tier 6)"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator"
+      ]
+    },
+    {
+      "id": "steel-ingot",
+      "name": "Steel Ingot",
+      "category": "materials",
+      "sub_category": "ingots",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "collapsible-dew-reaper-mk4",
+      "name": "Collapsible Dew Reaper Mk4",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "collapsible-dew-reaper-mk5",
+      "name": "Collapsible Dew Reaper Mk5",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "collapsible-dew-reaper-mk6",
+      "name": "Collapsible Dew Reaper Mk6",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "dew-reaper-mk2",
+      "name": "Dew Reaper Mk2",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "dew-reaper-mk4",
+      "name": "Dew Reaper Mk4",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "dew-reaper-mk6",
+      "name": "Dew Reaper Mk6",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "dew-scythe-mk4",
+      "name": "Dew Scythe Mk4",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "dew-scythe-mk6",
+      "name": "Dew Scythe Mk6",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "focused-reaper-mk5",
+      "name": "Focused Reaper Mk5",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "salvaged-metal",
+      "name": "Salvaged Metal",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "sandtrout-leathers",
+      "name": "Sandtrout Leathers",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "CHOAM Scout Boots",
+        "CHOAM Scout Chestplate",
+        "CHOAM Scout Gloves",
+        "CHOAM Scout Helmet",
+        "CHOAM Scout Pants",
+        "Duneman Scout Boots",
+        "Duneman Scout Gloves",
+        "Duneman Scout Helmet",
+        "Duneman Scout Jacket",
+        "Duneman Scout Pants",
+        "Radiation Suit Mk5"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator",
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "stillsuit-tubing",
+      "name": "Stillsuit Tubing",
+      "category": "materials",
+      "sub_category": "misc",
+      "used_in": [
+        "Batigh Stillsuit Garment",
+        "Maraqeb Stillsuit Garment",
+        "Native Stillsuit Body",
+        "Native Stillsuit Mask"
+      ],
+      "crafted_at": [
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "igniter-core",
+      "name": "Igniter Core",
+      "category": "materials",
+      "sub_category": "ores",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "irradiated-core",
+      "name": "Irradiated Core",
+      "category": "materials",
+      "sub_category": "ores",
+      "used_in": [
+        "Power Harness"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator"
+      ]
+    },
+    {
+      "id": "ballistic-weave-fabric",
+      "name": "Ballistic Weave Fabric",
+      "category": "materials",
+      "sub_category": "textiles",
+      "used_in": [
+        "Bulwark Boots",
+        "Desert Garb",
+        "Radiation Suit Mk6"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator"
+      ]
+    },
+    {
+      "id": "micro-sandwich-fabric",
+      "name": "Micro-sandwich Fabric",
+      "category": "materials",
+      "sub_category": "textiles",
+      "used_in": [
+        "Batigh Stillsuit Garment",
+        "CHOAM Stillsuit Body",
+        "CHOAM Stillsuit Boots",
+        "CHOAM Stillsuit Gloves",
+        "CHOAM Stillsuit Mask",
+        "Imperial Stillsuit Garment",
+        "Kirab Stillsuit Body",
+        "Maraqeb Stillsuit Garment",
+        "Menol's Stillsuit Garment",
+        "Native Stillsuit Body",
+        "Native Stillsuit Mask"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator",
+        "Fabricator / Garment Fabricator",
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "plant-fiber",
+      "name": "Plant Fiber",
+      "category": "materials",
+      "sub_category": "textiles",
+      "used_in": [
+        "Kirab Stillsuit Body",
+        "Menol's Stillsuit Garment"
+      ],
+      "crafted_at": [
+        "Fabricator / Garment Fabricator"
+      ]
+    },
+    {
+      "id": "plasteel-microflora-fiber",
+      "name": "Plasteel Microflora Fiber",
+      "category": "materials",
+      "sub_category": "textiles",
+      "used_in": [
+        "(various)",
+        "Bulwark Chest",
+        "Bulwark Gloves",
+        "Bulwark Helmet",
+        "Bulwark Leggings",
+        "CHOAM Heavy Boots",
+        "CHOAM Heavy Chestplate",
+        "CHOAM Heavy Gauntlets",
+        "CHOAM Heavy Greaves",
+        "CHOAM Heavy Helmet",
+        "CHOAM Scout Boots",
+        "CHOAM Scout Chestplate",
+        "CHOAM Scout Gloves",
+        "CHOAM Scout Helmet",
+        "CHOAM Scout Pants",
+        "Desert Garb",
+        "Duneman Heavy Boots",
+        "Duneman Heavy Gloves",
+        "Duneman Heavy Jacket",
+        "Duneman Heavy Mask",
+        "Duneman Heavy Pants",
+        "Duneman Scout Boots",
+        "Duneman Scout Gloves",
+        "Duneman Scout Helmet",
+        "Duneman Scout Jacket",
+        "Duneman Scout Pants",
+        "Power Harness",
+        "Radiation Suit Mk4",
+        "The Forge Helmet",
+        "Wayfinder Helm (Tier 6)"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator",
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "spice-infused-aluminum-dust",
+      "name": "Spice-infused Aluminum Dust",
+      "category": "spice",
+      "sub_category": "derivatives",
+      "used_in": [
+        "Maraqeb Stillsuit Garment"
+      ],
+      "crafted_at": [
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "spice-infused-duraluminum-dust",
+      "name": "Spice-infused Duraluminum Dust",
+      "category": "spice",
+      "sub_category": "derivatives",
+      "used_in": [
+        "Batigh Stillsuit Garment"
+      ],
+      "crafted_at": [
+        "Garment Fabricator"
+      ]
+    },
+    {
+      "id": "spice-infused-iron-dust",
+      "name": "Spice-infused Iron Dust",
+      "category": "spice",
+      "sub_category": "derivatives",
+      "used_in": [
+        "Menol's Stillsuit Garment"
+      ],
+      "crafted_at": [
+        "Fabricator / Garment Fabricator"
+      ]
+    },
+    {
+      "id": "spice-infused-plastanium-dust",
+      "name": "Spice-infused Plastanium Dust",
+      "category": "spice",
+      "sub_category": "derivatives",
+      "used_in": [
+        "Bulwark Boots",
+        "CHOAM Scout Boots",
+        "CHOAM Scout Chestplate",
+        "CHOAM Scout Gloves",
+        "CHOAM Scout Helmet",
+        "CHOAM Scout Pants",
+        "Desert Garb",
+        "Imperial Stillsuit Garment",
+        "Power Harness",
+        "The Forge Helmet"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator"
+      ]
+    },
+    {
+      "id": "spice-melange",
+      "name": "Spice Melange",
+      "category": "spice",
+      "sub_category": "melange",
+      "used_in": [
+        "(various)",
+        "Bulwark Boots",
+        "Bulwark Chest",
+        "Bulwark Gloves",
+        "Bulwark Helmet",
+        "Bulwark Leggings",
+        "CHOAM Heavy Boots",
+        "CHOAM Heavy Chestplate",
+        "CHOAM Heavy Gauntlets",
+        "CHOAM Heavy Greaves",
+        "CHOAM Heavy Helmet",
+        "CHOAM Scout Boots",
+        "CHOAM Scout Chestplate",
+        "CHOAM Scout Gloves",
+        "CHOAM Scout Helmet",
+        "CHOAM Scout Pants",
+        "CHOAM Stillsuit Body",
+        "CHOAM Stillsuit Boots",
+        "CHOAM Stillsuit Gloves",
+        "CHOAM Stillsuit Mask",
+        "Desert Garb",
+        "Imperial Stillsuit Garment",
+        "Power Harness",
+        "Radiation Suit Mk6",
+        "The Forge Helmet"
+      ],
+      "crafted_at": [
+        "Advanced Garment Fabricator"
+      ]
+    },
+    {
+      "id": "raw-spice",
+      "name": "Raw Spice",
+      "category": "spice",
+      "sub_category": "raw",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "basic-repair-kit",
+      "name": "Basic Repair Kit",
+      "category": "tools",
+      "sub_category": "repair",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "vehicle-backup-tool",
+      "name": "Vehicle Backup Tool",
+      "category": "tools",
+      "sub_category": "repair",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "blank-sinkchart",
+      "name": "Blank Sinkchart",
+      "category": "tools",
+      "sub_category": "surveying",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "survey-probe",
+      "name": "Survey Probe",
+      "category": "tools",
+      "sub_category": "surveying",
+      "used_in": [
+        "(various)"
+      ]
+    },
+    {
+      "id": "survey-probe-launcher",
+      "name": "Survey Probe Launcher",
+      "category": "tools",
+      "sub_category": "surveying",
+      "used_in": [
+        "(various)"
+      ]
+    }
+  ]
+}

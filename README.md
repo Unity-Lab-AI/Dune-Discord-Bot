@@ -28,6 +28,7 @@ DEPENDENCIES
 - googletrans==4.0.0-rc1
 - aiofiles
 - python-dotenv
+- cachetools
 
 SETUP
 -----
@@ -64,6 +65,11 @@ COMMANDS
 - !bothelp - Show commands/models
 - !setmodel - Pick AI model (DM)
 - !savememory <text> - Save channel note
+- !search <query> - Search Dune database
+- !item <name> - Lookup item info
+- !skill <name> - Lookup skill info
+- !contract <name> - Lookup contract info
+- !npc <name> - Lookup NPC info
 - !wipe - Clear chat history
 
 NATURAL CHAT
@@ -91,8 +97,20 @@ FILES
 - requirements.txt - Dependencies
 - .env - Tokens (keep secret)
 - system_instructions.txt - AI rules
+- info_request_instructions.txt - info-query rules
 - RUN_BOT.bat - Start script
 - logs/ - application.log, chat_data.json
+
+DATA FILES
+----------
+Game data lives in the `information/` directory. Each JSON file covers a domain:
+
+- `items.json` – full item list and details
+- `weapons.json`, `armor.json`, `vehicles.json`, `buildings.json`
+- `skills.json`, `research.json`
+- `tips.json`, `strategies.json`, `gameplay.json`, `volumes.json`
+
+When a message arrives the bot first asks the LLM which domains it needs (using `info_request_instructions.txt`), then reads only the named JSON files and sends the relevant entries back with the user's text to craft a final answer. Add or update data by editing the corresponding file or dropping a new `*.json` into `information/`.
 
 TROUBLESHOOTING
 ---------------
@@ -105,6 +123,7 @@ CONFIG TWEAKS
 -------------
 - Edit config.py: max_history (20), max_memories (5), add code/image keywords
 - Edit system_instructions.txt for AI style
+- Edit info_request_instructions.txt for data lookup behavior
 
 SECURITY
 --------

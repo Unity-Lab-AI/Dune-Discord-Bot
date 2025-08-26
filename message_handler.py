@@ -5,7 +5,8 @@ import asyncio
 import aiohttp
 from io import BytesIO
 import json
-from typing import Dict, Any, List, Tuple
+from pathlib import Path
+from typing import Dict, Any, Tuple, List
 
 logger = logging.getLogger(__name__)
 
@@ -22,21 +23,78 @@ class MessageHandler:
             "copter": ["ornithopter"],
         }
 
-        self.game_data = self.load_game_data("dune.json")
-        self.items = self._extract_items(self.game_data)
+        # Load game data from individual JSON files in the information directory.
+        # Each file's contents are stored under a key matching the filename
+        # (without extension) so the bot can look up specific domains on demand.
+        self.game_data: Dict[str, Dict[str, Any]] = {}
+        info_dir = Path("information")
+        for json_file in info_dir.glob("*.json"):
+            name = json_file.stem
+            self.game_data[name] = self.load_game_data(json_file)
+
+        # Build a short summary of each information file so the LLM knows
+        # what domains are available when planning which files to request.
+        self.file_summaries: Dict[str, str] = {}
+        for name, data in self.game_data.items():
+            self.file_summaries[name] = self._summarize_game_data(data)
+
+        # Merge item dictionaries across all loaded domains for quick lookup
+        # (used when mapping user text to a canonical item name).
+        self.items: Dict[str, Dict[str, Any]] = {}
+        for data in self.game_data.values():
+            self.items.update(self._extract_items(data))
+
         self.item_lookup: Dict[str, Tuple[str, Dict[str, Any]]] = {
             self.normalize_text(name): (name, details) for name, details in self.items.items()
         }
-        self.game_summary = self.game_data.get("game_summary", "")
+
+        # Grab a game summary if any file provides one
+        self.game_summary = ""
+        for data in self.game_data.values():
+            if isinstance(data, dict) and data.get("game_summary"):
+                self.game_summary = data["game_summary"]
+                break
 
         self.domain_terms = {
             "item", "items", "gear", "weapon", "weapons", "gun", "guns", "shotgun",
             "knife", "sword", "shield", "armor", "vehicle", "ornithopter", "thopter",
             "stats", "stat", "damage", "dps", "cost", "craft", "crafting", "blueprint",
             "recipe", "build", "best", "which", "recommend", "recommendation", "compare",
-            "vs", "versus", "loadout", "kit"
+            "vs", "versus", "loadout", "kit", "npc", "npcs", "contract", "contracts",
+            "lore", "solari", "skill", "skills", "building", "buildings"
         }
         self.greeting_terms = {"hi","hello","hey","yo","sup","howdy","greetings","hola"}
+
+        # Map common domain terms to their corresponding JSON information files.
+        # Used when the LLM does not specify which files to consult so we can
+        # still provide at least one relevant JSON dataset.
+        self.domain_to_file = {
+            "weapon": "weapons",
+            "weapons": "weapons",
+            "gun": "weapons",
+            "guns": "weapons",
+            "armor": "armor",
+            "vehicle": "vehicles",
+            "vehicles": "vehicles",
+            "ornithopter": "vehicles",
+            "copter": "vehicles",
+            "thopter": "vehicles",
+            "tip": "tips",
+            "tips": "tips",
+            "strategy": "strategies",
+            "strategies": "strategies",
+            "skill": "skills",
+            "skills": "skills",
+            "research": "research",
+            "building": "buildings",
+            "buildings": "buildings",
+            "item": "items",
+            "items": "items",
+            "gear": "items",
+            "volume": "volumes",
+            "volumes": "volumes",
+            "gameplay": "gameplay",
+        }
 
     def load_game_data(self, path: str) -> dict:
         try:
@@ -57,6 +115,33 @@ class MessageHandler:
             if items:
                 return items
         return {}
+
+    def _summarize_game_data(self, data: Dict[str, Any]) -> str:
+        """Generate a brief, human-readable summary of a game data file.
+
+        The summary lists a handful of top-level item names or keys so the LLM
+        has an idea of what the file contains before requesting it.
+        """
+
+        if not isinstance(data, dict):
+            return ""
+
+        # Prefer explicit summaries if present
+        summary = data.get("game_summary")
+        if isinstance(summary, str) and summary.strip():
+            return summary.strip()
+
+        # Otherwise build a summary from item names or keys
+        items = self._extract_items(data)
+        if items:
+            if len(items) == 1 and isinstance(next(iter(items.values())), dict):
+                inner = next(iter(items.values()))
+                keys = list(inner.keys())[:5]
+            else:
+                keys = list(items.keys())[:5]
+        else:
+            keys = list(data.keys())[:5]
+        return ", ".join(map(str, keys))
 
     def normalize_text(self, text: str) -> str:
         text = (text or "").lower()
@@ -83,66 +168,165 @@ class MessageHandler:
         tokens = set(norm.split())
         return bool(tokens & self.domain_terms)
 
-    def _score_item(self, message_tokens: List[str], name: str, details: Dict[str, Any]) -> float:
-        norm_name = self.normalize_text(name)
-        name_tokens = set(norm_name.split())
-        msg_tokens = set(message_tokens)
-        score = 0.0
-        score += len(msg_tokens & name_tokens)
-        for field in ("type", "usage"):
-            val = str(details.get(field, "")).lower()
-            val = self.normalize_text(val)
-            if not val:
-                continue
-            field_tokens = set(val.split())
-            score += 0.5 * len(msg_tokens & field_tokens)
-        return score
+    def _heuristic_files(self, user_message: str) -> List[str]:
+        """Fallback selection of JSON files based on keywords in the message."""
+
+        norm = self.normalize_text(user_message)
+        tokens = norm.split()
+        files: List[str] = []
+        for tok in tokens:
+            fname = self.domain_to_file.get(tok)
+            if fname:
+                files.append(fname)
+        if not files and self.game_data:
+            # If nothing matches, include the first available file to satisfy
+            # the requirement of always providing at least one JSON dataset.
+            files.append(next(iter(self.game_data.keys())))
+        # Preserve order while removing duplicates
+        return list(dict.fromkeys(files))
+
+    def _heuristic_logic(self, user_message: str) -> List[Dict[str, Any]]:
+        """Fallback logic search using a keyword from the user's message."""
+
+        norm = self.normalize_text(user_message)
+        tokens = norm.split()
+        if not tokens:
+            return []
+        type_map = {
+            "npc": "npc",
+            "contract": "contract",
+            "building": "building",
+            "weapon": "item",
+            "weapons": "item",
+            "item": "item",
+            "vehicle": "vehicle",
+            "vehicles": "vehicle",
+            "skill": "skill",
+            "skills": "skill",
+        }
+        ltype = ""
+        for tok in tokens:
+            if tok in type_map:
+                ltype = type_map[tok]
+                break
+        keyword = tokens[0]
+        return [{"type": ltype, "terms": [keyword]}]
+
 
     async def _ai_query_plan(self, model: str, user_message: str) -> Dict[str, Any]:
-        sys = "You are a query planner. Return only JSON with keys: keywords (array), types (array)."
-        usr = f"User question: {user_message}\nReturn only JSON."
+        """Ask the LLM which information files and keywords are relevant.
+
+        The model is prompted to return JSON with three arrays:
+        - ``files``: information domain filenames (e.g., "weapons", "armor").
+        - ``keywords``: search terms to locate specific entries within JSON files.
+        - ``logic``: objects describing searches for the Dune Logic database,
+          each with optional ``type`` (e.g., ``npc`` or ``item``) and a list of
+          ``terms`` keywords.
+        """
+
+        sys = self.config.info_request_instructions
+        overview_lines = [f"{name}: {summary}" for name, summary in self.file_summaries.items()]
+        overview = "\n".join(overview_lines)
+        usr = (
+            f"Available files and summaries:\n{overview}\n\n"
+            f"User question: {user_message}\nReturn only JSON."
+        )
         try:
             out = await self.api_client.send_message(
                 [{"role": "system", "content": sys}, {"role": "user", "content": usr}],
-                model
+                model,
             )
             m = re.search(r"\{[\s\S]*\}", out or "")
             plan = json.loads(m.group(0)) if m else {}
-            plan["keywords"] = [self.normalize_text(k) for k in plan.get("keywords", []) if isinstance(k, str)]
-            plan["types"] = [self.normalize_text(t) for t in plan.get("types", []) if isinstance(t, str)]
+            plan["files"] = [
+                self.normalize_text(f) for f in plan.get("files", []) if isinstance(f, str)
+            ]
+            plan["keywords"] = [
+                self.normalize_text(k) for k in plan.get("keywords", []) if isinstance(k, str)
+            ]
+            logic_queries: List[Dict[str, Any]] = []
+            for entry in plan.get("logic", []):
+                if isinstance(entry, dict):
+                    tp = self.normalize_text(entry.get("type", ""))
+                    terms = [
+                        self.normalize_text(t)
+                        for t in entry.get("terms", [])
+                        if isinstance(t, str)
+                    ]
+                    if terms:
+                        logic_queries.append({"type": tp, "terms": terms})
+            plan["logic"] = logic_queries
+            if not plan["files"]:
+                plan["files"] = self._heuristic_files(user_message)
+            if not plan["logic"]:
+                plan["logic"] = self._heuristic_logic(user_message)
             return plan
         except Exception as e:
             logger.warning(f"Query-plan parse failed, falling back to heuristic: {e}")
-            return {}
+            return {
+                "files": self._heuristic_files(user_message),
+                "keywords": [],
+                "logic": self._heuristic_logic(user_message),
+            }
 
-    def _retrieve_matches(self, user_message: str, plan: Dict[str, Any], top_k: int = 6):
-        norm = self.normalize_text(user_message)
-        message_tokens = norm.split()
-        message_tokens += plan.get("keywords", [])
-        message_tokens += plan.get("types", [])
-        seen = set()
-        message_tokens = [t for t in message_tokens if not (t in seen or seen.add(t))]
-        scored = []
-        for _, (display_name, details) in self.item_lookup.items():
-            s = self._score_item(message_tokens, display_name, details)
-            if s > 0:
-                scored.append((display_name, details, s))
-        scored.sort(key=lambda x: x[2], reverse=True)
-        return scored[:top_k]
+    def _retrieve_data(self, plan: Dict[str, Any]) -> Dict[str, Any]:
+        """Return the raw contents of each requested information file."""
 
-    def _game_context_json(self, matches):
-        payload = {
-            "items": [
-                {
-                    "name": name,
-                    "score": round(score, 3),
-                    "fields": {k: v for k, v in details.items()
-                               if isinstance(v, (str, int, float, bool)) or v is None}
-                }
-                for (name, details, score) in matches
-            ]
-        }
-        return json.dumps(payload, ensure_ascii=False, indent=2)
+        results: Dict[str, Any] = {}
+        for file in plan.get("files", []):
+            data = self.game_data.get(file)
+            if data is not None:
+                results[file] = data
+        return results
+
+    def _game_context_json(self, matches: Dict[str, Any]) -> str:
+        """Serialize matched game data to JSON for LLM consumption."""
+
+        return json.dumps(matches, ensure_ascii=False, indent=2)
+
+    async def _dune_logic_lookup(self, plan: Dict[str, Any]) -> Dict[str, Any]:
+        """Perform searches against the Dune Logic database based on plan."""
+
+        from dune_logic.search import search_autocomplete, route_path
+
+        results: List[Dict[str, Any]] = []
+        for query in plan.get("logic", []):
+            if not isinstance(query, dict):
+                continue
+            terms = query.get("terms", [])
+            qtype = query.get("type", "")
+            keyword = " ".join(terms).strip()
+            if not keyword:
+                continue
+            type_map = {
+                "item": "items",
+                "weapon": "items",
+                "vehicle": "items",
+                "npc": "npcs",
+                "contract": "contracts",
+                "building": "buildables",
+                "skill": "skills",
+            }
+            types = [type_map[qtype]] if qtype in type_map else None
+            try:
+                suggestions = await search_autocomplete("en", keyword, types)
+            except Exception as e:
+                logger.warning(f"Logic search failed for {keyword}: {e}")
+                continue
+            cards: List[Dict[str, Any]] = []
+            for s in suggestions[:3]:
+                path = s.get("path")
+                if not path:
+                    continue
+                try:
+                    kind, card = await route_path("en", path)
+                    card["kind"] = kind
+                    card["path"] = path
+                    cards.append(card)
+                except Exception as e:
+                    logger.warning(f"Logic fetch failed for {path}: {e}")
+            results.append({"type": qtype, "terms": terms, "results": cards})
+        return {"logic": results}
 
     async def handle_message(self, message):
         channel_id = str(message.channel.id)
@@ -186,17 +370,21 @@ class MessageHandler:
                 role = "assistant" if msg["role"] == "ai" else msg["role"]
                 messages.append({"role": role, "content": msg["content"]})
 
-        include_gamedata = self.is_item_query(user_message)
-        if include_gamedata:
-            plan = await self._ai_query_plan(user_model, user_message)
-            matches = self._retrieve_matches(user_message, plan, top_k=6)
-            game_context = self._game_context_json(matches)
+        plan = await self._ai_query_plan(user_model, user_message)
+        matches = self._retrieve_data(plan)
+        logic_matches = await self._dune_logic_lookup(plan)
+        context_parts: List[str] = []
+        if matches:
+            context_parts.append(f"GameData:\n{self._game_context_json(matches)}")
+        if logic_matches.get("logic"):
+            context_parts.append("LogicData:\n" + json.dumps(logic_matches, ensure_ascii=False, indent=2))
+        if context_parts:
             guardrails = (
                 "When the question concerns items, gear, or stats, use ONLY the following GameData JSON "
                 "for concrete names or numbers. If an asked-for item is missing, say so briefly and ask a short follow-up. "
-                "Do not comment about GameData if the user wasn't asking about items."
+                "Do not comment about GameData if the user wasn't asking about items. DuneLogic search results are provided as additional context."
             )
-            messages.append({"role": "system", "content": f"{guardrails}\n\nGameData:\n{game_context}"})
+            messages.append({"role": "system", "content": guardrails + "\n\n" + "\n\n".join(context_parts)})
 
         messages.append({"role": "user", "content": user_message})
 
@@ -224,7 +412,15 @@ class MessageHandler:
         text_lines = []
         image_urls = []
         for ln in lines:
-            if re.match(r"^https?://\S+\.(png|jpg|jpeg|gif|webp)(\?.*)?$", ln, flags=re.IGNORECASE):
+            # Treat URLs that point to common image formats or Pollinations
+            # generated images as image links even if they lack a file
+            # extension. Pollinations uses dynamic URLs without an extension,
+            # which previously caused the bot to echo the link instead of
+            # displaying the image. By explicitly checking for the Pollinations
+            # domain we can handle these URLs and upload the image rather than
+            # posting the raw link.
+            if re.match(r"^https?://\S+\.(png|jpg|jpeg|gif|webp)(\?.*)?$", ln, flags=re.IGNORECASE) or \
+               re.match(r"^https?://image\.pollinations\.ai/\S+", ln, flags=re.IGNORECASE):
                 image_urls.append(ln)
             else:
                 text_lines.append(ln)
@@ -239,6 +435,8 @@ class MessageHandler:
                         if resp.status == 200:
                             data = await resp.read()
                             filename = url.split("/")[-1].split("?")[0] or "image.png"
+                            if not re.search(r"\.(png|jpg|jpeg|gif|webp)$", filename, re.IGNORECASE):
+                                filename += ".png"
                             files.append(discord.File(BytesIO(data), filename=filename))
             except Exception as e:
                 logger.warning(f"Failed to fetch image {url}: {e}")
