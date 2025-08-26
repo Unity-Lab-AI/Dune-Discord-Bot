@@ -1,3 +1,70 @@
 {
-  "volumes": {}
+  "units": {
+    "liquid": "ml",
+    "inventory_volume": "V"
+  },
+  "player": {
+    "inventory": {
+      "slots": 35,
+      "capacity_v": 175
+    }
+  },
+  "city_storage": {
+    "bank": {
+      "slots": 40,
+      "capacity_v": 1500
+    }
+  },
+  "base_storage": [
+    { "id": "small_storage_container", "name": "Small Storage Container", "slots": 10, "capacity_v": 250 },
+    { "id": "chest", "name": "Chest", "slots": 20, "capacity_v": 750 },
+    { "id": "storage_container", "name": "Storage Container", "slots": 45, "capacity_v": 1750 },
+    { "id": "medium_storage_container", "name": "Medium Storage Container", "slots": 100, "capacity_v": 3500 }
+  ],
+  "vehicle_storage": [
+    { "id": "sandbike_storage_mk2", "name": "Sandbike Storage Mk2", "capacity_v": 250 },
+    { "id": "buggy_storage_mk3", "name": "Buggy Storage Mk3", "capacity_v": 1500 },
+    { "id": "buggy_storage_mk4", "name": "Buggy Storage Mk4", "capacity_v": 2000 },
+    { "id": "buggy_storage_mk5", "name": "Buggy Storage Mk5", "capacity_v": 2500, "slots": 20 },
+    { "id": "buggy_storage_mk6", "name": "Buggy Storage Mk6", "capacity_v": 3000 },
+    { "id": "scout_ornithopter_storage_mk4", "name": "Scout Ornithopter Storage Mk4", "capacity_v": 500 },
+    { "id": "assault_ornithopter_storage", "name": "Assault Ornithopter Storage", "capacity_v": 1000 }
+  ],
+  "liquid_containers": {
+    "water": [
+      { "id": "literjon_mk6", "name": "Literjon Mk6", "capacity_ml": 20000, "item_volume_v": 25 },
+      { "id": "decaliterjon", "name": "Decaliterjon", "capacity_ml": 10000, "item_volume_v": 15 },
+      { "id": "hajra_literjon_mk1", "name": "Hajra Literjon Mk1", "capacity_ml": 1500, "item_volume_v": 2 },
+      { "id": "hajra_literjon_mk5", "name": "Hajra Literjon Mk5", "capacity_ml": 2500, "item_volume_v": 2 },
+      { "id": "hajra_literjon_mk6", "name": "Hajra Literjon Mk6", "capacity_ml": 3000, "item_volume_v": 2 }
+    ],
+    "blood": [
+      { "id": "small_blood_sack", "name": "Small Blood Sack", "capacity_ml": 3000, "item_volume_v": 4 },
+      { "id": "medium_blood_sack", "name": "Medium Blood Sack", "capacity_ml": 9000, "item_volume_v": 8 },
+      { "id": "large_blood_sack", "name": "Large Blood Sack", "capacity_ml": 15000, "item_volume_v": 12 },
+      { "id": "massive_blood_sack", "name": "Massive Blood Sack", "capacity_ml": 24000, "item_volume_v": 16 },
+      { "id": "unique_blood_sack_sinners", "name": "Sinner's Bloodbag (Unique)", "capacity_ml": 19000 },
+      { "id": "unique_blood_sack_scipios", "name": "Scipio's Bloodbag (Unique)", "capacity_ml": 13000 },
+      { "id": "unique_blood_sack_gluttons", "name": "Glutton's Bloodbag (Unique)", "capacity_ml": 16000 },
+      { "id": "unique_blood_sack_maas_kharet", "name": "Maas Kharet Bloodbag (Unique)", "capacity_ml": 22000 },
+      { "id": "unique_blood_sack_baron", "name": "The Baron's Bloodbag (Unique)", "capacity_ml": 30000 }
+    ],
+    "cisterns": [
+      { "id": "water_cistern_small", "name": "Water Cistern (Small)", "capacity_ml": 5000 },
+      { "id": "water_cistern_medium", "name": "Medium Water Cistern", "capacity_ml": 25000 },
+      { "id": "water_cistern_large", "name": "Large Water Cistern", "capacity_ml": 100000 }
+    ],
+    "generators_internal_buffers": [
+      { "id": "windtrap_internal_reservoir", "name": "Windtrap Internal Reservoir", "capacity_ml": 500 }
+    ]
+  },
+  "production_rates": {
+    "windtrap_basic_ml_per_hour": 2700,
+    "windtrap_large_ml_per_hour": 6300,
+    "deathstill_ml_per_corpse_per_hour": 25000,
+    "deathstill_advanced_ml_per_corpse_per_hour": 45000
+  },
+  "bulky_items": [
+    { "id": "corpse_human", "name": "Corpse (Human/NPC)", "volume_v": 75 }
+  ]
 }
