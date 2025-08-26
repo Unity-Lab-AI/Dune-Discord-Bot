@@ -412,7 +412,12 @@ class MessageHandler:
         text_lines = []
         image_urls = []
         for ln in lines:
-            if re.match(r"^https?://\S+\.(png|jpg|jpeg|gif|webp)(\?.*)?$", ln, flags=re.IGNORECASE):
+            # Treat any standalone URL as a potential image link. Many image
+            # generation services (e.g., Pollinations) return image content
+            # without a file extension, so the previous extension-based check
+            # failed to detect them. We now capture generic URLs here and let
+            # _send_message verify whether they actually point to images.
+            if re.match(r"^https?://\S+$", ln, flags=re.IGNORECASE):
                 image_urls.append(ln)
             else:
                 text_lines.append(ln)
@@ -420,18 +425,27 @@ class MessageHandler:
 
     async def _send_message(self, message, user_id: str, final_message: Dict[str, Any], user_message_lower: str):
         files = []
+        failed_urls = []
         for url in final_message.get("images", []):
             try:
                 async with aiohttp.ClientSession() as session:
                     async with session.get(url) as resp:
-                        if resp.status == 200:
+                        content_type = resp.headers.get("Content-Type", "")
+                        if resp.status == 200 and content_type.startswith("image"):
                             data = await resp.read()
                             filename = url.split("/")[-1].split("?")[0] or "image.png"
                             files.append(discord.File(BytesIO(data), filename=filename))
+                        else:
+                            failed_urls.append(url)
             except Exception as e:
                 logger.warning(f"Failed to fetch image {url}: {e}")
+                failed_urls.append(url)
 
         content = final_message.get("content", "")
+        if failed_urls:
+            # If any URLs did not resolve to images, append them back into the
+            # text content so the user still receives the link.
+            content = (content + "\n" + "\n".join(failed_urls)).strip()
         if not content and not files:
             await message.channel.send(f"<@{user_id}> (No content)")
             return
