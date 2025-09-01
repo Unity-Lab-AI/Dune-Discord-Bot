@@ -61,6 +61,10 @@ async def on_message(message):
     if message.guild and config.allowed_channels and str(message.channel.id) not in config.allowed_channels:
         return
 
+    # If another bot sends a message in an allowed channel, wait before responding
+    if message.author.bot:
+        await asyncio.sleep(10)
+
     channel_id = str(message.channel.id)
     guild_id = str(message.guild.id) if message.guild else "DM"
     user_id = str(message.author.id)
